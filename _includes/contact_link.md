@@ -1,0 +1,1 @@
+Firmy i osoby zainteresowane zleceniem nam prac programistycznych [zapraszamy do kontaktu](/pages/contact).

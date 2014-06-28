@@ -1,4 +1,4 @@
 maciejlew
 =========
 
-Homepage and blog
+Homepage and blog for lion.net.pl.
