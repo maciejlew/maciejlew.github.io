@@ -255,6 +255,129 @@ p a {
 
 /*****************************************************************************/
 /*
+/* Images
+/*
+/*****************************************************************************/
+
+.gallery {
+    width: 100%;
+}
+
+.galleryItem {
+    padding: 5px;
+    background-color: inherit;
+    font-size: 10px/1.5;
+    float: left;
+    width: 16%;
+    margin: 2% 2% 50px 2%;
+}
+
+.stack { position: relative; z-index: 10; }
+
+/* Image styles */
+.stack img { max-width: 100%; height: auto; vertical-align: bottom; border: 10px solid #fff; border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Stacks creted by the use of generated content */
+.stack:before, .stack:after { content: ""; border-radius: 3px; width: 100%; height: 100%; position: absolute; border: 10px solid #fff; left: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: 0.3s all ease-out;
+	-moz-transition: 0.3s all ease-out;
+	transition: 0.3s all ease-out;
+}
+.stack:before { top: 4px; z-index: -10; } /* 1st element in stack (behind image) */
+.stack:after { top: 8px; z-index: -20; } /* 2nd element in stack (behind image) */
+
+.stack.rotated:before {
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	transform-origin: bottom left;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+.stack.rotated:after {
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	transform-origin: bottom left;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+
+/* Third stack example (One stack element rotated in the opposite direction) */
+.stack.twisted:before {
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+.stack.twisted:after {
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+
+/* Fourth stack example (Similar to the second but rotated left) */
+.stack.rotated-left:before {
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	transform-origin: bottom left;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.stack.rotated-left:after {
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	transform-origin: bottom left;
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+}
+
+/* Reset all rotations on hover */
+.stack:hover:before, .stack:hover:after {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+@media only screen and (max-width: 940px),
+only screen and (max-device-widht: 940px) {
+    .galleryItem {width: 21%;}
+}
+
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.galleryItem {width: 29.33333%;}
+}
+ 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	.galleryItem {width: 46%;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	.galleryItem {width: 96%;}
+	.galleryItem img {width: 96%;}
+	.galleryItem h3 {font-size: 18px;}
+	.galleryItem p {font-size: 18px;}
+}
+
+/*****************************************************************************/
+/*
 /* Responsive
 /*
 /*****************************************************************************/
