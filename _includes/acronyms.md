@@ -14,3 +14,4 @@
 *[B2C]: Business to Consumer
 *[IT]: Information Technology
 *[WinForms]: Windows Forms
+*[MHKI]: Muzeum Historii Komputerów i Informatyki
