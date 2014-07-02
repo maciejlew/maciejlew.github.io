@@ -2,7 +2,7 @@
 layout: page
 title: Kontakt
 description: Kontakt na lion.net.pl
-keywords: programowanie, firma programistyczna, branza IT
+keywords: programowanie, firma programistyczna, branża IT
 permalink: /contact/
 
 ---
