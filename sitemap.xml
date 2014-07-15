@@ -8,38 +8,42 @@
 
 <url>
   <loc>http://lion.net.pl/</loc>
-  <lastmod>2014-06-30T20:09:07+00:00</lastmod>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>1.00</priority>
 </url>
 <url>
   <loc>http://lion.net.pl/pages/offer/</loc>
-  <lastmod>2014-06-30T20:09:07+00:00</lastmod>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lion.net.pl/pages/skills/</loc>
-  <lastmod>2014-06-30T20:09:07+00:00</lastmod>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lion.net.pl/pages/contact/</loc>
-  <lastmod>2014-06-30T20:09:07+00:00</lastmod>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://lion.net.pl/pages/blog/</loc>
-  <lastmod>2014-06-30T20:09:07+00:00</lastmod>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://lion.net.pl/2014/07/13/phpers-silesia-czerwiec-2014.html</loc>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://lion.net.pl/2014/06/30/industriada-2014-wystawa-zabytkowych-komputerow.html</loc>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://lion.net.pl/2014/06/19/ready-steady-blog.html</loc>
-  <lastmod>2014-06-30T20:09:07+00:00</lastmod>
+  <lastmod>2014-07-15T20:28:57+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.64</priority>
 </url>
 </urlset>
