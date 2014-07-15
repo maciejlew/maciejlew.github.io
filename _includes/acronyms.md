@@ -15,3 +15,6 @@
 *[IT]: Information Technology
 *[WinForms]: Windows Forms
 *[MHKI]: Muzeum Historii Komputerów i Informatyki
+*[API]: Application Programming Interface
+*[SQL]: Structured Query Language
+*[SMS]: Short Message Service
