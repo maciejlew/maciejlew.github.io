@@ -15,7 +15,7 @@ samorządowej.
 
 Umiejętności jakie posiadamy i technologie przy pomocy jakich pracujemy to między innymi:
 
-
+ * bazy danych MySQL, PostgreSQL, MSSQL;
  * OOP, TDD, UML, wzorce projektowe, programowanie wielowątkowe;
  * technologie web: HTML, CSS, JavaScript (jQuery, Prototype, Ajax, Websockets), SOAP, REST;
  * systemy kontroli wersji (SVN, GIT);
