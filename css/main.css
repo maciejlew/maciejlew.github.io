@@ -15,17 +15,25 @@
 /*
 /*****************************************************************************/
 
-.color1 {
-    background: rgba(193, 154, 107, 0.5);
+#name_module {
+    background: linear-gradient(360deg, #014390 0%, #a849a3 100%);
 }
-.color2 {
-    background: rgba(255, 244, 43, 0.5);
+#name_module a {
+    color: #f2f2f2;
+    font-weight: 900;
+    text-shadow: 1px 2px black;
 }
-.color3 {
+#navigation_module {
+    background: linear-gradient(360deg, #01ae50 0%, #014390 100%);
+}
+.blog_module {
     background: white;
 }
-.color4 {
-    background: rgba(138, 219, 79, 0.3);
+#description_module {
+    color: #f2f2f2;
+    font-weight: 900;
+    text-shadow: 1px 2px black;
+    background: linear-gradient(360deg, #014390 0%, #01ae50 100%);
 }
 
 
@@ -77,22 +85,20 @@ nav a {
     padding: 0.4em;
     background: #fff;
     display: block;
+    color: #014390;
 }
 nav a:nth-child(2n) {
     margin: 10px
 }
 nav a:hover {
-    background: rgba(210, 23, 23, 0.7);
     border: 0;
-    color: #fff !important;
+    color: #a849a3 !important;
 }
 article p a:hover {
-    background: rgba(210, 23, 23, 0.7);
     border: 0;
-    color: #fff !important;
+    color: #a849a3 !important;
 }
 article p a {
-    border-bottom: .125em solid #ccc;
     padding: 0 0 .15em 0;
     display: inline;
 }
@@ -132,7 +138,7 @@ article p a {
     padding: 0;
 }
 .main-content a {
-    color: #d21717;
+    color: #014390;
 }
 .main-content a:hover,
 .main-content a:focus {
@@ -182,8 +188,7 @@ blockquote {
     box-shadow: 0 1px 4px #ccc, 0 5px 12px -8px #555;
 }
 p a {
-    text-decoration-line: underline;
-    text-decoration-style: double;
+    
 }
 
 /*****************************************************************************/
@@ -276,81 +281,81 @@ p a {
 
 /* Image styles */
 .stack img { max-width: 100%; height: auto; vertical-align: bottom; border: 10px solid #fff; border-radius: 3px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+             -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+             box-sizing: border-box;
+             -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+             -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Stacks creted by the use of generated content */
 .stack:before, .stack:after { content: ""; border-radius: 3px; width: 100%; height: 100%; position: absolute; border: 10px solid #fff; left: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	-webkit-transition: 0.3s all ease-out;
-	-moz-transition: 0.3s all ease-out;
-	transition: 0.3s all ease-out;
+                              -webkit-box-sizing: border-box;
+                              -moz-box-sizing: border-box;
+                              box-sizing: border-box;
+                              -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+                              -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+                              box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+                              -webkit-transition: 0.3s all ease-out;
+                              -moz-transition: 0.3s all ease-out;
+                              transition: 0.3s all ease-out;
 }
 .stack:before { top: 4px; z-index: -10; } /* 1st element in stack (behind image) */
 .stack:after { top: 8px; z-index: -20; } /* 2nd element in stack (behind image) */
 
 .stack.rotated:before {
-	-webkit-transform-origin: bottom left;
-	-moz-transform-origin: bottom left;
-	transform-origin: bottom left;
-	-webkit-transform: rotate(2deg);
-	-moz-transform: rotate(2deg);
-	transform: rotate(2deg);
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
 }
 .stack.rotated:after {
-	-webkit-transform-origin: bottom left;
-	-moz-transform-origin: bottom left;
-	transform-origin: bottom left;
-	-webkit-transform: rotate(4deg);
-	-moz-transform: rotate(4deg);
-	transform: rotate(4deg);
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
 }
 
 /* Third stack example (One stack element rotated in the opposite direction) */
 .stack.twisted:before {
-	-webkit-transform: rotate(4deg);
-	-moz-transform: rotate(4deg);
-	transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
 }
 .stack.twisted:after {
-	-webkit-transform: rotate(-4deg);
-	-moz-transform: rotate(-4deg);
-	transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
 }
 
 /* Fourth stack example (Similar to the second but rotated left) */
 .stack.rotated-left:before {
-	-webkit-transform-origin: bottom left;
-	-moz-transform-origin: bottom left;
-	transform-origin: bottom left;
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
-	transform: rotate(-3deg);
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
 .stack.rotated-left:after {
-	-webkit-transform-origin: bottom left;
-	-moz-transform-origin: bottom left;
-	transform-origin: bottom left;
-	-webkit-transform: rotate(-6deg);
-	-moz-transform: rotate(-6deg);
-	transform: rotate(-6deg);
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
 }
 
 /* Reset all rotations on hover */
 .stack:hover:before, .stack:hover:after {
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 @media only screen and (max-width: 940px),
@@ -360,20 +365,20 @@ only screen and (max-device-widht: 940px) {
 
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
-	.galleryItem {width: 29.33333%;}
+    .galleryItem {width: 29.33333%;}
 }
- 
+
 @media only screen and (max-width : 530px),
 only screen and (max-device-width : 530px){
-	.galleryItem {width: 46%;}
+    .galleryItem {width: 46%;}
 }
- 
+
 @media only screen and (max-width : 320px),
 only screen and (max-device-width : 320px){
-	.galleryItem {width: 96%;}
-	.galleryItem img {width: 96%;}
-	.galleryItem h3 {font-size: 18px;}
-	.galleryItem p {font-size: 18px;}
+    .galleryItem {width: 96%;}
+    .galleryItem img {width: 96%;}
+    .galleryItem h3 {font-size: 18px;}
+    .galleryItem p {font-size: 18px;}
 }
 
 /*****************************************************************************/
