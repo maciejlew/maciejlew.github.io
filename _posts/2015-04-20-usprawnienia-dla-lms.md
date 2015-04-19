@@ -23,6 +23,7 @@ Poniżej przedstawiam listę:
  * Dużo różnych rzeczy związanych z pluginem firmy Adescom obsługującym ich centralę VoIP - napisałem dla firmy Adescom plugin do LMS pozwalajacy na zarządzanie ich centralą, pomagam ten plugin rozbudować klientom którzy mają dodatkowe pomysły z nim związane.
 
 Obecnie pracuję nad:
+
  * Dodawanie załączników do dokumentów przechowywanych w LMS;
  * Pobieranie informacji z serwera pocztowego czy FV została wysłana do klienta i prezentacja tejże w LMS;
  * Lista kończących się umów, powiadamianie BOK o kończących się umowach;
