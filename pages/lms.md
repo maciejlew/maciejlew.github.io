@@ -17,7 +17,7 @@ Poniżej przedstawiam moje gotowe komponenty dla systemu LMS.
  * uwzględnienie terminów płatności
  * uwzględnienie możliwości występowania FV z wieloma pozycjami
  * aktualna data jest datą wystawienia wezwania
- * nazwa wystawcy konfigurowalna z poziomu LMS (wykorzystuje globalny, bądź przypisany do firmy, nagłówek FV)
+ * nazwa wystawcy konfigurowalna z poziomu LMS (wykorzystuje nagłówek FV - globalny, bądź przypisany do firmy)
  * numer konta bankowego brany z karty klienta (obsługa IBAN)
  * aktualne saldo - kwota do zapłaty
  * na życzenie klienta dostosowanie treści wezwania
