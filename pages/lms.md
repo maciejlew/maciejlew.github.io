@@ -38,7 +38,7 @@ Przykłady:
 
 Przkłady:
 
- * [Przykładowa książeczka opłat](http://lion.net.pl/img/szablony_dokumentow/książeczka_opłat_przyklad.pdf)
+ * [Przykładowa książeczka opłat](http://lion.net.pl/img/szablony_dokumentow/ksiazeczka_oplat_przyklad.pdf)
 
 * * *
 
