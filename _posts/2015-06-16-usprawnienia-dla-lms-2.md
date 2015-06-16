@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Usprawnienia dla LMS #2
+title: Usprawnienia dla LMS, część 2
 date: 2015-06-16 18:00:00
 description: Lista nowych usprawnień dla LMS, cześć 2
 keywords: lms, lan management system, pluginy, wzorce projektowe, rozbudowa lms
 
 ---
 
-Kolejny etap prac nad rozwojem LMS za mną, stworzłem kilka nowych rozwiązań, poprawiłem
+Kolejny etap prac nad rozwojem LMS za mną, stworzyłem kilka nowych rozwiązań, poprawiłem
 trochę błędów:
 
  * Przypisywanie komputerów klientów do urządzeń sieciowych (RADIUS accounting);
@@ -25,8 +25,8 @@ trochę błędów:
  * Wezwania do zapłaty - adres korespondencyjny;
  * Generator umów w promocji;
  * Poprawienie tworzenia zobowiązań z schematu promocji (nie działało dla taryf z niezdefiniowanym okresem naliczania);
- * Autmatycznie wyliczany rabat przy dodawaniu lub edycji zobowiązania;
- * Umożliwienie skopiowania numeru konta z faktury, którą klient dostaje w pdf (gdy pdf otwierany jest w Adobe Reader).
+ * Automatycznie wyliczany rabat przy dodawaniu lub edycji zobowiązania;
+ * Umożliwienie skopiowania numeru konta z faktury, którą klient dostaje w PDF (gdy PDF otwierany jest w Adobe Reader).
 
 
 Obecnie pracuję nad:
