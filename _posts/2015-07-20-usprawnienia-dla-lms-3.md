@@ -1,0 +1,29 @@
+---
+layout: post
+title: Usprawnienia dla LMS, część 3
+date: 2015-07-21 18:45:00
+description: Lista nowych usprawnień dla LMS, cześć 3
+keywords: lms, lan management system, pluginy, wzorce projektowe, rozbudowa lms
+
+---
+
+W ciągu ostatniego miesiąca udało mi się zakończyć takie zlecenia dotyczące LMS:
+
+ * Wyszukiwanie klientów zamiast rozwijanych list na formatach dodawania i edycji komputerów, faktur, not itp.
+ * Dodatkowe uprawnienia/obostrzenia dla użytkowników, zabezpieczające LMS przed wyciekiem danych klientów
+ * Modyfikacje domyślnego szablonu faktury (usunięcie PIN, PESEL, rozdzielenie wartości do zapłaty od wartości bieżącej FV)
+ * Wysyłanie wiadomości do klientów podłączonych pod wybrane urządzenie sieciowe
+ * Wysyłanie SMS z informacją o nowej fakruty, zaksięgowaniu nowej wpłaty, upłynięciu terminu płatności faktury
+ * [Poprawienie buga w mechaniźmie podpowiedzi wyszkiwarki w LMS](https://github.com/lmsgit/lms/pull/379)
+ * [Poprawienie buga umożliwiającego nieautoryzowany na dostęp do niektórych plików LMS](https://github.com/lmsgit/lms/pull/381)
+
+Obecnie pracuję nad:
+
+ * Pobieranie informacji z serwera pocztowego czy FV została wysłana do klienta i prezentacja tejże w LMS;
+ * Lista kończących się umów, powiadamianie BOK o kończących się umowach;
+ * Lista kończących się zobowiązań, powiadamianie BOK o kończących się zobowiązaniach;
+ * Terminarz - rozbudowa systemu komentarzy;
+ * Pobieranie informacji z SerwerSMS.
+ * Jednorazowe rabaty
+
+Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu](/contact).
