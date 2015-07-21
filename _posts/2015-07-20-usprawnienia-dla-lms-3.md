@@ -13,9 +13,9 @@ W ciągu ostatniego miesiąca udało mi się zakończyć takie zlecenia dotyczą
  * Dodatkowe uprawnienia/obostrzenia dla użytkowników, zabezpieczające LMS przed wyciekiem danych klientów
  * Modyfikacje domyślnego szablonu faktury (usunięcie PIN, PESEL, rozdzielenie wartości do zapłaty od wartości bieżącej FV)
  * Wysyłanie wiadomości do klientów podłączonych pod wybrane urządzenie sieciowe
- * Wysyłanie SMS z informacją o nowej fakruty, zaksięgowaniu nowej wpłaty, upłynięciu terminu płatności faktury
- * [Poprawienie buga w mechaniźmie podpowiedzi wyszkiwarki w LMS](https://github.com/lmsgit/lms/pull/379)
- * [Poprawienie buga umożliwiającego nieautoryzowany na dostęp do niektórych plików LMS](https://github.com/lmsgit/lms/pull/381)
+ * Wysyłanie SMS z informacją o nowej faktury, zaksięgowaniu nowej wpłaty, upłynięciu terminu płatności faktury
+ * [Poprawienie buga w mechanizmie podpowiedzi wyszukiwarki w LMS](https://github.com/lmsgit/lms/pull/379)
+ * [Poprawienie buga umożliwiającego na nieautoryzowany dostęp do niektórych plików LMS](https://github.com/lmsgit/lms/pull/381)
 
 Obecnie pracuję nad:
 
