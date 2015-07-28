@@ -128,17 +128,11 @@ ze ścieżkami w których LMS szuka modułów dodana została, na początku tej 
 ścieżka w której plugin przetrzymuje dostarczane w paczce z nim moduły.
 
 Podsumowując, routing w LMS przebiega następująco:
- 1. LMS ładuje potrzebne zasoby, tworzy odpowiednie obiekty do ich obsługi, zaczyna
-się wykonywanie kodu z głównej ścieżki
- 2. LMS dochodzi do takiej instrukcji uruchamiającej zaczep, mówi managerowi pluginów: 
-"hej, dotarłem do zaczepu 'nazwa_zaczepu', jak masz jakieś włączone pluginy to 
-powiedz im że jesteśmy w tym miejscu i przekaż im $jakas_zmienna"
- 3. manager pluginów sprawdza czy ma załadowane jakieś pluginy, mówi im: 
-"jesteśmy w punkcie 'nazwa_hooka', jeśli chcecie tu coś zrobić to mam dla Was 
-$jakas_zmienna, róbcie z nią co chcecie, ale później fajnie by było jakbyście mi
- ją oddali to będę mógł przekazać kolejnym pluginom"
- 4. plugin, jeśli jest zainteresowany, wykonuje swoją funkcję dla danego zaczepu
-i zwraca $jakas_zmienna managerowi
+
+ 1. LMS ładuje potrzebne zasoby, tworzy odpowiednie obiekty do ich obsługi, zaczyna się wykonywanie kodu z głównej ścieżki
+ 2. LMS dochodzi do takiej instrukcji uruchamiającej zaczep, mówi managerowi pluginów: "hej, dotarłem do zaczepu 'nazwa_zaczepu', jak masz jakieś włączone pluginy to powiedz im że jesteśmy w tym miejscu i przekaż im $jakas_zmienna"
+ 3. manager pluginów sprawdza czy ma załadowane jakieś pluginy, mówi im: "jesteśmy w punkcie 'nazwa_hooka', jeśli chcecie tu coś zrobić to mam dla Was $jakas_zmienna, róbcie z nią co chcecie, ale później fajnie by było jakbyście mi ją oddali to będę mógł przekazać kolejnym pluginom"
+ 4. plugin, jeśli jest zainteresowany, wykonuje swoją funkcję dla danego zaczepu i zwraca $jakas_zmienna managerowi
  5. manager pluginów gdy już nie ma więcej pluginów zwraca $jakas_zmienna do LMS
  6. LMS kontynuuje wykonywanie kodu z głównej ścieżki
 
