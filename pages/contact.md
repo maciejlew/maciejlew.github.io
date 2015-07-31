@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Kontakt
-description: Kontakt na lion.net.pl
-keywords: programowanie, firma programistyczna, branża IT
+title: "Kontakt z LionNet"
+description: "Kontakt z LionNet. Adres e-mail, konta społecznościowe, komunikatory."
+keywords: "programowanie, firma programistyczna, branża IT, lan management system, 
+LMS GIT, LMS INET, programista PHP, administrator Linuks"
 permalink: /contact/
 
 ---

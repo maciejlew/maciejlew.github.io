@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Nasze umiejętności
-description: Oferta firmy lion.net.pl. Systemy informatyczne.
-keywords: oop, tdd, wzorce projektowe, programowanie wielowątkowe, technologie web, sieci komputerowe
+title: "Nasze umiejętności"
+description: "Oferta firmy lion.net.pl. Systemy informatyczne."
+keywords: "oop, tdd, wzorce projektowe, programowanie wielowątkowe, technologie 
+web, sieci komputerowe"
 permalink: /skills/
 ---
 

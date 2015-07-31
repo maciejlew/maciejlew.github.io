@@ -1,8 +1,11 @@
 ---
 layout: page
-title: LMS gotowe komponenty
-description: Gotowe komponenty dla systemu Lan Management System
-keywords: LMS, Lan Management System, sieci LAN, programowanie webowe, programista PHP, platformy VoIP, dodatki, komponenty
+title: "Dodatki do Lan Management System"
+description: "Gotowe komponenty dla systemu Lan Management System"
+keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe, 
+platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty,
+przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
+druki wpłat"
 permalink: /lms/
 ---
 

@@ -1,8 +1,11 @@
 ---
 layout: blog 
-title: Blog
-description: Blog techniczny na lion.net.pl. Systemy informatyczne.
-keywords: programowanie, informatyka, inzynieria oprogramowania, sieci komputerowe, rozwoj osobisty, branza IT
+title: "Blog o tematyce informatycznej"
+description: "Blog informatyczny. Ciekawostki z dziedziny informatyki. Rozwój Lan Management System."
+keywords: "programowanie, informatyka, inżynieria oprogramowania, sieci komputerowe, 
+rozwój osobisty, branża IT, lan manage system, refaktoryzacja, legacy code, 
+zarządzanie sieciami LAN, system zarządzania siecią, sieci komputerowe, sieci 
+osiedlowe"
 permalink: /blog/
 ---
 

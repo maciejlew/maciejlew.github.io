@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Oferta
-description: Oferta firmy lion.net.pl. Systemy informatyczne.
-keywords: LMS, Lan Management System, sieci LAN, programowanie webowe, programista PHP, platformy VoIP
+title: "Oferta firmy LionNet"
+description: "Oferta firmy LionNet. Systemy informatyczne. Programowanie w PHP. 
+Administracja serwerami. Rozwój i wdrożenia Lan Management System"
+keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe, 
+programista PHP, platformy VoIP, LMS GIT, LMS INET"
 permalink: /offer/
 ---
 
