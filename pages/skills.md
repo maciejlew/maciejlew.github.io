@@ -1,20 +1,20 @@
 ---
 layout: page
-title: "Nasze umiejętności"
+title: "Umiejętności LionNet"
 description: "Oferta firmy lion.net.pl. Systemy informatyczne."
 keywords: "oop, tdd, wzorce projektowe, programowanie wielowątkowe, technologie 
 web, sieci komputerowe"
 permalink: /skills/
 ---
 
-### Posiadamy ponad 5-letnie doświadczenie w tworzeniu systemów informatycznych
+### Posiadam ponad 5-letnie doświadczenie w tworzeniu systemów informatycznych
 
-Specjalizujemy się w projektach związanych z systemami zarządzania sieciami 
-internetowymi LAN. Mieliśmy okazję projektować, programować i wdrażać u 
-klientów systemy B2B i B2C. Braliśmy udział w projektach IT dla administracji 
+Specjalizuję się w projektach związanych z systemami zarządzania sieciami 
+internetowymi LAN. Miałem okazję projektować, programować i wdrażać u 
+klientów systemy B2B i B2C. Brałem udział w projektach IT dla administracji 
 samorządowej.
 
-Umiejętności jakie posiadamy i technologie przy pomocy jakich pracujemy to między innymi:
+Umiejętności jakie posiadam i technologie przy pomocy jakich pracuję to między innymi:
 
  * bazy danych MySQL, PostgreSQL, MSSQL;
  * OOP, TDD, UML, wzorce projektowe, programowanie wielowątkowe;
@@ -25,12 +25,12 @@ Umiejętności jakie posiadamy i technologie przy pomocy jakich pracujemy to mi�
  * C/C++/C# (WinForms, pthreads);
 
 
-Od 4 lat bierzemy udział w rozwijaniu systemu Lan Management System (LMS) - narzędzia 
-do zarządzania sieciami LAN. W tym czasu zdobyliśmy doświadczenie w dostosowywaniu 
-LMS do potrzeb klienta, a wiele z naszych pomysłów zostało wprowadzonych do 
+Od 4 lat biorę udział w rozwijaniu systemu Lan Management System (LMS) - narzędzia 
+do zarządzania sieciami LAN. W tym czasu zdobyłem doświadczenie w dostosowywaniu 
+LMS do potrzeb klienta, a wiele z moich pomysłów zostało wprowadzonych do 
 głównej gałęzi projektu.
 
-Od roku pracujemy nad rozwojem platformy wspierającej zarządzanie systemem VoIP firmy Adescom.
+Od roku pracuję nad rozwojem platformy wspierającej zarządzanie systemem VoIP firmy Adescom.
 
 * * *
 

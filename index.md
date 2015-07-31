@@ -9,13 +9,13 @@ lan management system, administracja serwerami, LMS GIT, LMS INET"
 
 Projektowanie i wdrażanie systemów informatycznych.
 
-Zajmujemy się projektowaniem, programowaniem i wdrażaniem systemów 
-informatycznych. Możemy pomóc Ci w wyborze rozwiązania przystosowanego 
+Zajmuję się projektowaniem, programowaniem i wdrażaniem systemów 
+informatycznych. Mogę pomóc Ci w wyborze rozwiązania przystosowanego 
 do Twoich potrzeb lub stworzyć je specjalnie dla Ciebie!
 
-Posiadamy ponad 5-letnie doświadczenie w branży IT. Specjalizujemy się w 
-aplikacjach dla rynku telekomunikacji, ale nieobce są nam inne branże. 
-Posiadamy także doświadczenie w pracy z administracją samorządową.
+Posiadam ponad 5-letnie doświadczenie w branży IT. Specjalizuję się w 
+aplikacjach dla rynku telekomunikacji, ale nieobce są mi inne branże. 
+Posiadam także doświadczenie w pracy z administracją samorządową.
 
 
 * * *
