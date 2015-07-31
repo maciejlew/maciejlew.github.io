@@ -1,6 +1,6 @@
 ---
 layout: blog 
-title: "Blog o tematyce informatycznej"
+title: "Blog o tematyce informatycznej na LionNet"
 description: "Blog informatyczny. Ciekawostki z dziedziny informatyki. Rozwój Lan Management System."
 keywords: "programowanie, informatyka, inżynieria oprogramowania, sieci komputerowe, 
 rozwój osobisty, branża IT, lan manage system, refaktoryzacja, legacy code, 
