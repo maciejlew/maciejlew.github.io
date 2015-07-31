@@ -1,9 +1,10 @@
 ---
 layout: post
-title: LMS - system zarządzania sieciami LAN i nie tylko
+title: "LMS - system zarządzania sieciami LAN i nie tylko"
 date: 2014-07-27 14:53:00
-description: Opis systemu LMS, funkcjonalność i zalety stosowania przez ISP
-keywords: lms, opis systemu lms, sieci osiedlowe, dostawcy internetu, systemy crm
+description: "Opis systemu LMS, funkcjonalność i zalety stosowania przez ISP"
+keywords: "LMS, opis systemu LMS, sieci osiedlowe, dostawcy internetu, systemy CRM,
+zarządzanie siecią LAN, system zarządzania siecią, LMS GIT"
 
 ---
 

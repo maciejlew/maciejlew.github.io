@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Usprawnienia dla LMS
+title: "Usprawnienia dla LMS"
 date: 2015-04-20 20:00:00
-description: Lista nowych usprawnień dla LMS
-keywords: lms, lan management system, pluginy, wzorce projektowe, rozbudowa lms
+description: "Lista nowych usprawnień dla LMS"
+keywords: "LMS, Lan Management System, pluginy, wzorce projektowe, rozbudowa LMS,
+zawieszenia blokowania, szablony dokumentów, Adescom plugin dla LMS, lista kończących
+się umów, lista kończących się zobowiązań"
 
 ---
 

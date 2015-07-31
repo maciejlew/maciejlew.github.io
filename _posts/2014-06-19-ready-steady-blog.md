@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ready, steady, blog
+title: "Ready, steady, blog"
 date: 2014-06-19 18:54:00
-description: Start bloga na lion.net.pl.
-keywords: blog, jekyll, github pages, block-log template
+description: "Start bloga na lion.net.pl"
+keywords: "blog, Jekyll, GitHub Pages, block-log template, systemy blogowe"
 
 ---
 

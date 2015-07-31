@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Usprawnienia dla LMS, część 2
+title: "Usprawnienia dla LMS, część 2"
 date: 2015-06-16 18:00:00
-description: Lista nowych usprawnień dla LMS, cześć 2
-keywords: lms, lan management system, pluginy, wzorce projektowe, rozbudowa lms
+description: "Lista nowych usprawnień dla LMS, część 2"
+keywords: "LMS, Lan Management System, pluginy, wzorce projektowe, rozbudowa LMS,
+RADIUS accounting, załączniki do dokumentów w LMS, noty obciążeniowe w LMS, 
+terminarz w LMS, wezwania do zapłaty, promocje w LMS"
 
 ---
 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: LMSConfig - nowy system zarządzania konfiguracją LMS
+title: "LMSConfig - nowy system zarządzania konfiguracją LMS"
 date: 2014-07-16 18:27:00
-description: Opis LMSConfig - nowego systemu zarządzania konfiguracją w LMS
-keywords: lms, pliki konfiguracyjne, uiconfig, pliki ini, wzorce projektowe
+description: "Opis LMSConfig - nowego systemu zarządzania konfiguracją w LMS"
+keywords: "LMS, pliki konfiguracyjne, uiconfig, pliki INI, wzorce projektowe,
+LMS GIT, refaktoryzacja, zmienne globalne, LMS GIT, rozwój LMS"
 
 ---
 

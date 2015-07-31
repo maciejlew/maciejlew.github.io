@@ -1,9 +1,10 @@
 ---
 layout: post
-title: LMS - co dalej?
+title: "LMS - co dalej?"
 date: 2015-02-07 18:00:00
-description: Kierunek rozwoju LMS
-keywords: lms, lan management system, problemy w lms, rozwój lms
+description: "Kierunek rozwoju LMS"
+keywords: "LMS, Lan Management System, problemy w LMS, rozwój LMS, lista dyskusyjna LMS,
+LMS GIT, Jambox, Hiperus, pluginy do LMS"
 
 ---
 

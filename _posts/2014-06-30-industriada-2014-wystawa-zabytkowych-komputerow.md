@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja
+title: "Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja"
 date: 2014-06-30 20:07:00
-description: Fotorelacja z wystawy starych komputerów i innych zabytków techniki komputerowej mającej miejsce podczas Industriady 2014
-keywords: stare komputery, zabytki techniki, industriada 2014, gry komputerowe
+description: "Fotorelacja z wystawy starych komputerów i innych zabytków techniki 
+komputerowej mającej miejsce podczas Industriady 2014"
+keywords: "stare komputery, zabytki techniki, industriada 2014, gry komputerowe,
+Atari, Macintosh, Elwro"
 ---
 
 ## Industriada 2014
