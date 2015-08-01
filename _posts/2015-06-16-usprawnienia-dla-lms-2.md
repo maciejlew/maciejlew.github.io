@@ -12,8 +12,9 @@ terminarz w LMS, wezwania do zapłaty, promocje w LMS"
 Kolejny etap prac nad rozwojem LMS za mną, stworzyłem kilka nowych rozwiązań, poprawiłem
 trochę błędów:
 
- * Przypisywanie komputerów klientów do urządzeń sieciowych (RADIUS accounting);
- * Dodawanie, usuwanie, edycja załączników do dokumentów w LMS;
+ * **Przypisywanie komputerów klientów do urządzeń sieciowych (RADIUS accounting)**;
+ * **Generator umów w promocji**;
+ * **Dodawanie, usuwanie, edycja załączników do dokumentów w LMS**;
  * Zwiększenie maksymalnego rozmiaru załączników do dokumentów;
  * Noty obciążeniowe - generowanie w PDF;
  * Noty obciążeniowe - powrót na kartę klienta po kliknięciu "Zapisz";
@@ -25,7 +26,6 @@ trochę błędów:
  * Likwidacja pól GG, Yahoo, Skype na karcie klienta;
  * Umowy - adres korespondencyjny;
  * Wezwania do zapłaty - adres korespondencyjny;
- * Generator umów w promocji;
  * Poprawienie tworzenia zobowiązań z schematu promocji (nie działało dla taryf z niezdefiniowanym okresem naliczania);
  * Automatycznie wyliczany rabat przy dodawaniu lub edycji zobowiązania;
  * Umożliwienie skopiowania numeru konta z faktury, którą klient dostaje w PDF (gdy PDF otwierany jest w Adobe Reader).

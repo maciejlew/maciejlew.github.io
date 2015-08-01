@@ -8,8 +8,8 @@ rozwój LMS, lista modeli urządzeń sieciowych, routery, switche"
 
 ---
 
-Dodałem do głównej gałęzi LMS możliwość przechowywania w bazie danych LMS nazw 
-producentów i ich modeli urządzeń sieciowych. Obecnie wgrane zostały modele 
+Dodałem do głównej gałęzi LMS **możliwość przechowywania w bazie danych LMS nazw 
+producentów i ich modeli urządzeń sieciowych**. Obecnie wgrane zostały modele 
 wyprodukowane przez firmy Mikrotik i Ubiquiti. Ponadto udostępniłem mechanizm 
 pobierania tych nazw na formatce dodawania i edycji nowego urządzenia sieciowego.
 Identyfikator modelu urządzenia jest w tle przypisywany do urządzenia. Pozwoli

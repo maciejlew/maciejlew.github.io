@@ -10,11 +10,11 @@ uprawnienia w LMS, bugi w LMS, masowa wysyłka SMS, szablony faktur, terminarz w
 
 W ciągu ostatniego miesiąca udało mi się zakończyć takie zlecenia dotyczące LMS:
 
+ * **Wysyłanie wiadomości do klientów podłączonych pod wybrane urządzenie sieciowe**
+ * **Wysyłanie SMS z informacją o nowej faktury, zaksięgowaniu nowej wpłaty, upłynięciu terminu płatności faktury**
  * Wyszukiwanie klientów zamiast rozwijanych list na formatach dodawania i edycji komputerów, faktur, not itp.
  * Dodatkowe uprawnienia/obostrzenia dla użytkowników, zabezpieczające LMS przed wyciekiem danych klientów
  * Modyfikacje domyślnego szablonu faktury (usunięcie PIN, PESEL, rozdzielenie wartości do zapłaty od wartości bieżącej FV)
- * Wysyłanie wiadomości do klientów podłączonych pod wybrane urządzenie sieciowe
- * Wysyłanie SMS z informacją o nowej faktury, zaksięgowaniu nowej wpłaty, upłynięciu terminu płatności faktury
  * [Poprawienie buga w mechanizmie podpowiedzi wyszukiwarki w LMS](https://github.com/lmsgit/lms/pull/379)
  * [Poprawienie buga umożliwiającego na nieautoryzowany dostęp do niektórych plików LMS](https://github.com/lmsgit/lms/pull/381)
 

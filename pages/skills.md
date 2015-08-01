@@ -25,7 +25,7 @@ Umiejętności jakie posiadam i technologie przy pomocy jakich pracuję to międ
  * C/C++/C# (WinForms, pthreads);
 
 
-Od 4 lat biorę udział w rozwijaniu systemu Lan Management System (LMS) - narzędzia 
+**Od 4 lat biorę udział w rozwijaniu systemu Lan Management System (LMS)** - narzędzia 
 do zarządzania sieciami LAN. W tym czasu zdobyłem doświadczenie w dostosowywaniu 
 LMS do potrzeb klienta, a wiele z moich pomysłów zostało wprowadzonych do 
 głównej gałęzi projektu.

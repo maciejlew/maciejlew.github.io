@@ -15,10 +15,10 @@ LMS &ndash; Lan Management System &ndash; jest platformą zarządzania sieciami 
 Od 5 lat zajmuję się wdrażaniem i rozwijaniem tego systemu na potrzeby moich
 klientów. Moja oferta obejmuje:
 
- * wdrożenie LMS w sieci;
- * konfiguracja modułów LMS wystawiających faktury, wysyłających faktury, generujących powiadomienia, blokujących użytkowników sieci i innych zgodnie z potrzebami danej sieci;
- * integracja LMS z zewnętrznymi systemami księgowymi, mailingowymi, zarządzającymi ruchem w sieci;
- * przygotowanie szablonów faktur;
+ * **wdrożenie LMS w sieci komputerowej**;
+ * **konfiguracja modułów LMS** wystawiających faktury, wysyłających faktury, generujących powiadomienia, blokujących użytkowników sieci i innych zgodnie z potrzebami danej sieci;
+ * **integracja LMS z zewnętrznymi systemami** księgowymi, mailingowymi, zarządzającymi ruchem w sieci;
+ * **przygotowanie szablonów faktur, umów, protokołów, not i wezwań dla LMS**;
  * integracja z systemami VoIP, np. firmy Adescom;
 
 Mogę także zmodyfikować LMS zgodnie z wymaganiami klienta.

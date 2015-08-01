@@ -8,13 +8,15 @@ systemy pluginów, moduły w LMS"
 
 ---
 
-W tym wpisie postaram się przedstawić jak działa routing w LMS, czyli jak to się 
+W tym wpisie postaram się przedstawić **jak działa routing w LMS**, czyli jak to się 
 dzieje, że po wpisaniu w adresie URL np.: ?m=customerlist widzimy ekran z listą
 klientów a nie coś innego.
 
+## Podstawowy routing w LMS
+
 Zapytania jakie wysyłamy do LMS przechodzą przez umieszczony w głównym katalogu 
 skrypt index.php. Można powiedzieć że jest to centralny punkt aplikacji, front 
-controller. W tym skrypcie, zanim wtgenerowana zostanie odpowiedź, dzieje się 
+controller. W tym skrypcie, zanim wygenerowana zostanie odpowiedź, dzieje się 
 wiele różnych rzeczy, m.in.:
 
  1. Ładowanie podstawowej konfiguracji z pliku lms.ini
@@ -50,9 +52,11 @@ Odpowiada ona, w najprostszym przypadku, nazwie pliku znajdującego się w katal
 "modules" którego kod ma zostać wykonany. Po dotarciu do przedostatniego punktu 
 z listy sterowanie zostaje przekazane właśnie do kodu PHP z tego pliku.
 
-Całkiem sporo, ale to jeszcze nie wszystko. Od momentu wprowadzenia mechanizmu 
-pluginów na ścieżce wykonywanego kodu pojawiają się zaczepy (hooki). Można je 
-rozpoznać po takiej składni: 
+## Routing z pluginami w LMS
+
+W podstawowym wariancie routingu dzieje się całkiem sporo, ale to jeszcze nie 
+wszystko. **Od momentu wprowadzenia mechanizmu  pluginów na ścieżce wykonywanego 
+kodu pojawiają się zaczepy (hooki)**. Można je rozpoznać po takiej składni: 
 
 {% highlight php startinline %}
 $plugin_manager->executeHook('nazwa_hooka', $jakas_zmienna);
@@ -87,7 +91,7 @@ dany zaczep lub go ignorować. Plugin obsługuje zaczep, może wykonywać swoje 
 modyfikować przekazane dane. Po zakończeniu pracy z danym zaczepem plugin powinien
 oddać menadżerowi dane, po czym są one przekazywane ewentualnym kolejnym pluginom.
 
-Pluginy mogą zmienić routing w LMS. Zostało to tak zaimplementowane aby można było
+**Pluginy mogą zmienić routing w LMS**. Zostało to tak zaimplementowane aby można było
 całkowicie odseparować się od akcji wykonywanych w modułach LMS np przesłaniając je.
 Można tego dokonać rozszerzając tablice ścieżek w których LMS szuka modułów.
 Najbardziej nadaje się do tego zaczep o nazwie "modules_dir_initialized", a można 
@@ -127,6 +131,8 @@ Wywoływana jest wskazana metoda ze wskazanej klasy. Metoda ta otrzymuje dane pr
 do zaczepu po czym zwraca je po modyfikacji. W tym przypadku do podstawowej tablicy
 ze ścieżkami w których LMS szuka modułów dodana została, na początku tej tablicy,
 ścieżka w której plugin przetrzymuje dostarczane w paczce z nim moduły.
+
+## Routing w LMS całościowo
 
 Podsumowując, routing w LMS przebiega następująco:
 
