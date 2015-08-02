@@ -5,7 +5,8 @@ description: "Oferta firmy LionNet. Systemy informatyczne. Programowanie w PHP.
 Administracja serwerami. Rozwój i wdrożenia Lan Management System"
 keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe, 
 programista PHP, platformy VoIP, LMS GIT, LMS INET"
-permalink: /offer/
+permalink: /oferta/
+redirect_from: /offer/
 ---
 
 ### Wdrażanie i modyfikacje LMS

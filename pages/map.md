@@ -5,7 +5,8 @@ description: "Mapa strony LionNet"
 keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe, 
 programista PHP, platformy VoIP, LMS GIT, LMS INET, blog informatyczny, administracja 
 serwerami, oprogramowanie dla ISP"
-permalink: /map/
+permalink: /mapa/
+redirect_from: /map/
 ---
 
  * [O mnie](../)

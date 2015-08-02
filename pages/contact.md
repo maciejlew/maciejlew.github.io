@@ -4,8 +4,8 @@ title: "Kontakt z LionNet"
 description: "Kontakt z LionNet. Adres e-mail, konta społecznościowe, komunikatory."
 keywords: "programowanie, firma programistyczna, branża IT, lan management system, 
 LMS GIT, LMS INET, programista PHP, administrator Linuks"
-permalink: /contact/
-
+permalink: /kontakt/
+redirect_from: /contact/
 ---
 
 E-mail: <span class="email">{{ site.email }}</span>

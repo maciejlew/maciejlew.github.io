@@ -6,7 +6,8 @@ keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe,
 platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty,
 przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
 druki wpłat"
-permalink: /lms/
+permalink: /lan-management-system/
+redirect-from: /lms/
 ---
 
 Poniżej przedstawiam moje gotowe komponenty dla systemu LMS.

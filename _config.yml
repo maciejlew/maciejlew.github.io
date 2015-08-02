@@ -8,4 +8,5 @@ email: maciej.lew.1987 [at] gmail.com
 github: maciejlew
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
   

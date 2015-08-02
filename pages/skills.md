@@ -4,7 +4,8 @@ title: "Umiejętności LionNet"
 description: "Oferta firmy lion.net.pl. Systemy informatyczne."
 keywords: "oop, tdd, wzorce projektowe, programowanie wielowątkowe, technologie 
 web, sieci komputerowe"
-permalink: /skills/
+permalink: /umiejetnosci/
+redirect_from: /skills/
 ---
 
 ### Posiadam ponad 5-letnie doświadczenie w tworzeniu systemów informatycznych
