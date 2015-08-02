@@ -10,39 +10,39 @@ permalink: /lan-management-system/
 redirect-from: /lms/
 ---
 
-Poniżej przedstawiam moje gotowe komponenty dla systemu LMS.
+Poniżej przedstawiam moje gotowe komponenty dla systemu LMS, które nie są dostępne
+w głównej gałęzi projektu:
 
 ## Szablony dokumentów
 
-### Wezwanie do zapłaty oraz przedsądowe wezwanie do zapłaty
+Szablony dokumentów w LMS pozwalają na automatyczne generowanie umów, regulaminów,
+aneksów, protokołów zdawczo-odbiorczych, wezwań do zapłaty oraz innych. Wygenerowane
+dokumentu są w LMS przypisane d konkretnego klienta co pozwala na łatwe ich 
+odnalezienie, wydrukowanie, udostępnienie klientowi. Dzięki szablonom dokumentów
+można zaoszczędzić sporo czasu podczas podłączania nowego klienta, zawierania 
+dalszych umów, rozliczania klienta z zaległości, rozwiązywania umowy z klientem.
 
- * lista nieopłaconych dokumentów (FV, noty obciążeniowe)
- * uwzględnienie częściowo zapłaconych FV i not obciążeniowych
- * uwzględnienie terminów płatności
- * uwzględnienie możliwości występowania FV z wieloma pozycjami
- * aktualna data jest datą wystawienia wezwania
- * nazwa wystawcy konfigurowalna z poziomu LMS (wykorzystuje nagłówek FV - globalny, bądź przypisany do firmy)
- * numer konta bankowego brany z karty klienta (obsługa IBAN)
- * aktualne saldo - kwota do zapłaty
- * na życzenie klienta dostosowanie treści wezwania
+Moje gotowe szablony dokumentów:
 
-Przykłady:
+ * [Wezwanie do zapłaty](./szablony-dokumentow/wezwanie-do-zaplaty)
+ * [Przedsądowe wezwanie do zapłaty](./szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
+ * [Książeczka opłat](./szablony-dokumentow/ksiazeczka-oplat)
 
- * [Przykładowe wezwanie do zapłaty](http://lion.net.pl/img/szablony_dokumentow/wezwanie_do_zaplaty_przyklad.pdf)
- * [Przykładowe przedsądowe wezwanie do zapłaty](http://lion.net.pl/img/szablony_dokumentow/przedsadowe_wezwanie_do_zaplaty_przyklad.pdf)
+Przygotowane przeze mnie szablony działają zarówno w LMS GIT jak i INET LMS.
 
-* * *
+## Pluginy
 
-### Druki wpłat
+Od momentu wprowadzenia do LMS mechanizmu pluginów zacząłem przygotowywać część
+dodatków w postaci pluginów. Dzięki pluginom można rozszerzyć możliwości LMS bez
+ingerencji w kod projektu. Dzięki temu utrzymanie i aktualizacje LMS stają się 
+łatwiejsze. Do tej pory jako plugin ukazały się:
 
- * wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej
- * numer konta bankowego brany z karty klienta (obsługa IBAN)
- * możliwość konfiguracji pola "nazwa odbiorcy" oraz szablonu pola "tytułem" z poziomu LMS
- * możliwość konfiguracji ilości stron oraz ilości druków na stronę (1 lub 2)
+ * Lista kończących się umów
+ * Lista kończących się zobowiązań
+ * Logi programu Exim
 
-Przkłady:
-
- * [Przykładowa książeczka opłat](http://lion.net.pl/img/szablony_dokumentow/ksiazeczka_oplat_przyklad.pdf)
+Pluginy działają z wersją LMS GIT, chyba że w opisie zaznaczono inaczej. Na 
+życzenie klienta istnieje możliwość przerobienia pluginu na moduł INET LMS.
 
 * * *
 
