@@ -10,10 +10,10 @@ redirect_from: /map/
 ---
 
  * [O mnie](../)
- * [Oferta](../offer)
- * [Lan Management System](../lms)
- * [Umiejętności](../skills)
- * [Kontakt](../contact)
+ * [Oferta](../oferta)
+ * [Lan Management System](../lan-management-system)
+ * [Umiejętności](../umiejetnosci)
+ * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
    * [Routing w LMS](../2015/07/29/routing-w-lms.html)
    * [Usprawnienia dla LMS, część 3](../2015/07/21/usprawnienia-dla-lms-3.html)
