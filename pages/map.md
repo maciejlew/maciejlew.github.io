@@ -20,7 +20,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
-   * [Routing w LMS](../2015/07/29/routing-w-lms.html)
+   * [Routing w LMS](../2015/07/28/routing-w-lms.html)
    * [Usprawnienia dla LMS, część 3](../2015/07/21/usprawnienia-dla-lms-3.html)
    * [Usprawnienia dla LMS, część 2](../2015/06/16/usprawnienia-dla-lms-2.html)
    * [Usprawnienia dla LMS](../2015/04/20/usprawnienia-dla-lms.html)
