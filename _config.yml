@@ -6,6 +6,7 @@ pygments: true
 disqus-id: lionnetpl
 email: maciej.lew.1987 [at] gmail.com
 github: maciejlew
+timezone: Europe/Warsaw
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
