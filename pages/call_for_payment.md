@@ -9,14 +9,15 @@ druki wpłat"
 permalink: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty/
 ---
 
- * lista nieopłaconych dokumentów (FV, noty obciążeniowe)
- * uwzględnienie częściowo zapłaconych FV i not obciążeniowych
+ * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe)
+ * uwzględnienie częściowo zapłaconych faktur VAT i not obciążeniowych
  * uwzględnienie terminów płatności
- * uwzględnienie możliwości występowania FV z wieloma pozycjami
+ * uwzględnienie możliwości występowania faktur VAT z wieloma pozycjami
  * aktualna data jest datą wystawienia wezwania
- * nazwa wystawcy konfigurowalna z poziomu LMS (wykorzystuje nagłówek FV - globalny, bądź przypisany do firmy)
- * numer konta bankowego brany z karty klienta (obsługa IBAN)
+ * nazwa wystawcy konfigurowalna z poziomu LMS (wykorzystuje nagłówek faktury VAT - globalny, bądź przypisany do firmy)
+ * numer konta bankowego brany z karty klienta (obsługa IBAN - indywidualnych numerów bankowych klientów)
  * aktualne saldo - kwota do zapłaty
+ * obsługa adresów korespondencyjnych
  * na życzenie klienta dostosowanie treści wezwania
 
 Przykłady:
