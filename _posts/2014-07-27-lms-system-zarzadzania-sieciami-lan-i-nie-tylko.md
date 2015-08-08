@@ -13,7 +13,7 @@ się czym jest LMS, jakie są jego podstawowe funkcjonalności, dlaczego **warto
 niego skorzystać prowadząc własną sieć osiedlową**, a także dlaczego **może być 
 przydatny dla innych przedsiębiorców**.
 
-### Opis systemu LMS
+#### Opis systemu LMS
 
 LMS ma już kilkanaście lat. W ciągu tego czasu powstało **pełnowartościowe 
 środowisko do zarządzania sieciami osiedlowymi LAN**. Kod projektu udostępniany jest 
@@ -34,7 +34,7 @@ procedura jego instalacji oraz konfiguracji.
 Projekt przetłumaczony został na kilka języków. Obecnie wspierane są języki:
 angielski, czeski, litewski, polski, rosyjski i słowacki.
 
-### Funkcje frontendu
+#### Funkcje frontendu
 
 Poniżej przedstawiono niektóre, moim zdaniem najważniejsze, funkcje frontendu.
 
@@ -86,7 +86,7 @@ Helpdesk pozwala na odbieranie zgłoszeń od klientów i zarządzanie nimi. Dzi�
 sieci mają możliwość śledzenia zgłoszeń**, delegowania pracowników do ich rozwiązania i prowadzenia
 dialogu z klientem.
 
-### Funkcje backendu
+#### Funkcje backendu
 
 LMS to nie tylko działająca w przeglądarce wizualna nakładka na bazę danych naszej sieci komputerowej,
 ale także **rozbudowany system skryptów pomagających w zarządzaniu siecią w sposób zautomatyzowany**.

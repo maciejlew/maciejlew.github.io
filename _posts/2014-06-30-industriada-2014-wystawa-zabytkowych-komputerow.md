@@ -8,7 +8,7 @@ keywords: "stare komputery, zabytki techniki, industriada 2014, gry komputerowe,
 Atari, Macintosh, Elwro"
 ---
 
-## Industriada 2014
+#### Industriada 2014
 
 14 czerwca miała na Śląsku miejsce piąta już edycja Industriady - festiwalu 
 mającego za cel prezentację dziedzictwa techniki znajdującego się na Śląsku.
@@ -18,7 +18,7 @@ i Żywcu, przejechać się kolejką wąskotorową w Bytomiu lub zjechać pod zie
 przepłynąć łodzią Sztolnię Czarnego Pstrąga w Tarnowskich Górach. Ja jednak 
 postanowiłem wybrać się na wystawę starych komputerów w Radzionkowie.
 
-### Wystawa zabytkowych komputerów
+#### Wystawa zabytkowych komputerów
 
 Jak się okazało, wystawa w Radzionkowie była to wyjazdową ekspozycją przygotowaną
 przez Muzeum Historii Komputerów i Informatyki z Katowic. Panowie z MHKI przywieźli
@@ -42,7 +42,7 @@ zagłębić się w najprzyjemniejszą chyba czynność, do której zostały te m
 kiedykolwiek wykorzystane - pograć w stare, kultowe gry komputerowe. Można było
 stracić trochę czasu grając w niezapomniane Mario lub PacMan.
 
-### Fotorelacja
+#### Fotorelacja
 
 <div class="gallery">
 

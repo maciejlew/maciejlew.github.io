@@ -12,7 +12,7 @@ W tym wpisie postaram się przedstawić **jak działa routing w LMS**, czyli jak
 dzieje, że po wpisaniu w adresie URL np.: ?m=customerlist widzimy ekran z listą
 klientów a nie coś innego.
 
-## Podstawowy routing w LMS
+#### Podstawowy routing w LMS
 
 Zapytania jakie wysyłamy do LMS przechodzą przez umieszczony w głównym katalogu 
 skrypt index.php. Można powiedzieć że jest to centralny punkt aplikacji, front 
@@ -52,7 +52,7 @@ Odpowiada ona, w najprostszym przypadku, nazwie pliku znajdującego się w katal
 "modules" którego kod ma zostać wykonany. Po dotarciu do przedostatniego punktu 
 z listy sterowanie zostaje przekazane właśnie do kodu PHP z tego pliku.
 
-## Routing z pluginami w LMS
+#### Routing z pluginami w LMS
 
 W podstawowym wariancie routingu dzieje się całkiem sporo, ale to jeszcze nie 
 wszystko. **Od momentu wprowadzenia mechanizmu  pluginów na ścieżce wykonywanego 
@@ -132,7 +132,7 @@ do zaczepu po czym zwraca je po modyfikacji. W tym przypadku do podstawowej tabl
 ze ścieżkami w których LMS szuka modułów dodana została, na początku tej tablicy,
 ścieżka w której plugin przetrzymuje dostarczane w paczce z nim moduły.
 
-## Routing w LMS całościowo
+#### Routing w LMS całościowo
 
 Podsumowując, routing w LMS przebiega następująco:
 

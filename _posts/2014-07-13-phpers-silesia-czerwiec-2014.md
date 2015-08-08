@@ -17,7 +17,7 @@ wyglądała następująco:
  * "PHPSpec extension points" Norbert Orzechowicz
  * "SMS to tylko 160 znaków: WRONG!" Adrian Olczyk, Andrzej Ogonowski
 
-### Testy jednostkowe jako żywa specyfikacja kodu   
+#### Testy jednostkowe jako żywa specyfikacja kodu   
 
 Spotkanie swoją prezentacją rozpoczął [Wojciech Zawistowski](https://github.com/velesin).
 Przedstawił nam na przykładzie jak można przerobić co prawda działające, ale 
@@ -47,7 +47,7 @@ i nie będzie się w duchu dopytywał WTF?! ;)
 
 </div>
 
-### "Wzorce projektowe Map-Reduce
+#### "Wzorce projektowe Map-Reduce
 
 Kolejna prezentacja związana była z nierelacyjnymi bazami danych i wzorcem map-reduce.
 [Wojciech Sznapka](http://blog.sznapka.pl/o-mnie/) na przykładzie logów z systemu
@@ -57,7 +57,7 @@ były całkiem czytelne. Wniosek z tej prezentacji jest taki, że czasem nie trz
 myśleć o schemacie bazy danych, strukturze relacji pomiędzy tabelami i o zapytaniach
 SQL aby ze zbiory danych wyłuskać przydatne informacje.
 
-### PHPSpec extension points
+#### PHPSpec extension points
 
 Po prezentacjach nadeszła pora na "Lightning talks" co można tłumaczyć jako szybkie
 prezentacje bardzo konkretnych tematów. Pierwsze wystąpienie dotyczyło PHPSpec i 
@@ -68,7 +68,7 @@ przerósł, i mam wrażenie że większość z zebranych na sali także. Niemnie
 przyszłości przyjrzę się i temu narzędziu, a wtedy być może warto będzie wrócić
 do omawianej prezentacji.
 
-### SMS to tylko 160 znaków: WRONG!
+#### SMS to tylko 160 znaków: WRONG!
 
 Drugi z lightning talks dotyczył masowego wysyłania wiadomości SMS. Była to de-facto
 prezentacja produktu SMSAPI. Z tą platformą miałem już wcześniej doczynienia,
@@ -80,7 +80,7 @@ udostępniono API w kilku językach (PHP, JAVA, C#) i podobno wszystko przetesto
 ;). Prezentacja była bardzo ciekawa, przykłady także, głównie dzięki zaangażowaniu
 w jej przebieg widowni.
 
-### Podsumowanie
+#### Podsumowanie
 
 Pod koniec spotkania wyłoniono najlepszego prelegenta. Metoda którą się w tym celu 
 była, można powiedzieć, dość kontrowersyjna - niezawodne w tej kwestii ucho 
