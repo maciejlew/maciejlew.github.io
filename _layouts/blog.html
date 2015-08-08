@@ -9,7 +9,7 @@ layout: default
     {% for post in site.posts limit:1 %}
     <article class="module blog_module">
         <h2><a class="red" href="{{ post.url }}">{{ post.title }}</a></h2>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date| date: "%Y/%m/%d" }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date| date: "%d/%m/%Y" }}</time>
         <p>{{ post.content | strip_html | truncate: 250 }}</p>
     </article>
     {% endfor %}
