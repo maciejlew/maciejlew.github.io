@@ -17,9 +17,25 @@ permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
 przypisanych mu taryf
  * opcja generowania druków przelewu tylko dla wybranego zakresu miesięcy
 
-Przykłady:
+### Przykłady:
 
  * [Przykładowa książeczka opłat](http://lion.net.pl/img/szablony_dokumentow/ksiazeczka_oplat_przyklad.pdf)
+
+### Instalacja:
+
+Zawartość paczki z szablonem należy umieścić w katalogu *lms/documents/templates/*.
+Podkład druku wpłaty należy umieścić w katalogu *lms/img*.
+
+### Konfiguracja:
+
+W konfiguracji interfejsu użytkownika, w sekcji *finances*, należy dodać 
+następujące zmienne:
+
+ * *transfer_forms_receiver_line_1* - nazwa odbiorcy, linia 1
+ * *transfer_forms_receiver_line_2* - nazwa odbiorcy, linia 2
+ * *transfer_forms_pay_title* - tytuł przelewu
+ * *transfer_forms_pages* - ilość stron
+ * *transfer_forms_per_page* - ilość druków na stronę
 
 * * *
 
