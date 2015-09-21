@@ -13,6 +13,9 @@ permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
  * numer konta bankowego brany z karty klienta (obsługa IBAN)
  * możliwość konfiguracji pola "nazwa odbiorcy" oraz szablonu pola "tytułem" z poziomu LMS
  * możliwość konfiguracji ilości stron oraz ilości druków na stronę (1 lub 2)
+ * opcja drukowania na wszystkich drukach sumy zobowiązań klienta wynikającej z
+przypisanych mu taryf
+ * opcja generowania druków przelewu tylko dla wybranego zakresu miesięcy
 
 Przykłady:
 
