@@ -20,6 +20,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Książeczka opłat - nowe funkcje](../2015/09/21/ksiazeczka-oplat-nowe-funkcje.html)
    * [Wezwania do zapłaty - adresy korespondencyjne klientów](../2015/08/08/wezwania-do-zaplaty-adresy-korespondencyjne.html)
    * [Grupa LMS na Goldenline](../2015/08/08/grupa-lms-na-goldenline.html)
    * [Routing w LMS](../2015/07/28/routing-w-lms.html)
