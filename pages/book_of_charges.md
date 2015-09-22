@@ -16,6 +16,7 @@ permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
  * opcja drukowania na wszystkich drukach sumy zobowiązań klienta wynikającej z
 przypisanych mu taryf
  * opcja generowania druków przelewu tylko dla wybranego zakresu miesięcy
+ * kompatybilność z LMS w wersjach GIT i INET oraz prawdopodbnie także ze starszymi wersjami LMS
 
 ### Przykłady:
 
@@ -24,7 +25,14 @@ przypisanych mu taryf
 ### Instalacja:
 
 Zawartość paczki z szablonem należy umieścić w katalogu *lms/documents/templates/*.
-Podkład druku wpłaty należy umieścić w katalogu *lms/img*.
+Podkład druku wpłaty należy umieścić w katalogu *lms/img/*.
+
+Jeśli instalacja jest wykonywana w starszej wersji LMS należy w plikach *engine.php*
+i *plugin.php* odnaleźć zakomentowane sekcje *old config*, odkomentować je a zakomentować
+sekcje *new config*.
+
+Zawartość pliku *strings.php* należy dodać do obecnej zawartości pliku
+*lms/lib/locale/pl/strings.php*.
 
 ### Konfiguracja:
 
@@ -36,6 +44,7 @@ następujące zmienne:
  * *transfer_forms_pay_title* - tytuł przelewu
  * *transfer_forms_pages* - ilość stron
  * *transfer_forms_per_page* - ilość druków na stronę
+ * *transfer_forms_to_words_short* - *true* jeśli ma być generowana krótka słowna wersja należności
 
 * * *
 
@@ -49,3 +58,4 @@ Zobacz także:
 {% include contact_link.md %}
 
 {% include acronyms.md %}
+
