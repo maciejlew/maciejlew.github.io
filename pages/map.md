@@ -17,6 +17,8 @@ redirect_from: /map/
      * [Przedsądowe wezwanie do zapłaty](../lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
      * [Książeczka opłat](../lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
    * [Pluginy](../lan-management-system/pluginy)
+     * [Lista kończących się umów](../lan-management-system/pluginy/konczace-sie-umowy)
+     * [Lista kończących się zobowiązań](../lan-management-system/pluginy/konczace-sie-zobowiazania)
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)

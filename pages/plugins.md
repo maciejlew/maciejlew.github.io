@@ -14,8 +14,8 @@ dodatków w postaci pluginów. Dzięki pluginom można rozszerzyć możliwości 
 ingerencji w kod projektu. Dzięki temu utrzymanie i aktualizacje LMS stają się 
 łatwiejsze. Do tej pory jako plugin ukazały się:
 
- * Lista kończących się umów
- * Lista kończących się zobowiązań
+ * [Lista kończących się umów](./konczace-sie-umowy)
+ * [Lista kończących się zobowiązań](./konczace-sie-zobowiazania)
  * Logi programu Exim
 
 Pluginy działają z wersją LMS GIT, chyba że w opisie zaznaczono inaczej. Na 
