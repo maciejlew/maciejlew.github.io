@@ -1,1 +1,1 @@
-Firmy i osoby zainteresowane zleceniem mi prac programistycznych [zapraszam do kontaktu](/kontakt).
+Zainteresowanych zleceniem mi prac programistycznych [zapraszam do kontaktu](/kontakt).
