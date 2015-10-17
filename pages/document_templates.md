@@ -20,6 +20,7 @@ Moje gotowe szablony dokumentów:
  * [Wezwanie do zapłaty](./szablony-dokumentow/wezwanie-do-zaplaty)
  * [Przedsądowe wezwanie do zapłaty](./szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
  * [Książeczka opłat](./szablony-dokumentow/ksiazeczka-oplat)
+ * [Informacje do umowy zawartej poza lokalem](./szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
 
 Przygotowane przeze mnie szablony działają zarówno w LMS GIT jak i INET LMS.
 
