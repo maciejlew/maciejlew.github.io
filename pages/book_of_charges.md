@@ -53,6 +53,7 @@ Zobacz także:
  * [Wezwanie do zapłaty](../wezwanie-do-zaplaty)
  * [Przedsądowe wezwanie do zapłaty](../przedsadowe-wezwanie-do-zaplaty)
  * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
+ * [Odstąpienie od umowy zawartej poza lokalem](../odstapienie-od-umowy-zawartej-poza-lokalem)
 
 * * *
 

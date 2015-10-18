@@ -31,6 +31,7 @@ Zobacz także:
  * [Przedsądowe wezwanie do zapłaty](../przedsadowe-wezwanie-do-zaplaty)
  * [Książeczka opłat](../ksiazeczka-oplat)
  * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
+ * [Odstąpienie od umowy zawartej poza lokalem](../odstapienie-od-umowy-zawartej-poza-lokalem)
 
 * * *
 

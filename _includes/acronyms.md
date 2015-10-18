@@ -19,3 +19,4 @@
 *[SQL]: Structured Query Language
 *[SMS]: Short Message Service
 *[UOKiK]: Urząd Ochrony Konkurencji i Konsumentów
+*[ISP]: Internet Service Provider

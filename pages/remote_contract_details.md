@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Szablon informacji do umowy zawartej poza lokalem dla systemu LMS"
+title: "Szablon informacji do umowy zawartej poza lokalem dla LMS"
 description: "Szablon informacji do umowy zawartej poza lokalem dla Lan Management System"
 keywords: "LMS, Lan Management System, sieci LAN, LMS GIT, LMS INET, wezwanie do zapłaty,
 przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
