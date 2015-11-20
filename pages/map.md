@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [SpreadIT 2015](../2015/11/20/spreadit-2015.html)
    * [Książeczka opłat - nowe funkcje](../2015/09/21/ksiazeczka-oplat-nowe-funkcje.html)
    * [Wezwania do zapłaty - adresy korespondencyjne klientów](../2015/08/08/wezwania-do-zaplaty-adresy-korespondencyjne.html)
    * [Grupa LMS na Goldenline](../2015/08/08/grupa-lms-na-goldenline.html)
