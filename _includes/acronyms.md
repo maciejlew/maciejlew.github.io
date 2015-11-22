@@ -20,3 +20,6 @@
 *[SMS]: Short Message Service
 *[UOKiK]: Urząd Ochrony Konkurencji i Konsumentów
 *[ISP]: Internet Service Provider
+*[SOA]: Service-Oriented Architecture
+*[DDD]: Domain-Driven Design
+*[RDD]: Responsibility-Driven design
