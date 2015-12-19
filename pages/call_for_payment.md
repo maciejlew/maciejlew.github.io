@@ -9,7 +9,7 @@ druki wpłat"
 permalink: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty/
 ---
 
- * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe)
+ * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe, korekty faktur VAT)
  * uwzględnienie częściowo zapłaconych faktur VAT i not obciążeniowych
  * uwzględnienie terminów płatności
  * uwzględnienie możliwości występowania faktur VAT z wieloma pozycjami
@@ -18,11 +18,14 @@ permalink: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty/
  * numer konta bankowego brany z karty klienta (obsługa IBAN - indywidualnych numerów bankowych klientów)
  * aktualne saldo - kwota do zapłaty
  * obsługa adresów korespondencyjnych
+ * opcja wyliczania odsetek ustawowych, obsługa stawek 13% i 8%, uwzględnienie dni wolnych
+ * opcja oznaczania na liście pozycji do których były korekty
  * na życzenie klienta dostosowanie treści wezwania
 
 Przykłady:
 
  * [Przykładowe wezwanie do zapłaty](http://lion.net.pl/img/szablony_dokumentow/wezwanie_do_zaplaty_przyklad.pdf)
+ * [Przykładowe wezwanie do zapłaty z odsetkami](http://lion.net.pl/img/szablony_dokumentow/wezwanie_do_zaplaty_odsetki_ustawowe_przyklad.pdf)
 
 * * *
 

@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Wezwania do zapłaty - nowe funkcje](../2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html)
    * [SpreadIT 2015 - relacja](../2015/11/20/spreadit-2015-relacja.html)
    * [SpreadIT 2015](../2015/11/20/spreadit-2015.html)
    * [Książeczka opłat - nowe funkcje](../2015/09/21/ksiazeczka-oplat-nowe-funkcje.html)
