@@ -8,7 +8,10 @@ druki wpłat, uokik, umowa w lokalu, umowa poza lokalem"
 permalink: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
 ---
 
-Szablony zawierają informacje dla klienta według 
+Podejmuję się przenoszenia istniejących szablonów informacji dodatkowych 
+do umowy zawartej poza lokalem do szablonów systemu LMS.
+
+Szablony takie zawierają zazwyczaj informacje dla klienta według 
 [wytycznych UOKiK dla umów zawieranych poza lokalem](https://uokik.gov.pl/faq_umowy_zawierane_na_odleglosc.php#f1255):
 
  * główne cechy świadczenia, tj:

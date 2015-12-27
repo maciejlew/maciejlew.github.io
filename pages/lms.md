@@ -27,6 +27,13 @@ Moje gotowe szablony dokumentów:
  * [Wezwanie do zapłaty](./szablony-dokumentow/wezwanie-do-zaplaty)
  * [Przedsądowe wezwanie do zapłaty](./szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
  * [Książeczka opłat](./szablony-dokumentow/ksiazeczka-oplat)
+
+Poza gotowymi szablonami oferuję także usługi przenoszenia istniejących szablonów 
+dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in.:
+
+ * Umowy
+ * Regulaminy
+ * Protokoły zdawczo-odbiorcze
  * [Informacje do umowy zawartej poza lokalem](./szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
  * [Odstąpienie od umowy zawartej poza lokalem](./szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem)
 

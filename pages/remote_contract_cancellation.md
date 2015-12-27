@@ -9,10 +9,13 @@ telekomunikacja, internet"
 permalink: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
 ---
 
-Szablon zawiera oświadczenie klienta o odstąpieniu od umowy zawartej poza lokalem 
+Przyjmuję zlecenia przenoszenia istniejących szablonów odstąpienia od umowy zawartej
+poza lokalem do systemu LMS.
+
+Szablon taki zawiera zazwyczaj oświadczenie klienta o odstąpieniu od umowy zawartej poza lokalem 
 przedsiębiorstwa (na odległość).
 
-Na szablonie, oprócz oświadczenia, znajdują się:
+Na szablonie, oprócz oświadczenia, znajdują się zwykle także:
 
  * dane klienta;
  * dane firmy;
