@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Przegląd aplikacji dla sysadminów](../2016/01/24/przeglad-aplikacji-dla-sysadminow.html)
    * [Wezwania do zapłaty - nowe funkcje](../2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html)
    * [SpreadIT 2015 - relacja](../2015/11/20/spreadit-2015-relacja.html)
    * [SpreadIT 2015](../2015/11/20/spreadit-2015.html)
