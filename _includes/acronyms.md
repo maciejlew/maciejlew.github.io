@@ -23,3 +23,6 @@
 *[SOA]: Service-Oriented Architecture
 *[DDD]: Domain-Driven Design
 *[RDD]: Responsibility-Driven design
+*[DRY]: Don't Repeat Yourself
+*[KISS]: Keep It Simple, Stupid
+*[SEO]: Search Engine Optimalization
