@@ -8,6 +8,8 @@ ostateczne przedsądowe wezwanie do zapłaty, druki wpłat"
 permalink: /lan-management-system/szablony-dokumentow/
 ---
 
+{% include suspension.md %}
+
 Szablony dokumentów w LMS pozwalają na automatyczne generowanie umów, regulaminów,
 aneksów, protokołów zdawczo-odbiorczych, wezwań do zapłaty oraz innych. Wygenerowane
 dokumentu są w LMS przypisane d konkretnego klienta co pozwala na łatwe ich 
@@ -32,8 +34,5 @@ dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in
 
 Przygotowane przeze mnie szablony działają zarówno w LMS GIT jak i INET LMS.
 
-* * *
-
-{% include contact_link.md %}
-
 {% include acronyms.md %}
+

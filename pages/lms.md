@@ -10,6 +10,8 @@ permalink: /lan-management-system/
 redirect-from: /lms/
 ---
 
+{% include suspension.md %}
+
 Poniżej przedstawiam moje gotowe komponenty dla systemu LMS, które nie są dostępne
 w głównej gałęzi projektu:
 
@@ -53,8 +55,5 @@ ingerencji w kod projektu. Dzięki temu utrzymanie i aktualizacje LMS stają si�
 Pluginy działają z wersją LMS GIT, chyba że w opisie zaznaczono inaczej. Na 
 życzenie klienta istnieje możliwość przerobienia pluginu na moduł INET LMS.
 
-* * *
-
-{% include contact_link.md %}
-
 {% include acronyms.md %}
+

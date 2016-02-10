@@ -9,6 +9,8 @@ permalink: /oferta/
 redirect_from: /offer/
 ---
 
+{% include suspension.md %}
+
 ### Wdrażanie i modyfikacje LMS
 
 LMS &ndash; Lan Management System &ndash; jest platformą zarządzania sieciami LAN.
@@ -32,8 +34,5 @@ Mam doświadczenie w projektowaniu i implementacji systemów informatycznych dla
 firm i administracji. Budowałem systemy telekomunikacyjne, ankietowe, zarządzania 
 indeksami materiałowymi.
 
-* * *
-
-{% include contact_link.md %}
-
 {% include acronyms.md %}
+

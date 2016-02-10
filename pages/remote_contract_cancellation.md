@@ -9,6 +9,8 @@ telekomunikacja, internet"
 permalink: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
 ---
 
+{% include suspension.md %}
+
 Przyjmuję zlecenia przenoszenia istniejących szablonów odstąpienia od umowy zawartej
 poza lokalem do systemu LMS.
 
@@ -63,8 +65,5 @@ Zobacz także:
  * [Książeczka opłat](../ksiazeczka-oplat)
  * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
 
-* * *
-
-{% include contact_link.md %}
-
 {% include acronyms.md %}
+

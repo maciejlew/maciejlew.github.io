@@ -9,6 +9,8 @@ druki wpłat"
 permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
 ---
 
+{% include suspension.md %}
+
  * wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej
  * numer konta bankowego brany z karty klienta (obsługa IBAN)
  * możliwość konfiguracji pola "nazwa odbiorcy" oraz szablonu pola "tytułem" z poziomu LMS
@@ -55,9 +57,6 @@ Zobacz także:
  * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
  * [Odstąpienie od umowy zawartej poza lokalem](../odstapienie-od-umowy-zawartej-poza-lokalem)
 
-* * *
-
-{% include contact_link.md %}
 
 {% include acronyms.md %}
 

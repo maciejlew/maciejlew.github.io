@@ -6,6 +6,8 @@ pluginy dla lms"
 permalink: /lan-management-system/pluginy/konczace-sie-umowy/
 ---
 
+{% include suspension.md %}
+
  * lista kończących się umów
  * możliwość oznaczania umów jako pomijanych podczas wyszukiwania
 
@@ -33,10 +35,6 @@ W menu konfiguracji, w module *Wtyczki*, należy uruchomić plugin
 Zobacz także:
 
  * [Lista kończących się zobowiązań](../konczace-sie-zobowiazania)
-
-* * *
-
-{% include contact_link.md %}
 
 {% include acronyms.md %}
 

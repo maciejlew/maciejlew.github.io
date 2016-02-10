@@ -9,6 +9,8 @@ druki wpłat"
 permalink: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
 ---
 
+{% include suspension.md %}
+
  * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe, korekty faktur VAT)
  * uwzględnienie częściowo zapłaconych faktur VAT i not obciążeniowych
  * uwzględnienie terminów płatności
@@ -36,8 +38,5 @@ Zobacz także:
  * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
  * [Odstąpienie od umowy zawartej poza lokalem](../odstapienie-od-umowy-zawartej-poza-lokalem)
 
-* * *
-
-{% include contact_link.md %}
-
 {% include acronyms.md %}
+

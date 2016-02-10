@@ -8,6 +8,8 @@ druki wpłat, uokik, umowa w lokalu, umowa poza lokalem"
 permalink: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
 ---
 
+{% include suspension.md %}
+
 Podejmuję się przenoszenia istniejących szablonów informacji dodatkowych 
 do umowy zawartej poza lokalem do szablonów systemu LMS.
 
@@ -72,8 +74,6 @@ Zobacz także:
  * [Przedsądowe wezwanie do zapłaty](../przedsadowe-wezwanie-do-zaplaty)
  * [Książeczka opłat](../ksiazeczka-oplat)
 
-* * *
-
-{% include contact_link.md %}
 
 {% include acronyms.md %}
+

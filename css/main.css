@@ -191,6 +191,14 @@ p a {
     
 }
 
+#suspension {
+    width: 100%;
+    background-color: orange;
+    border: 2px solid red;
+    padding: 0.5em 1em;
+}
+
+
 /*****************************************************************************/
 /*
 /* Syntax highlight
@@ -412,3 +420,4 @@ only screen and (max-device-width : 320px){
         margin: 0 0.75em;
     }
 }
+

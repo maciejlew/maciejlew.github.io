@@ -35,10 +35,7 @@ Od roku pracuję nad rozwojem platformy wspierającej zarządzanie systemem VoIP
 
 * * *
 
-{% include contact_link.md %}
-
-* * *
-
 {% include logos.md %}
 
 {% include acronyms.md %}
+

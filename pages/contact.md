@@ -8,6 +8,8 @@ permalink: /kontakt/
 redirect_from: /contact/
 ---
 
+{% include suspension.md %}
+
 E-mail: <span class="email">{{ site.email }}</span>
 
 GitHub: [{{ site.github }}](https://github.com/{{ site.github }})
@@ -15,3 +17,4 @@ GitHub: [{{ site.github }}](https://github.com/{{ site.github }})
 GoldenLine: [Maciej Lew](http://www.goldenline.pl/1526554/)
 
 Gadu-gadu: 1724368, status: <img src="http://status.gadu-gadu.pl/users/status.asp?id=1724368&styl=5">
+
