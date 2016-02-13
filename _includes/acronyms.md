@@ -30,3 +30,6 @@
 *[PHPCPD]: PHP Copy Paste Detector
 *[PHPCS]: PHP Code Sniffer
 *[PHPMD]: PHP Mess Detector
+*[ŚKUP]: Śląska Karta Usług Publicznych
+*[LXC]: Linux Containers
+*[OS]: Operating System

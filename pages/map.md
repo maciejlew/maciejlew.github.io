@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Quality Meetup #7](../2016/02/13/quality-meetup-7.html)
    * [Serwer CI dla LMS](../2016/02/13/konfiguracja-serwera-ci-dla-lms.html)
    * [Dlaczego większość stron nie powinna mieć podłączonego (micro) frameworka?](../2016/01/24/dlaczego-wiekszosc-stron-nie-powinna-miec-podlaczonego-micro-frameworka.html)
    * [Przegląd aplikacji dla sysadminów](../2016/01/24/przeglad-aplikacji-dla-sysadminow.html)
