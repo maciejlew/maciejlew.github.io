@@ -44,7 +44,7 @@ zainstalowane, czyli PHP5, Composer i git.
 Instrukcje poprzedzone znakiem **#** wykonuję jako root, instrukcje poprzedzone
 znakiem **$** wykonuję są jako zwykły użytkownik.
 
-{% highlight bash startinline %}
+{% highlight console %}
 
 # wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
 # echo 'deb http://pkg.jenkins-ci.org/debian binary/' >> /etc/apt/sources.list
@@ -117,7 +117,7 @@ zajmie się tym Jenkins. Dodaję kolejny krok wybierając **"Add build step"** >
 **"Execute shell"**. Ustawiam ten bloczek na samym początku sekcji **"Build"**.
 W jego treści wpisuję:
 
-{% highlight bash startinline %}
+{% highlight console %}
 cd $WORKSPACE
 composer update
 {% endhighlight %}
@@ -148,9 +148,9 @@ z targetów opisanych w pliku build.xml, opłaca się uruchamiać tylko
 wybrany podejrzany target. Mogę to zrobić z poziomu katalogu projektu w workspace
 wydając komendę:
 
-{% highlight bash startinline %}
-cd /var/lib/jenkins/jobs/LMS/workspace/
-ant <nazwa_targetu>
+{% highlight console %}
+# cd /var/lib/jenkins/jobs/LMS/workspace/
+# ant <nazwa_targetu>
 {% endhighlight %}
 
 Opublikowałem także [mój referencyjny konfig joba dla LMS](https://gist.github.com/maciejlew/9b207f32be4af5bf8cbe). 
