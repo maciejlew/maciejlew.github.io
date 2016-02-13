@@ -8,7 +8,7 @@ permalink: /umiejetnosci/
 redirect_from: /skills/
 ---
 
-### Posiadam ponad 5-letnie doświadczenie w tworzeniu systemów informatycznych
+### Posiadam ponad {{ site.time|date:'%Y'|minus:2010 }}-letnie doświadczenie w tworzeniu systemów informatycznych
 
 Specjalizuję się w projektach związanych z systemami zarządzania sieciami 
 internetowymi LAN. Miałem okazję projektować, programować i wdrażać u 
@@ -26,12 +26,12 @@ Umiejętności jakie posiadam i technologie przy pomocy jakich pracuję to międ
  * C/C++/C# (WinForms, pthreads);
 
 
-**Od 4 lat biorę udział w rozwijaniu systemu Lan Management System (LMS)** - narzędzia 
+**Od {{ site.time|date:'%Y'|minus:2011 }} lat biorę udział w rozwijaniu systemu Lan Management System (LMS)** - narzędzia 
 do zarządzania sieciami LAN. W tym czasu zdobyłem doświadczenie w dostosowywaniu 
 LMS do potrzeb klienta, a wiele z moich pomysłów zostało wprowadzonych do 
 głównej gałęzi projektu.
 
-Od roku pracuję nad rozwojem platformy wspierającej zarządzanie systemem VoIP firmy Adescom.
+Od {{ site.time|date:'%Y'|minus:2014 }} lat pracuję nad rozwojem platformy wspierającej zarządzanie systemem VoIP firmy Adescom.
 
 * * *
 

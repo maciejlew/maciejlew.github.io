@@ -15,7 +15,7 @@ redirect_from: /offer/
 
 LMS &ndash; Lan Management System &ndash; jest platformą zarządzania sieciami LAN.
 
-Od 5 lat zajmuję się wdrażaniem i rozwijaniem tego systemu na potrzeby moich
+Od {{ site.time|date:'%Y'|minus:2010 }} lat zajmuję się wdrażaniem i rozwijaniem tego systemu na potrzeby moich
 klientów. Moja oferta obejmuje:
 
  * **wdrożenie LMS w sieci komputerowej**;
