@@ -2,7 +2,7 @@
 layout: post
 title: "Serwer CI dla LMS"
 date: 2016-02-13 08:00:00
-description: "Opis Przykładowej konfiguracji serwera Continous Integration dla Lan Management System"
+description: "Opis konfiguracji serwera Continous Integration dla Lan Management System"
 keywords: "Jenkins, PHP, continous integration, quality assurance, Lan Management System, static analyse,
 unit testing, jakość oprogramowania, serwer ciągłej integracji, testy jednostkowe"
 ---
@@ -12,7 +12,10 @@ osobom zainteresowanym rozwojem LMS automatyzacji procesu sprawdzania
 poprawności i jakości kodu w repozytorium LMS. **Za serwer CI posłuży 
 [Jenkins](https://jenkins-ci.org/) ze względu na jego popularność oraz gotowe 
 komponenty integrujące go z narzędziami służącymi do analizy kodu napisanego w 
-języku PHP**.
+języku PHP**. Instalacja będzie działała "out-of-box" gdy 
+[pull request #621](https://github.com/lmsgit/lms/pull/621)
+zostanie przyjęty. Do tego czasu należy za źródło LMSa brać 
+[mój fork](https://github.com/maciejlew/lms).
 
 Przed instalacją warto zapoznać się z możliwościami Jenkinsa - materiałów
 na jego temat w Internecie jest mnóstwo.
@@ -41,21 +44,19 @@ nie ma to znaczenia z punktu widzenia opisanej poniżej procedury.
 Instalacja opisałem jest dla dystrybucji Debian i pochodnych. Zakładam że
 w systemie jest zainstalowane to co dotychczas developer musiał i tak mieć
 zainstalowane, czyli PHP5, Composer i git.
-Instrukcje poprzedzone znakiem **#** wykonuję jako root, instrukcje poprzedzone
-znakiem **$** wykonuję są jako zwykły użytkownik.
 
-{% highlight console %}
+Jako root wykonuję polecenia:
 
-# wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
-# echo 'deb http://pkg.jenkins-ci.org/debian binary/' >> /etc/apt/sources.list
-# aptitude update
-# aptitude install jenkins php5-xdebug curl
+    wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
+    echo 'deb http://pkg.jenkins-ci.org/debian binary/' >> /etc/apt/sources.list
+    aptitude update
+    aptitude install jenkins php5-xdebug curl
 
-$ wget http://localhost:8080/jnlpJars/jenkins-cli.jar
-$ java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations warnings xunit git
-$ curl -L https://raw.githubusercontent.com/sebastianbergmann/php-jenkins-template/master/config.xml | java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-template
+Jako zwykły użytkownik wykonuję polecenia:
 
-{% endhighlight %}
+    wget http://localhost:8080/jnlpJars/jenkins-cli.jar
+    java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations warnings xunit git
+    curl -L https://raw.githubusercontent.com/sebastianbergmann/php-jenkins-template/master/config.xml | java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-template
 
 Po pomyślnej instalacji Jenkins powinien działać już w tle jako daemon i być 
 dostępny w przeglądarce pod adresem localhosta na porcie 8080.
@@ -117,10 +118,8 @@ zajmie się tym Jenkins. Dodaję kolejny krok wybierając **"Add build step"** >
 **"Execute shell"**. Ustawiam ten bloczek na samym początku sekcji **"Build"**.
 W jego treści wpisuję:
 
-{% highlight console %}
-cd $WORKSPACE
-composer update
-{% endhighlight %}
+    cd $WORKSPACE
+    composer update
 
 Kolejnym krokiem na liście zdarzeń naszego joba jest "Invoke Ant". Spowoduje
 on wykonanie targetu "full-build", który jest opisany w pliku build.xml 
@@ -146,12 +145,10 @@ klon repozytorium oraz konfiguracja, logi i raporty z buildów. W przypadku prob
 z konfiguracją Jenkinsa, jeśli podejrzewamy że są one związane z którymś
 z targetów opisanych w pliku build.xml, opłaca się uruchamiać tylko 
 wybrany podejrzany target. Mogę to zrobić z poziomu katalogu projektu w workspace
-wydając komendę:
+wydając komendę, jako użytkownik jenkins:
 
-{% highlight console %}
-# cd /var/lib/jenkins/jobs/LMS/workspace/
-# ant <nazwa_targetu>
-{% endhighlight %}
+    cd /var/lib/jenkins/jobs/LMS/workspace/
+    ant <nazwa_targetu>
 
 Opublikowałem także [mój referencyjny konfig joba dla LMS](https://gist.github.com/maciejlew/9b207f32be4af5bf8cbe). 
 W razie problemów możecie go porównać z konfigiem znajdującym się w 
