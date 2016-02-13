@@ -26,3 +26,7 @@
 *[DRY]: Don't Repeat Yourself
 *[KISS]: Keep It Simple, Stupid
 *[SEO]: Search Engine Optimalization
+*[ACL]: Access Control Level
+*[PHPCPD]: PHP Copy Paste Detector
+*[PHPCS]: PHP Code Sniffer
+*[PHPMD]: PHP Mess Detector
