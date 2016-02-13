@@ -9,7 +9,7 @@ kontenery docker, ciągła integracja, testy akceptacyjne, testy integracyjne"
 ---
 
 Z powodu coraz większego nacisku na testy integracyjne w projektach w których biorę
-i pojawiających się z tego powodu problemów do rozwiązania, wybrałem się na
+udział i pojawiających się z tego powodu problemów do rozwiązania, wybrałem się na
 **spotkanie grupy osób związanych i/lub zainteresowanych tworzeniem oprogramowania
 wysokiej jakości - Quality Meetup #7**. O spotkaniu dowiedziałem się obserwując
 wiadomości związane z Quality Excites, konferencją na której już kiedyś byłem i
