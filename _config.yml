@@ -1,8 +1,6 @@
 name: LionNet
 url: http://lion.net.pl
 description: Progra&shy;mowanie, sieci kompu&shy;terowe, informa&shy;tyka.
-markdown: kramdown
-pygments: true
 disqus-id: lionnetpl
 email: maciej.lew.1987 [at] gmail.com
 github: maciejlew
