@@ -8,6 +8,8 @@ layout: default
         <hr>
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date| date: "%d/%m/%Y" }}</time>
 
+        {% include post_tags.md %}
+        
         {{ content }}
 
 </article>

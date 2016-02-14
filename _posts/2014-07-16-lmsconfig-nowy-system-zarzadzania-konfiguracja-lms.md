@@ -5,7 +5,9 @@ date: 2014-07-16 18:27:00
 description: "Opis LMSConfig - nowego systemu zarządzania konfiguracją w LMS"
 keywords: "LMS, pliki konfiguracyjne, uiconfig, pliki INI, wzorce projektowe,
 LMS GIT, refaktoryzacja, zmienne globalne, LMS GIT, rozwój LMS"
-
+tags:
+- LMS
+- OOP
 ---
 
 Z głównej gałęzi LMS na GitHubie można już pobierać LMS w wersji, w której stara

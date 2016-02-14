@@ -5,7 +5,8 @@ date: 2015-12-19 17:45:00
 description: "Nowe funkcje w szablonach wezwań do zapłaty dla LMS"
 keywords: "LMS, Lan Management System, rozwój Lan Management System, dodatki, 
 komponenty, LMS GIT, LMS INET, wezwania do zapłaty, odsetki ustawowe, korekty faktur"
-
+tags:
+- LMS
 ---
 
 [Szablon wezwania do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)

@@ -6,7 +6,8 @@ description: "Adresy korespondencyjne klientów na szablonach wezwań do zapłat
 keywords: "LMS, Lan Management System, rozwój Lan Management System, dodatki, 
 komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, 
 ostateczne przedsądowe wezwanie do zapłaty"
-
+tags:
+- LMS
 ---
 
 Rozbudowałem szablony [wezwania do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty) 

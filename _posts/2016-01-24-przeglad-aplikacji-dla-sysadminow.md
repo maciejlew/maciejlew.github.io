@@ -4,7 +4,8 @@ title: "Przegląd aplikacji dla sysadminów"
 date: 2016-01-24 12:00:00
 description: "Znane i mniej znane aplikacje pomocne w codziennej pracy sysadmina"
 keywords: "aplikacje do zarządzania siecią komputerową, aplikacje dla it"
-
+tags:
+- LMS
 ---
 
 Jakiś czas temu natrafiłem w czeluściach Internetu na ciekawą 

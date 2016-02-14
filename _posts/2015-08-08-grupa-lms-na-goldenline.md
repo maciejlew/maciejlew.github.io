@@ -6,7 +6,8 @@ description: "Założenie grupy LMS w serwisie społecznościowym Goldenline"
 keywords: "LMS, Lan Management System, rozwój Lan Management System, osoby 
 związane z Lan Management System, administratorzy sieci komputerowych, firmy
 telekomunikacyjne, internet service providers, rynek telekomunikacyjny"
-
+tags:
+- LMS
 ---
 
 Jakiś czas temu założyłem w serwisie dla poszukujących pracy, pracodawców i rekruterów

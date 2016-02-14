@@ -5,7 +5,8 @@ date: 2015-07-21 18:45:00
 description: "Lista nowych usprawnień dla LMS, część 3"
 keywords: "LMS, Lan Management System, pluginy, wzorce projektowe, rozbudowa LMS, 
 uprawnienia w LMS, bugi w LMS, masowa wysyłka SMS, szablony faktur, terminarz w LMS"
-
+tags:
+- LMS
 ---
 
 W ciągu ostatniego miesiąca udało mi się zakończyć takie zlecenia dotyczące LMS:

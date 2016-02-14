@@ -45,4 +45,5 @@ redirect_from: /map/
    * [PHPers Silesia czerwiec 2014](../2014/07/13/phpers-silesia-czerwiec-2014.html)
    * [Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja](../2014/06/30/industriada-2014-wystawa-zabytkowych-komputerow.html)
    * [Ready, steady, blog](../2014/06/19/ready-steady-blog.html)
+   * [Wszystkie wpisy pogrupowane tagami](../blog/tags)
  * [Mapa strony](.)

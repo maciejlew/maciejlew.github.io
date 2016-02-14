@@ -4,7 +4,8 @@ title: "SpreadIT 2015 - relacja"
 date: 2015-11-22 10:50:00
 description: "Relacja z SpreadIT 2015"
 keywords: "SpreadIT 2015, konferencja IT, relacja"
-
+tags:
+- OOP
 ---
 
 Miałem przyjemność wziąć udział na konferencji SpreadIT jako jeden z jej 600 

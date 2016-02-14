@@ -5,7 +5,8 @@ date: 2016-01-24 15:00:00
 description: "Opinia o wykorzystywaniu frameworków do budowy stron WWW"
 keywords: "php, frameworki, strony internetowe, zaśmiecacze internetu, blogi,
 strony wizytówki"
-
+tags:
+- OOP
 ---
 
 Ten post jest polemiką z artykułem który ostatnio znalazłem na Planecie PHP - 

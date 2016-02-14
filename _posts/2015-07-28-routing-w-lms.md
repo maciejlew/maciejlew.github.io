@@ -5,7 +5,8 @@ date: 2015-07-28 00:00:00
 description: "Routing w LMS"
 keywords: "LMS, Lan Management System, problemy w LMS, rozwój LMS, LMS GIT, routing,
 systemy pluginów, moduły w LMS"
-
+tags:
+- LMS
 ---
 
 W tym wpisie postaram się przedstawić **jak działa routing w LMS**, czyli jak to się 

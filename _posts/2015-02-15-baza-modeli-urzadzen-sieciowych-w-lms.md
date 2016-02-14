@@ -5,7 +5,8 @@ date: 2015-02-15 22:00:00
 description: "Baza producentów i modeli urządzeń sieciowych w LMS"
 keywords: "LMS, Lan Management System, urządzenia sieciowe, MikroTik, Ubiquiti, 
 rozwój LMS, lista modeli urządzeń sieciowych, routery, switche"
-
+tags:
+- LMS
 ---
 
 Dodałem do głównej gałęzi LMS **możliwość przechowywania w bazie danych LMS nazw 

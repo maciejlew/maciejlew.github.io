@@ -6,7 +6,8 @@ description: "Lista nowych usprawnień dla LMS, część 2"
 keywords: "LMS, Lan Management System, pluginy, wzorce projektowe, rozbudowa LMS,
 RADIUS accounting, załączniki do dokumentów w LMS, noty obciążeniowe w LMS, 
 terminarz w LMS, wezwania do zapłaty, promocje w LMS"
-
+tags:
+- LMS
 ---
 
 Kolejny etap prac nad rozwojem LMS za mną, stworzyłem kilka nowych rozwiązań, poprawiłem

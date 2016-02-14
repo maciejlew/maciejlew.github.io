@@ -6,6 +6,8 @@ description: "Fotorelacja z wystawy starych komputerów i innych zabytków techn
 komputerowej mającej miejsce podczas Industriady 2014"
 keywords: "stare komputery, zabytki techniki, industriada 2014, gry komputerowe,
 Atari, Macintosh, Elwro"
+tags:
+- RETRO
 ---
 
 #### Industriada 2014

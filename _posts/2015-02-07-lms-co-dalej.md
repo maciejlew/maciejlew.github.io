@@ -5,7 +5,8 @@ date: 2015-02-07 18:00:00
 description: "Kierunek rozwoju LMS"
 keywords: "LMS, Lan Management System, problemy w LMS, rozwój LMS, lista dyskusyjna LMS,
 LMS GIT, Jambox, Hiperus, pluginy do LMS"
-
+tags:
+- LMS
 ---
 
 W ciągu kliku ostatnich tygodni na grupie dyskusyjnej LMS mogliśmy obserwować 

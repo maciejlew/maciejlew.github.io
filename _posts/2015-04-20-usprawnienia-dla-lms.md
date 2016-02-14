@@ -6,7 +6,8 @@ description: "Lista nowych usprawnień dla LMS"
 keywords: "LMS, Lan Management System, pluginy, wzorce projektowe, rozbudowa LMS,
 zawieszenia blokowania, szablony dokumentów, Adescom plugin dla LMS, lista kończących
 się umów, lista kończących się zobowiązań"
-
+tags:
+- LMS
 ---
 
 Zakończyłem kolejny etap prac dla jednego z moich klientów. 

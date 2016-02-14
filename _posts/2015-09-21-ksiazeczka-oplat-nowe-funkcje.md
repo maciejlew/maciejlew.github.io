@@ -6,7 +6,8 @@ description: "Nowe funkcje w szablonie książeczki opłat dla LMS"
 keywords: "LMS, Lan Management System, rozwój Lan Management System, dodatki, 
 komponenty, LMS GIT, LMS INET, książeczka opłat, druki polecenia wpłaty, druki 
 przelewu"
-
+tags:
+- LMS
 ---
 
 Dodałem do oferowanego przeze mnie 

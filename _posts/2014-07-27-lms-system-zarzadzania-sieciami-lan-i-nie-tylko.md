@@ -5,7 +5,8 @@ date: 2014-07-27 14:53:00
 description: "Opis systemu LMS, funkcjonalność i zalety stosowania przez ISP"
 keywords: "LMS, opis systemu LMS, sieci osiedlowe, dostawcy internetu, systemy CRM,
 zarządzanie siecią LAN, system zarządzania siecią, LMS GIT"
-
+tags:
+- LMS
 ---
 
 Wpis ten będzie dotyczył systemu LMS jako całości. Z jego lektury dowiesz

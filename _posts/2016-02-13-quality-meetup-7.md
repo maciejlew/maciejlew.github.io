@@ -6,6 +6,8 @@ description: "Relacja z siódmego spotkania osób związanych i zainteresowanych
 tworzeniem oprogramowania wysokiej jakości"
 keywords: "quality meetup, continous integration, selenium grid, śląska karta usług publicznych
 kontenery docker, ciągła integracja, testy akceptacyjne, testy integracyjne"
+tags:
+- QA
 ---
 
 Z powodu coraz większego nacisku na testy integracyjne w projektach w których biorę

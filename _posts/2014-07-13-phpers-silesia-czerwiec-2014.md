@@ -5,7 +5,9 @@ date: 2014-07-13 12:52:00
 description: "Relacja ze spotkania PHPers Silesia z czerwca 2014"
 keywords: "PHP, phpers silesia, wzorzec map reduce, testowanie oprogramowania, 
 masowa wysyłka SMS, konferencje informatyczne"
-
+tags:
+- QA
+- OOP
 ---
 
 W czerwcu tego roku miało miejsce kolejne ze spotkań śląskiej grupy programistów 

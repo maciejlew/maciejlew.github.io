@@ -5,6 +5,9 @@ date: 2016-02-13 08:00:00
 description: "Opis konfiguracji serwera Continous Integration dla Lan Management System"
 keywords: "Jenkins, PHP, continous integration, quality assurance, Lan Management System, static analyse,
 unit testing, jakość oprogramowania, serwer ciągłej integracji, testy jednostkowe"
+tags:
+- QA
+- LMS
 ---
 
 Napisałem ten krótki opis konfiguracji serwera CI dla LMS w celu ułatwienia 
