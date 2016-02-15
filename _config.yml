@@ -1,4 +1,5 @@
 name: LionNet
+author: Maciej Lew
 url: http://lion.net.pl
 description: Progra&shy;mowanie, sieci kompu&shy;terowe, informa&shy;tyka.
 disqus-id: lionnetpl
@@ -8,4 +9,4 @@ timezone: Europe/Warsaw
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
-  
+  - jekyll-feed
