@@ -9,4 +9,3 @@ timezone: Europe/Warsaw
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-feed
