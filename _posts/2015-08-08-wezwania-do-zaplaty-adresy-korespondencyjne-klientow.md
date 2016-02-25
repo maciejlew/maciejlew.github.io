@@ -10,7 +10,7 @@ tags:
 - LMS
 ---
 
-Rozbudowałem szablony [wezwania do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty) 
+Rozbudowałem szablony [wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty) 
 oraz [przedsądowego wezwania do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty) 
 dla Lan Management System o obsługę adresów korespondencyjnych klientów którym 
 takie wezwania mają zostać wygenerowane. Podczas generowania dokumentów, adresy 

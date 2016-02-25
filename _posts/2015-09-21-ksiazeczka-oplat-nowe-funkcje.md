@@ -11,7 +11,7 @@ tags:
 ---
 
 Dodałem do oferowanego przeze mnie 
-[szablonu książeczki opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
+[szablonu książeczki opłat]({{ site.url }}/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
 nowe funkcje i usprawnienia:
 
  * opcja drukowania na wszystkich drukach sumy zobowiązań klienta wynikającej z

@@ -9,9 +9,9 @@ tags:
 - LMS
 ---
 
-[Szablon wezwania do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
+[Szablon wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
 oraz 
-[szablon przedsądowego wezwania do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty), 
+[szablon przedsądowego wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty), 
 cieszące się sporym zainteresowaniem klientów, zostały wyposażone w nowe funkcje:
 
  * uwzględnianie korekt faktur VAT, opcja oznaczania pozycji na wezwaniu do których 
@@ -20,7 +20,7 @@ były wystawione korekty;
 13% (poprzednia stawka) i 8% (obecna stawka) z uwzględnieniem przesuwania dnia
 rozpoczęcia naliczania odsetek gdy wypada on w dniu ustawowo wolnym od pracy.
 
-Osoby zainteresowane tymi oraz [innymi szablonami dla systemu LMS](/lan-management-system/szablony-dokumentow)
-zapraszam do [kontaktu](/kontakt).
+Osoby zainteresowane tymi oraz [innymi szablonami dla systemu LMS]({{ site.url }}/lan-management-system/szablony-dokumentow)
+zapraszam do [kontaktu]({{ site.url }}/kontakt).
 
 {% include acronyms.md %}

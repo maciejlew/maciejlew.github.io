@@ -32,4 +32,4 @@ Obecnie pracuję nad:
  * Lista kończących się umów, powiadamianie BOK o kończących się umowach;
  * Lista kończących się zobowiązań, powiadamianie BOK o kończących się zobowiązaniach.
 
-Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu](/contact).
+Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu]({{ site.url }}/kontakt).

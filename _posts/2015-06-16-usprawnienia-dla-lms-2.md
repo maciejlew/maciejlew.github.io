@@ -41,4 +41,4 @@ Obecnie pracuję nad:
  * Pobieranie informacji z SerwerSMS.
 
 
-Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu](/contact).
+Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu]({{ site.url }}/kontakt).
