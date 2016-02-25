@@ -20,10 +20,6 @@ przypisanych mu taryf
  * opcja generowania druków przelewu tylko dla wybranego zakresu miesięcy
  * kompatybilność z LMS w wersjach GIT i INET oraz prawdopodbnie także ze starszymi wersjami LMS
 
-### Przykłady:
-
- * [Przykładowa książeczka opłat](http://lion.net.pl/img/szablony_dokumentow/ksiazeczka_oplat_przyklad.pdf)
-
 ### Instalacja:
 
 Zawartość paczki z szablonem należy umieścić w katalogu *lms/documents/templates/*.
