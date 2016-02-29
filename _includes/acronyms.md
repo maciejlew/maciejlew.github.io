@@ -33,3 +33,9 @@
 *[ŚKUP]: Śląska Karta Usług Publicznych
 *[LXC]: Linux Containers
 *[OS]: Operating System
+*[JS]: JavaScript
+*[IDE]: Integrated Development Environment
+*[SDK]: Software Development Kit
+*[CPU]: Central Processing Unit
+*[BIOS]: Basic Input/Output System
+*[KVM]: Kernel-based Virtual Machine
