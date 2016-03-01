@@ -9,7 +9,7 @@ permalink: /blog/tags/
 ### Kategorie
 
 <ul class="tag-cloud">
-{% for tag in site.tags %}
+{% for tag in site.tags reversed %}
   <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
     <a href="#{{ tag | first | slugize }}">
       {{ tag | first }}
@@ -19,7 +19,7 @@ permalink: /blog/tags/
 </ul>
 
 <div id="archives">
-{% for tag in site.tags %}
+{% for tag in site.tags reversed %}
   <div class="archive-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <h4 id="#{{ tag_name | slugize }}">{{ tag_name }}</h4>
