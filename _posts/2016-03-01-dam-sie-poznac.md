@@ -10,12 +10,11 @@ tags:
 - JS
 ---
 
-<img src="/img/DSP2016/DSP2016-logo-RGB-color-1.png" alt="Daj Się Poznać 2016" title="Daj Się Poznać 2016"/>
-
 Ten wpis to nie anons matrymonialny. Tu chodzi o coś więcej. Jest konkurs do 
 wygrania i ja w tym konkursie startuję. A ten konkurs to organizowany przez 
 Macieja Aniserowicza ["Daj Się Poznać 2016"](http://www.maciejaniserowicz.com/daj-sie-poznac/).
 
+<img src="/img/DSP2016/DSP2016-logo-RGB-color-1.png" alt="Daj Się Poznać 2016" title="Daj Się Poznać 2016"/>
 
 ## Leo, why?
 
