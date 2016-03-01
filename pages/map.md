@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Dam się poznać](../2016/03/01/dam-sie-poznac.html)
    * [Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować](../2016/02/29/jak-skonfigurowac-srodowisko-programistyczne-z-apache-cordova-android-sdk-i-nodejs-na-debianie-8-i386-i-nie-zwariowac.html)
    * [Quality Meetup #7](../2016/02/13/quality-meetup-7.html)
    * [Serwer CI dla LMS](../2016/02/13/konfiguracja-serwera-ci-dla-lms.html)
