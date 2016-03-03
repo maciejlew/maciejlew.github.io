@@ -88,3 +88,5 @@ dla mnie framework **Ionic**. Zapowiada się więc dobra zabawa.
 Na tym blogu będę publikować raporty z postępu prac, przemyślenia oraz inne notatki
 związane z konkursem. Mam nadzieję że mój projekt Cię zainteresował i będziesz go 
 śledzić. Wszelkie uwagi i dobre rady są zawsze mile widziane. A teraz - do roboty! ;)
+
+{% include acronyms.md %}
