@@ -26,7 +26,7 @@ Każde ww. narzędzi ma swój generator, czyli specjalne interaktywne narzędzie
 zrobione tylko po to, aby łatwiej można było rozpocząć pracę. A wiec AngularJS ma
 generator który stworzy nam szkielet aplikacji AngularJS. Cordova ma generator
 który stworzy nam szkielet aplikacji Cordova. Ionic ma generator który stworzy 
-nam szkielet aplikacji Ionic z Adularem i Cordova. No fajnie. Wygląda na to że
+nam szkielet aplikacji Ionic z Angularem i Cordova. No fajnie. Wygląda na to że
 najlepiej wykorzystać generator Ionic, który powinien nam wszystko ładnie utworzyć
 tak aby nie trzeba się było już niczym przejmować i od razu zacząć kodować. Nic 
 bardziej mylnego :)
@@ -44,15 +44,15 @@ dylematy. Tak też prawdopodobnie powstał ionic-generator dla Yeoman.
 ostatnim czasie. Z tego powodu nie mogę jeszcze czuć się jego ekspertem, ale 
 napiszę tu te kilka zdań - może także właśnie dla Ciebie Yeoman stanie się 
 odkryciem dnia. Narzędzie to służy do definiowania szkieletów aplikacji. I chodzi 
-tu nie tylko o aplikację JS, choć te przodują w statystykach upublicznionych 
+tu nie tylko o aplikacje JS, choć te przodują w statystykach upublicznionych 
 szablonów Yeomana. Jednym prostym poleceniem generujemy projekt według zadanego 
-szablonu. W tej chwili baza zarejestrowanych szablonów Yeomana posiada 3000 
+szablonu. W tej chwili baza zarejestrowanych szablonów Yeomana posiada ponad 3000 
 wpisów. Jest z czego wybierać.
 
 ### generator-ionic
 
 Mój wybór padł na szablon [generator-ionic](https://github.com/diegonetto/generator-ionic)
-reklamujący się jako pozwalający na szybkie i rozsądne narzędzie do tworzenia
+reklamujący się jako szybkie i rozsądne narzędzie do tworzenia
 projektów pisanych w Ionic, AngularJS i Cordova, podążające za dobrymi praktykami
 formowania struktury projektów.
 
