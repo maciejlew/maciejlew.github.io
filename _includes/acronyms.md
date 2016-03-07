@@ -39,3 +39,5 @@
 *[CPU]: Central Processing Unit
 *[BIOS]: Basic Input/Output System
 *[KVM]: Kernel-based Virtual Machine
+*[NPM]: Node Package Manager
+*[BDD]: Behavior Driven Development
