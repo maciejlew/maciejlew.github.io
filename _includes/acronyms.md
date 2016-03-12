@@ -41,3 +41,5 @@
 *[KVM]: Kernel-based Virtual Machine
 *[NPM]: Node Package Manager
 *[BDD]: Behavior Driven Development
+*[DDF]: Drug Dose Framework
+*[JSON]: JavaScript Object Notation

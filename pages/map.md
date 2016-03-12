@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Format opisu leków w DDF](../2016/03/12/format-opisu-lekow-w-ddf.html)
    * [Zapach Jaśminu](../2016/03/07/zapach-jasminu.html)
    * [Yeoman! Idziemy na front!](../2016/03/03/yeoman-idziemy-na-front.html)
    * [Dam się poznać](../2016/03/01/dam-sie-poznac.html)
