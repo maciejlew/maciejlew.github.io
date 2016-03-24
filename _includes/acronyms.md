@@ -43,3 +43,4 @@
 *[BDD]: Behavior Driven Development
 *[DDF]: Drug Dose Framework
 *[JSON]: JavaScript Object Notation
+*[YAGNI]: You Aren't Gonna Need It
