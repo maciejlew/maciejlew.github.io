@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Typy wyjątków w JavaScript](../2016/04/05/typy-wyjatkow-w-javascript.html)
    * [Wyszukiwanie binarne i interpolacja liniowa w JavaScript](../2016/03/26/wyszukiwanie-binarne-i-interpolacja-liniowa-w-javascript.html)
    * [Walidacja w akcesorach JavaScript](../2016/03/24/walidacja-w-akcesorach-javascript.html)
    * [Raport #1 z prac nad DDF](../2016/03/17/raport-1-z-prac-nad-ddf.html)
