@@ -74,7 +74,7 @@ aplikacji niekoniecznie związanym z eval.
 
 Błąd zakresu jest jednym z bardziej przydatnych typów błędu w JS. Może się on 
 pojawić podczas zabaw z tablicami w JS lub typem Number. Można go wykorzystać
-tworząc [walidację danych przekazywanych do funkcji i metod, w tym do setterów]({{site.url}}/2016/03/04/walidacja-w-akcesorach-javascript.html).
+tworząc [walidację danych przekazywanych do funkcji i metod, w tym do setterów]({{site.url}}/2016/03/24/walidacja-w-akcesorach-javascript.html).
 **Przydaje się on gdy sprawdzamy czy wartość numeryczna znajduje się w zbiorze wartości
 z określonej dziedziny** - ja tak często robię.
 
