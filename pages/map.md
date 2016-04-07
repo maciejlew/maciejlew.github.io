@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Debugowanie testów. Jasmine i Karma](../2016/04/07/debugowanie-testow-jasmine-i-karma.html)
    * [Typy wyjątków w JavaScript](../2016/04/05/typy-wyjatkow-w-javascript.html)
    * [Wyszukiwanie binarne i interpolacja liniowa w JavaScript](../2016/03/26/wyszukiwanie-binarne-i-interpolacja-liniowa-w-javascript.html)
    * [Walidacja w akcesorach JavaScript](../2016/03/24/walidacja-w-akcesorach-javascript.html)
