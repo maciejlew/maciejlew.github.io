@@ -45,3 +45,6 @@
 *[JSON]: JavaScript Object Notation
 *[YAGNI]: You Aren't Gonna Need It
 *[DOM]: Document Object Model
+*[SPL]: Standard PHP Library
+*[CQRS]: Command and Query Responsibility Segregation
+*[MQ]: Message Queue
