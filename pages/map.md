@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Raport #2 z prac nad DDF](../2016/04/14/raport-2-z-prac-nad-ddf.html)
    * [PHPers Silesia #8 - relacja](../2016/04/12/phpers-silesia-8-relacja.html)
    * [Debugowanie testów. Jasmine i Karma](../2016/04/07/debugowanie-testow-jasmine-i-karma.html)
    * [Typy wyjątków w JavaScript](../2016/04/05/typy-wyjatkow-w-javascript.html)
