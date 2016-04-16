@@ -48,3 +48,4 @@
 *[SPL]: Standard PHP Library
 *[CQRS]: Command and Query Responsibility Segregation
 *[MQ]: Message Queue
+*[APK]: Android Application Package
