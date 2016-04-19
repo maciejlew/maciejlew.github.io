@@ -49,3 +49,5 @@
 *[CQRS]: Command and Query Responsibility Segregation
 *[MQ]: Message Queue
 *[APK]: Android Application Package
+*[UI]: User Interface
+*[URL]: Uniform Resource Locator
