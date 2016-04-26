@@ -23,7 +23,8 @@ naszą aplikację na użytkowników którzy nie posługują się jej natywnym j�
 
 ### Biblioteka angular-gettext
 
-Biblioteka angular-gettext pozwala w łatwy sposób przystosować treść szablonów,
+[Biblioteka angular-gettext](https://angular-gettext.rocketeer.be/) 
+pozwala w łatwy sposób przystosować treść szablonów,
 dyrektyw, a nawet komunikatów generowanych w kontrolerach frameworka AngularJS do
 pracy w wielojęzycznym środowisku.
 
