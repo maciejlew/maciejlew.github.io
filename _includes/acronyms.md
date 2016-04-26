@@ -51,3 +51,7 @@
 *[APK]: Android Application Package
 *[UI]: User Interface
 *[URL]: Uniform Resource Locator
+*[I18N]: Internationalization
+*[PO]: Portable Object
+*[POT]: Portable Object Template
+*[W3C]: World Wide Web Consortium

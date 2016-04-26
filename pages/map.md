@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [I18N z angular-gettext](../2016/04/26/i18n-z-angularjs-gettext.html)
    * [Powiadomienia w Ionic Framework](../2016/04/19/powiadomienia-w-ionic-framework.html)
    * [Apache Cordova, Ionic Framework i starsze wersje Androida](../2016/04/16/apache-cordova-ionic-framework-i-starsze-wersje-androida.html)
    * [Raport #2 z prac nad DDF](../2016/04/14/raport-2-z-prac-nad-ddf.html)
