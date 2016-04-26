@@ -16,11 +16,10 @@ I18N aplikacji może być niemałym problemem jeśli się o niej nie pomyśli za
 W tym wpisie dowiesz się jak można przeprowadzić łatwo i przyjemnie **proces 
 internacjonalizacji w AngularJS**.
 
-Internacjonalizacja jest, [cytując za W3C](https://www.w3.org/International/questions/qa-i18n#i18n),
-
-> projektowaniem i rozwijaniem produktów, aplikacji, 
-> lub treści dokumentów, które umożliwiają łatwą lokalizację dla odbiorców 
-> docelowych, którzy różnią się co do kultury, regionu, lub języka.
+Internacjonalizacja to takie przygotowanie aplikacji, aby jej późniejsze 
+przystosowanie dla odbiorców posługujących się innym językiem było jak najłatwiejsze
+i jak najbardziej ustandaryzowane w ramach aplikacji. Dzięki I18N możemy otworzyć 
+naszą aplikację na użytkowników którzy nie posługują się jej natywnym językiem.
 
 ### Biblioteka angular-gettext
 
