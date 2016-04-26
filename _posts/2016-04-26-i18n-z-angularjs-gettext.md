@@ -121,7 +121,7 @@ Jeśli nasz tekst znajduje się już w innym znaczniku nie musimy wprowadzać ko
 
 Innym pomysłem może być **użycie filtru translate**:
 
-    {{ 'sentence to translate' | translate }}
+    {{ "{{ 'sentence to translate' | translate " }}}}
 
 Możemy także przygotować własną dyrektywę wspierającą tłumaczenia:
 
