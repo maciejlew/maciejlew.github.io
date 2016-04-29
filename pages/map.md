@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Podróż na wschód - roadmap z MoSCoW](../2016/04/29/podroz-na-wschod-roadmap-z-moscow.html)
    * [I18N z angular-gettext](../2016/04/26/i18n-z-angularjs-gettext.html)
    * [Powiadomienia w Ionic Framework](../2016/04/19/powiadomienia-w-ionic-framework.html)
    * [Apache Cordova, Ionic Framework i starsze wersje Androida](../2016/04/16/apache-cordova-ionic-framework-i-starsze-wersje-androida.html)
