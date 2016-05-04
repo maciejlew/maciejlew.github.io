@@ -43,6 +43,8 @@ znajduje się w zbiorze czy też jej tam nie ma. Poniżej przedstawiam implement
 dla opisanego na wstępie problemu w DDF:
 
 {% gist 74db81244ff491dde85d %}
+{% capture gist_id %}74db81244ff491dde85d{% endcapture %}
+{% include gist-noscript.md %}
 
 Wstępne uporządkowanie zapewnia nam implementacja klasy DoseComplexParameters.
 **Algorytm umieszczony jest w metodzie *calculateDose***. Zaczynamy od ustawienia
@@ -64,6 +66,8 @@ rodzaj interpolacji wielomianowej. Wyznaczymy funkcję interpolacyjną, obliczaj
 parametry **a** i **b** z dwóch punktów najbliższych szukanej wadze.
 
 {% gist 076a91fe3bfa698f2aef %}
+{% capture gist_id %}076a91fe3bfa698f2aef{% endcapture %}
+{% include gist-noscript.md %}
 
 Dodaliśmy zmienną przechowującą współrzędną iks najbliższego punktu po lewej.
 Zmieniliśmy także blok alternatywy w przypadku gdy nie dało się odnaleźć wagi w

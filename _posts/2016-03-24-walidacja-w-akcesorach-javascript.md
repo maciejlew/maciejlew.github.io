@@ -46,6 +46,8 @@ ale prędzej czy później ktoś z niewiedzy lub z wyrafinowaniem to wykorzysta 
 w taki sposób w jaki byśmy chcieli.
 
 {% gist a2eb3798ec6867adc675 %}
+{% capture gist_id %}a2eb3798ec6867adc675{% endcapture %}
+{% include gist-noscript.md %}
  
 #### Enkapsulacja pól obiektów
 
@@ -53,6 +55,8 @@ Dobrym pomysłem jest próba enkapsulacji pól klas jako pól pseudo prywatnych 
 utworzenie dla nich setterów i getterów:
 
 {% gist b9e745708bff98539826 %}
+{% capture gist_id %}b9e745708bff98539826{% endcapture %}
+{% include gist-noscript.md %}
 
 W tej chwili ustawiamy stan obiektu przy pomocy setterów. Co prawda nadal możliwe
 jest przypisanie wartości o typach z poza dziedziny oraz bezpośredni dostęp do pól,
@@ -62,6 +66,8 @@ dokonać walidacji.
 #### Walidacja w setterach
 
 {% gist ce9d59ad88ec7cbc9449 %}
+{% capture gist_id %}ce9d59ad88ec7cbc9449{% endcapture %}
+{% include gist-noscript.md %}
 
 W tym przykładzie settery zostały rozbudowane o dodatkową walidację. Przekazywane
 do setterów wartości są przypisywane do pól obiektu tylko wtedy gdy przejdą przez

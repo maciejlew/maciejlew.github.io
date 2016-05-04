@@ -26,7 +26,8 @@ przygotować swoje zestawy leków.
 Zestawy leków opisywane będą w plikach o następującej strukturze:
 
 {% gist aaef76a1781717f15743 %}
-
+{% capture gist_id %}aaef76a1781717f15743{% endcapture %}
+{% include gist-noscript.md %}
 
 ## Dane o leku, dawkowanie
 
@@ -44,18 +45,24 @@ ogólnie:
 **y(x) = a * x + b** 
 
 {% gist df0aef76b78203fc2034 %}
+{% capture gist_id %}df0aef76b78203fc2034{% endcapture %}
+{% include gist-noscript.md %}
 
 jednak być może ktoś chciałby stworzyć bardziej wyrafinowane zależności, jak: 
 
 **y_min(x) = a_min * x + b; y_max(x) = a_max * x + b**
 
 {% gist bbb28441759d7262922d %}
+{% capture gist_id %}bbb28441759d7262922d{% endcapture %}
+{% include gist-noscript.md %}
 
 lub nawet:
 
 **y_1 = a_1; y_2 = a_2; ...; y_n = a_n**
 
 {% gist 35eaf86339e6fad33e14 %}
+{% capture gist_id %}35eaf86339e6fad33e14{% endcapture %}
+{% include gist-noscript.md %}
 
 Te wszystkie typy opisów zamierzam obsługiwać w DDF.
 

@@ -191,7 +191,8 @@ p a {
     
 }
 
-#suspension {
+#suspension,
+noscript.gist > div {
     width: 100%;
     background-color: orange;
     border: 2px solid red;
