@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Jak robić dobry changelog?](../2016/05/04/jak-robic-dobry-changelog.html)
    * [MoSCoW dla Drug Dose Framework](../2016/05/04/moscow-dla-drug-dose-framework.html)
    * [Podróż na wschód - roadmap z MoSCoW](../2016/04/29/podroz-na-wschod-roadmap-z-moscow.html)
    * [I18N z angular-gettext](../2016/04/26/i18n-z-angularjs-gettext.html)
