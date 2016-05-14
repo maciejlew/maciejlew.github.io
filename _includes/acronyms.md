@@ -58,3 +58,6 @@
 *[PDF]: Portable Document Format
 *[MoSCoW]: Must Should Could Won't
 *[MUST]: Minimum Usable SubseT
+*[QM]: Quality Meetup
+*[CDT]: Context-Driven Testing
+*[XXE]: XML eXternal Entities

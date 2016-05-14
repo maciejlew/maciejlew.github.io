@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Quality Meetup #8](../2016/05/14/quality-meetup-8.html)
    * [Przykład dobrego changeloga](../2016/05/11/przyklad-dobrego-changeloga.html)
    * [Zmiana języka 'on the fly' w Ionic i angular-gettext](../2016/05/10/zmiana-jezyka-on-the-fly-w-ionic-i-angular-gettext.html)
    * [Jak robić dobry changelog?](../2016/05/04/jak-robic-dobry-changelog.html)
