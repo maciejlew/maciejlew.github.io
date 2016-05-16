@@ -24,7 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
-   * [JSHint - jakość kodu JS pod kontrolą](../2016/05/14/jshint-jakosc-kodu-js-pod-kontrola.html)
+   * [JSHint - jakość kodu JS pod kontrolą](../2016/05/16/jshint-jakosc-kodu-js-pod-kontrola.html)
    * [Quality Meetup #8](../2016/05/14/quality-meetup-8.html)
    * [Przykład dobrego changeloga](../2016/05/11/przyklad-dobrego-changeloga.html)
    * [Zmiana języka 'on the fly' w Ionic i angular-gettext](../2016/05/10/zmiana-jezyka-on-the-fly-w-ionic-i-angular-gettext.html)
