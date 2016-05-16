@@ -178,7 +178,7 @@ JSHint][6]. Pozwoli to namierzyć kawałek kodu który odpowiedzialny jest za
 przygotowanie komunikatu. Po krótkiej analizie okazuje się że nie ma opcji 
 pozwalającej na wyłączenie tego ostrzeżenia.
 
-#### Fałsze ostrzeżenia o brakujących kasach
+#### Fałszywe ostrzeżenia o brakujących kasach
 
 Czasami dla lepszej czytelności kodu wynosimy definicje klas do osobnych plików,
 a wykorzystujemy je w zupełnie innych częściach aplikacji, w innych plikach.
