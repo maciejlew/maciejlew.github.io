@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Code Coverage w Karma](../2016/05/18/code-coverage-w-karma.html)
    * [JSHint - jakość kodu JS pod kontrolą](../2016/05/16/jshint-jakosc-kodu-js-pod-kontrola.html)
    * [Quality Meetup #8](../2016/05/14/quality-meetup-8.html)
    * [Przykład dobrego changeloga](../2016/05/11/przyklad-dobrego-changeloga.html)
