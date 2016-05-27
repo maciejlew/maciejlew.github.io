@@ -26,7 +26,7 @@ redirect_from: /map/
  * [Blog informatyczny](../blog)
    * [Tłumaczenie atrybutów w angular-gettext](../2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html)
    * [Ikony i splash screen aplikacji w Ionic Framework](../2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html)
-   * [Nie używaj String|Numer|Boolean jako konstruktorów w JavaScript!](../2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html)
+   * [Nie używaj String\|Numer\|Boolean jako konstruktorów w JavaScript!](../2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html)
    * [Code Coverage w Karma](../2016/05/18/code-coverage-w-karma.html)
    * [JSHint - jakość kodu JS pod kontrolą](../2016/05/16/jshint-jakosc-kodu-js-pod-kontrola.html)
    * [Quality Meetup #8](../2016/05/14/quality-meetup-8.html)
