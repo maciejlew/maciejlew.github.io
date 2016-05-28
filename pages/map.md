@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Szewc ze starym smartfonem chodzi](../2016/05/28/szewc-ze-starym-smartfonem-chodzi.html)
    * [Tłumaczenie atrybutów w angular-gettext](../2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html)
    * [Ikony i splash screen aplikacji w Ionic Framework](../2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html)
    * [Nie używaj String\|Numer\|Boolean jako konstruktorów w JavaScript!](../2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html)
