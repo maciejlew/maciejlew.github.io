@@ -120,16 +120,16 @@ body > header > a:focus {
 /*
 /*****************************************************************************/
 
-#main-content {
+main {
     width: 65%;
     float: right;
     padding: 0;
 }
-#main-content a {
+main a {
     color: #014390;
 }
-#main-content a:hover,
-#main-content a:focus {
+main a:hover,
+main a:focus {
     color: #e40000;
 }
 time {
@@ -151,7 +151,7 @@ hr {
     overflow: hidden;
     background-color: #fff;
 }
-#main-content .module {
+main .module {
     margin-left: 0;
 }
 .module img {
@@ -429,7 +429,7 @@ only screen and (max-device-width : 320px){
     }
     body > header,
     body > footer,
-    #main-content {
+    main {
         width: 100%;
         padding: 0.75em;
     }
@@ -437,7 +437,7 @@ only screen and (max-device-width : 320px){
     body > footer .module {
         margin-left: 0;
     }
-    #main-content .module {
+    main .module {
         margin-top: 0;
     }
     nav {
