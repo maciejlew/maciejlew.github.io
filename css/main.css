@@ -292,6 +292,12 @@ noscript.gist > div {
     width: 100%;
 }
 
+.gallery:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .galleryItem {
     padding: 5px;
     background-color: inherit;
