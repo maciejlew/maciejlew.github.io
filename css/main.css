@@ -16,11 +16,6 @@
 /*****************************************************************************/
 
 #description_module, 
-#name_module,
-#navigation_module {
-    background-color: #fff;
-}
-#description_module, 
 #name_module a {
     font-weight: 900;
     color: #c19a6b;
@@ -153,6 +148,7 @@ hr {
     padding: 1.5em;
     position: relative;
     overflow: hidden;
+    background-color: #fff;
 }
 .main-content .module {
     margin-left: 0;
