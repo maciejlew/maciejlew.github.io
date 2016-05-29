@@ -15,7 +15,7 @@
     <link href="{{ site.url }}/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header class="main-header">
+    <header>
         <div id="name_module" class="module">
             <h1>
                 <a href="/">{{ site.name }}</a>
@@ -44,6 +44,14 @@
             {{ site.description }}
         </div>
         
+        
+    </header>
+    
+    {{ content }}
+    
+    
+    <footer>
+        
         <div id="blog_module" class="module">
             <h3>Ostatnio na blogu...</h3>
             <ul>
@@ -61,9 +69,7 @@
             </a>
         </div>
         
-    </header>
-    
-    {{ content }}
+    </footer>
     
     <script src="/js/email_obfuscator.js"></script>
 </body>

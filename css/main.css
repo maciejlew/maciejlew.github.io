@@ -93,23 +93,24 @@ article p a {
 
 /*****************************************************************************/
 /*
-/* Header
+/* Header and footer
 /*
 /*****************************************************************************/
 
-.main-header {
+body > header,
+body > footer {
     width: 35%;
     float: left;
     line-height: 1.7
 }
-.main-header h1 {
+body > header h1 {
     margin: 0;
 }
-.main-header a {
+body > header a {
     font-weight: normal
 }
-.main-header a:hover,
-.main-header a:focus {
+body > header > a:hover,
+body > header > a:focus {
     color: black;
 }
 
@@ -119,16 +120,16 @@ article p a {
 /*
 /*****************************************************************************/
 
-.main-content {
+#main-content {
     width: 65%;
     float: right;
     padding: 0;
 }
-.main-content a {
+#main-content a {
     color: #014390;
 }
-.main-content a:hover,
-.main-content a:focus {
+#main-content a:hover,
+#main-content a:focus {
     color: #e40000;
 }
 time {
@@ -150,7 +151,7 @@ hr {
     overflow: hidden;
     background-color: #fff;
 }
-.main-content .module {
+#main-content .module {
     margin-left: 0;
 }
 .module img {
@@ -422,19 +423,21 @@ only screen and (max-device-width : 320px){
 /*
 /*****************************************************************************/
 
-@media (max-width: 850px) {
+@media (max-width: 980px) {
     body {
         font-size: large;
     }
-    .main-header,
-    .main-content {
+    body > header,
+    body > footer,
+    #main-content {
         width: 100%;
         padding: 0.75em;
     }
-    .main-header .module {
+    body > header .module,
+    body > footer .module {
         margin-left: 0;
     }
-    .main-content .module {
+    #main-content .module {
         margin-top: 0;
     }
     nav {
@@ -446,5 +449,19 @@ only screen and (max-device-width : 320px){
     nav a {
         margin: 0 0.75em;
     }
+    nav ul {
+        display: table;
+    }
+    nav ul li {
+        display: table-cell;
+    }
 }
 
+@media (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+    }
+}
