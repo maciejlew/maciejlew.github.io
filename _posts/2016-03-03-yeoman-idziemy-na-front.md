@@ -2,7 +2,7 @@
 layout: post
 title: "Yeoman! Idziemy na front!"
 date: 2016-03-03 19:00:00
-description: 'Konkurs "Daj się poznać 2016"'
+description: 'Yeoman - generator struktury projektów dla każdego!'
 keywords: "daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa,
 drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, yeoman,
 ionic framework, generator aplikacji"

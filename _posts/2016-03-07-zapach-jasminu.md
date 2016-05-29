@@ -2,7 +2,7 @@
 layout: post
 title: "Zapach Jaśminu"
 date: 2016-03-07 20:00:00
-description: 'Konkurs "Daj się poznać 2016"'
+description: 'Jasmine - framework do testów BDD w JavScript'
 keywords: "daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa,
 drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, yeoman,
 ionic framework, generator aplikacji, jasmine, bdd, testowanie aplikacji"

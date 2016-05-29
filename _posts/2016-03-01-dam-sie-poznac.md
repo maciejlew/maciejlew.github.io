@@ -2,7 +2,7 @@
 layout: post
 title: "Dam się poznać"
 date: 2016-03-01 16:00:00
-description: 'Konkurs "Daj się poznać 2016"'
+description: 'Konkurs Daj się poznać 2016'
 keywords: "daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa,
 drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków"
 tags:
