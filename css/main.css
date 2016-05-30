@@ -114,6 +114,10 @@ body > header > a:focus {
     color: black;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
 /*****************************************************************************/
 /*
 /* Content
@@ -157,6 +161,7 @@ main .module {
 .module img {
     max-width: 100%;
     height: auto;
+    float: left;
 }
 nav.module {
     padding-top: 1.5em;

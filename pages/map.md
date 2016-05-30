@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Raport #3 z prac nad DDF](../2016/05/30/raport-3-z-prac-nad-ddf.html)
    * [Szewc ze starym smartfonem chodzi](../2016/05/28/szewc-ze-starym-smartfonem-chodzi.html)
    * [Tłumaczenie atrybutów w angular-gettext](../2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html)
    * [Ikony i splash screen aplikacji w Ionic Framework](../2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html)
