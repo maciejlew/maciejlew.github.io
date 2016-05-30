@@ -85,14 +85,14 @@ widoki:
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-langunage-settings-1.png">
+            <a href="{{site.url}}/img/DSP2016/ddf-language-settings-1.png">
                 <img src="{{site.url}}/img/DSP2016/ddf-language-settings-1.png" alt="boczne menu prowadzące do widoku zmiany języka aplikacji"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-langunage-settings-2.png">
+            <a href="{{site.url}}/img/DSP2016/ddf-language-settings-2.png">
                 <img src="{{site.url}}/img/DSP2016/ddf-language-settings-2.png" alt="formularz zmiany języka aplikacji"/>
             </a>
         </div>
