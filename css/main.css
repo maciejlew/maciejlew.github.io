@@ -406,23 +406,33 @@ noscript.gist > div {
     transform: rotate(0deg);
 }
 
-@media only screen and (max-width: 940px),
-only screen and (max-device-widht: 940px) {
+@media only screen and (max-width: 1920px),
+only screen and (max-device-widht: 1920px) {
     .galleryItem {width: 21%;}
 }
 
-@media only screen and (max-width : 720px),
-only screen and (max-device-width : 720px){
+@media only screen and (max-width: 1280px),
+only screen and (max-device-widht: 1280px) {
     .galleryItem {width: 29.33333%;}
 }
 
-@media only screen and (max-width : 530px),
-only screen and (max-device-width : 530px){
+@media only screen and (max-width: 1024px),
+only screen and (max-device-widht: 1024px) {
     .galleryItem {width: 46%;}
 }
 
-@media only screen and (max-width : 320px),
-only screen and (max-device-width : 320px){
+@media only screen and (max-width : 980px),
+only screen and (max-device-width : 980px){
+    .galleryItem {width: 29.33333%;}
+}
+
+@media only screen and (max-width : 600px),
+only screen and (max-device-width : 600px){
+    .galleryItem {width: 46%;}
+}
+
+@media only screen and (max-width : 360px),
+only screen and (max-device-width : 360px){
     .galleryItem {width: 96%;}
     .galleryItem img {width: 96%;}
     .galleryItem h3 {font-size: 18px;}
