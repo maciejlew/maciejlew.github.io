@@ -24,6 +24,7 @@ redirect_from: /map/
  * [Umiejętności](../umiejetnosci)
  * [Kontakt](../kontakt)
  * [Blog informatyczny](../blog)
+   * [Dałem się poznać](../2016/06/12/dalem-sie-poznac.html)
    * [Raport #3 z prac nad DDF](../2016/05/30/raport-3-z-prac-nad-ddf.html)
    * [Szewc ze starym smartfonem chodzi](../2016/05/28/szewc-ze-starym-smartfonem-chodzi.html)
    * [Tłumaczenie atrybutów w angular-gettext](../2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html)
