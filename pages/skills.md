@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Umiejętności LionNet"
-description: "Oferta firmy lion.net.pl. Systemy informatyczne."
+description: "Oferta firmy LionNet. Systemy informatyczne. Oprogramowanie dla ISP. Rozwój LMS."
 keywords: "oop, tdd, wzorce projektowe, programowanie wielowątkowe, technologie 
 web, sieci komputerowe"
 permalink: /umiejetnosci/

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Pluginy dla Lan Management System"
-description: "Gotowe pluginy dla systemu Lan Management System"
+description: "Gotowe pluginy dla systemu Lan Management System, dostępne w ofercie LionNet"
 keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe, dodatki, 
 komponenty, LMS GIT, LMS INET, pluginy, lista umów, lista kończących się umów,
 lista zobowiązań, lista kończących się zobowiązań, logi programu Exim, logi 

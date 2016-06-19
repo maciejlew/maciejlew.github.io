@@ -2,7 +2,7 @@
 layout: post
 title: "Jak robić dobry changelog?"
 date: "2016-05-05 22:15:00"
-description: 'Jak przygotować dobry dziennik zmian aplikacji'
+description: 'Jak przygotować dobry dziennik zmian aplikacji, jak prowadzić changelog'
 keywords: "daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa,
 drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków,
 markdown, changelog, dziennik zmian, numeracja wersji"
