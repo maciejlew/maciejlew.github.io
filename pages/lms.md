@@ -8,6 +8,15 @@ przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
 druki wpłat"
 permalink: /lan-management-system/
 redirect-from: /lms/
+type: CollectionPage
+date: "2015-05-04 21:50:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /lan-management-system/
+    title: Lan Management System
+    type: CollectionPage
 ---
 
 {% include suspension.md %}

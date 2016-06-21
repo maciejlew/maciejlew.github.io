@@ -7,6 +7,21 @@ przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
 druki wpłat, uokik, umowa w lokalu, umowa poza lokalem, odstąpienie od umowy
 telekomunikacja, internet"
 permalink: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
+type: ItemPage
+date: "2015-10-18 12:25:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /lan-management-system/
+    title: "Lan Management System"
+    type: CollectionPage
+  - url: /lan-management-system/szablony-dokumentow/
+    title: "Szablony dokumentów"
+    type: CollectionPage
+  - url: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
+    title: "Szablon odstąpienia od umowy zawartej poza lokalem"
+    type: ItemPage
 ---
 
 {% include suspension.md %}

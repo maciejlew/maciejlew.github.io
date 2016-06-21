@@ -6,6 +6,15 @@ keywords: "oop, tdd, wzorce projektowe, programowanie wielowątkowe, technologie
 web, sieci komputerowe"
 permalink: /umiejetnosci/
 redirect_from: /skills/
+type: ProfilePage
+date: "2014-06-28 19:01:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /umiejetnosci/
+    title: "Umiejętności"
+    type: ProfilePage
 ---
 
 ### Posiadam ponad {{ site.time|date:'%Y'|minus:2010 }}-letnie doświadczenie w tworzeniu systemów informatycznych

@@ -4,6 +4,21 @@ title: "Lista kończących się umów w LMS"
 description: "kończące się umowy, kończące się zobowiązania, marketing w lms, 
 pluginy dla lms"
 permalink: /lan-management-system/pluginy/konczace-sie-umowy/
+type: ItemPage
+date: "2015-09-30 20:04:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /lan-management-system/
+    title: "Lan Management System"
+    type: CollectionPage
+  - url: /lan-management-system/pluginy/
+    title: "Pluginy"
+    type: CollectionPage
+  - url: /lan-management-system/pluginy/konczace-sie-umowy/
+    title: "Lista kończących się umów"
+    type: ItemPage
 ---
 
 {% include suspension.md %}

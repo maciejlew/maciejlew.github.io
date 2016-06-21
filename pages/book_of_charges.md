@@ -7,6 +7,21 @@ platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty,
 przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
 druki wpłat"
 permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
+type: ItemPage
+date: "2015-08-02 15:39:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /lan-management-system/
+    title: "Lan Management System"
+    type: CollectionPage
+  - url: /lan-management-system/szablony-dokumentow/
+    title: "Szablony dokumentów"
+    type: CollectionPage
+  - url: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
+    title: "Książeczka opłat"
+    type: ItemPage
 ---
 
 {% include suspension.md %}

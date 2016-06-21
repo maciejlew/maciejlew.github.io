@@ -7,6 +7,15 @@ programista PHP, platformy VoIP, LMS GIT, LMS INET, blog informatyczny, administ
 serwerami, oprogramowanie dla ISP"
 permalink: /mapa/
 redirect_from: /map/
+type: CollectionPage
+date: "2015-08-01 23:25:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /mapa/
+    title: "Mapa strony"
+    type: CollectionPage
 ---
 
  * [O mnie](../)

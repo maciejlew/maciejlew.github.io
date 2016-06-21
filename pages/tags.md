@@ -4,6 +4,18 @@ title: "Kategorie wpisów na blogu LionNet"
 description: "OOP, LMS, QA, BLOG, object orientet programming, lan management system,
 quality assurance"
 permalink: /blog/tags/
+type: CollectionPage
+date: "2016-02-14 18:27:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/tags/
+    title: "Kategorie wpisów"
+    type: CollectionPage
 ---
 
 ### Kategorie

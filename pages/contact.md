@@ -6,6 +6,15 @@ keywords: "programowanie, firma programistyczna, branża IT, lan management syst
 LMS GIT, LMS INET, programista PHP, administrator Linuks"
 permalink: /kontakt/
 redirect_from: /contact/
+type: ContactPage
+date: "2014-06-28 19:01:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /kontakt/
+    title: "Kontakt"
+    type: ContactPage
 ---
 
 {% include suspension.md %}

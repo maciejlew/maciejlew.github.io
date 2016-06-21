@@ -6,6 +6,21 @@ keywords: "LMS, Lan Management System, sieci LAN, LMS GIT, LMS INET, wezwanie do
 przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty,
 druki wpłat, uokik, umowa w lokalu, umowa poza lokalem"
 permalink: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
+type: ItemPage
+date: "2015-10-17 12:30:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /lan-management-system/
+    title: "Lan Management System"
+    type: CollectionPage
+  - url: /lan-management-system/szablony-dokumentow/
+    title: "Szablony dokumentów"
+    type: CollectionPage
+  - url: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
+    title: "Szablon informacji do umowy zawartej poza lokalem"
+    type: ItemPage
 ---
 
 {% include suspension.md %}

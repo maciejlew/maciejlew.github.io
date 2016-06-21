@@ -2,16 +2,18 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
+    <title>{{ page.title }}</title>
     <meta name="robots" content="index,follow"/> 
     <meta name="revisit-after" content="1 days"/>        
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta name="HandheldFriendly" content="True"/>
     <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="{{ page.description }}"/>
     <meta name="keywords" content="{{ page.keywords }}"/>
     <meta name="author" content="Maciej Lew"/>
     <link rel="stylesheet" href="/css/main.css" type='text/css'>
     <link href="{{ site.url }}/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
-    {% seo %}
+    {% include json-ld.md %}
 </head>
 <body>
     <header>

@@ -7,6 +7,18 @@ komponenty, LMS GIT, LMS INET, pluginy, lista umów, lista kończących się um�
 lista zobowiązań, lista kończących się zobowiązań, logi programu Exim, logi 
 programu pocztowego, wysłane faktury"
 permalink: /lan-management-system/pluginy/
+type: CollectionPage
+date: "2015-08-02 15:39:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /lan-management-system/
+    title: "Lan Management System"
+    type: CollectionPage
+  - url: /lan-management-system/pluginy/
+    title: "Pluginy"
+    type: CollectionPage
 ---
 
 {% include suspension.md %}

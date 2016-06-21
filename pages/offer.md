@@ -7,6 +7,15 @@ keywords: "LMS, Lan Management System, sieci LAN, programowanie webowe,
 programista PHP, platformy VoIP, LMS GIT, LMS INET"
 permalink: /oferta/
 redirect_from: /offer/
+type: AboutPage
+date: "2014-06-28 19:01:00"
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /oferta/
+    title: "Oferta"
+    type: AboutPage
 ---
 
 {% include suspension.md %}

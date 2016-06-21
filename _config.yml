@@ -6,6 +6,14 @@ disqus-id: lionnetpl
 email: maciej.lew.1987 [at] gmail.com
 github: maciejlew
 timezone: Europe/Warsaw
+date: "2014-06-19"
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
