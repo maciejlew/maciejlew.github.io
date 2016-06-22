@@ -7,6 +7,16 @@ keywords: "LMS, Lan Management System, rozwój Lan Management System, dodatki,
 komponenty, LMS GIT, LMS INET, wezwania do zapłaty, odsetki ustawowe, korekty faktur"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/wezwania-do-zaplaty-nowe-funkcje.html
+    title: "Wezwania do zapłaty - nowe funkcje"
+    type: BlogPosting
 ---
 
 [Szablon wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)

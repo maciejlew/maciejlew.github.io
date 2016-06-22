@@ -7,6 +7,16 @@ keywords: "LMS, Lan Management System, problemy w LMS, rozwój LMS, LMS GIT, rou
 systemy pluginów, moduły w LMS"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/routing-w-lms.html
+    title: "Routing w LMS"
+    type: BlogPosting
 ---
 
 W tym wpisie postaram się przedstawić **jak działa routing w LMS**, czyli jak to się 

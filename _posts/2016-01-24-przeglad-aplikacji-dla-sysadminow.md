@@ -6,6 +6,16 @@ description: "Znane i mniej znane aplikacje pomocne w codziennej pracy sysadmina
 keywords: "aplikacje do zarządzania siecią komputerową, aplikacje dla it"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/przeglad-aplikacji-dla-sysadminow.html
+    title: "Przegląd aplikacji dla sysadminów"
+    type: BlogPosting
 ---
 
 Jakiś czas temu natrafiłem w czeluściach Internetu na ciekawą 

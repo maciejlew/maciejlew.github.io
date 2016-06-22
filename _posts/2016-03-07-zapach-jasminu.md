@@ -9,6 +9,16 @@ ionic framework, generator aplikacji, jasmine, bdd, testowanie aplikacji"
 tags:
 - DSP2016
 - JS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/zapach-jasminu.html
+    title: "Zapach Jaśminu"
+    type: BlogPosting
 ---
 
 Postanowiłem, aby uniknąć w przyszłości nieprzyjemnych zapachów w mojej aplikacji

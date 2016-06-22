@@ -10,6 +10,16 @@ must have, should have, could have, wont have, minimum usable subset, markdown"
 tags:
 - DSP2016
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/podroz-na-wschod-roadmap-z-moscow.html
+    title: "Podróż na wschód - roadmap z MoSCoW"
+    type: BlogPosting
 ---
 
 Nawet w najprostszych projektach warto spisać raport z założonych wymagań, tzw. roadmap.

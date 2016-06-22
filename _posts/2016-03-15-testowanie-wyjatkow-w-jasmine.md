@@ -12,6 +12,16 @@ tags:
 - DDF
 - OOP
 - QA
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/testowanie-wyjatkow-w-jasmine.html
+    title: "Testowanie wyjątków w Jasmine"
+    type: BlogPosting
 ---
 
 Czasami jest tak źle, że aż chce się rzucić mięsem... eee, tzn. wyjątkiem. Dobrze

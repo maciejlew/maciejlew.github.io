@@ -11,6 +11,16 @@ tags:
 - DSP2016
 - DDF
 - JS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/zmiana-jezyka-on-the-fly-w-ionic-i-angular-gettext.html
+    title: "Zmiana języka 'on the fly' w Ionic i angular-gettext"
+    type: BlogPosting
 ---
 
 Pisałem niedawno o [wdrażaniu I18N w aplikacji][1]. Tym razem pokaże jak zrobić 

@@ -10,6 +10,16 @@ tags:
 - DDF
 - JS
 - QA
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/debugowanie-testow-jasmine-i-karma.html
+    title: "Debugowanie testów. Jasmine i Karma"
+    type: BlogPosting
 ---
 
 W tym wpisie przedstawię jak uruchomić przy pomocy środowiska Karma testy napisane

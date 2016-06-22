@@ -12,6 +12,16 @@ tags:
 - DDF
 - OOP
 - QA
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/raport-2-z-prac-nad-ddf.html
+    title: "Raport #2 z prac nad DDF"
+    type: BlogPosting
 ---
 
 Konkurs DSP2016 jest już na półmetku. Czas po raz kolejny pochwalić się postępami

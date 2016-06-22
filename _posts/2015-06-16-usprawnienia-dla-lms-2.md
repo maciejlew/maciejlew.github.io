@@ -8,6 +8,16 @@ RADIUS accounting, załączniki do dokumentów w LMS, noty obciążeniowe w LMS,
 terminarz w LMS, wezwania do zapłaty, promocje w LMS"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/usprawnienia-dla-lms-2.html
+    title: "Usprawnienia dla LMS, część 2"
+    type: BlogPosting
 ---
 
 Kolejny etap prac nad rozwojem LMS za mną, stworzyłem kilka nowych rozwiązań, poprawiłem

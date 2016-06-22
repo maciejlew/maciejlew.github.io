@@ -11,6 +11,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/tlumaczenie-atrybutow-html-w-angular-gettext.html
+    title: "Tłumaczenie atrybutów w angular-gettext"
+    type: BlogPosting
 ---
 
 W [mojej aplikacji][1] wykorzystuję [bibliotekę angular-gettext][2] w celu zapewnienia 

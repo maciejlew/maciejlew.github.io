@@ -13,6 +13,16 @@ tags:
 - DDF
 - OOP
 - QA
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/walidacja-w-akcesorach-javascript.html
+    title: "Walidacja w akcesorach JavaScript"
+    type: BlogPosting
 ---
 
 Chciałbym poruszyć, dość banalny jak mogłoby się wydawać, temat jakim jest walidacja

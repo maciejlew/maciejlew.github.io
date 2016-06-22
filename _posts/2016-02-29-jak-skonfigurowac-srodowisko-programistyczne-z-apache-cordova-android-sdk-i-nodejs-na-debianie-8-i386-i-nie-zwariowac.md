@@ -6,6 +6,16 @@ description: "Opis konfiguracji środowiska składającego się z Apache Cordova
 keywords: "apache cordova, nodejs, środowisko programistyczne, debian, wirtualizacja"
 tags:
 - JS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/jak-skonfigurowac-srodowisko-programistyczne-z-apache-cordova-android-sdk-i-nodejs-na-debianie-8-i386-i-nie-zwariowac.html
+    title: "Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować"
+    type: BlogPosting
 ---
 
 Opiszę pokrótce jak skonfigurowałem sobie środowisko programistyczne na moim 

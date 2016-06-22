@@ -7,6 +7,16 @@ keywords: "LMS, Lan Management System, pluginy, wzorce projektowe, rozbudowa LMS
 uprawnienia w LMS, bugi w LMS, masowa wysyłka SMS, szablony faktur, terminarz w LMS"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/usprawnienia-dla-lms-3.html
+    title: "Usprawnienia dla LMS, część 3"
+    type: BlogPosting
 ---
 
 W ciągu ostatniego miesiąca udało mi się zakończyć takie zlecenia dotyczące LMS:

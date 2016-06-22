@@ -10,6 +10,16 @@ tags:
 - JS
 - DDF
 - DSP2016
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/code-coverage-w-karma.html
+    title: "Code Coverage w Karma"
+    type: BlogPosting
 ---
 
 Raporty pokrycia kodu testami jednostkowymi pozwalają szybko i przyjemnie przeanalizować

@@ -11,6 +11,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/szewc-ze-starym-smartfonem-chodzi.html
+    title: "Szewc ze starym smartfonem chodzi"
+    type: BlogPosting
 ---
 
 Zawsze uważałem, że telefon powinien służyć do tego do czego został stworzony, 

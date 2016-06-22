@@ -8,6 +8,16 @@ LMS GIT, refaktoryzacja, zmienne globalne, LMS GIT, rozwój LMS"
 tags:
 - LMS
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/lmsconfig-nowy-system-zarzadzania-konfiguracja-lms.html
+    title: "LMSConfig - nowy system zarządzania konfiguracją LMS"
+    type: BlogPosting
 ---
 
 Z głównej gałęzi LMS na GitHubie można już pobierać LMS w wersji, w której stara

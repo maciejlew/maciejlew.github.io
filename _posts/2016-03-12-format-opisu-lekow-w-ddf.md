@@ -10,6 +10,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/format-opisu-lekow-w-ddf.html
+    title: "Format opisu leków w DDF"
+    type: BlogPosting
 ---
 
 Na potrzeby [aplikacji DDF]({{site.url}}/2016/03/01/dam-sie-poznac.html) 

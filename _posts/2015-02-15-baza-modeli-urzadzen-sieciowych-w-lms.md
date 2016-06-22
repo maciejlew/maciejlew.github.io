@@ -7,6 +7,16 @@ keywords: "LMS, Lan Management System, urządzenia sieciowe, MikroTik, Ubiquiti,
 rozwój LMS, lista modeli urządzeń sieciowych, routery, switche"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/baza-modeli-urzadzen-sieciowych-w-lms.html
+    title: "Baza modeli urządzeń sieciowych w LMS"
+    type: BlogPosting
 ---
 
 Dodałem do głównej gałęzi LMS **możliwość przechowywania w bazie danych LMS nazw 

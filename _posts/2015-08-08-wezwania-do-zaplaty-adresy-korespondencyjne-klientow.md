@@ -8,6 +8,16 @@ komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do za
 ostateczne przedsądowe wezwanie do zapłaty"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/wezwania-do-zaplaty-adresy-korespondencyjne-klientow.html
+    title: "Wezwania do zapłaty - adresy korespondencyjne klientów"
+    type: BlogPosting
 ---
 
 Rozbudowałem szablony [wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty) 

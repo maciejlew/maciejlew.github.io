@@ -7,6 +7,16 @@ keywords: "LMS, Lan Management System, problemy w LMS, rozwój LMS, lista dyskus
 LMS GIT, Jambox, Hiperus, pluginy do LMS"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/lms-co-dalej.html
+    title: "LMS - co dalej?"
+    type: BlogPosting
 ---
 
 W ciągu kliku ostatnich tygodni na grupie dyskusyjnej LMS mogliśmy obserwować 

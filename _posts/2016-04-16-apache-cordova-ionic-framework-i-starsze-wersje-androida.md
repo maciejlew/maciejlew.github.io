@@ -10,6 +10,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/apache-cordova-ionic-framework-i-starsze-wersje-androida.html
+    title: "Apache Cordova, Ionic Framework i starsze wersje Androida"
+    type: BlogPosting
 ---
 
 Stanąłem dziś przed problemem wgrania mojej aplikacji stworzonej w Ionic Framework

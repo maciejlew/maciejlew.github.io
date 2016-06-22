@@ -6,6 +6,16 @@ description: "Start bloga na lion.net.pl"
 keywords: "blog, Jekyll, GitHub Pages, block-log template, systemy blogowe"
 tags:
 - BLOG
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/ready-steady-blog.html
+    title: "Ready, steady, blog"
+    type: BlogPosting
 ---
 
 Jakiś czas temu natrafiłem na GitHub na informacje o [GitHub Pages](https://pages.github.com/)

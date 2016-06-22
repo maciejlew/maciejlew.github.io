@@ -8,6 +8,16 @@ keywords: "quality meetup, context-driven testing, cdt, testy bezpieczeństwa,
 bash shellshock, xml external entities, quality excites"
 tags:
 - QA
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/quality-meetup-8.html
+    title: "Quality Meetup #8"
+    type: BlogPosting
 ---
 
 Minęło trochę czasu od [poprzedniego spotkania Quality Meetup][1] na Śląsku. 

@@ -6,6 +6,16 @@ description: "Relacja z SpreadIT 2015"
 keywords: "SpreadIT 2015, konferencja IT, relacja"
 tags:
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/spreadit-2015-relacja.html
+    title: "SpreadIT 2015 - relacja"
+    type: BlogPosting
 ---
 
 Miałem przyjemność wziąć udział na konferencji SpreadIT jako jeden z jej 600 

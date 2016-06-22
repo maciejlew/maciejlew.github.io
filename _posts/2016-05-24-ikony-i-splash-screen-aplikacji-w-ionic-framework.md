@@ -8,6 +8,16 @@ tags:
 - JS
 - DDF
 - DSP2016
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/ikony-i-splash-screen-aplikacji-w-ionic-framework.html
+    title: "Ikony i splash screen aplikacji w Ionic Framework"
+    type: BlogPosting
 ---
 
 Przygotowanie ikony aplikacji i jej "splash screena" w Ionic Framework jest bardzo 

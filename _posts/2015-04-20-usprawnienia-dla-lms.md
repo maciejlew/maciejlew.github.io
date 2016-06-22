@@ -8,6 +8,16 @@ zawieszenia blokowania, szablony dokumentów, Adescom plugin dla LMS, lista koń
 się umów, lista kończących się zobowiązań"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/usprawnienia-dla-lms.html
+    title: "Usprawnienia dla LMS"
+    type: BlogPosting
 ---
 
 Zakończyłem kolejny etap prac dla jednego z moich klientów. 

@@ -12,6 +12,16 @@ tags:
 - DDF
 - DSP2016
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html
+    title: "Nie używaj String|Numer|Boolean jako konstruktorów w JavaScript!"
+    type: BlogPosting
 ---
 
 Śmieszne może się wydawać to że w języku obiektowym (czy też prototypowanym) jest 

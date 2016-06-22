@@ -7,6 +7,16 @@ keywords: "php, frameworki, strony internetowe, zaśmiecacze internetu, blogi,
 strony wizytówki"
 tags:
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/dlaczego-wiekszosc-stron-nie-powinna-miec-podlaczonego-micro-frameworka.html
+    title: "Dlaczego większość stron nie powinna mieć podłączonego (micro) frameworka?"
+    type: BlogPosting
 ---
 
 Ten post jest polemiką z artykułem który ostatnio znalazłem na Planecie PHP - 

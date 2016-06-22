@@ -10,6 +10,16 @@ tags:
 - JS
 - DDF
 - DSP2016
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/jshint-jakosc-kodu-js-pod-kontrola.html
+    title: "JSHint - jakość kodu JS pod kontrolą"
+    type: BlogPosting
 ---
 
 JavaScript pozwala na wiele. Pozwala także zrobić sobie śmietnik w aplikacji.

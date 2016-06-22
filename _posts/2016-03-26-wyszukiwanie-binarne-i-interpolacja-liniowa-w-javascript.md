@@ -9,6 +9,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/wyszukiwanie-binarne-i-interpolacja-liniowa-w-javascript.html
+    title: "Wyszukiwanie binarne i interpolacja liniowa w JavaScript"
+    type: BlogPosting
 ---
 
 Warto pamiętać o podstawowych algorytmach wpajanych już we wczesnych latach na 

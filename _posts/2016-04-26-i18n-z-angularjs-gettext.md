@@ -10,6 +10,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/i18n-z-angularjs-gettext.html
+    title: "I18N z angular-gettext"
+    type: BlogPosting
 ---
 
 I18N aplikacji może być niemałym problemem jeśli się o niej nie pomyśli zawczasu.

@@ -8,6 +8,16 @@ unit testing, jakość oprogramowania, serwer ciągłej integracji, testy jednos
 tags:
 - QA
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/konfiguracja-serwera-ci-dla-lms.html
+    title: "Serwer CI dla LMS"
+    type: BlogPosting
 ---
 
 Napisałem ten krótki opis konfiguracji serwera CI dla LMS w celu ułatwienia 

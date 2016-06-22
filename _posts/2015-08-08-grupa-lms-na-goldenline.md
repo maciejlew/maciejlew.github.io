@@ -8,6 +8,16 @@ związane z Lan Management System, administratorzy sieci komputerowych, firmy
 telekomunikacyjne, internet service providers, rynek telekomunikacyjny"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/grupa-lms-na-goldenline.html
+    title: "Grupa LMS na Goldenline"
+    type: BlogPosting
 ---
 
 Jakiś czas temu założyłem w serwisie dla poszukujących pracy, pracodawców i rekruterów

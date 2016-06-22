@@ -9,6 +9,16 @@ markdown, changelog, dziennik zmian, numeracja wersji"
 tags:
 - DSP2016
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/przyklad-dobrego-changeloga.html
+    title: "Przykład dobrego changeloga"
+    type: BlogPosting
 ---
 
 Po wstępie do [tematu tworzenia dobrych changelogów][1] przyszedł czas na praktyczny

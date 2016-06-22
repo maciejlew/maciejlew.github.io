@@ -8,6 +8,16 @@ keywords: "quality meetup, continous integration, selenium grid, śląska karta 
 kontenery docker, ciągła integracja, testy akceptacyjne, testy integracyjne"
 tags:
 - QA
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/quality-meetup-7.html
+    title: "Quality Meetup #7"
+    type: BlogPosting
 ---
 
 Z powodu coraz większego nacisku na testy integracyjne w projektach w których biorę

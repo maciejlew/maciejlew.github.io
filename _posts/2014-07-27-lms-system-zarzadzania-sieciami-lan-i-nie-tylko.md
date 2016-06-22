@@ -7,6 +7,16 @@ keywords: "LMS, opis systemu LMS, sieci osiedlowe, dostawcy internetu, systemy C
 zarządzanie siecią LAN, system zarządzania siecią, LMS GIT"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html
+    title: "LMS - system zarządzania sieciami LAN i nie tylko"
+    type: BlogPosting
 ---
 
 Wpis ten będzie dotyczył systemu LMS jako całości. Z jego lektury dowiesz

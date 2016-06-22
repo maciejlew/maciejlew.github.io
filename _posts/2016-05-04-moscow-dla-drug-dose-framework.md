@@ -10,6 +10,16 @@ must have, should have, could have, wont have, minimum usable subset, markdown"
 tags:
 - DSP2016
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/moscow-dla-drug-dose-framework.html
+    title: "MoSCoW dla Drug Dose Framework"
+    type: BlogPosting
 ---
 
 Pisałem ostatnio o [zaletach metody MoSCoW][1] i o proponowanym przeze mnie szablonie

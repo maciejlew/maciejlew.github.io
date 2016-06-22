@@ -10,6 +10,16 @@ tags:
 - DSP2016
 - DDF
 - BLOG
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/dalem-sie-poznac.html
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/dalem-sie-poznac.html
+    title: "Dałem się poznać"
+    type: BlogPosting
 ---
 
 Przez ostatnie 3 miesiące mogłeś śledzić jak sobie radzę w konkursie *"Daj się 

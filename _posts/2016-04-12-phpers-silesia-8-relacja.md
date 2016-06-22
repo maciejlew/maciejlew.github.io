@@ -10,6 +10,16 @@ standard php library"
 tags:
 - PHP
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/phpers-silesia-8-relacja.html
+    title: "PHPers Silesia #8 - relacja"
+    type: BlogPosting
 ---
 
 W dniu 06.05.2016, czyli kilka dni temu, odbyło się ósme spotkanie programistów

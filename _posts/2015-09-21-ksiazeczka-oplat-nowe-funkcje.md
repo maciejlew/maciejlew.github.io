@@ -8,6 +8,16 @@ komponenty, LMS GIT, LMS INET, książeczka opłat, druki polecenia wpłaty, dru
 przelewu"
 tags:
 - LMS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/ksiazeczka-oplat-nowe-funkcje.html
+    title: "Książeczka opłat - nowe funkcje"
+    type: BlogPosting
 ---
 
 Dodałem do oferowanego przeze mnie 

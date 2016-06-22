@@ -10,6 +10,16 @@ tags:
 - DSP2016
 - JS
 - DDF
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/powiadomienia-w-ionic-framework.html
+    title: "Powiadomienia w Ionic Framework"
+    type: BlogPosting
 ---
 
 Czasem trzeba przedstawić użytkownikowi aplikacji pewien komunikat w taki sposób

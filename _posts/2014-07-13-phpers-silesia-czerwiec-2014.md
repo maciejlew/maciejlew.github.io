@@ -8,6 +8,16 @@ masowa wysyłka SMS, konferencje informatyczne"
 tags:
 - QA
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/phpers-silesia-czerwiec-2014.html
+    title: "PHPers Silesia czerwiec 2014"
+    type: BlogPosting
 ---
 
 W czerwcu tego roku miało miejsce kolejne ze spotkań śląskiej grupy programistów 

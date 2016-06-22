@@ -8,6 +8,16 @@ drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków"
 tags:
 - DSP2016
 - JS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/dam-sie-poznac.html
+    title: "Dam się poznać"
+    type: BlogPosting
 ---
 
 Ten wpis to nie anons matrymonialny. Tu chodzi o coś więcej. Jest konkurs do 

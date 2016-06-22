@@ -8,6 +8,16 @@ keywords: "stare komputery, zabytki techniki, industriada 2014, gry komputerowe,
 Atari, Macintosh, Elwro"
 tags:
 - RETRO
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/industriada-2014-wystawa-zabytkowych-komputerow.html
+    title: "Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja"
+    type: BlogPosting
 ---
 
 #### Industriada 2014

@@ -9,6 +9,16 @@ ionic framework, generator aplikacji"
 tags:
 - DSP2016
 - JS
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/yeoman-idziemy-na-front.html
+    title: "Yeoman! Idziemy na front!"
+    type: BlogPosting
 ---
 
 Idziemy na front! Trzeba się przygotować. Misja będzie trudna. Na szczęście mamy

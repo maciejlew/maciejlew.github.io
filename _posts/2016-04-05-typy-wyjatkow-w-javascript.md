@@ -9,6 +9,16 @@ tags:
 - DSP2016
 - JS
 - OOP
+breadcrumbs:
+  - url: /
+    title: "LionNet"
+    type: AboutPage
+  - url: /blog/
+    title: "Blog"
+    type: CollectionPage
+  - url: /blog/typy-wyjatkow-w-javascript.html
+    title: "Typy wyjątków w JavaScript"
+    type: BlogPosting
 ---
 
 W tym wpisie znajdziesz informacje wbudowanych w JS typach wyjątków. Przedstawię 
