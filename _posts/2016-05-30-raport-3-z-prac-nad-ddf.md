@@ -145,7 +145,7 @@ i pomysły na dalszy rozwój DDF!
 [1]: {{site.url}}/2016/05/28/szewc-ze-starym-smartfonem-chodzi.html
 [2]: {{site.url}}/2016/04/29/podroz-na-wschod-roadmap-z-moscow.html
 [3]: {{site.url}}/2016/04/26/i18n-z-angularjs-gettext.html
-[4]: {{site.url}}/2016/05/24/ikony-i-splash-screen-aplikacji-w-ionic-framework.html
+[4]: {{site.url}}/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html
 [5]: {{site.url}}/2016/04/14/raport-2-z-prac-nad-ddf.html
 [6]: {{site.url}}/2016/04/19/powiadomienia-w-ionic-framework.html
 [7]: {{site.url}}/2016/05/10/zmiana-jezyka-on-the-fly-w-ionic-i-angular-gettext.html
