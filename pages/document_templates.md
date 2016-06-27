@@ -31,9 +31,9 @@ dalszych umów, rozliczania klienta z zaległości, rozwiązywania umowy z klien
 
 Moje gotowe szablony dokumentów:
 
- * [Wezwanie do zapłaty](./szablony-dokumentow/wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](./szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
- * [Książeczka opłat](./szablony-dokumentow/ksiazeczka-oplat)
+ * [Wezwanie do zapłaty][1]
+ * [Przedsądowe wezwanie do zapłaty][2]
+ * [Książeczka opłat][3]
 
 Poza gotowymi szablonami oferuję także usługi przenoszenia istniejących szablonów 
 dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in.:
@@ -41,10 +41,15 @@ dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in
  * Umowy
  * Regulaminy
  * Protokoły zdawczo-odbiorcze
- * [Informacje do umowy zawartej poza lokalem](./szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
- * [Odstąpienie od umowy zawartej poza lokalem](./szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem)
+ * [Informacje do umowy zawartej poza lokalem][4]
+ * [Odstąpienie od umowy zawartej poza lokalem][5]
 
 Przygotowane przeze mnie szablony działają zarówno w LMS GIT jak i INET LMS.
 
 {% include acronyms.md %}
 
+[1]: {{ site.url }}{{ page.permalink }}wezwanie-do-zaplaty/
+[2]: {{ site.url }}{{ page.permalink }}przedsadowe-wezwanie-do-zaplaty/
+[3]: {{ site.url }}{{ page.permalink }}ksiazeczka-oplat/
+[4]: {{ site.url }}{{ page.permalink }}informacje-do-umowy-zawartej-poza-lokalem/
+[5]: {{ site.url }}{{ page.permalink }}odstapienie-od-umowy-zawartej-poza-lokalem/
