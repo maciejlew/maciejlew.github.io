@@ -62,3 +62,4 @@
 *[CDT]: Context-Driven Testing
 *[XXE]: XML eXternal Entities
 *[RWD]: Responsive Web Design
+*[RTG]: Zdjęcie rentgenowskie, rentgenogram

@@ -171,15 +171,21 @@ pre {
     padding: 0.4em;
 }
 blockquote {
-    position: relative;
-    border: .1em solid #ddd;
-    border-top-color: #eee;
-    border-bottom-color: #bbb;
-    padding: 1.5em;
-    background: #f2f2f2;
-    -webkit-box-shadow: 0 1px 4px #ccc, 0 5px 12px -8px #555;
-    -moz-box-shadow: 0 1px 4px #ccc, 0 5px 12px -8px #555;
-    box-shadow: 0 1px 4px #ccc, 0 5px 12px -8px #555;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
 }
 
 #suspension,
@@ -404,6 +410,11 @@ noscript.gist > div {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
+}
+
+figure img,
+figure figcaption {
+    display: inline-block;
 }
 
 @media only screen and (max-width: 1920px),
