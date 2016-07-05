@@ -75,5 +75,18 @@
     
     <script src="/js/email_obfuscator.js"></script>
     {% if page.math %}<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>{% endif %}
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//interpc.pl/~mlewinterpc/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 1]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><p><img src="//interpc.pl/~mlewinterpc/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
