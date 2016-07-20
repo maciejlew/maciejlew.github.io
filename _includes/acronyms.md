@@ -63,3 +63,4 @@
 *[XXE]: XML eXternal Entities
 *[RWD]: Responsive Web Design
 *[RTG]: Zdjęcie rentgenowskie, rentgenogram
+*[PSR]: PHP Standards Recommendations

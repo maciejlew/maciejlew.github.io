@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Małe - wielkie zmiany w NetBeans dla PHP](../2016/07/20/male-wielkie-zmiany-w-netbeans-dla-php.html)
    * [Przekształcenia morfologiczne, kontekstowe i rozmyte](../2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html)
    * [Dałem się poznać](../2016/06/12/dalem-sie-poznac.html)
    * [Raport #3 z prac nad DDF](../2016/05/30/raport-3-z-prac-nad-ddf.html)
