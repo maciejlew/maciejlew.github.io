@@ -64,3 +64,6 @@
 *[RWD]: Responsive Web Design
 *[RTG]: Zdjęcie rentgenowskie, rentgenogram
 *[PSR]: PHP Standards Recommendations
+*[GNU]: GNU's not Unix
+*[GPL]: General Public License
+*[BSD]: Berkeley Software Distribution
