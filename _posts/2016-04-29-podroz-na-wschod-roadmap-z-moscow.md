@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/podroz-na-wschod-roadmap-z-moscow.html
-    title: "Podróż na wschód - roadmap z MoSCoW"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

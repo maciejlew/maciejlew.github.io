@@ -14,9 +14,9 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/routing-w-lms.html
-    title: "Routing w LMS"
-    type: BlogPosting
+  - url: page.url
+    title: page.title
+    type: BlogPostingg
 ---
 
 W tym wpisie postaram się przedstawić **jak działa routing w LMS**, czyli jak to się 

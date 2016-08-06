@@ -13,8 +13,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/jak-skonfigurowac-srodowisko-programistyczne-z-apache-cordova-android-sdk-i-nodejs-na-debianie-8-i386-i-nie-zwariowac.html
-    title: "Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

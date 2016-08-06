@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/ksiazeczka-oplat-nowe-funkcje.html
-    title: "Książeczka opłat - nowe funkcje"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

@@ -14,8 +14,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/wezwania-do-zaplaty-nowe-funkcje.html
-    title: "Wezwania do zapłaty - nowe funkcje"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

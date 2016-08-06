@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html
-    title: "Przekształcenia morfologiczne, kontekstowe i rozmyte"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 math: true
 ---

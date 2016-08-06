@@ -51,8 +51,8 @@
                         "position": {{ forloop.index }},
                         "item": {
                             "@type": "{% if breadcrumb.type %}{{ breadcrumb.type }}{% else %}WebPage{% endif %}",
-                            "@id": "{{ site.url }}{{ breadcrumb.url }}",
-                            "name": "{{ breadcrumb.title }}"
+                            "@id": "{{ site.url }}{% if breadcrumb.url == 'page.url' %}{{ page.url }}{% else %}{{ breadcrumb.url }}{% endif %}",
+                            "name": "{% if breadcrumb.title == 'page.title' %}{{ page.title }}{% else %}{{ breadcrumb.title }}{% endif %}"
                         }
                     }{% unless forloop.last %},{% endunless %}
                 {% endfor %}]

@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/moscow-dla-drug-dose-framework.html
-    title: "MoSCoW dla Drug Dose Framework"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

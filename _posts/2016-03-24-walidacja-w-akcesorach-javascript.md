@@ -20,8 +20,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/walidacja-w-akcesorach-javascript.html
-    title: "Walidacja w akcesorach JavaScript"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

@@ -14,8 +14,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/baza-modeli-urzadzen-sieciowych-w-lms.html
-    title: "Baza modeli urządzeń sieciowych w LMS"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

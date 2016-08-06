@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/powiadomienia-w-ionic-framework.html
-    title: "Powiadomienia w Ionic Framework"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

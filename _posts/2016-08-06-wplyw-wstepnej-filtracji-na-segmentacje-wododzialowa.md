@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html
-    title: "Wpływ wstępnej filtracji na segmentację wododziałową"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

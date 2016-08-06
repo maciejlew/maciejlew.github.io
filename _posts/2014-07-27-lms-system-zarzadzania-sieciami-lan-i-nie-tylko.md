@@ -14,8 +14,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html
-    title: "LMS - system zarządzania sieciami LAN i nie tylko"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

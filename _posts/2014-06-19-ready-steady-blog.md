@@ -13,8 +13,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/ready-steady-blog.html
-    title: "Ready, steady, blog"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

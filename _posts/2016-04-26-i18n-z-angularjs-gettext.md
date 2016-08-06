@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/i18n-z-angularjs-gettext.html
-    title: "I18N z angular-gettext"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/industriada-2014-wystawa-zabytkowych-komputerow.html
-    title: "Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

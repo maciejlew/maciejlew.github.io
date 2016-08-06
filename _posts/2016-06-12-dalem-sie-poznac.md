@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/dalem-sie-poznac.html
     title: "Blog"
     type: CollectionPage
-  - url: /blog/dalem-sie-poznac.html
-    title: "Dałem się poznać"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

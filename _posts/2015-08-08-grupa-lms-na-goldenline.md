@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/grupa-lms-na-goldenline.html
-    title: "Grupa LMS na Goldenline"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

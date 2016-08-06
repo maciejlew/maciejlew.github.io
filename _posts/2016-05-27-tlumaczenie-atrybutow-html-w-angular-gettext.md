@@ -18,8 +18,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/tlumaczenie-atrybutow-html-w-angular-gettext.html
-    title: "Tłumaczenie atrybutów w angular-gettext"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

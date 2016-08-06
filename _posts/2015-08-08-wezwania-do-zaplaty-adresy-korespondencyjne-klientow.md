@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/wezwania-do-zaplaty-adresy-korespondencyjne-klientow.html
-    title: "Wezwania do zapłaty - adresy korespondencyjne klientów"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

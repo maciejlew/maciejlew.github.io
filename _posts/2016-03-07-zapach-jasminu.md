@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/zapach-jasminu.html
-    title: "Zapach Jaśminu"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

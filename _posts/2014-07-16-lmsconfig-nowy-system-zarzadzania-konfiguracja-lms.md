@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/lmsconfig-nowy-system-zarzadzania-konfiguracja-lms.html
-    title: "LMSConfig - nowy system zarządzania konfiguracją LMS"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

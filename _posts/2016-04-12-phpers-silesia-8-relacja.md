@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/phpers-silesia-8-relacja.html
-    title: "PHPers Silesia #8 - relacja"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

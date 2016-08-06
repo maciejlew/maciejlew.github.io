@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/yeoman-idziemy-na-front.html
-    title: "Yeoman! Idziemy na front!"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

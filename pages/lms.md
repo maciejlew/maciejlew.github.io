@@ -14,8 +14,8 @@ breadcrumbs:
   - url: /
     title: "LionNet"
     type: AboutPage
-  - url: /lan-management-system/
-    title: Lan Management System
+  - url: page.url
+    title: page.title
     type: CollectionPage
 ---
 

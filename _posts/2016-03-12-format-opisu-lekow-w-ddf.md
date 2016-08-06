@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/format-opisu-lekow-w-ddf.html
-    title: "Format opisu leków w DDF"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

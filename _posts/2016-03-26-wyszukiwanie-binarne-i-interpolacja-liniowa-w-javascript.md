@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/wyszukiwanie-binarne-i-interpolacja-liniowa-w-javascript.html
-    title: "Wyszukiwanie binarne i interpolacja liniowa w JavaScript"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

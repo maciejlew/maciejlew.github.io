@@ -13,8 +13,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/male-wielkie-zmiany-w-netbeans-dla-php.html
-    title: "Małe - wielkie zmiany w NetBeans dla PHP"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

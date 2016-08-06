@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/typy-wyjatkow-w-javascript.html
-    title: "Typy wyjątków w JavaScript"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

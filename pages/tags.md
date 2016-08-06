@@ -13,8 +13,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/tags/
-    title: "Kategorie wpisów"
+  - url: page.url
+    title: page.title
     type: CollectionPage
 ---
 

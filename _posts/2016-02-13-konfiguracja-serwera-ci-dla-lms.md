@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/konfiguracja-serwera-ci-dla-lms.html
-    title: "Serwer CI dla LMS"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

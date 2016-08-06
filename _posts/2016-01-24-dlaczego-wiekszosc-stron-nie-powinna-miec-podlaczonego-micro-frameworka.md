@@ -14,8 +14,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/dlaczego-wiekszosc-stron-nie-powinna-miec-podlaczonego-micro-frameworka.html
-    title: "Dlaczego większość stron nie powinna mieć podłączonego (micro) frameworka?"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

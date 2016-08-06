@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /lan-management-system/
     title: "Lan Management System"
     type: CollectionPage
-  - url: /lan-management-system/pluginy/
-    title: "Pluginy"
+  - url: page.url
+    title: page.title
     type: CollectionPage
 ---
 

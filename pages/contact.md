@@ -12,8 +12,8 @@ breadcrumbs:
   - url: /
     title: "LionNet"
     type: AboutPage
-  - url: /kontakt/
-    title: "Kontakt"
+  - url: page.url
+    title: page.title
     type: ContactPage
 ---
 

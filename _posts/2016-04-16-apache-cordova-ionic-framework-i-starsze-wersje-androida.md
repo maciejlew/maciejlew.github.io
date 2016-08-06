@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/apache-cordova-ionic-framework-i-starsze-wersje-androida.html
-    title: "Apache Cordova, Ionic Framework i starsze wersje Androida"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

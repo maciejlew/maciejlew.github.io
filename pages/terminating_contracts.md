@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /lan-management-system/pluginy/
     title: "Pluginy"
     type: CollectionPage
-  - url: /lan-management-system/pluginy/konczace-sie-umowy/
-    title: "Lista kończących się umów"
+  - url: page.url
+    title: page.title
     type: ItemPage
 ---
 

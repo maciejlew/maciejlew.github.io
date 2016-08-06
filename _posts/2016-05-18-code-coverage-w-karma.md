@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/code-coverage-w-karma.html
-    title: "Code Coverage w Karma"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

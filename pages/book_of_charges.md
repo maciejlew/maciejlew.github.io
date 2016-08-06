@@ -19,8 +19,8 @@ breadcrumbs:
   - url: /lan-management-system/szablony-dokumentow/
     title: "Szablony dokumentów"
     type: CollectionPage
-  - url: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
-    title: "Książeczka opłat"
+  - url: page.url
+    title: page.title
     type: ItemPage
 ---
 

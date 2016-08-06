@@ -18,8 +18,8 @@ breadcrumbs:
   - url: /lan-management-system/szablony-dokumentow/
     title: "Szablony dokumentów"
     type: CollectionPage
-  - url: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
-    title: "Szablon informacji do umowy zawartej poza lokalem"
+  - url: page.url
+    title: page.title
     type: ItemPage
 ---
 

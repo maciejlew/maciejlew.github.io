@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/debugowanie-testow-jasmine-i-karma.html
-    title: "Debugowanie testów. Jasmine i Karma"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

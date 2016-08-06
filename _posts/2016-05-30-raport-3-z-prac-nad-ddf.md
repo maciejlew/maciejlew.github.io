@@ -19,8 +19,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/raport-3-z-prac-nad-ddf.html
-    title: "Raport #3 z prac nad DDF"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

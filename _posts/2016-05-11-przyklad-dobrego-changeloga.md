@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/przyklad-dobrego-changeloga.html
-    title: "Przykład dobrego changeloga"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

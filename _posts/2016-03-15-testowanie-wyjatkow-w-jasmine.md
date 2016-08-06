@@ -19,8 +19,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/testowanie-wyjatkow-w-jasmine.html
-    title: "Testowanie wyjątków w Jasmine"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

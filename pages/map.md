@@ -13,8 +13,8 @@ breadcrumbs:
   - url: /
     title: "LionNet"
     type: AboutPage
-  - url: /mapa/
-    title: "Mapa strony"
+  - url: page.url
+    title: page.title
     type: CollectionPage
 ---
 

@@ -19,8 +19,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html
-    title: "Nie używaj String|Numer|Boolean jako konstruktorów w JavaScript!"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

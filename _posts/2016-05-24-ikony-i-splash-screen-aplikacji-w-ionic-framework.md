@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/ikony-i-splash-screen-aplikacji-w-ionic-framework.html
-    title: "Ikony i splash screen aplikacji w Ionic Framework"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

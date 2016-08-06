@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/quality-meetup-8.html
-    title: "Quality Meetup #8"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

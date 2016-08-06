@@ -12,8 +12,8 @@ breadcrumbs:
   - url: /
     title: "LionNet"
     type: AboutPage
-  - url: /umiejetnosci/
-    title: "Umiejętności"
+  - url: page.url
+    title: page.title
     type: ProfilePage
 ---
 

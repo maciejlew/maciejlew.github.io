@@ -15,8 +15,8 @@ breadcrumbs:
   - url: /lan-management-system/
     title: "Lan Management System"
     type: CollectionPage
-  - url: /lan-management-system/szablony-dokumentow/
-    title: "Szablony dokumentów"
+  - url: page.url
+    title: page.title
     type: CollectionPage
 ---
 

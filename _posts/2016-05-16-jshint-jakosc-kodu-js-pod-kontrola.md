@@ -17,8 +17,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/jshint-jakosc-kodu-js-pod-kontrola.html
-    title: "JSHint - jakość kodu JS pod kontrolą"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

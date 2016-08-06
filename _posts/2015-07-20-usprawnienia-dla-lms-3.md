@@ -14,8 +14,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/usprawnienia-dla-lms-3.html
-    title: "Usprawnienia dla LMS, część 3"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

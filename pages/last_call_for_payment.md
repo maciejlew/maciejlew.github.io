@@ -19,8 +19,8 @@ breadcrumbs:
   - url: /lan-management-system/szablony-dokumentow/
     title: "Szablony dokumentów"
     type: CollectionPage
-  - url: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
-    title: "Przedsądowe wezwanie do zapłaty"
+  - url: page.url
+    title: page.title
     type: ItemPage
 ---
 

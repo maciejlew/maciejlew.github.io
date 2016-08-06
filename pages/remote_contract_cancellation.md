@@ -19,8 +19,8 @@ breadcrumbs:
   - url: /lan-management-system/szablony-dokumentow/
     title: "Szablony dokumentów"
     type: CollectionPage
-  - url: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
-    title: "Szablon odstąpienia od umowy zawartej poza lokalem"
+  - url: page.url
+    title: page.title
     type: ItemPage
 ---
 

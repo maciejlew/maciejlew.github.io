@@ -13,8 +13,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/spreadit-2015-relacja.html
-    title: "SpreadIT 2015 - relacja"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

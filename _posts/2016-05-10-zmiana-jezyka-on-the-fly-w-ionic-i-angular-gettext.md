@@ -18,8 +18,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/zmiana-jezyka-on-the-fly-w-ionic-i-angular-gettext.html
-    title: "Zmiana języka 'on the fly' w Ionic i angular-gettext"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 

@@ -16,8 +16,8 @@ breadcrumbs:
   - url: /blog/
     title: "Blog"
     type: CollectionPage
-  - url: /blog/jak-robic-dobry-changelog.html
-    title: "Jak robić dobry changelog?"
+  - url: page.url
+    title: page.title
     type: BlogPosting
 ---
 
