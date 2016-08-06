@@ -347,8 +347,20 @@ się w oknie 3x3 i oblicza nową wartość dla dla piksela centralnego.
 3. <a name="ster-rozm"><strong>D. Driankov, H. Hellendoorm, M. Reinfrank. <em>Wprowadzenie do sterowania rozmytego</em>.</strong> Wydawnictwa Naukowo-Techniczne, 1993</a>
 4. <a name="fuzzy-noise-reduction"><strong>H. V. Nejad, H. R. Pourreza, H. Ebrahimi. <em>A Novel Fuzzy Technique for Image Noise Reduction</em>.</strong> World Academy Of Science, Engineering and Technology, 2008</a>
 
+* * *
+
 Treść tego wpisu zawiera fragmenty mojej pracy dyplomowej **"Badanie wpływu 
 wstępnej filtracji na proces segmentacji w analizie patologicznych zmian w 
 obrębie zębów widocznych na zdjęciach RTG"**.
+
+* * *
+
+Zobacz także:
+
+ * [EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej][1]
+ * [Wpływ wstępnej filtracji na segmentację wododziałową][2]
+
+[1]: {{ site.url }}/2016/07/24/emgucvdemo-aplikacja-testujaca-wplyw-wybranych-filtrow-na-wyniki-segmentacji-wododzialowej.html
+[2]: {{ site.url }}/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html
 
 {% include acronyms.md %}

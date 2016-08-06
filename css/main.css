@@ -498,3 +498,25 @@ only screen and (max-device-width : 360px){
         display: block;
     }
 }
+table {
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 1em;
+    font-size: small;
+}
+th, td {
+    border: 1px solid #000;
+}
+thead tr {
+    background-color: #c19a6b;
+    color: #222;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tbody tr:hover {
+    background-color: #ddd;
+}
+tbody td {
+    text-align: right;
+}

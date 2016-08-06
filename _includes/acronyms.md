@@ -67,3 +67,4 @@
 *[GNU]: GNU's not Unix
 *[GPL]: General Public License
 *[BSD]: Berkeley Software Distribution
+*[RAM]: Random-Access Memory

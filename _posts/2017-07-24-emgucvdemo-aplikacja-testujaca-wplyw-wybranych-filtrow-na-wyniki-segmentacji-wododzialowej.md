@@ -129,11 +129,22 @@ Jeśli chcesz przetestować aplikację EmguCVDemo [skontaktuj się ze mną][2].
         <strong><em>OpenCV Wiki</em>.</strong> http://opencv.willowgarage.com/wiki, 2013
     </a>
 
+* * *
+
 Treść tego wpisu zawiera fragmenty mojej pracy dyplomowej **"Badanie wpływu 
 wstępnej filtracji na proces segmentacji w analizie patologicznych zmian w 
 obrębie zębów widocznych na zdjęciach RTG"**.
 
+* * *
+
+Zobacz także:
+
+ * [Przekształcenia morfologiczne, kontekstowe i rozmyte][3]
+ * [Wpływ wstępnej filtracji na segmentację wododziałową][2]
+
+
 [1]: {{ site.url }}/2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html
 [2]: {{ site.url }}/kontakt/
+[3]: {{ site.url }}/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html
 
 {% include acronyms.md %}
