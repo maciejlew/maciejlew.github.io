@@ -410,17 +410,17 @@ figure figcaption {
 }
 
 @media only screen and (max-width: 1920px),
-only screen and (max-device-widht: 1920px) {
+only screen and (max-device-width: 1920px) {
     .galleryItem {width: 21%;}
 }
 
 @media only screen and (max-width: 1280px),
-only screen and (max-device-widht: 1280px) {
+only screen and (max-device-width: 1280px) {
     .galleryItem {width: 29.33333%;}
 }
 
 @media only screen and (max-width: 1024px),
-only screen and (max-device-widht: 1024px) {
+only screen and (max-device-width: 1024px) {
     .galleryItem {width: 46%;}
 }
 
