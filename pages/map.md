@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Recenzja 'JavaScript. Programowanie obiektowe'](../2016/08/07/recenzja-javascript-programowanie-obiektowe.html)
    * [Wpływ wstępnej filtracji na segmentację wododziałową](../2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html)
    * [EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej](../2016/07/24/emgucvdemo-aplikacja-testujaca-wplyw-wybranych-filtrow-na-wyniki-segmentacji-wododzialowej.html)
    * [Małe - wielkie zmiany w NetBeans dla PHP](../2016/07/20/male-wielkie-zmiany-w-netbeans-dla-php.html)
