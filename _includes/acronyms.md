@@ -69,3 +69,4 @@
 *[BSD]: Berkeley Software Distribution
 *[RAM]: Random-Access Memory
 *[WWW]: World Wide Web
+*[FF]: FireFox
