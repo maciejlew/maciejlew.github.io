@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jak zrobić zrzut ekranu całej strony internetowej?"
-date: '2016-08-07 19:20:00'
+date: '2016-09-02 19:20:00'
 description: "Opis jak przy pomocy przeglądarki FireFox zrobić zrzut ekranu strony WWW"
 keywords: "strony internetowe, zrzut ekranu"
 tags:
