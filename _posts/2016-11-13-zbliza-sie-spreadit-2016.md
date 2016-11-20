@@ -5,7 +5,7 @@ date: '2016-11-13 13:00:00'
 description: "Zapowiedź kolejnej edycji popularnego i darmowego wydarzenia dla
 programistów ze Śląska i nie tylko."
 tags:
-- WWW
+- OOP, QA, SpreadIT, MEETING
 breadcrumbs:
   - url: /
     title: "LionNet"
@@ -37,5 +37,12 @@ odebrać bardzo fajną koszulkę związaną z tym wydarzeniem. Polecam.
 Więcej informacji znajdziecie [na stronie wydarzenia][1]. Do zobaczenia na miejscu.
 
 [1]: http://spreadit.pl/
+
+* * *
+
+Zobacz także:
+
+* [SpreadIT 2015 - relacja]({{site.url}}/2015/11/22/spreadit-2015-relacja.html)
+* [SpreadIT 2016 - relacja]({{site.url}}/2016/11/20/spreadit-2016-relacja.html)
 
 {% include acronyms.md %}

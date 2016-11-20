@@ -5,7 +5,7 @@ date: 2015-11-22 10:50:00
 description: "Relacja z SpreadIT 2015"
 keywords: "SpreadIT 2015, konferencja IT, relacja"
 tags:
-- OOP
+- OOP, QA, SpreadIT, MEETING
 breadcrumbs:
   - url: /
     title: "LionNet"
@@ -98,5 +98,11 @@ jak jej autor lubię optymalizować różne rzeczy gdzie się tylko da ;).
 Całą konferencję oceniam jako bardzo udana i fajnie przygotowaną. Organizatorzy 
 spisali się, jak zresztą co roku, na piątkę. Do zobaczenia już za rok na kolejnej
 edycji SpreadIT!
+
+* * *
+
+Zobacz także:
+
+* [SpreadIT 2016 - relacja]({{site.url}}/2016/11/20/spreadit-2016-relacja.html)
 
 {% include acronyms.md %}

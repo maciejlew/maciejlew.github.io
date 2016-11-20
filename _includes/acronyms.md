@@ -70,3 +70,9 @@
 *[RAM]: Random-Access Memory
 *[WWW]: World Wide Web
 *[FF]: FireFox
+*[CQS]: Comand Query Separation
+*[OO]: Object Oriented
+*[BWDD]: Buzz Word Driven Development
+*[CVDD]: CV Driven Development
+*[AM]: Actor Model
+*[P&A]: Ports & Adapters
