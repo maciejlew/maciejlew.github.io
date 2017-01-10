@@ -69,7 +69,7 @@ które także należy skonfigurować:
       },
     }
 
-Narzędzie **nggettext_extract służy do wyszukiwania w kodzie aplikacji tekstów
+Narzędzie **nggettext_compile służy do wyszukiwania w kodzie aplikacji tekstów
 do przetłumaczenia**. W powyższej konfiguracji dodajemy dodatkowy atrybut HTML,
 którego wartość ma być również brana pod uwagę podczas analizowania kodu (o tym 
 jak oznaczać teksty do tłumaczenia a także o własnych dyrektywach przeczytasz

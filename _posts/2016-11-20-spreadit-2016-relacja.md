@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SpreadIT 2016 - relacja"
-date: 2016-11-20 20:15:00
+date: '2016-11-20 20:15:00'
 description: "Relacja z SpreadIT 2016"
 keywords: "SpreadIT 2016, konferencja IT, relacja, inżynieria programowania, 
 jakość kodu, programowanie gier, biznes i rozwój"
