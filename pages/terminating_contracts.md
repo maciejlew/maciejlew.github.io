@@ -21,8 +21,6 @@ breadcrumbs:
     type: ItemPage
 ---
 
-{% include suspension.md %}
-
  * lista kończących się umów
  * możliwość oznaczania umów jako pomijanych podczas wyszukiwania
 

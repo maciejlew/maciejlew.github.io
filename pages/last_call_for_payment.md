@@ -24,8 +24,6 @@ breadcrumbs:
     type: ItemPage
 ---
 
-{% include suspension.md %}
-
  * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe, korekty faktur VAT)
  * uwzględnienie częściowo zapłaconych faktur VAT i not obciążeniowych
  * uwzględnienie terminów płatności

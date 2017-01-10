@@ -17,8 +17,6 @@ breadcrumbs:
     type: ContactPage
 ---
 
-{% include suspension.md %}
-
 E-mail: <span class="email">{{ site.email }}</span>
 
 GitHub: [{{ site.github }}](https://github.com/{{ site.github }})

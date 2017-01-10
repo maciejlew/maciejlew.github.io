@@ -19,8 +19,6 @@ breadcrumbs:
     type: CollectionPage
 ---
 
-{% include suspension.md %}
-
 Poniżej przedstawiam moje gotowe komponenty dla systemu LMS, które nie są dostępne
 w głównej gałęzi projektu:
 

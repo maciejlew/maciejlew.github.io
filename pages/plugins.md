@@ -21,8 +21,6 @@ breadcrumbs:
     type: CollectionPage
 ---
 
-{% include suspension.md %}
-
 Od momentu wprowadzenia do LMS mechanizmu pluginów zacząłem przygotowywać część
 dodatków w postaci pluginów. Dzięki pluginom można rozszerzyć możliwości LMS bez
 ingerencji w kod projektu. Dzięki temu utrzymanie i aktualizacje LMS stają się 

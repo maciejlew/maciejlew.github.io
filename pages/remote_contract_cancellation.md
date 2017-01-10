@@ -24,8 +24,6 @@ breadcrumbs:
     type: ItemPage
 ---
 
-{% include suspension.md %}
-
 Przyjmuję zlecenia przenoszenia istniejących szablonów odstąpienia od umowy zawartej
 poza lokalem do systemu LMS.
 

@@ -21,8 +21,6 @@ breadcrumbs:
     type: ItemPage
 ---
 
-{% include suspension.md %}
-
  * lista kończących się zobowiązań
  * możliwość oznaczania zobowiązań jako pomijanych podczas wyszukiwania
 

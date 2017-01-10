@@ -23,8 +23,6 @@ breadcrumbs:
     type: ItemPage
 ---
 
-{% include suspension.md %}
-
 Podejmuję się przenoszenia istniejących szablonów informacji dodatkowych 
 do umowy zawartej poza lokalem do szablonów systemu LMS.
 

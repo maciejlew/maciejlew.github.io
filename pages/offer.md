@@ -18,8 +18,6 @@ breadcrumbs:
     type: AboutPage
 ---
 
-{% include suspension.md %}
-
 ### Wdrażanie i modyfikacje LMS
 
 LMS &ndash; Lan Management System &ndash; jest platformą zarządzania sieciami LAN.

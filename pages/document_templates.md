@@ -20,8 +20,6 @@ breadcrumbs:
     type: CollectionPage
 ---
 
-{% include suspension.md %}
-
 Szablony dokumentów w LMS pozwalają na automatyczne generowanie umów, regulaminów,
 aneksów, protokołów zdawczo-odbiorczych, wezwań do zapłaty oraz innych. Wygenerowane
 dokumentu są w LMS przypisane d konkretnego klienta co pozwala na łatwe ich 

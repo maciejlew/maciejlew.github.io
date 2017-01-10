@@ -24,8 +24,6 @@ breadcrumbs:
     type: ItemPage
 ---
 
-{% include suspension.md %}
-
  * wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej
  * numer konta bankowego brany z karty klienta (obsługa IBAN)
  * możliwość konfiguracji pola "nazwa odbiorcy" oraz szablonu pola "tytułem" z poziomu LMS
