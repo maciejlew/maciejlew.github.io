@@ -76,3 +76,7 @@
 *[CVDD]: CV Driven Development
 *[AM]: Actor Model
 *[P&A]: Ports & Adapters
+*[ORM]: Object Relational Mapping
+*[MVNO]: Mobile Virtual Network Operator
+*[SOLID]: Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion
+*[GUI]: Graphical User Interface
