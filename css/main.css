@@ -511,3 +511,18 @@ tbody tr:hover {
 tbody td {
     text-align: right;
 }
+
+figure {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #666;
+    padding: 1em;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 70%;
+    margin-top: 1em;
+}
