@@ -80,3 +80,4 @@
 *[MVNO]: Mobile Virtual Network Operator
 *[SOLID]: Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion
 *[GUI]: Graphical User Interface
+*[DDS]: Drug Dose Server

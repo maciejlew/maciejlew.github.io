@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Powtórka z rozrywki](../2017/03/01/powtorka-z-rozrywki.html)
    * [Dokumenty w LAN Management System](../2017/02/13/dokumenty_w_lan_management_system.html)
    * [SpreadIT 2016 - relacja](../2016/11/20/spreadit-2016-relacja.html)
    * [Zbliża się SpreadIT 2016!](../2016/11/13/zbliza-sie-spreadit-2016.html)
