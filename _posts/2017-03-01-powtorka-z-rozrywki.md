@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Powtórka z rozrywki'
-date: '2017-02-13 20:00:00'
+date: '2017-03-01 20:00:00'
 description: 'Konkurs Daj się poznać 2017'
 keywords: 'daj się poznać 2017, konkurs programistyczny, aplikacja konkursowa,
 drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków'
