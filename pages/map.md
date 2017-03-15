@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Jak włączyć tryb debug w cmake?](../2017/03/15/jak-wlaczyc-tryb-debug-w-cmake.html)
    * [Pistacja](../2017/03/14/pistacja.html)
    * [Powtórka z rozrywki](../2017/03/01/powtorka-z-rozrywki.html)
    * [Dokumenty w LAN Management System](../2017/02/13/dokumenty_w_lan_management_system.html)
