@@ -7,7 +7,8 @@ keywords: 'daj się poznać 2017, konkurs programistyczny, aplikacja konkursowa,
 drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków'
 tags:
 - DSP2017
-
+- C++
+- DDS
 img_hosting: "http://interpc.pl/~mlewinterpc/lion.net.pl/2017/03/01/powtorka-z-rozrywki/"
 ---
 

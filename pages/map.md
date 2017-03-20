@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Analiza wymagań dla serwera dawek leków](../2017/03/20/analiza-wymagan-dla-serwera-dawek-lekow.html)
    * [Jak włączyć tryb debug w cmake?](../2017/03/15/jak-wlaczyc-tryb-debug-w-cmake.html)
    * [Pistacja](../2017/03/14/pistacja.html)
    * [Powtórka z rozrywki](../2017/03/01/powtorka-z-rozrywki.html)
