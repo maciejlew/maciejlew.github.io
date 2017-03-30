@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Pistache i RapidJSON - czytanie danych z pliku](../2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html)
    * [Pistache i RapidJSON - prosty obiekt w odpowiedzi](../2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html)
    * [Front Controller w Pistache](../2017/03/25/front-controller-w-pistache.html)
    * [Analiza wymagań dla serwera dawek leków](../2017/03/20/analiza-wymagan-dla-serwera-dawek-lekow.html)
