@@ -81,3 +81,5 @@
 *[SOLID]: Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion
 *[GUI]: Graphical User Interface
 *[DDS]: Drug Dose Server
+*[HTTP]: Hypertext Transfer Protocol
+*[MIME]: Multipurpose Internet Mail Extensions
