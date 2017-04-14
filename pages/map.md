@@ -34,7 +34,7 @@ breadcrumbs:
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
    * [Pistache i RapidJSON - pliki statyczne](../2017/04/14/pistache-i-rapidjson-pliki-statyczne.html)
-   * [Pistache i RapidJSON - ](../2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html)
+   * [Pistache i RapidJSON - typ odpowiedzi w nagłówku](../2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html)
    * [Pistache i RapidJSON - przekazywanie zmiennych w URL](../2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html)
    * [Pistache i RapidJSON - czytanie danych z pliku](../2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html)
    * [Pistache i RapidJSON - prosty obiekt w odpowiedzi](../2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html)
