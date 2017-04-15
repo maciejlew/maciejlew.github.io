@@ -77,7 +77,7 @@ zachowywane jest formatowanie, odpowiedź może "ważyć" więcej niż po przepa
 przez RapidJSON
  * w przypadku braku pliku kodem odpowiedzi musi być 404
 
-Pokazane w tym wpisie przykłady są zaczerpnięte z [aplikacji DDS][1].
+Pokazane w tym wpisie przykłady są zaczerpnięte z [aplikacji DDS][2].
 
 [1]: {{ site.url }}/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html
 [2]: https://github.com/maciejlew/drug-dose-server
