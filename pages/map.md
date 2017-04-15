@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Silnik zarządzania konfiguracją aplikacji w C++](../2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html)
    * [Pistache i RapidJSON - pliki statyczne](../2017/04/14/pistache-i-rapidjson-pliki-statyczne.html)
    * [Pistache i RapidJSON - typ odpowiedzi w nagłówku](../2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html)
    * [Pistache i RapidJSON - przekazywanie zmiennych w URL](../2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html)
