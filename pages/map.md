@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [Nowa stabilna wersja LMS 1.11.22](../2017/06/28/nowa-stabilna-wersja-lms-1-11-22.html)
    * [Silnik zarządzania konfiguracją aplikacji w C++](../2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html)
    * [Pistache i RapidJSON - pliki statyczne](../2017/04/14/pistache-i-rapidjson-pliki-statyczne.html)
    * [Pistache i RapidJSON - typ odpowiedzi w nagłówku](../2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html)
