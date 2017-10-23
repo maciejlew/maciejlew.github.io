@@ -84,3 +84,11 @@
 *[HTTP]: Hypertext Transfer Protocol
 *[MIME]: Multipurpose Internet Mail Extensions
 *[DI]: Dependency Injection
+*[USB]: Universal Serial Bus
+*[ISO]: International Organization for Standardization
+*[MD5]: Message-Digest algorithm 5
+*[CD]: Compact Disc
+*[GRUB]: Grand Unified Bootloader
+*[LILO]: Linux Loader
+*[RAID]: Redundant Array of Independent Disks
+*[LVM]: Logical Volume Manager
