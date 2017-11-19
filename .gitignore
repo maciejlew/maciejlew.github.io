@@ -2,3 +2,4 @@ _site
 nbproject
 /Gemfile
 /Gemfile.lock
+/.sass-cache
