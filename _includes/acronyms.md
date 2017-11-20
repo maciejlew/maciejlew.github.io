@@ -92,3 +92,5 @@
 *[LILO]: Linux Loader
 *[RAID]: Redundant Array of Independent Disks
 *[LVM]: Logical Volume Manager
+*[IaC]: Infrastructure as Code
+*[CI]: Continuous Integration

@@ -103,6 +103,7 @@ edycji SpreadIT!
 
 Zobacz także:
 
+* [SpreadIT 2017 - relacja]({{site.url}}/2017/11/19/spreadit-2017-relacja.html)
 * [SpreadIT 2016 - relacja]({{site.url}}/2016/11/20/spreadit-2016-relacja.html)
 
 {% include acronyms.md %}

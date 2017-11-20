@@ -33,6 +33,7 @@ breadcrumbs:
  * [Umiejętności](../umiejetnosci/)
  * [Kontakt](../kontakt/)
  * [Blog informatyczny](../blog/)
+   * [SpreadIT 2017 - relacja](../2017/11/19/spreadit-2017-relacja.html)
    * [Jak instalować Debiana i przy okazji nie oszaleć](../2017/10/23/jak-instalowac-debiana-i-przy-okazji-nie-oszalec.html)
    * [Nowa stabilna wersja LMS 1.11.22](../2017/06/28/nowa-stabilna-wersja-lms-1-11-22.html)
    * [Silnik zarządzania konfiguracją aplikacji w C++](../2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html)

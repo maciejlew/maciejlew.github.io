@@ -114,6 +114,7 @@ jeszcze lepiej. Do zobaczenia na miejscu bo ja na pewno tego nie przegapię!
 
 Zobacz także:
 
+* [SpreadIT 2017 - relacja]({{site.url}}/2017/11/19/spreadit-2017-relacja.html)
 * [SpreadIT 2015 - relacja]({{site.url}}/2015/11/22/spreadit-2015-relacja.html)
 
 {% include acronyms.md %}
