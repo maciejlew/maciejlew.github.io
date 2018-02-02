@@ -1,5 +1,0 @@
-![LMS](/img/logo_lms.png "LMS")
-![MySQL](/img/logo_mysql.png "MySQL")
-![PostgreSQL](/img/logo_postgresql.png "PostgreSQL")
-![Linux](/img/logo_linux.png "Linux")
-![PHP](/img/logo_php.png "PHP")

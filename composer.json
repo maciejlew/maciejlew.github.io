@@ -1,0 +1,15 @@
+{
+    "name": "lionnet/maciejlew.github.io",
+    "description": "lion.net.pl site",
+    "type": "project",
+    "require": {
+        "sculpin/sculpin": "^2.1",
+        "dflydev/embedded-composer": "^1.0@dev"
+    },
+    "authors": [
+        {
+            "name": "Maciej Lew",
+            "email": "maciej.lew.1987@gmail.com"
+        }
+    ]
+}

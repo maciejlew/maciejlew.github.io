@@ -1,0 +1,13 @@
+{% extends "default" %}
+
+{% block content_wrapper %}
+
+<article class="blog_module module">
+    <h2>{{ page.title }}</h2>
+    <hr>
+
+    {{ page.blocks.content|raw }}
+
+</article>
+
+{% endblock %}
