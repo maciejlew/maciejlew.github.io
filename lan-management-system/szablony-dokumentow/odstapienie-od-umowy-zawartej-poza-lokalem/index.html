@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Szablon odstąpienia od umowy zawartej poza lokalem dla LMS</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Szablon odstąpienia od umowy zawartej poza lokalem dla Lan Management System"/>
+    <meta name="keywords" content="LMS, Lan Management System, sieci LAN, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat, uokik, umowa w lokalu, umowa poza lokalem, odstąpienie od umowy, telekomunikacja, internet"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Szablon odstąpienia od umowy zawartej poza lokalem dla LMS</h2>
+    <hr>
+
+    <p>Przyjmuję zlecenia przenoszenia istniejących szablonów odstąpienia od umowy zawartej
+poza lokalem do systemu LMS.</p>
+
+<p>Szablon taki zawiera zazwyczaj oświadczenie klienta o odstąpieniu od umowy zawartej poza lokalem 
+przedsiębiorstwa (na odległość).</p>
+
+<p>Na szablonie, oprócz oświadczenia, znajdują się zwykle także:</p>
+
+<ul>
+<li>dane klienta;</li>
+<li>dane firmy;</li>
+<li>miejsce wystawienia;</li>
+<li>data wystawienia;</li>
+<li>pouczenie do odstąpienia od umowy.</li>
+</ul>
+
+<p>Formularz generowania szablonu pozwala na zdefiniowanie miejsca wystawienia oraz
+zawartych w pouczeniu ilości dni na odstąpienie od umowy, na zwrot sprzętu przez
+klienta oraz na zwrot nadpłaty przez ISP.</p>
+
+<p>Dane o kliencie oraz dostawcy usługi są pobierane z bazy LMS pozostałe dane są
+definiowane per dokument i podczas dodawania dokumentu są walidowane. Istnieje 
+możliwość konfiguracji domyślnych ustawień szablonu.</p>
+
+<p>Treść szablonu jest zawsze konsultowana i może zostać zmieniona zgodnie z przekazanymi
+uwagami.</p>
+
+<h3 id="przyk%C5%82ady%3A">Przykłady:</h3>
+
+<ul>
+<li><a href="http://lion.net.pl/img/szablony_dokumentow/odstapienie_od_umowy_zawartej_poza_lokalem.png">Formatka dodawania dokumentu z szablonu odstąpienia od umowy zawartej poza lokalem</a></li>
+</ul>
+
+<h3 id="instalacja%3A">Instalacja:</h3>
+
+<p>Zawartość paczki z szablonem należy umieścić w katalogu <em>lms/documents/templates/</em>.</p>
+
+<h3 id="konfiguracja%3A">Konfiguracja:</h3>
+
+<p>W konfiguracji interfejsu użytkownika, w sekcji <em>phpui</em>, należy dodać 
+następujące zmienne definiujące domyślne wartości pól formularza dodawania
+dokumentu:</p>
+
+<ul>
+<li><em>remote_contract_cancellation_resignantion_days_deadline</em> - ilość dni na odstąpienie od umowy;</li>
+<li><em>remote_contract_cancellation_equipment_return_days_deadline</em> - ilość dni na zwrot sprzętu;</li>
+<li><em>remote_contract_cancellation_payments_return_days_deadline</em> - ilość dni na zwrot płatności;</li>
+<li><em>remote_contract_cancellation_location</em> - miejsce wystawienia dokumentu.</li>
+</ul>
+
+<hr />
+
+<p>Zobacz także:</p>
+
+<ul>
+<li><a href="../wezwanie-do-zaplaty">Wezwanie do zapłaty</a></li>
+<li><a href="../przedsadowe-wezwanie-do-zaplaty">Przedsądowe wezwanie do zapłaty</a></li>
+<li><a href="../ksiazeczka-oplat">Książeczka opłat</a></li>
+<li><a href="../informacje-do-umowy-zawartej-poza-lokalem">Informacje do umowy zawartej poza lokalem</a></li>
+</ul>
+
+
+</article>
+
+
+    </main>
+    
+    </body>
+</html>

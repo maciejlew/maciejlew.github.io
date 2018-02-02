@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Yeoman! Idziemy na front!</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Yeoman - generator struktury projektów dla każdego!"/>
+    <meta name="keywords" content="daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, yeoman, ionic framework, generator aplikacji"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Yeoman! Idziemy na front!</h2>
+    <hr>
+
+    <p>Idziemy na front! Trzeba się przygotować. Misja będzie trudna. Na szczęście mamy
+wsparcie.</p>
+
+<h2 id="generatory-aplikacji-js">Generatory aplikacji JS</h2>
+
+<p>Ostatnimi czasu dużo się działo. Zwłaszcza w światku JS. Powstało sporo frameworków
+i narzędzi. Aż głowa może rozboleć gdy nagle trzeba się tego wszystkiego nauczyć. 
+Nie inaczej było ze mną. Chcę utworzyć pierwszą aplikację w <strong>AngularJS</strong>, <strong>Ionic</strong> i
+<strong>Apache Cordova</strong>. I co? Od czego zacząć? Ściągać paczki? Tworzyć strukturę katalogów?
+No ale zaraz, gdzie ja to powinienem wszystko zainstalować? Zaraz, zaraz...</p>
+
+<p>Każde ww. narzędzi ma swój generator, czyli specjalne interaktywne narzędzie
+zrobione tylko po to, aby łatwiej można było rozpocząć pracę. A wiec AngularJS ma
+generator który stworzy nam szkielet aplikacji AngularJS. Cordova ma generator
+który stworzy nam szkielet aplikacji Cordova. Ionic ma generator który stworzy 
+nam szkielet aplikacji Ionic z Angularem i Cordova. No fajnie. Wygląda na to że
+najlepiej wykorzystać generator Ionic, który powinien nam wszystko ładnie utworzyć
+tak aby nie trzeba się było już niczym przejmować i od razu zacząć kodować. Nic 
+bardziej mylnego :)</p>
+
+<p>Polecenie <em>ionic start</em> rzeczywiście wygeneruje nam szkielet. Przeglądając go, 
+mając pewne nawyki z innych frameworków wyposażonych w generatory, można odnieść
+wrażenie że trochę tego za dużo się wygenerowało. Na dodatek nie mamy jeszcze pliku
+.gitignore, wiec nie wiadomo co powinno zostać przesłane do repozytorium, a co 
+powinno zostać tylko w kopii roboczej. Słabo. Na szczęście inni także mieli takie
+dylematy. Tak też prawdopodobnie powstał ionic-generator dla Yeoman.</p>
+
+<h2 id="yeoman">Yeoman</h2>
+
+<p><a href="http://yeoman.io/">Yeoman</a> to kolejne narzędzie które przyszło mi poznać w 
+ostatnim czasie. Z tego powodu nie mogę jeszcze czuć się jego ekspertem, ale 
+napiszę tu te kilka zdań - może także właśnie dla Ciebie Yeoman stanie się 
+odkryciem dnia. Narzędzie to służy do definiowania szkieletów aplikacji. I chodzi 
+tu nie tylko o aplikacje JS, choć te przodują w statystykach upublicznionych 
+szablonów Yeomana. Jednym prostym poleceniem generujemy projekt według zadanego 
+szablonu. W tej chwili baza zarejestrowanych szablonów Yeomana posiada ponad 3000 
+wpisów. Jest z czego wybierać.</p>
+
+<h3 id="generator-ionic">generator-ionic</h3>
+
+<p>Mój wybór padł na szablon <a href="https://github.com/diegonetto/generator-ionic">generator-ionic</a>
+reklamujący się jako szybkie i rozsądne narzędzie do tworzenia
+projektów pisanych w Ionic, AngularJS i Cordova, podążające za dobrymi praktykami
+formowania struktury projektów.</p>
+
+<p>Ten generator dodaje ponad to kilka usprawnień których brakuje generatorowi
+zawartemu w Ionic. Zostaniemy wypytani o to z jakich chcemy skorzystać pluginów 
+Cordova oraz jaki chcemy pobrać szablon Ionic. Dostaniemy gotowy plik .gitignore
+dzięki czemu nie będziemy zaśmiecać repozytorium. Otrzymamy także zestaw poleceń
+grunta które budują aplikację. Całkiem fajnie.</p>
+
+<h2 id="idziemy-na-front%21">Idziemy na front!</h2>
+
+<p>Pora wyruszać. Jedynie kilka kroków dzieli nas przed pierwszym zetknięciem z 
+frontem:</p>
+
+<pre><code>npm install -g yo grunt-cli bower generator-ionic ionic cordova
+mkdir drug-dose-framework-ionic
+cd drug-dose-framework
+yo ionic drug-dose-framework
+</code></pre>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

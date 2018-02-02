@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Pistache i RapidJSON - typ odpowiedzi w nagłówku</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Przykład definiowania nagłówka Content-Type w Pistache"/>
+    <meta name="keywords" content="daj się poznać 2017, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, pistache, rapidjson, json"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Pistache i RapidJSON - typ odpowiedzi w nagłówku</h2>
+    <hr>
+
+    <p>Po przeczytaniu poprzednich postów wiesz już jak zwrócić w Pistache odpowiedź w
+formacie JSON. Po wprowadzeniu poprawek omówionych w tym wpisie będziesz w stanie
+powiadomić aplikacje klienckie o tym odpowiedź z Twoich webserwisów że to właśnie
+JSON.</p>
+
+<h3 id="nag%C5%82%C3%B3wki-content-type-w-pistache">Nagłówki Content-Type w Pistache</h3>
+
+<p>Nagłówek Content-Type to jeden z najczęściej wykorzystywanych nagłówków HTTP.
+Informuje on aplikacje klienckie o tym jak zinterpretować odpowiedź z serwera HTTP,
+czy to jest tekst, czy obrazek, czy wideo, itp.</p>
+
+<p>Domyślnie odpowiedź z Pistache wysłana jest bez tego nagłówka.</p>
+
+<h4 id="jak-sprawdzi%C4%87-czy-odpowied%C5%BA-zawiera-nag%C5%82%C3%B3wek-content-type%3F">Jak sprawdzić czy odpowiedź zawiera nagłówek Content-Type?</h4>
+
+<p>Najprościej sprawdzić to poleceniem narzędziem curl:</p>
+
+<pre><code>curl -I -X GET http://localhost:9080/drugs/drug_one
+</code></pre>
+
+<p>W odpowiedzi możemy zobaczyć taki tekst, wskazujący że nagłówek jest przekazywany:</p>
+
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json
+</code></pre>
+
+<p>Możesz także posłużyć się dowolną przeglądarką i przejrzeć odpowiedź, np przy 
+pomocy wbudowanych w nią narzędzi dla programistów.</p>
+
+<h4 id="ustawianie-content-type-w-pistache">Ustawianie Content-Type w Pistache</h4>
+
+<p>Dodanie nagłówka Content-Type w Pistache jest proste. Należy przed wysłaniem 
+odpowiedzi (metodą send) wywołać na obiekcie odpowiedzi metodę pobierającą obiekt
+nagłówków, a następnie na tym obiekcie metodą dodającą kolejny, jak w przykładzie:</p>
+
+<pre><code>response.headers().add&lt;Net::Http::Header::ContentType&gt;(MIME(Application, Json));
+</code></pre>
+
+<p>Wykorzystywane tu jest makro <em>MIME</em> pozwalające w skróconej formie określić typ 
+zwracanej odpowiedzi. Istnieją także inne, bardziej rozbudowane, metody wskazywania
+typów MIME, których opis można znaleźć w dokumentacji frameworka Pistache.</p>
+
+<p>Pokazane w tym wpisie przykłady są zaczerpnięte z <a href="https://github.com/maciejlew/drug-dose-server">aplikacji DDS</a>.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

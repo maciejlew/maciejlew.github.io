@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Pistache i RapidJSON - pliki statyczne</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Przykład wysyłania pliku statycznego w Pistache"/>
+    <meta name="keywords" content="daj się poznać 2017, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków,  pistache, rapidjson, json"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Pistache i RapidJSON - pliki statyczne</h2>
+    <hr>
+
+    <p>Zastanawiasz się jak serwować pliki statyczne w Pistache? To banalnie proste!</p>
+
+<h3 id="czytanie-danych-z-pliku---metoda-http%3A%3Aservefile">Czytanie danych z pliku - metoda Http::serveFile</h3>
+
+<p>To <a href="/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html">jak odczytać plik JSON i odesłać go w całości do użytkownika</a> było jednym z 
+pierwszych zadań jakie postawiłem sobie podczas nauk Pistache i RapidJSON. Opisany
+wtedy sposób działa i ma swoje zalety (o których za chwilkę). Ma też swoje wady
+- wymaga otwarcia pliku, parsowania przez RapidJSON i własnoręcznego tworzenia 
+strumienia odpowiedzi. Można to zrobić w Pistache inaczej.</p>
+
+<p>Framework Pistache posiada wbudowaną metodę odsyłania do przeglądarki plików
+statycznych, oto jak możesz to zrobić:</p>
+
+<pre><code>void DrugsHandler::onRequest(const Net::Rest::Request&amp; request, Net::Http::ResponseWriter response) {
+
+    Document config;
+    char _config_buffer[65536];
+
+    FILE* config_pointer = fopen("config.json", "r");
+    FileReadStream config_stream(config_pointer, _config_buffer, sizeof(_config_buffer));
+    config.ParseStream(config_stream);
+    fclose(config_pointer);
+
+    if (config.HasMember("files_path")) {
+
+        std::ostringstream s;
+        s &lt;&lt; config["files_path"].GetString() &lt;&lt; "/drugs.json";
+
+        Http::serveFile(response, s.str().c_str(), MIME(Application, Json));
+
+    } else {
+        response.send(Http::Code::Internal_Server_Error);
+    }
+
+}
+</code></pre>
+
+<p>Jeśli porównasz ten kod z <a href="/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html">poprzednio prezentowaną wersją tej metody</a>, to 
+zauważysz że nie ma tu już zabawy w otwieranie pliku z listą leków, ustawiania
+nagłówków odpowiedzi, strumieniowania pliku. Wszystko załatwia metoda 
+<em>Http::serveFile</em>. Metoda ta jako argumentu przyjmuje, po kolei, obiekt odpowiedzi,
+ścieżkę do pliku i opcjonalnie typ zwracanej odpowiedzi. Co się dzieje gdy pliku
+nie ma w podanej ścieżce na dysku? Wysłana zostanie pusta odpowiedź z kodem 404.
+Dodatkowo, metoda ta zwraca obiekt <em>promise</em>, a obsługując go możemy zrobić np. 
+logowanie zdarzeń/błędów (obiekt ten przenosi informację o ilości wysłanych danych).</p>
+
+<h4 id="wady-i-zalety">Wady i zalety</h4>
+
+<p>Do zalet można <em>Http::serveFile</em> można zaliczyć:</p>
+
+<ul>
+<li>zwięzłość</li>
+<li>szybkość</li>
+<li>obsługę Content-Type</li>
+<li>obsługę błędów</li>
+</ul>
+
+<p>Do minusów tej metody można zaliczyć:</p>
+
+<ul>
+<li>wysyłanie pliku bez parsowania (być może to nie JSON?)</li>
+<li>wysyłanie pliku takim jak jest - nie są usuwane z niego zbędne białe znaki,
+zachowywane jest formatowanie, odpowiedź może "ważyć" więcej niż po przeparsowaniu
+przez RapidJSON</li>
+<li>w przypadku braku pliku kodem odpowiedzi musi być 404</li>
+</ul>
+
+<p>Pokazane w tym wpisie przykłady są zaczerpnięte z <a href="https://github.com/maciejlew/drug-dose-server">aplikacji DDS</a>.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

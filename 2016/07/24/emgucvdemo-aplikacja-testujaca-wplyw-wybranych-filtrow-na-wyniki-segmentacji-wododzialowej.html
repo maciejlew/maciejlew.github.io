@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Opis aplikacja do testowania segmentacji wododziałowej"/>
+    <meta name="keywords" content="grafika komputerowa, przekształcenia obrazu, przekształcenia morfologiczne, przekształcenia kontekstowe, przekształcenia rozmyte, logika rozmyta, translacja, erozja, dylacja, otwarcie, zamknięcie, black top hat, white top hat, gradient morfologiczny, filtr medianowy, segmentacja wododziałowa, opencv"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej</h2>
+    <hr>
+
+    <p>To już drugi post z cyklu badania wpływu wstępnej filtracji na jakość wyników
+uzyskanych podczas segmentacji wododziałowej. W poprzednim wpisie mogłeś przeczytać
+o <a href="/2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html">teorii kryjącej się za filtrami kontekstowymi, morfologicznymi i rozmytymi</a>, 
+będącymi przedmiotem badań. W tym wpisie przedstawię narzędzie pomocnicze
+napisane przeze mnie w celu przeprowadzenia badań.</p>
+
+<h3 id="analiza-obraz%C3%B3w---biblioteka-emgucv">Analiza obrazów - biblioteka EmguCV</h3>
+
+<p>EmguCV jest nakładką na OpenCV Open Computer Vision, pozwalającą na wykorzystywanie
+tej biblioteki w środowisku Microsoft .NET Framework. OpenCV (Open Source Computer 
+Vision) jest biblioteką zawierającą w sobie wiele (ponad 2500) algorytmów 
+wykorzystywanych w grafice komputerowej. Oprogramowanie to jest rozwijane od 
+1993 roku przez firmę Intel i od tego czasu pełni ważną rolę w badaniach i 
+tworzeniu oprogramowania z zakresu wizji komputerowej. Biblioteka posiada 
+interfejsy pozwalające na wykorzystanie jej w językach programowania takich jak 
+C, C++, Python i Java. OpenCV działa w systemach MS Windows, Linux, Mac oraz 
+Android. Wśród zaimplementowanych w bibliotece algorytmów można odleźć 
+przekształcenia punktowe, kontekstowe, morfologiczne, algorytmy segmentacji, 
+rozpoznawania obrazów. Biblioteka ta wykorzystywana jest m. in. w analizie obrazów 
+na potrzeby bezpieczeństwa, w procesach medycznych, do identyfikacji oraz do 
+sterowania robotami. Biblioteka OpenCV udostępniana jest na licencji BSD Berkeley 
+Software Distribution License, natomiast EmguCV na licencji GNU GPL General 
+Public License v3[<a href="#opencv">3</a>].</p>
+
+<h3 id="emgucvdemo---specyfikacja-zewn%C4%99trzna">EmguCVDemo - specyfikacja zewnętrzna</h3>
+
+<p>W tym rozdziale przedstawiona zostanie aplikacja pomocnicza EmguCVDemo. Aplikacja 
+ta została napisana w celu przygotowania środowiska dla testów przeprowadzanych 
+w części badawczej pracy. Środowisko to zapewnia dostęp do algorytmów filtracji 
+obrazu dostępnych w bibliotece EmguCV oraz do własnych implementacji wybranych 
+algorytmów. Aplikacja może być wykorzystywana do testowania wpływu wybranych 
+filtrów na obraz i jego późniejszą segmentację.</p>
+
+<h4 id="emgucvdemo">EmguCVDemo</h4>
+
+<figure>
+    <img src="/img/gkiro/emgucvdemo.png" alt="EmguCVDemo - okno programu testowego">
+    <figcaption>Rysunek 1: EmguCVDemo - okno programu testowego</figcaption>
+</figure>
+
+<p>Na rysunku 1 pokazano główne okno aplikacji EmguCVDemo. Interfejs programu składa 
+się z panelu, na którym wyświetlane są zdjęcia, jedno oryginalne - przed obróbką, 
+drugie po zastosowaniu dostępnych operacji. Operacje dostępne w programie są za 
+pomocą znajdujących się na formatce przycisków lub z poziomu paska zadań programu. 
+Do sterowania parametrami niektórych operacji wykorzystuje się kontrolki 
+znajdujące się w oknie programu w panelu po lewej stronie. Wśród wykorzystanych 
+operacji pochodzących z biblioteki EmguCV można wymienić:</p>
+
+<ul>
+<li>Przekształcenia morfologiczne:
+
+<ul>
+<li>Erozja</li>
+<li>Dylacja</li>
+<li>Otwarcie</li>
+<li>Zamknięcie</li>
+<li>White Top Hat</li>
+<li>Black Top Hat</li>
+<li>Gradient morfologiczny</li>
+</ul></li>
+<li>Przekształcenia kontekstowe:
+
+<ul>
+<li>Wyrównanie histogramu</li>
+<li>Filtr medianowy</li>
+</ul></li>
+<li>Inne narzędzia:
+
+<ul>
+<li>Negacja obrazu</li>
+<li>Reset obrazu</li>
+<li>Powiększenie</li>
+<li>Pomniejszenie</li>
+<li>Reset rozmiaru</li>
+</ul></li>
+</ul>
+
+<p>Wymienione operacje uzupełniono interfejsem do własnych implementacji następujących 
+algorytmów:</p>
+
+<ul>
+<li>Przekształcenia logiki rozmytej:
+
+<ul>
+<li>Fuzzy Noise Smoothing</li>
+</ul></li>
+<li>Operacje związane z segmentacją:
+
+<ul>
+<li>Lokalne minima</li>
+<li>Segmentacja wododziałowa</li>
+<li>Liczenie segmentów</li>
+</ul></li>
+</ul>
+
+<p>Parametry filtrów dostępne w programie pozwalają na sterowanie rozmiarem elementu 
+strukturalnego filtrów morfologicznych, a także położeniem punktu odniesienia w 
+jego wnętrzu. Możliwe jest także manipulowanie ilością iteracji.</p>
+
+<p>Dostępna jest opcja zmiany algorytmu zliczania segmentów z podstawowego 
+(<em>SegmentMarkerBasic</em>) na (<em>SegmentMarkerFlooding</em>).</p>
+
+<p>Możliwe jest także sterowanie rozmiarem okna filtru medianowego.</p>
+
+<p>Po przeprowadzeniu segmentacji możliwe jest oznaczenie na obrazie wyjściowym 
+dwóch segmentów - wewnętrznego i zewnętrznego, po czym następuje wyszukiwanie 
+przez algorytm segmentów pośrednich. Pokazano to na rysunku 1, obraz wejściowy 
+poddano wstępnej filtracji, segmentacji a następnie zaznaczony czerwony segment 
+wewnętrzny i zielony zewnętrzny. Granice segmentów pośrednich oznaczone zostały 
+kolorem niebieskim.</p>
+
+<p>Opcja <em>Liczenie segmentów</em> pozwala na oznaczenie segmentów i zliczenie ich liczby 
+na obrazie. Po zakończonej operacji użytkownik otrzymuje podsumowanie z liczbą 
+segmentów oraz czasem zliczania. Wykonanie tej operacji jest niezbędne, aby móc 
+oznaczać segmenty na obrazie.</p>
+
+<h5 id="demo">Demo</h5>
+
+<p>Jeśli chcesz przetestować aplikację EmguCVDemo <a href="/kontakt/">skontaktuj się ze mną</a>.</p>
+
+<h3 id="literatura">Literatura</h3>
+
+<ol>
+<li><a name="wyklady-gkiro">
+    <strong><em>OpenCV Wiki</em>.</strong> http://opencv.willowgarage.com/wiki, 2013
+</a></li>
+</ol>
+
+<hr />
+
+<p>Treść tego wpisu zawiera fragmenty mojej pracy dyplomowej <strong>"Badanie wpływu 
+wstępnej filtracji na proces segmentacji w analizie patologicznych zmian w 
+obrębie zębów widocznych na zdjęciach RTG"</strong>.</p>
+
+<hr />
+
+<p>Zobacz także:</p>
+
+<ul>
+<li><a href="/2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html">Przekształcenia morfologiczne, kontekstowe i rozmyte</a></li>
+<li><a href="/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html">Wpływ wstępnej filtracji na segmentację wododziałową</a></li>
+</ul>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

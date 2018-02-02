@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Opis konfiguracji środowiska składającego się z Apache Cordova, Android SDK i NodeJS na 32-bitowym Debianie"/>
+    <meta name="keywords" content="apache cordova, nodejs, środowisko programistyczne, debian, wirtualizacja"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować</h2>
+    <hr>
+
+    <p>Opiszę pokrótce jak skonfigurowałem sobie środowisko programistyczne na moim 
+laptopie z Debianem 8. Laptop wyposażony jest w procesor o architekturze 32-bitowej
+co okaże się dość istotne w całym procesie.</p>
+
+<p>Najpierw przedstawię co chciałem osiągnąć:</p>
+
+<ul>
+<li>Apache Cordova</li>
+<li>Android SDK</li>
+<li>NodeJS</li>
+<li>Netbeans IDE</li>
+</ul>
+
+<p>Zaczynamy od pobrania i instalacji NodeJS oraz Android SDK. W repozytorium 
+Debiana jest obecnie dostępna nieaktualna, zabugowana, wersja NodeJS pozostaje 
+więc jedynie kompilacja ze źródeł. Dodatkowo, nie chcę aby NodeJS był zainstalowany 
+globalnie, a jedynie dla mojego użytkownika. Jak się okazuje, dla architektury
+32-bitowej w 
+<a href="http://stackoverflow.com/a/34219845">Android Platform Tools w wersji 23.1+ występuje bug</a> 
+- należy zrobić "downgrade".</p>
+
+<pre><code>mkdir -p ~/local/src
+cd ~/local/src
+wget https://nodejs.org/dist/v4.3.1/node-v4.3.1.tar.gz
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+wget https://dl-ssl.google.com/android/repository/platform-tools_r23.0.1-linux.zip
+tar -zxf node-v4.3.1.tar.gz
+tar -zxf android-sdk_r24.4.1-linux.tgz
+unzip platform-tools_r23.0.1-linux.zip
+cd ~/local/src/node-v4.3.1
+./configure --prefix=~/local
+make
+make install
+mv ~/local/src/android-sdk-linux ~/local/lib
+mv ~/local/src/platform-tools ~/local/lib/android-sdk-linux
+echo 'export PATH=$HOME/local/bin:$PATH' &gt;&gt; ~/.bashrc
+echo 'export PATH=$HOME/local/lib/android-sdk-linux/tools:$PATH' &gt;&gt; ~/.bashrc
+echo 'export PATH=$HOME/local/lib/android-sdk-linux/platform-tools:$PATH' &gt;&gt; ~/.bashrc
+</code></pre>
+
+<p>W tym momencie można się przelogować aby nowe polecenia stały się widoczne w systemie.</p>
+
+<p>Teraz możemy doinstalować potrzebne komponenty, pamiętając aby przypadkiem nie 
+zrobić aktualizacji platform-tools:</p>
+
+<pre><code>android sdk
+</code></pre>
+
+<p>Tworzymy wirtualne urządzenie:</p>
+
+<pre><code>android avd
+</code></pre>
+
+<p>Możemy teraz doinstalować Apache Cordova:</p>
+
+<pre><code>npm install -g cordova
+</code></pre>
+
+<p>Tworzymy przykładowy projekt:</p>
+
+<pre><code>cd ~/projects/
+cordova create test
+cd test
+cordova platform add android
+cordova run android
+</code></pre>
+
+<p>Prawdopodobnie otrzymamy komunikat jak poniżej:</p>
+
+<blockquote>
+  <p>Either one will allow you to use the 32-bit binaries, but please be
+  aware that these will disappear in a future Android SDK release.
+  Consider moving to a 64-bit Linux system before that happens.</p>
+</blockquote>
+
+<p>Aby się go pozbyć robimy taki trik:</p>
+
+<pre><code>echo 'export ANDROID_EMULATOR_FORCE_32BIT=true' &gt;&gt; ~/.bashrc
+export ANDROID_EMULATOR_FORCE_32BIT=true
+</code></pre>
+
+<p>Próbujemy ponownie, możemy zobaczyć coś takiego:</p>
+
+<blockquote>
+  <p>emulator: ERROR: x86 emulation currently requires hardware acceleration!
+  Please ensure KVM is properly installed and usable.
+  CPU acceleration status: KVM is not installed on this machine (/dev/kvm is missing).</p>
+</blockquote>
+
+<p>Instalujemy potrzebne do wirtualizacji paczki:</p>
+
+<pre><code>aptitude install qemu-kvm libvirt-bin
+</code></pre>
+
+<p>Jeśli nadal widzimy powyższy komunikat może to oznaczać że wirtualizacja jest
+wyłączona z poziomu BIOS lub że procesor wcale nie wspiera wirtualizacji.</p>
+
+<p>Uruchamiamy ponownie maszynę i w BIOS szukamy odpowiedniej opcji, w okolicach
+ustawień związanych z CPU.</p>
+
+<p>Po ponownym uruchomieniu komputera polecenie <em>cordova run android</em> powinno zadziałać.
+Jeśli się tak nie stało i nadal otrzymujemy komunikaty związane z KVM warto 
+posłużyć się jednym z poniższych poleceń w celu sprawdzenia co jest grane:</p>
+
+<pre><code>sudo ls -l /dev/kvm
+egrep '(vmx|svm)' /proc/cpuinfo
+sudo systemctl status libvirtd.service
+sudo dmesg | grep kvm
+</code></pre>
+
+<p>Na tym etapie mamy już wszystko potrzebne do uruchomienia projektu, pozostaje 
+skonfigurowanie IDE.</p>
+
+<p>Niestety Netbeans 8.1 nie może poradzić sobie z odnalezieniem Apache Cordova
+i nie znalazłem żadnego rozwiązania tego problemu. NodeJS oraz NPM można natomiast
+skonfigurować wybierając w NB opcję "Tools > Options > HTML/JS > NodeJS".</p>
+
+<p>Mam nadzieję że ten opis pomoże osobom zainteresowanym programowaniem urządzeń
+mobilnych w konfiguracji swojego środowiska. Ilość trudności jakie napotkałem
+podczas uruchamiania tego zestawu narzędzi popchnął mnie do refleksji, że czasy
+procesorów 32 bitowych powoli mijają i niebawem, chcąc nie chcąc, trzeba będzie
+się przesiąść na ich następców, choćby po to aby odpalić sobie jakieś SDK...</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

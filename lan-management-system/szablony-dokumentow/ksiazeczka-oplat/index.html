@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Książeczka opłat dla LMS</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Szablon książeczki opłat dla Lan Management System"/>
+    <meta name="keywords" content="LMS, Lan Management System, sieci LAN, programowanie webowe, platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Książeczka opłat dla LMS</h2>
+    <hr>
+
+    <ul>
+<li>wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej</li>
+<li>numer konta bankowego brany z karty klienta (obsługa IBAN)</li>
+<li>możliwość konfiguracji pola "nazwa odbiorcy" oraz szablonu pola "tytułem" z poziomu LMS</li>
+<li>możliwość konfiguracji ilości stron oraz ilości druków na stronę (1 lub 2)</li>
+<li>opcja drukowania na wszystkich drukach sumy zobowiązań klienta wynikającej z
+przypisanych mu taryf</li>
+<li>opcja generowania druków przelewu tylko dla wybranego zakresu miesięcy</li>
+<li>kompatybilność z LMS w wersjach GIT i INET oraz prawdopodbnie także ze starszymi wersjami LMS</li>
+</ul>
+
+<h3 id="instalacja%3A">Instalacja:</h3>
+
+<p>Zawartość paczki z szablonem należy umieścić w katalogu <em>lms/documents/templates/</em>.
+Podkład druku wpłaty należy umieścić w katalogu <em>lms/img/</em>.</p>
+
+<p>Jeśli instalacja jest wykonywana w starszej wersji LMS należy w plikach <em>engine.php</em>
+i <em>plugin.php</em> odnaleźć zakomentowane sekcje <em>old config</em>, odkomentować je a zakomentować
+sekcje <em>new config</em>.</p>
+
+<p>Zawartość pliku <em>strings.php</em> należy dodać do obecnej zawartości pliku
+<em>lms/lib/locale/pl/strings.php</em>.</p>
+
+<h3 id="konfiguracja%3A">Konfiguracja:</h3>
+
+<p>W konfiguracji interfejsu użytkownika, w sekcji <em>finances</em>, należy dodać 
+następujące zmienne:</p>
+
+<ul>
+<li><em>transfer_forms_receiver_line_1</em> - nazwa odbiorcy, linia 1</li>
+<li><em>transfer_forms_receiver_line_2</em> - nazwa odbiorcy, linia 2</li>
+<li><em>transfer_forms_pay_title</em> - tytuł przelewu</li>
+<li><em>transfer_forms_pages</em> - ilość stron</li>
+<li><em>transfer_forms_per_page</em> - ilość druków na stronę</li>
+<li><em>transfer_forms_to_words_short</em> - <em>true</em> jeśli ma być generowana krótka słowna wersja należności</li>
+</ul>
+
+<hr />
+
+<p>Zobacz także:</p>
+
+<ul>
+<li><a href="../wezwanie-do-zaplaty">Wezwanie do zapłaty</a></li>
+<li><a href="../przedsadowe-wezwanie-do-zaplaty">Przedsądowe wezwanie do zapłaty</a></li>
+<li><a href="../informacje-do-umowy-zawartej-poza-lokalem">Informacje do umowy zawartej poza lokalem</a></li>
+<li><a href="../odstapienie-od-umowy-zawartej-poza-lokalem">Odstąpienie od umowy zawartej poza lokalem</a></li>
+</ul>
+
+
+</article>
+
+
+    </main>
+    
+    </body>
+</html>

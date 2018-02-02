@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Debugowanie testów. Jasmine i Karma</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Debugowanie testów jednostkowych napisanych przy pomocy Jasmine w środowisku Karma"/>
+    <meta name="keywords" content="debugowanie testów, framework jasmine, uruchamianie testów, jakość oprogramowania"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Debugowanie testów. Jasmine i Karma</h2>
+    <hr>
+
+    <p>W tym wpisie przedstawię jak uruchomić przy pomocy środowiska Karma testy napisane
+w frameworku Jasmine z opcją debugowania w przeglądarce.</p>
+
+<p>Jeśli śledzisz od dłuższego czasu rozwój DDF to zauważyłeś pewnie że sporo czasu
+i miejsca na tym blogu poświęcam testom:</p>
+
+<ul>
+<li><a href="http://lion.net.pl/2016/03/07/zapach-jasminu.html">Zapach Jaśminu</a></li>
+<li><a href="http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html">Testowanie wyjątków w Jasmine</a></li>
+</ul>
+
+<p>Dziś, z powodu pewnego głupiutkiego błędu 
+zmuszony byłem dowiedzieć się w jaki sposób uruchomić test w środowisku przeglądarki
+by móc przy pomocy FireBuga i wbudowanego w niego debuggera prześledzić co się 
+dzieje w kodzie. Możesz powiedzieć że przecież jest funkcja <em>dump()</em> dzięki której
+można w kodzie Jasmine wyrzucić sobie na ekran zawartość zmienne. Niestety, to nie
+zadziała gdy test wpadnie w nieskończoną pętlę, a tak właśnie działo się w moim 
+przypadku.</p>
+
+<p>Okazało się że rozwiązanie jest proste, trzeba tylko dobrze poszukać. Wykorzystałem
+do tego <a href="http://www.itsmycodeblog.com/debugging-phantomjs-tests-in-a-browser/">wpis na blogu "It's my code blog"</a>.
+Zawarte tam wskazówki dostosowałem do sekcji opisującej zadanie odpalające Karma
+w moim pliku Gruntfile.js. Co należało zrobić?</p>
+
+<ol>
+<li><p>doinstalować przy pomocy NPM i dodać informację o pluginach w sekcji options:</p>
+
+<p>plugins: [
+    'karma-jasmine',
+    'karma-coverage',
+    'karma-phantomjs-launcher'
+],</p></li>
+<li><p>zmienić wartość autoWatch z false na true w sekcji options</p></li>
+<li>zmienić wartość singleRun z true na false w sekcji options</li>
+<li>zmienić wartość background z true na false w sekcji unit</li>
+</ol>
+
+<p>Od tego momentu wywołanie polecenia <em>grunt karma</em> powoduje wykonanie wszystkich 
+testów ale po wszystkim nie kończy działania środowiska testowego Karma. Dzięki 
+temu można w przeglądarce pod adresem <em>http://localhost:8080/debug.html</em> zobaczyć
+przy pomocy FireBuga co się dzieje w kodzie. Ponowne wykonanie testów polega na
+odświeżeniu strony w przeglądarce. Dzięki temu kod testów można zatrzymać na
+ustawionych w FireBugu punktach wstrzymania i podejrzeć co też kryje się w zmiennych.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

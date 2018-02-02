@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Serwer CI dla LMS</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Opis konfiguracji serwera Continous Integration dla Lan Management System"/>
+    <meta name="keywords" content="Jenkins, PHP, continous integration, quality assurance, Lan Management System, static analyse, unit testing, jakość oprogramowania, serwer ciągłej integracji, testy jednostkowe"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Serwer CI dla LMS</h2>
+    <hr>
+
+    <p>Napisałem ten krótki opis konfiguracji serwera CI dla LMS w celu ułatwienia 
+osobom zainteresowanym rozwojem LMS automatyzacji procesu sprawdzania 
+poprawności i jakości kodu w repozytorium LMS. <strong>Za serwer CI posłuży 
+<a href="https://jenkins-ci.org/">Jenkins</a> ze względu na jego popularność oraz gotowe 
+komponenty integrujące go z narzędziami służącymi do analizy kodu napisanego w 
+języku PHP</strong>. Instalacja będzie działała "out-of-box" gdy 
+<a href="https://github.com/lmsgit/lms/pull/621">pull request #621</a>
+zostanie przyjęty. Do tego czasu należy za źródło LMSa brać 
+<a href="https://github.com/maciejlew/lms">mój fork</a>.</p>
+
+<p>Przed instalacją warto zapoznać się z możliwościami Jenkinsa - materiałów
+na jego temat w Internecie jest mnóstwo.</p>
+
+<p>Jenkins zostanie skonfigurowany z obsługą narzędzi takich jak:</p>
+
+<ul>
+<li><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHPCS</a></li>
+<li><a href="http://phpmd.org/">PHPMD</a></li>
+<li><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></li>
+<li><a href="http://pdepend.org/">PDEPEND</a></li>
+<li><a href="https://phpunit.de/">PHPUnit</a>.</li>
+</ul>
+
+<p>Informacje o nich także znajdziecie w sieci.</p>
+
+<p><strong>Opis instalacji i konfiguracji powstał częściowo w oparciu o 
+<a href="http://jenkins-php.org/">szablon PHP dla Jenkinsa</a> oraz częściowo o moje
+własne doświadczenia</strong>. Będzie to opis dla pojedynczego noda.
+Instalacja przeprowadzę krok po kroku. W sieci możecie znaleźć gotowe rozwiązania 
+pozwalające uprościć proces budowy, tworzenie architektury dla testów, 
+jak np. kontenery Dockera, ale nie będę tego omawiał w tym wpisie. 
+Instalację możecie przeprowadzić na stacji roboczej lub na wirtualnej maszynie - 
+nie ma to znaczenia z punktu widzenia opisanej poniżej procedury.</p>
+
+<h2 id="instalacja">Instalacja</h2>
+
+<p>Instalacja opisałem jest dla dystrybucji Debian i pochodnych. Zakładam że
+w systemie jest zainstalowane to co dotychczas developer musiał i tak mieć
+zainstalowane, czyli PHP5, Composer i git.</p>
+
+<p>Jako root wykonuję polecenia:</p>
+
+<pre><code>wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
+echo 'deb http://pkg.jenkins-ci.org/debian binary/' &gt;&gt; /etc/apt/sources.list
+aptitude update
+aptitude install jenkins php5-xdebug curl
+</code></pre>
+
+<p>Jako zwykły użytkownik wykonuję polecenia:</p>
+
+<pre><code>wget http://localhost:8080/jnlpJars/jenkins-cli.jar
+java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations warnings xunit git
+curl -L https://raw.githubusercontent.com/sebastianbergmann/php-jenkins-template/master/config.xml | java -jar jenkins-cli.jar -s http://localhost:8080 create-job php-template
+</code></pre>
+
+<p>Po pomyślnej instalacji Jenkins powinien działać już w tle jako daemon i być 
+dostępny w przeglądarce pod adresem localhosta na porcie 8080.</p>
+
+<h2 id="konfiguracja">Konfiguracja</h2>
+
+<p>Konfigurację przeprowadzę przy pomocy interfejsu webowego Jenkinsa.
+W opisie konfiguracji będę używał angielskich nazw elementów interfejsu
+z powodu tego że część z nich nie jest przetłumaczona na język polski.
+Po otwarciu strony głównej tej aplikacji powinniśmy widzieć
+panel zarządzania Jenkinsem. (Domyślnie nie są skonfigurowane żadne
+ACL więc każdy może dowolnie modyfikować konfigurację i uruchamiać
+zadania - nie jest to najlepsze rozwiązanie na dłuższą metę i może 
+prowadzić do rzeczy strasznych ;). Skonfigurowanie ACL wykracza
+poza zakres tego wpisu - informacje jak to zrobić można znaleźć w
+sieci).</p>
+
+<p>Ostatnie z poleceń wykonanych podczas instalacji dodało do Jenkinsa
+szablon dla projektów pisanych w PHP. Na podstawie tego szablonu
+zbuduję konfigurację dla LMS (tzw. joba).</p>
+
+<p>Wybieram <strong>"New Item"</strong>. Wypełniam nazwę, np: <strong>"LMS"</strong>. Wybieram 
+ostatnią dostępną opcję: <strong>"Copy existing Item"</strong> i w pole <strong>"Copy
+from"</strong> wpisuję <strong>"php-template"</strong>. Klikam <strong>"OK"</strong>.</p>
+
+<p>W tym momencie na liście jobów widzę nowy projekt o nazwie LMS.
+Klikając w jego nazwę przechodzę do podglądu. W menu wybieram "Configure".</p>
+
+<p>Konfigurację joba zaczynam od usunięcia zbędnych elementów. Elementy wykonują
+się z góry na dół listy. Każdy z takich bloczków mogę przesuwać przy 
+pomocy myszy lub usuwać klikając w znajdujące się w jego obrębie przyciski
+<strong>"Delete"</strong>. Usuwam bloki nazywające się <strong>"Plot build data"</strong> związane z narzędziem
+PHPLOC oraz bloki <strong>"Publish HTML reports"</strong> związane z PHPDOX. Pierwsze z narzędzi pozwala na
+analizę złożoności projektu - moim zdaniem raczej nie przydaje się w codziennej 
+pracy, poza tym jego instalacja przy pomocy Composera kończy się konfliktami
+z innymi bardziej przydatnymi narzędziami. Drugie z narzędzi pozwala na 
+wygenerowanie dokumentacji technicznej na podstawie adnotacji w kodzie,
+także moim zdaniem jest to zbędne.</p>
+
+<p>Po poprzednim kroku moja konfiguracja jest już prawie gotowa, poza tym
+że nie wiadomo gdzie jest kod projektu który chcę testować ;).
+Mógłbym wszystko skonfigurować tak aby celowało w moją kopię roboczą,
+jeśli akurat znajdowałaby się ona na tym samym systemie, ale nie jest to dobry 
+pomysł. Skonfiguruję Jenkinsa tak, aby zrobił sobie "clone" z mojego
+lokalnego repozytorium LMS a następnym razem gdy uruchomię build robił "pull". 
+Mam już doinstalowany plugin obsługujący git w Jenkinsie więc jedyne co pozostaje
+mi zrobić to wybrać opcję <strong>"Git"</strong> w sekcji <strong>"Source Code Management"</strong>.
+Podaję URL do repo. Znajduje się ono na tym samym hoście więc wpisuję
+ścieżkę do niego: <strong>"/home/maciek/lms"</strong>. Jeśli byłoby ono gdzieś w 
+sieci to podałbym URL, np: <strong>"https://github.com/lmsgit/lms"</strong>. Można także wskazać
+branch inny niż master. Jest to dobre rozwiązanie jeśli chcemy przetestować
+swoje własne zmiany przez wysłaniem ich do głównego brancha i dalej do
+LMS na GitHubie. Wpisuję w pole <strong>"Branches to build"</strong> wartość <strong>"*/dev"</strong>.</p>
+
+<p>Zajmę się teraz do instalacją wspomnianych wcześniej narzędzi, dzięki którym
+przetestujemy LMS. Są one wskazane w pliku composer.json więc należałoby
+wykonać polecenie "composer update". Nie będę tego jednak robić ręcznie -
+zajmie się tym Jenkins. Dodaję kolejny krok wybierając <strong>"Add build step"</strong> >
+<strong>"Execute shell"</strong>. Ustawiam ten bloczek na samym początku sekcji <strong>"Build"</strong>.
+W jego treści wpisuję:</p>
+
+<pre><code>cd $WORKSPACE
+composer update
+</code></pre>
+
+<p>Kolejnym krokiem na liście zdarzeń naszego joba jest "Invoke Ant". Spowoduje
+on wykonanie targetu "full-build", który jest opisany w pliku build.xml 
+dostarczanym wraz z LMS. Target ten, a właściwie inkludowane przez niego
+targety, automatyzują cały proces testowania. Niektóre z nich korzystają
+z plików konfiguracyjnych także dostarczanych wraz z LMS w katalogu build.
+Myślę że nazwy targetów oraz to co się w nich dzieje jest zrozumiałe więc
+nie będę się za bardzo o nich rozpisywał, opis można znaleźć na stronie
+<a href="http://jenkins-php.org/">szablonu PHP dla Jenkinsa</a>, jedyna różnica polega
+na tym że ścieżki dostosowałem do struktury LMS.</p>
+
+<h2 id="uruchomienie">Uruchomienie</h2>
+
+<p>Skonfigurowany job mogę uruchomić klikając w przyciski <strong>"Build now"</strong> znajdujące
+się w kilku miejscach interfejsu. Spowoduje to uruchomienie wszystkich 
+skonfigurowanych wcześniej kroków w projekcie. Podgląd na żywo mogę uzyskać 
+klikając w <strong>"Console Output"</strong>. Tam też znajdę wszystkie informacje w przypadku
+niepowodzenia.</p>
+
+<p>Domyślnie "workspace" Jenkinsa znajduje się w <strong>"/var/lib/jenkins/jobs"</strong>. Tam 
+też powinien utworzyć się folder o nazwie naszego projektu, a w nim sam
+klon repozytorium oraz konfiguracja, logi i raporty z buildów. W przypadku problemów
+z konfiguracją Jenkinsa, jeśli podejrzewamy że są one związane z którymś
+z targetów opisanych w pliku build.xml, opłaca się uruchamiać tylko 
+wybrany podejrzany target. Mogę to zrobić z poziomu katalogu projektu w workspace
+wydając komendę, jako użytkownik jenkins:</p>
+
+<pre><code>cd /var/lib/jenkins/jobs/LMS/workspace/
+ant &lt;nazwa_targetu&gt;
+</code></pre>
+
+<p>Opublikowałem także <a href="https://gist.github.com/maciejlew/9b207f32be4af5bf8cbe">mój referencyjny konfig joba dla LMS</a>. 
+W razie problemów możecie go porównać z konfigiem znajdującym się w 
+<strong>/var/lib/jenkins/jobs/LMS/config.xml</strong>.</p>
+
+<p>Po skończonym buildzie kolor ikonki stanu przy projekcie wskazuje, czy w 
+projekcie są poważne błędy, czy może wszystkie testy się udały. Klikając
+w numer builda mogę przejść do informacji o nim, a stamtąd do podglądu
+raportów wygenerowanych przez uruchomione pomocnicze narzędzia.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

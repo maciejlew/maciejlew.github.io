@@ -1,1 +1,0 @@
-Zainteresowanych zleceniem mi prac programistycznych [zapraszam do kontaktu](/kontakt).

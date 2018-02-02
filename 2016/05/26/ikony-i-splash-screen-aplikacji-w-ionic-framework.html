@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Ikony i splash screen aplikacji w Ionic Framework</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Jak przygotować ikonę i splash screen aplikacji w Ionic Framework?"/>
+    <meta name="keywords" content="java script, ionic framework, android, ikona aplikacji, splash screen"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Ikony i splash screen aplikacji w Ionic Framework</h2>
+    <hr>
+
+    <p>Przygotowanie ikony aplikacji i jej "splash screena" w Ionic Framework jest bardzo 
+proste. W tym wpisie dowiesz się jak zrobić to w mgnieniu oka i to na wszystkie
+najbardziej popularne urządzenia za jednym zamachem!</p>
+
+<h3 id="tworzenie-ikony">Tworzenie ikony</h3>
+
+<p>Utworzenie ikony dla aplikacji rozwijanej w Ionic polega na dwóch prostych krokach.
+Po pierwsze należy przygotować wyjściowy obrazek. Powinien on mieć rozmiary 512x512
+pikseli. Należy go umieścić w katalogu projektu w podkatalogu <em>resources</em>. Nazwą
+obrazka ikony powinno być <em>icon</em>, obsługiwane rozszerzenia to <em>.psd</em>, <em>.png</em> i 
+<em>.ai</em>. Kolejnym krokiem jest wydanie polecenia:</p>
+
+<pre><code>ionic resources --icon
+</code></pre>
+
+<p>Ionic Framework wygeneruje w tym momencie zestaw ikon dla wszystkich skonfigurowanych
+środowisk uruchomieniowych (android, ios, itd.) i dla wszystkich najpopularniejszych
+rozmiarów urządzeń.</p>
+
+<h3 id="tworzenie-splash-screen">Tworzenie splash screen</h3>
+
+<p>Tworzenie obrazu powitalnego aplikacji nie odbiega bardzo od tworzenia ikony.
+Należy jednak dobrze przygotować wyjściowy obrazek. Powinien on mieć 2208x2208
+pikseli, z czego najważniejsze jego elementy powinny się zmieścić w kwadracie
+o rozmiarze 1200x1200 pikseli. Pozostałe części obrazka mogą zostać przycięte 
+podczas generowania splash screena na poszczególne rozdzielczości urządzeń.
+Niestety jest to dość nieprzewidywalne i jedynym wyjściem jest próbowanie do skutku
+aż uzyskamy zadowalający rezultat dla większości rozdzielczości. Poleceniem
+które uruchamia generowanie splash screenów jest:</p>
+
+<pre><code>ionic resources --splash
+</code></pre>
+
+<h3 id="optymalizacja">Optymalizacja</h3>
+
+<p>Zarówno wynikowe ikony jak i obrazy powitalne aplikacji nie są zoptymalizowane.
+Przepuszczając je przez narzędzie optipng można zyskać kilkanaście procent na wadze
+obrazków, co może się przełożyć nawet na kilkadziesiąt kilobajtów mniej w 
+rozmiarze całej aplikacji.</p>
+
+<h3 id="testowanie-ikony-i-splash-screena">Testowanie ikony i splash screena</h3>
+
+<p>Aby przetestować działanie ikon i splash screena należy wgrać aplikację na urządzenie
+poleceniem:</p>
+
+<pre><code>ionic run
+</code></pre>
+
+<p>Jeśli aplikacja była już wcześniej testowana na urządzeniu pomocne może okazać
+się wyczyszczenie cache aplikacji na urządzeniu.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

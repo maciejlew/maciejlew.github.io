@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Format opisu leków w DDF</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Konkurs &quot;Daj się poznać 2016&quot;"/>
+    <meta name="keywords" content="daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, yeoman, ionic framework, generator aplikacji, jasmine, bdd, testowanie aplikacji"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Format opisu leków w DDF</h2>
+    <hr>
+
+    <p>Na potrzeby <a href="http://lion.net.pl/2016/03/01/dam-sie-poznac.html">aplikacji DDF</a> 
+(fajnie jest wprowadzać swoje własne 3-znakowe akronimy - informatycy to uwielbiają) 
+wymyśliłem format w jakim opisywane będą leki i ich dawkowanie.</p>
+
+<p>Wszystkie dane przechowywane będą w plikach JSON, dzięki czemu nie będzie problemów
+z ich tworzeniem, pobieraniem i przetwarzaniem w aplikacji DDF. Format ten jest 
+także bardzo "ludzki" więc myślę że nawet osoby nietechniczne będą w stanie 
+przygotować swoje zestawy leków.</p>
+
+<h2 id="zestawy-lek%C3%B3w">Zestawy leków</h2>
+
+<p>Zestawy leków opisywane będą w plikach o następującej strukturze:</p>
+
+<p>(Przykład)[https://gist.github.com/maciejlew/aaef76a1781717f15743]</p>
+
+<h2 id="dane-o-leku%2C-dawkowanie">Dane o leku, dawkowanie</h2>
+
+<p>Każdy lek powinien posiadać identyfikator, nazwę, opis oraz parametry funkcji
+dawkowania. Wyróżniłem dwa podstawowe typy opisu dawkowania: przy pomocy funkcji
+liniowej (<em>simple</em>) oraz przy pomocy wartości dyskretnych (<em>complex</em>). Typ będzie
+potrzebny aby algorytm wiedział z czym ma do czynienia przed rozpoczęciem parsowania
+danych. Zazwyczaj wzór potrzebny do wyliczenia podawany jest w postaci prostej 
+zależności liniowej:</p>
+
+<p><strong>y(x) = a * x</strong></p>
+
+<p>ogólnie:</p>
+
+<p><strong>y(x) = a * x + b</strong></p>
+
+<p>(Przykład)[https://gist.github.com/maciejlew/df0aef76b78203fc2034]</p>
+
+<p>jednak być może ktoś chciałby stworzyć bardziej wyrafinowane zależności, jak:</p>
+
+<p><strong>y_min(x) = a_min * x + b; y_max(x) = a_max * x + b</strong></p>
+
+<p>(Przykład)[https://gist.github.com/maciejlew/bbb28441759d7262922d]</p>
+
+<p>lub nawet:</p>
+
+<p><strong>y_1 = a_1; y_2 = a_2; ...; y_n = a_n</strong></p>
+
+<p>(Przykład)[https://gist.github.com/maciejlew/35eaf86339e6fad33e14]</p>
+
+<p>Te wszystkie typy opisów zamierzam obsługiwać w DDF.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>SpreadIT 2017 - relacja</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Relacja z SpreadIT 2017"/>
+    <meta name="keywords" content="SpreadIT 2017, konferencja IT, relacja, inżynieria programowania, jakość kodu, programowanie gier, biznes i rozwój"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>SpreadIT 2017 - relacja</h2>
+    <hr>
+
+    <p>Wczoraj miało miejsce jubileuszowe, piąte z kolei SpreadIT - konferencja mająca za cel szerzenie nowych trendów w IT zarówno wśród nowych adeptów technologii informacyjnych jak i wśród starych wyjadaczy. Jak co roku, przygotowałem krótką relację z tego wydarzenia.</p>
+
+<h2 id="tematyka-konferencji">Tematyka konferencji</h2>
+
+<p>W tym roku ścieżki tematyczne zostały lekko przemianowane. Wszystko mamy więc tym razem pogrupowane bardziej w "inglish":</p>
+
+<ul>
+<li>Software Architecture</li>
+<li>GameDev</li>
+<li>Software Craftsmanship</li>
+</ul>
+
+<p>Po porównaniu do <a href="/2016/11/20/spreadit-2016-relacja.html">agendy poprzedniej edycji konferencji</a>, widzimy że gałąź <em>Biznes i rozwój</em> została zastąpiona <em>Software craftsmanship</em> gdzie sprytnie wstrzyknięto tematy związane z rozwojem. Być może zostało to podyktowane tym, że w mojej ocenie, wykłady związane z biznesem i rozwojem cieszyły się rok temu umiarkowanym zainteresowaniem, a przy rekordowej w tym roku frekwencji uczestników (podobno ponad 500 osób) trzeba było jakoś równomiernie ich porozrzucać po aulach Wydziału Automatyki, Elektroniki i Informatyki.</p>
+
+<p>Jak wspomniałem, w tym roku zainteresowanych udziałem w konferencji było tak dużo, że trudno "na oko powiedzieć" które wykłady cieszyły się największym powodzeniem. Na aulach czasami brakowało miejsc siedzących! Ja, podobnie jak rok temu i jak zwykle, najbardziej zainteresowany byłem wywodzącą się z inżynierii oprogramowania, ścieżką <em>Software Architecture</em>. Z tego powodu miałem okazję wysłuchać prelekcji nt:</p>
+
+<ul>
+<li>Event Processing in Action</li>
+<li>Pragmatic Monolith-First, easy to decompose, clean architecture</li>
+<li>Orchestrate your choreography!</li>
+<li>Historia jednego repozytorium - projektowanie git workflow oraz zarządzanie repozytorium</li>
+<li>DevOps as code w pędzącym startupie</li>
+</ul>
+
+<h2 id="event-processing-in-action">Event Processing in Action</h2>
+
+<p>Zdarzenia i architektura sterowana zdarzeniami to jeden z najpopularniejszych obecnie tematów konferencji związanych z IT. Sebastian Malaca pokazał nam jak prawidłowo podejść do zadania wykrywania zdarzeń w naszych projektach. Było więc kilka słów o <a href="https://en.wikipedia.org/wiki/Event_storming">Event Stroming</a>, o prawidłowym nazewnictwie, o dekompozycji nieprawidłowo rozpoznanych zdarzeń, o event procesorze. Była to bardzo dobra prelekcja, pozwalająca nowym w temacie zapoznać się z procesowaniem zdarzeń, a osobom z pewnym doświadczeniem usystematyzować wiedzę i wyłapać pewne "smaczki".</p>
+
+<h2 id="pragmatic-monolith-first%2C-easy-to-decompose%2C-clean-architecture">Pragmatic Monolith-First, easy to decompose, clean architecture</h2>
+
+<p>Ta prezentacja miała być chyba odpowiedzią na hype związany z mikroserwisami/mikrousługami. Piotr Pelczar udowadniał, że monolityczna architektura systemu także może mieć swoje zalety, a dobrze zaprojektowana lub dobrze zrefaktoryzowana może w przyszłości doprowadzić do wydzielenia z niej mikroserwisów. Podkreślone zostało, że bezzasadne nastawienia się na architekturę mikroserwisów może prowadzić do porażki serwisu, że podczas projektowania architektury systemu należy pamiętać aby w analizie zwrócić uwagę na zasadę YAGNI. Była to bardzo ciekawa prezentacja, biorąc pod uwagę to że praktycznie cały czas biorę udział głównie w projektach zbudowanych w oparciu o monolit. Lata doświadczeń w pracy nad projektami monolitycznymi, obserwacje jak ewoluuje ich architektura, w porównaniu do tego co zaprezentował prelegent, pozwala mi powiedzieć sobie samemu że idą one w dobrym kierunku - co cieszy :)</p>
+
+<h2 id="orchestrate-your-choreography%21">Orchestrate your choreography!</h2>
+
+<p>Tytuł tej prezentacji był zagadkowy. Do ostatniego momentu nie wiedziałem o czym tak na prawdę będzie ten wykład. Daniel Pokusa - organizator SpreadIT - porównał dla nas projektowanie metody do konceptów znanych z muzyki. Prelegent bardzo szybko nawiązał kontakt z publicznością. Poprzez eksperyment wytłumaczył zwięźle różnice pomiędzy orkiestracją a choreografią.  Dowiedzieliśmy się jak te dwie metody wyznaczania czasu przekładają się na budowę podstawowych struktur we współczesnym programowaniu jakimi są funkcje/metody.</p>
+
+<h2 id="historia-jednego-repozytorium---projektowanie-git-workflow-oraz-zarz%C4%85dzanie-repozytorium">Historia jednego repozytorium - projektowanie git workflow oraz zarządzanie repozytorium</h2>
+
+<p>Podczas tej prezentacji Karol Lasończyk pokazał jak w projekcie w którym bierze udział rozwiązana jest kwestia prowadzenia repozytorium. Mieliśmy więc okazję posłuchać o <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">GitFlow</a>, trochę o problemach z upublicznianiem repozytorium, trochę o celowym nadpisywaniu historii w git. Dowiedzieliśmy się jakie są wady i zalety mergowania i rebase. Było też kilka słów o komponowaniu opisu rewizji. Prawdę powiedziawszy czegoś innego spodziewałem się po tej prezentacji. Ogólnie było OK, ale chętnie posłuchałbym jak tak skomplikowane podejście do struktury repozytorium ma się do continous deployment i continous delivery.</p>
+
+<h2 id="devops-as-code-w-p%C4%99dz%C4%85cym-startupie">DevOps as code w pędzącym startupie</h2>
+
+<p>Ostatnia prezentacja w której miałem przyjemność uczestniczyć dotyczyła modnego ostatnio konceptu trzymania infrastruktury w kodzie. Jakub Bujny - kolejny programista który postanowił zostać DevOpsem (jakaś epidemia?) - tłumaczył nam czym tak naprawdę zajmuje się DevOps. Dowiedzieliśmy się jak dla rozwijającej się firmy ważne może być to by infrastruktura ich systemu IT została przygotowana w profesjonalny sposób, gotowy na skalowania i na reagowanie na katastrofy. Prelegent pokazał, na przykładzie chmury, jak szybko można skalować system gdy jego struktura opisana jest w kodzie, jak można przerzucić cały system z jednego krańca świata na drugi jednym poleceniem (oczywiście wypracowanie kodu który to jedno polecenie wykona nie jest już tak trywialne). Dowiedzieliśmy się więc czym jest IaC, jakie są popularne narzędzia do tworzenia IaC, jak można sobie ułatwić pracę z serwerem CI Jenkins przy pomocy pipeline. Była to ciekawa prelekcja, nie tylko dla osób zainteresowanych przeniesieniem swojej infrastruktury w chmury. Budowanie lokalnej infrastruktury w firmie czy też w domowym labie.</p>
+
+<h2 id="podsumowanie">Podsumowanie</h2>
+
+<p>Tegoroczna, 5-ta edycja SpreadIT, odbyła się z wielka pompą. 35 prelekcji, 3 ścieżki tematyczne, znani i doświadczeni prelegenci zrobili swoje. Organizatorzy stanęli na wysokości zadania. Konferencję uznaję za udaną także i dla mnie. Nie mogłem uczestniczyć we wszystkich prelekcjach, ale i tak wyniosłem z tego wydarzenie wiele nowych pomysłów, które zamierzam zrealizować we własnych projektach. Warto poświęcić te kilka godzin, zarówno gdy dopiero zaczynamy nasza przygodę z IT, jak i wtedy gdy siedzimy w tym biznesie od lat. Do zobaczenia za rok!</p>
+
+<hr />
+
+<p>Zobacz także:</p>
+
+<ul>
+<li><a href="http://lion.net.pl/2016/11/20/spreadit-2016-relacja.html">SpreadIT 2016 - relacja</a></li>
+<li><a href="http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html">SpreadIT 2015 - relacja</a></li>
+</ul>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

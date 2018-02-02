@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Raport #3 z prac nad DDF</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Raport #3 z postępów w pracach nad projektem DDF - Drug Dose Framework"/>
+    <meta name="keywords" content="daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków,  framework, ionic, angularjs, android, ios, analiza wymagań, raport"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Raport #3 z prac nad DDF</h2>
+    <hr>
+
+    <p>To już koniec. Ale coś jest. Jest skończona aplikacja na konkurs DSP2016! Zachęcam
+do zapoznania się z trzecim i ostatnim raportem z prac nad DDF wykonanym podczas
+trwania DSP2016 (mam zamiar dalej rozwijać aplikację, ale już poza konkursem).</p>
+
+<h3 id="post%C4%99py-w-ddf">Postępy w DDF</h3>
+
+<p><img src="img/DSP2016/icon.png" alt="Ikona DDF" /></p>
+
+<p>Z powodów opisanych <a href="/2016/05/28/szewc-ze-starym-smartfonem-chodzi.html">przeze mnie ostatnio</a>, postanowiłem przesunąć funkcjonalność
+polegającą na możliwości wskazywania plików z lekami i ich dawkowaniem do <a href="/2016/04/29/podroz-na-wschod-roadmap-z-moscow.html">sekcji
+"COULD" analizy wymagań</a>. Zostały za to spełnione inne wymagania, czyli 
+<a href="/2016/04/26/i18n-z-angularjs-gettext.html">wdrożenie I18N</a>, <a href="/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html">dodanie ikony i splash screena</a> (widoczne obok).
+Została wydana <a href="https://github.com/maciejlew/drug-dose-framework/releases/tag/v0.3.0">wersja 0.3 aplikacji DDF, do pobrania z repozytorium</a>.</p>
+
+<h4 id="model">Model</h4>
+
+<p>Model aplikacji nie zmienił się od czasu <a href="/2016/04/14/raport-2-z-prac-nad-ddf.html">poprzedniego raportu</a>.</p>
+
+<h4 id="kontroler">Kontroler</h4>
+
+<p>Jeśli chodzi o kontrolery to tutaj zaszły pewne zmiany. Dodałem obsługę <a href="/2016/04/19/powiadomienia-w-ionic-framework.html">powiadomień 
+z Ionic Framework</a>. Wprowadziłem <a href="/2016/04/26/i18n-z-angularjs-gettext.html">wsparcie dla I18N</a> - udało mi się to 
+zrobić tak, że <a href="/2016/05/10/zmiana-jezyka-on-the-fly-w-ionic-i-angular-gettext.html">zmiana języka odbywa się bez konieczności przeładowania aplikacji 
+na telefonie</a>.</p>
+
+<h4 id="widoki">Widoki</h4>
+
+<p>Został zmieniony sposób w jaki przechodzi się do szczegółów leku oraz do kalkulatora
+dawki leku. Dodano zostało wysuwane boczne menu. Z tego menu można przejść do 
+widoku ustawień językowych. Poniżej przedstawiam galerię prezentującą poszczególne
+widoki:</p>
+
+<div class="gallery">
+
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-drug-list-polish.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-drug-list-polish.png" alt="lista leków"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-drug-details.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-drug-details.png" alt="szczegóły leku"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-dose-calculator.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-dose-calculator.png" alt="kalkulator dawki leku"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-dose-result.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-dose-result.png" alt="wynik obliczenia dawki leku"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-dose-exception.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-dose-exception.png" alt="komunikat o błędzie podczas obliczania dawki leku"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-language-settings-1.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-language-settings-1.png" alt="boczne menu prowadzące do widoku zmiany języka aplikacji"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-language-settings-2.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-language-settings-2.png" alt="formularz zmiany języka aplikacji"/>
+            </a>
+        </div>
+    </div>
+    <div class="galleryItem">
+        <div class="stack twisted">
+            <a href="http://lion.net.pl/img/DSP2016/ddf-drug-list-english.png">
+                <img src="http://lion.net.pl/img/DSP2016/ddf-drug-list-english.png" alt="lista leków po angielsku"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+<h4 id="testy">Testy</h4>
+
+<p>Włączyłem w projekcie <a href="/2016/05/18/code-coverage-w-karma.html">raporty pokrycia kodu testami jednostkowymi uruchamianymi
+przez Karma</a>. Pomimo rozwoju aplikacji udało się utrzymać pokrycie na wysokim
+poziomie, oscylującym wokół 80%, model przetestowany jest w 100%!</p>
+
+<p><img src="img/DSP2016/ddf-code-coverage-1.png" alt="DDF Karma code coverage report #1" /></p>
+
+<h4 id="stan-aplikacji">Stan aplikacji</h4>
+
+<p>Ostatnie 3 miesiące były dla mnie bardzo pracowite. Poza codziennymi obowiązkami
+zgłosiłem się do DSP2016. Warunki konkursu były bardzo dobrze wyważone - pozwalały
+wystartować w nim osobom pracującym, które na rozbudowę aplikacji i blogowanie
+mogły poświęcić ograniczoną ilość czasu. Myślę że udało mi się wykorzystać ten 
+czas w optymalny sposób. Aplikacja konkursowa działa, może być już wykorzystywana
+w zakresie dla którego została wymyślona, czyli do budowy aplikacji obliczających dawki
+leków na urządzeniach mobilnych. Użytkownikowi został dostarczony działający
+szkielet, do którego wystarczy że wgra <a href="/2016/03/12/format-opisu-lekow-w-ddf.html">zestaw interesujących do leków zgodny ze
+wspieranym formatem</a>.</p>
+
+<h4 id="co-dalej-z-ddf%3F">Co dalej z DDF?</h4>
+
+<p>Aplikacja będzie dalej rozwijana. W moim wolnym czasie
+postaram się dodać kolejne funkcjonalności. Czekam także na opinie użytkowników
+i pomysły na dalszy rozwój DDF!</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

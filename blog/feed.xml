@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>LionNet</title>
+        <description>Programowanie, sieci komputerowe, informatyka.</description>      
+        <link>http://lion.net.pl</link>
+        <language>pl</language>
+        <generator>Sculpin</generator>
+        <category>IT</category>
+        <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
+                <item>
+            <title>SpreadIT 2017 - relacja</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>OOP, QA, SpreadIT, MEETING</category>
+                                    <content:encoded>&lt;p&gt;Wczoraj miało miejsce jubileuszowe, piąte z kolei SpreadIT - konferencja mająca za cel szerzenie nowych trendów w IT zarówno wśród nowych adeptów technologii informacyjnych jak i wśród starych wyjadaczy. Jak co roku, przygotowałem krótką relację z tego wydarzenia.&lt;/p&gt;
+
+&lt;h2 id=&quot;tematyka-konferencji&quot;&gt;Tematyka konferencji&lt;/h2&gt;
+
+&lt;p&gt;W tym roku ścieżki tematyczne zostały lekko przemianowane. Wszystko mamy więc tym razem pogrupowane bardziej w &quot;inglish&quot;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software Architecture&lt;/li&gt;
+&lt;li&gt;GameDev&lt;/li&gt;
+&lt;li&gt;Software Craftsmanship&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Po porównaniu do &lt;a href=&quot;/2016/11/20/spreadit-2016-relacja.html&quot;&gt;agendy poprzedniej edycji konferencji&lt;/a&gt;, widzimy że gałąź &lt;em&gt;Biznes i rozwój&lt;/em&gt; została zastąpiona &lt;em&gt;Software craftsmanship&lt;/em&gt; gdzie sprytnie wstrzyknięto tematy związane z rozwojem. Być może zostało to podyktowane tym, że w mojej ocenie, wykłady związane z biznesem i rozwojem cieszyły się rok temu umiarkowanym zainteresowaniem, a przy rekordowej w tym roku frekwencji uczestników (podobno ponad 500 osób) trzeba było jakoś równomiernie ich porozrzucać po aulach Wydziału Automatyki, Elektroniki i Informatyki.&lt;/p&gt;
+
+&lt;p&gt;Jak wspomniałem, w tym roku zainteresowanych udziałem w konferencji było tak dużo, że trudno &quot;na oko powiedzieć&quot; które wykłady cieszyły się największym powodzeniem. Na aulach czasami brakowało miejsc siedzących! Ja, podobnie jak rok temu i jak zwykle, najbardziej zainteresowany byłem wywodzącą się z inżynierii oprogramowania, ścieżką &lt;em&gt;Software Architecture&lt;/em&gt;. Z tego powodu miałem okazję wysłuchać prelekcji nt:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Event Processing in Action&lt;/li&gt;
+&lt;li&gt;Pragmatic Monolith-First, easy to decompose, clean architecture&lt;/li&gt;
+&lt;li&gt;Orchestrate your choreography!&lt;/li&gt;
+&lt;li&gt;Historia jednego repozytorium - projektowanie git workflow oraz zarządzanie repozytorium&lt;/li&gt;
+&lt;li&gt;DevOps as code w pędzącym startupie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;event-processing-in-action&quot;&gt;Event Processing in Action&lt;/h2&gt;
+
+&lt;p&gt;Zdarzenia i architektura sterowana zdarzeniami to jeden z najpopularniejszych obecnie tematów konferencji związanych z IT. Sebastian Malaca pokazał nam jak prawidłowo podejść do zadania wykrywania zdarzeń w naszych projektach. Było więc kilka słów o &lt;a href=&quot;https://en.wikipedia.org/wiki/Event_storming&quot;&gt;Event Stroming&lt;/a&gt;, o prawidłowym nazewnictwie, o dekompozycji nieprawidłowo rozpoznanych zdarzeń, o event procesorze. Była to bardzo dobra prelekcja, pozwalająca nowym w temacie zapoznać się z procesowaniem zdarzeń, a osobom z pewnym doświadczeniem usystematyzować wiedzę i wyłapać pewne &quot;smaczki&quot;.&lt;/p&gt;
+
+&lt;h2 id=&quot;pragmatic-monolith-first%2C-easy-to-decompose%2C-clean-architecture&quot;&gt;Pragmatic Monolith-First, easy to decompose, clean architecture&lt;/h2&gt;
+
+&lt;p&gt;Ta prezentacja miała być chyba odpowiedzią na hype związany z mikroserwisami/mikrousługami. Piotr Pelczar udowadniał, że monolityczna architektura systemu także może mieć swoje zalety, a dobrze zaprojektowana lub dobrze zrefaktoryzowana może w przyszłości doprowadzić do wydzielenia z niej mikroserwisów. Podkreślone zostało, że bezzasadne nastawienia się na architekturę mikroserwisów może prowadzić do porażki serwisu, że podczas projektowania architektury systemu należy pamiętać aby w analizie zwrócić uwagę na zasadę YAGNI. Była to bardzo ciekawa prezentacja, biorąc pod uwagę to że praktycznie cały czas biorę udział głównie w projektach zbudowanych w oparciu o monolit. Lata doświadczeń w pracy nad projektami monolitycznymi, obserwacje jak ewoluuje ich architektura, w porównaniu do tego co zaprezentował prelegent, pozwala mi powiedzieć sobie samemu że idą one w dobrym kierunku - co cieszy :)&lt;/p&gt;
+
+&lt;h2 id=&quot;orchestrate-your-choreography%21&quot;&gt;Orchestrate your choreography!&lt;/h2&gt;
+
+&lt;p&gt;Tytuł tej prezentacji był zagadkowy. Do ostatniego momentu nie wiedziałem o czym tak na prawdę będzie ten wykład. Daniel Pokusa - organizator SpreadIT - porównał dla nas projektowanie metody do konceptów znanych z muzyki. Prelegent bardzo szybko nawiązał kontakt z publicznością. Poprzez eksperyment wytłumaczył zwięźle różnice pomiędzy orkiestracją a choreografią.  Dowiedzieliśmy się jak te dwie metody wyznaczania czasu przekładają się na budowę podstawowych struktur we współczesnym programowaniu jakimi są funkcje/metody.&lt;/p&gt;
+
+&lt;h2 id=&quot;historia-jednego-repozytorium---projektowanie-git-workflow-oraz-zarz%C4%85dzanie-repozytorium&quot;&gt;Historia jednego repozytorium - projektowanie git workflow oraz zarządzanie repozytorium&lt;/h2&gt;
+
+&lt;p&gt;Podczas tej prezentacji Karol Lasończyk pokazał jak w projekcie w którym bierze udział rozwiązana jest kwestia prowadzenia repozytorium. Mieliśmy więc okazję posłuchać o &lt;a href=&quot;https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow&quot;&gt;GitFlow&lt;/a&gt;, trochę o problemach z upublicznianiem repozytorium, trochę o celowym nadpisywaniu historii w git. Dowiedzieliśmy się jakie są wady i zalety mergowania i rebase. Było też kilka słów o komponowaniu opisu rewizji. Prawdę powiedziawszy czegoś innego spodziewałem się po tej prezentacji. Ogólnie było OK, ale chętnie posłuchałbym jak tak skomplikowane podejście do struktury repozytorium ma się do continous deployment i continous delivery.&lt;/p&gt;
+
+&lt;h2 id=&quot;devops-as-code-w-p%C4%99dz%C4%85cym-startupie&quot;&gt;DevOps as code w pędzącym startupie&lt;/h2&gt;
+
+&lt;p&gt;Ostatnia prezentacja w której miałem przyjemność uczestniczyć dotyczyła modnego ostatnio konceptu trzymania infrastruktury w kodzie. Jakub Bujny - kolejny programista który postanowił zostać DevOpsem (jakaś epidemia?) - tłumaczył nam czym tak naprawdę zajmuje się DevOps. Dowiedzieliśmy się jak dla rozwijającej się firmy ważne może być to by infrastruktura ich systemu IT została przygotowana w profesjonalny sposób, gotowy na skalowania i na reagowanie na katastrofy. Prelegent pokazał, na przykładzie chmury, jak szybko można skalować system gdy jego struktura opisana jest w kodzie, jak można przerzucić cały system z jednego krańca świata na drugi jednym poleceniem (oczywiście wypracowanie kodu który to jedno polecenie wykona nie jest już tak trywialne). Dowiedzieliśmy się więc czym jest IaC, jakie są popularne narzędzia do tworzenia IaC, jak można sobie ułatwić pracę z serwerem CI Jenkins przy pomocy pipeline. Była to ciekawa prelekcja, nie tylko dla osób zainteresowanych przeniesieniem swojej infrastruktury w chmury. Budowanie lokalnej infrastruktury w firmie czy też w domowym labie.&lt;/p&gt;
+
+&lt;h2 id=&quot;podsumowanie&quot;&gt;Podsumowanie&lt;/h2&gt;
+
+&lt;p&gt;Tegoroczna, 5-ta edycja SpreadIT, odbyła się z wielka pompą. 35 prelekcji, 3 ścieżki tematyczne, znani i doświadczeni prelegenci zrobili swoje. Organizatorzy stanęli na wysokości zadania. Konferencję uznaję za udaną także i dla mnie. Nie mogłem uczestniczyć we wszystkich prelekcjach, ale i tak wyniosłem z tego wydarzenie wiele nowych pomysłów, które zamierzam zrealizować we własnych projektach. Warto poświęcić te kilka godzin, zarówno gdy dopiero zaczynamy nasza przygodę z IT, jak i wtedy gdy siedzimy w tym biznesie od lat. Do zobaczenia za rok!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Zobacz także:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;{{site.url}}/2016/11/20/spreadit-2016-relacja.html&quot;&gt;SpreadIT 2016 - relacja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;{{site.url}}/2015/11/22/spreadit-2015-relacja.html&quot;&gt;SpreadIT 2015 - relacja&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+            <pubDate>2017-11-19T09:20:00+01:00</pubDate>
+            <link>http://lion.net.pl/2017/11/19/spreadit-2017-relacja.html</link>
+            <atom:link href="http://lion.net.pl/2017/11/19/spreadit-2017-relacja.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/11/19/spreadit-2017-relacja.html</guid>
+        </item>
+                <item>
+            <title>Jak instalować Debiana i przy okazji nie oszaleć</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>Linux</category>
+                        <category>Debian</category>
+                                    <content:encoded>&lt;p&gt;Instalacja Debiana. Niby nic takiego. Mamy graficzny interfejs, wszystko jest ładnie przetłumaczone na nasz rodzimy język. A jednak i tak można napotkać na problemy po których na głowie mamy jeszcze mniej włosów niż wcześniej, a melisa to za mało...&lt;/p&gt;
+
+&lt;p&gt;Sprawa komplikuje się gdy próbujemy użyć bardziej zaawansowanych opcji, a nasza konfiguracja to nie ścieżka wytyczona przez wbudowany w instalator przewodnik.&lt;/p&gt;
+
+&lt;p&gt;Opiszę kilka problemów na jakie natrafiłem ostatnio. Być może pozwoli to komuś zaoszczędzić minut, a może nawet godzin, spędzonych na kminieniu WTF?!&lt;/p&gt;
+
+&lt;h2 id=&quot;usb-stick&quot;&gt;USB stick&lt;/h2&gt;
+
+&lt;p&gt;Instalacja uruchomiona została z bootowalnego pendrive / USB stick. Pierwszy problem wystąpił gdy już wydawało mi się nic nietypowego już nie może się zdarzyć - podczas instalacji podstawowych składników systemu (jak się później okaże to dopiero początek nietypowych scenariuszy podczas instalacji). Wszystko powinno od tego momentu &lt;em&gt;podziać się&lt;/em&gt; automatycznie. A tu niespodzianka: debootstrap zgłasza niepoprawne pakiety. A przecież sprawdziłem sumę kontrolną pobranego ISO?! Co mogło pójść nie tak? Sprawdziłem MD5 problematycznego pakietu. Rzeczywiście niepoprawny. Rozpakowałem ISO na drugim komputerze i wszystko OK. Nagrałem ponownie ISO na USB. Zmniejszyłem przy tym parametr &lt;em&gt;bs&lt;/em&gt; polecenia &lt;em&gt;dd&lt;/em&gt;. I znowu to samo, tym razem inny pakiet uszkodzony. Kolejna próba, nagrałem wszystko ponownie i sprawdziłem lokalnie na drugim komputerze:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;debootstrap --components=main --resolve-deps --no-check-gpg stretch ~/test/ file:///cdrom/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I znowu inny pakiet uszkodzony. Okazało się że problemem jest sam nośnik. ISO nagrywa się, ale losowe pakiety są uszkodzone. Nie przeszkadza to instalatorowi Debiana uruchomić się i dać użytkownikowi możliwość skonfigurowania sobie wszystkiego. Sprawdzanie pakietów następuje dopiero po etapie konfiguracji - trochę to głupie...&lt;/p&gt;
+
+&lt;p&gt;Po nagraniu na inny nośnik ten etap instalacji przeszedł dalej bez problemów. Prawdopodobnie gdybym nagrywał na CD nie byłoby możliwości wystąpienia takiego problemu - sprawdziłbym integralność danych po zapisie na CD wbudowaną w program do nagrywania funkcją.&lt;/p&gt;
+
+&lt;h2 id=&quot;noexec-na-%2Fvar&quot;&gt;noexec na /var&lt;/h2&gt;
+
+&lt;p&gt;Niedługo trwała moja radość po rozwiązaniu problemów z nośnikiem. Kolejny problem objawił się także na etapie instalacji podstawowych składników systemu. Okazało się że jeden z pakietów w swoim postint - skrypcie wykonywanym po udanej instalacji - wymaga uruchomienia czegoś co znalazło się na partycji /var, której akurat podczas konfiguracji ustawiłem w opcjach montowania noexec... To akurat było proste do prawienia i nie wymagało konfiguracji wszystkiego od początku. Po wyłączeniu noexec instalacja przebiegła pomyślnie.&lt;/p&gt;
+
+&lt;h2 id=&quot;largefile-na-%2Fboot&quot;&gt;largefile na /boot&lt;/h2&gt;
+
+&lt;p&gt;Kolejnym krokiem, po instalacji podstawowych składników systemu, jest instalacja GRUBa lub LILO. Zwyczajowo instaluje się je na partycji /boot i tak też chciałem zrobić tym razem. Na partycję /boot przeznaczyłem 100MB licząc na to że jeszcze zostanie tam trochę miejsca. Nieopacznie włączyłem tam także opcję montowania &lt;em&gt;largefile&lt;/em&gt; co poskutkowało tym że GRUB nie był w stanie się tam wypakować. Otrzymywałem komunikat &lt;em&gt;&quot;no space left on device&quot;&lt;/em&gt;... Niestety przyczyn takiej pomyłki nie dało się łatwo naprawić - wymagało to ode mnie ponownego partycjonowania dysków i instalacji całego systemu od nowa. Tym razem zwiększyłem także rozmiar samej partycji &lt;em&gt;/boot&lt;/em&gt; - tak na wszelki wypadek.&lt;/p&gt;
+
+&lt;h2 id=&quot;podsumowanie&quot;&gt;Podsumowanie&lt;/h2&gt;
+
+&lt;p&gt;Instalacja Debiana jest prosta. O ile instalujemy według utartych schematów. Jeśli zaczynamy kombinować szukając optymalizacji wydajności, poprawy bezpieczeństwa, instalujemy RAID oraz LVM, to proces instalacji znacznie się komplikuje i jej czas wydłuża. Opisywana tu instalacja zajęła mi kilka wieczorów i wymagała kilkunastu ponownych prób. Mimo wszystko Debian jako dystrybucja Linuksa jest, moim zdaniem, najlepszym wyborem zarówno na stacje robocze jak i serwery. Polecam ją każdemu kto lubi się uczyć, nie boi się popełniać błędów i ma ambicje poznać swój system od podszewki, choć czasem może on doprowadzić człowieka do szaleństwa.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-10-23T20:00:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/10/23/jak-instalowac-debiana-i-przy-okazji-nie-oszalec.html</link>
+            <atom:link href="http://lion.net.pl/2017/10/23/jak-instalowac-debiana-i-przy-okazji-nie-oszalec.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/10/23/jak-instalowac-debiana-i-przy-okazji-nie-oszalec.html</guid>
+        </item>
+                <item>
+            <title>Nowa stabilna wersja LMS 1.11.22</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>LMS</category>
+                                    <content:encoded>&lt;p&gt;Nie tak dawno temu światło dzienne ujrzała nowa stabilna wersja LMS, oznaczona numerem 1.11.22.&lt;/p&gt;
+
+&lt;p&gt;W nowym LMS znajdziemy, m. in.:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;podgląd wielu dokumentów w jednym pliku PDF,&lt;/li&gt;
+&lt;li&gt;zmianę kolejności modułów w panelu abonenta metodą przeciągnij-upuść,&lt;/li&gt;
+&lt;li&gt;opcję pozwalającą wyłączyć zapisywanie nazw/nazwisk klientów dużymi literami,&lt;/li&gt;
+&lt;li&gt;faktury pro-forma,&lt;/li&gt;
+&lt;li&gt;możliwość zmiany numeru i planu numeracyjnego faktury,&lt;/li&gt;
+&lt;li&gt;JPK FA,&lt;/li&gt;
+&lt;li&gt;JPK VAT,&lt;/li&gt;
+&lt;li&gt;możliwość definiowania wielu adresów,&lt;/li&gt;
+&lt;li&gt;xajax 0.6,&lt;/li&gt;
+&lt;li&gt;więcej JS w GUI LMS - asynchroniczne ładowanie zawartości stron modułów,&lt;/li&gt;
+&lt;li&gt;poprawki w skrypcie importującym TERYT,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;oraz masę mniejszych i większych poprawek, np:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;poprawki w module dokumentów,&lt;/li&gt;
+&lt;li&gt;poprawki w module helpdesk,&lt;/li&gt;
+&lt;li&gt;poprawki w module dodawania komputera,&lt;/li&gt;
+&lt;li&gt;poprawki w module edycji klienta,&lt;/li&gt;
+&lt;li&gt;poprawki w module terminarza,&lt;/li&gt;
+&lt;li&gt;poprawki w module map.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wszystkie szczegóły znajdziesz w pliku doc/ChangeLog w paczce z LMS, którą można pobrać ze &lt;a href=&quot;http://lms.org.pl&quot;&gt;strony projektu&lt;/a&gt; bądź jego &lt;a href=&quot;https://github.com/lmsgit/lms&quot;&gt;repozytorium GitHub&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-06-28T21:00:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/06/28/nowa-stabilna-wersja-lms-1-11-22.html</link>
+            <atom:link href="http://lion.net.pl/2017/06/28/nowa-stabilna-wersja-lms-1-11-22.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/06/28/nowa-stabilna-wersja-lms-1-11-22.html</guid>
+        </item>
+                <item>
+            <title>Silnik zarządzania konfiguracją aplikacji w C++</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;Rozbudowane aplikacje potrzebują funkcji pozwalających je konfigurować. Jak zrobić
+prosty silnik zarządzania aplikacją napisaną w C++?&lt;/p&gt;
+
+&lt;h3 id=&quot;dry-and-others&quot;&gt;DRY (and others)&lt;/h3&gt;
+
+&lt;p&gt;Zgodnie z zasadą DRY, nie powinniśmy powtarzać wielokrotnie tych samych żmudnych
+czynności, lecz wypracować mechanizmy pozwalające wydzielić tę czynność do 
+narzędzia wielokrotnego użytku, tym samym automatyzując sobie pracę i skracając 
+jej czas i redukując potrzebne na jej wykonanie zasoby. Zasadę tę można śmiało
+rozszerzyć - nie powinniśmy powtarzać także przygotowanych przez innych rozwiązań,
+zwłaszcza gdy działają, są udostępnione za darmo i są odpowiadającej nam jakości
+(no chyba że w celach nauki). Podsumowując, warto się rozejrzeć za gotowymi 
+narzędziami do zarządzania konfiguracją aplikacji napisanych w C++.&lt;/p&gt;
+
+&lt;h3 id=&quot;settingsparser&quot;&gt;SettingsParser&lt;/h3&gt;
+
+&lt;p&gt;SettingsParser jest prostą biblioteką napisaną w C++, nieposiadającą zewnętrznych 
+zależności, udostępnioną za darmo na licencji &lt;a href=&quot;https://en.wikipedia.org/wiki/Zlib_License&quot;&gt;zlib&lt;/a&gt;, &lt;a href=&quot;https://github.com/Foaly/SettingsParser&quot;&gt;udostępnioną na GitHubie&lt;/a&gt;
+przez programistę Foaly.&lt;/p&gt;
+
+&lt;p&gt;Biblioteka SettingsParser pozwala na odczyt i zapis konfiguracji w formacie
+przypominającym stary i lubiany format ini (ale bez wsparcia dla sekcji). Mamy tu
+więc proste, jednolinijkowe &lt;strong&gt;konstrukcje &lt;em&gt;klucz = wartość&lt;/em&gt;&lt;/strong&gt;. To jednak wystarczy
+nam już aby skonfigurować prostą aplikację.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SettingsParser settings;
+if (!settings.loadFromFile(&quot;dds.ini&quot;)) {
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ponadto, dzięki wbudowanym metodom szablonowym, biblioteka ta zadba o konwersję
+odczytanych z pliku wartości do typu zmiennej której wartość tę chcemy przypisać
+(w przykładzie DrugsHandler dziedziczy po Handler):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Handler::Handler(SettingsParser settings) : settings(settings) {}
+
+SettingsParser Handler::getSettings() {
+    return settings;
+}
+
+void DrugsHandler::onRequest(const Net::Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
+
+    std::string files_path;
+
+    getSettings().get(&quot;files_path&quot;, files_path);
+
+    if (!files_path.empty()) {
+
+        std::ostringstream s;
+        s &amp;lt;&amp;lt; files_path &amp;lt;&amp;lt; &quot;/drugs.json&quot;;
+
+        Http::serveFile(response, s.str().c_str(), MIME(Application, Json));
+
+    } else {
+        response.send(Http::Code::Internal_Server_Error);
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biblioteka SettingsParser może być łatwo zaadoptowana do każdego projektu, a dzięki
+braku zależności łatwo wstrzyknieta do kodu i wkorzystana stosując techniki DI.&lt;/p&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-04-15T21:30:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html</link>
+            <atom:link href="http://lion.net.pl/2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html</guid>
+        </item>
+                <item>
+            <title>Pistache i RapidJSON - pliki statyczne</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;Zastanawiasz się jak serwować pliki statyczne w Pistache? To banalnie proste!&lt;/p&gt;
+
+&lt;h3 id=&quot;czytanie-danych-z-pliku---metoda-http%3A%3Aservefile&quot;&gt;Czytanie danych z pliku - metoda Http::serveFile&lt;/h3&gt;
+
+&lt;p&gt;To &lt;a href=&quot;/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html&quot;&gt;jak odczytać plik JSON i odesłać go w całości do użytkownika&lt;/a&gt; było jednym z 
+pierwszych zadań jakie postawiłem sobie podczas nauk Pistache i RapidJSON. Opisany
+wtedy sposób działa i ma swoje zalety (o których za chwilkę). Ma też swoje wady
+- wymaga otwarcia pliku, parsowania przez RapidJSON i własnoręcznego tworzenia 
+strumienia odpowiedzi. Można to zrobić w Pistache inaczej.&lt;/p&gt;
+
+&lt;p&gt;Framework Pistache posiada wbudowaną metodę odsyłania do przeglądarki plików
+statycznych, oto jak możesz to zrobić:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void DrugsHandler::onRequest(const Net::Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
+
+    Document config;
+    char _config_buffer[65536];
+
+    FILE* config_pointer = fopen(&quot;config.json&quot;, &quot;r&quot;);
+    FileReadStream config_stream(config_pointer, _config_buffer, sizeof(_config_buffer));
+    config.ParseStream(config_stream);
+    fclose(config_pointer);
+
+    if (config.HasMember(&quot;files_path&quot;)) {
+
+        std::ostringstream s;
+        s &amp;lt;&amp;lt; config[&quot;files_path&quot;].GetString() &amp;lt;&amp;lt; &quot;/drugs.json&quot;;
+
+        Http::serveFile(response, s.str().c_str(), MIME(Application, Json));
+
+    } else {
+        response.send(Http::Code::Internal_Server_Error);
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jeśli porównasz ten kod z &lt;a href=&quot;/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html&quot;&gt;poprzednio prezentowaną wersją tej metody&lt;/a&gt;, to 
+zauważysz że nie ma tu już zabawy w otwieranie pliku z listą leków, ustawiania
+nagłówków odpowiedzi, strumieniowania pliku. Wszystko załatwia metoda 
+&lt;em&gt;Http::serveFile&lt;/em&gt;. Metoda ta jako argumentu przyjmuje, po kolei, obiekt odpowiedzi,
+ścieżkę do pliku i opcjonalnie typ zwracanej odpowiedzi. Co się dzieje gdy pliku
+nie ma w podanej ścieżce na dysku? Wysłana zostanie pusta odpowiedź z kodem 404.
+Dodatkowo, metoda ta zwraca obiekt &lt;em&gt;promise&lt;/em&gt;, a obsługując go możemy zrobić np. 
+logowanie zdarzeń/błędów (obiekt ten przenosi informację o ilości wysłanych danych).&lt;/p&gt;
+
+&lt;h4 id=&quot;wady-i-zalety&quot;&gt;Wady i zalety&lt;/h4&gt;
+
+&lt;p&gt;Do zalet można &lt;em&gt;Http::serveFile&lt;/em&gt; można zaliczyć:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;zwięzłość&lt;/li&gt;
+&lt;li&gt;szybkość&lt;/li&gt;
+&lt;li&gt;obsługę Content-Type&lt;/li&gt;
+&lt;li&gt;obsługę błędów&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Do minusów tej metody można zaliczyć:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;wysyłanie pliku bez parsowania (być może to nie JSON?)&lt;/li&gt;
+&lt;li&gt;wysyłanie pliku takim jak jest - nie są usuwane z niego zbędne białe znaki,
+zachowywane jest formatowanie, odpowiedź może &quot;ważyć&quot; więcej niż po przeparsowaniu
+przez RapidJSON&lt;/li&gt;
+&lt;li&gt;w przypadku braku pliku kodem odpowiedzi musi być 404&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-04-14T22:30:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/04/14/pistache-i-rapidjson-pliki-statyczne.html</link>
+            <atom:link href="http://lion.net.pl/2017/04/14/pistache-i-rapidjson-pliki-statyczne.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/04/14/pistache-i-rapidjson-pliki-statyczne.html</guid>
+        </item>
+                <item>
+            <title>Pistache i RapidJSON - typ odpowiedzi w nagłówku</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;Po przeczytaniu poprzednich postów wiesz już jak zwrócić w Pistache odpowiedź w
+formacie JSON. Po wprowadzeniu poprawek omówionych w tym wpisie będziesz w stanie
+powiadomić aplikacje klienckie o tym odpowiedź z Twoich webserwisów że to właśnie
+JSON.&lt;/p&gt;
+
+&lt;h3 id=&quot;nag%C5%82%C3%B3wki-content-type-w-pistache&quot;&gt;Nagłówki Content-Type w Pistache&lt;/h3&gt;
+
+&lt;p&gt;Nagłówek Content-Type to jeden z najczęściej wykorzystywanych nagłówków HTTP.
+Informuje on aplikacje klienckie o tym jak zinterpretować odpowiedź z serwera HTTP,
+czy to jest tekst, czy obrazek, czy wideo, itp.&lt;/p&gt;
+
+&lt;p&gt;Domyślnie odpowiedź z Pistache wysłana jest bez tego nagłówka.&lt;/p&gt;
+
+&lt;h4 id=&quot;jak-sprawdzi%C4%87-czy-odpowied%C5%BA-zawiera-nag%C5%82%C3%B3wek-content-type%3F&quot;&gt;Jak sprawdzić czy odpowiedź zawiera nagłówek Content-Type?&lt;/h4&gt;
+
+&lt;p&gt;Najprościej sprawdzić to poleceniem narzędziem curl:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -I -X GET http://localhost:9080/drugs/drug_one
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;W odpowiedzi możemy zobaczyć taki tekst, wskazujący że nagłówek jest przekazywany:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;HTTP/1.1 200 OK
+Content-Type: application/json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Możesz także posłużyć się dowolną przeglądarką i przejrzeć odpowiedź, np przy 
+pomocy wbudowanych w nią narzędzi dla programistów.&lt;/p&gt;
+
+&lt;h4 id=&quot;ustawianie-content-type-w-pistache&quot;&gt;Ustawianie Content-Type w Pistache&lt;/h4&gt;
+
+&lt;p&gt;Dodanie nagłówka Content-Type w Pistache jest proste. Należy przed wysłaniem 
+odpowiedzi (metodą send) wywołać na obiekcie odpowiedzi metodę pobierającą obiekt
+nagłówków, a następnie na tym obiekcie metodą dodającą kolejny, jak w przykładzie:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;response.headers().add&amp;lt;Net::Http::Header::ContentType&amp;gt;(MIME(Application, Json));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Wykorzystywane tu jest makro &lt;em&gt;MIME&lt;/em&gt; pozwalające w skróconej formie określić typ 
+zwracanej odpowiedzi. Istnieją także inne, bardziej rozbudowane, metody wskazywania
+typów MIME, których opis można znaleźć w dokumentacji frameworka Pistache.&lt;/p&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-04-09T14:15:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html</link>
+            <atom:link href="http://lion.net.pl/2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html</guid>
+        </item>
+                <item>
+            <title>Pistache i RapidJSON - przekazywanie zmiennych w URL</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;Po przykładzie, w którym pokazałem &lt;a href=&quot;/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html&quot;&gt;jak odczytać plik i przesłać jego zawartość
+jako odpowiedź webserwisu w Pistache&lt;/a&gt;, czas na przykład jak odebrać od
+użytkownika zmienną i na jej podstawie przygotować odpowiedź.&lt;/p&gt;
+
+&lt;h3 id=&quot;zmienne-w-url&quot;&gt;Zmienne w URL&lt;/h3&gt;
+
+&lt;p&gt;Rejestrowanie endpointów zawierających zmienne jest banalnie proste. Wygląda to
+identycznie jak rejestrowanie każdej innej metody webserwisu, z tym wyjątkiem że
+w miejscach w których spodziewamy się od użytkownika użycia zmiennej definiujemy
+zaślepkę:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Routes::Get(router, &quot;/drugs/:id&quot;, Routes::bind(&amp;amp;DrugHandler::onRequest, &amp;amp;drug_handler));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;W powyższym przykładzie spodziewam się że użytkownik w celu pobrania informacji
+o konkretnym leku poda jego identyfikator w miejscu oznaczonym jako &lt;em&gt;:id&lt;/em&gt;. Każda
+zaślepka w Pistache wyróżniona musi zostać poprzez dodanie znaku dwukropka przed
+jej nazwą.&lt;/p&gt;
+
+&lt;p&gt;Odbieranie nazwanej zmiennej w metodzie obsługi webserwisu także jest bardzo proste:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;auto id = request.param(&quot;:id&quot;).as&amp;lt;std::string&amp;gt;();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Z obiektu &lt;em&gt;request&lt;/em&gt; pobieramy parametr &quot;:id&quot; jako string. Od tego momentu możemy
+w programie używać zmiennej &lt;em&gt;id&lt;/em&gt; do której przypisana jest wartość podana przez
+użytkownika webserwisu.&lt;/p&gt;
+
+&lt;p&gt;Istnieje także możliwość odbierania zmiennych bez podawania ich nazw, podając
+kolejne pozycje w sekwencji zaślepek.&lt;/p&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-04-08T22:30:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html</link>
+            <atom:link href="http://lion.net.pl/2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html</guid>
+        </item>
+                <item>
+            <title>Pistache i RapidJSON - czytanie danych z pliku</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;&lt;a href=&quot;/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html&quot;&gt;Zapowiadałem&lt;/a&gt;, że pokażę jak wczytać przy pomocy RapidJSON dane z pliku i odesłać
+je do użytkownika webserwisu stworzonego w Pistache. Oto jak to możesz zrobić.&lt;/p&gt;
+
+&lt;h3 id=&quot;strumie%C5%84-z-pliku-json&quot;&gt;Strumień z pliku JSON&lt;/h3&gt;
+
+&lt;p&gt;Po otwarciu pliku, wykorzystując standardowe fopen, możesz w RapidJSON nakazać 
+aby dane z tego pliku były zaczytane przy pomocy obiektu strumienia &lt;em&gt;FileReadStream&lt;/em&gt;.
+Następnie należy przetworzyć te dane używając metody &lt;em&gt;parseStream&lt;/em&gt; obiektu &lt;em&gt;Document&lt;/em&gt;.
+W ten nieskomplikowany sposób możesz w kilku linijkach kody w szybki i wydajny
+sposób uzyskać dostęp do zapisanych w plikach JSON. Możesz sprawdzać ich wartości,
+manipulować nimi, zapisywać ponownie do pliku (tu pomocny może okazać się obiekt
+klasy &lt;em&gt;FileWriteStream&lt;/em&gt;). Poniższy przykład pokazuje jak otwieram plik z konfiguracją
+na podstawie której otwieram docelowy plik z danymi, po czym odsyłam całą jego 
+zawartość do użytkownika webserwisu. Oczywiście dla takiej funkcjonalności parsowanie
+pliku jest trochę przerostem formy nad treścią, ale jest to dobra baza pod to by
+w przyszłości wprowadzić w tej metodzie paginację, wyszukiwanie i inne zaawansowane
+funkcje.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void DrugsHandler::onRequest(const Net::Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
+
+    Document drugs, config;
+    char _drugs_buffer[65536], _config_buffer[65536], _files_path_buffer[65536];
+    StringBuffer drugs_buffer;
+
+    FILE* config_pointer = fopen(&quot;config.json&quot;, &quot;r&quot;);
+    FileReadStream config_stream(config_pointer, _config_buffer, sizeof(_config_buffer));
+    config.ParseStream(config_stream);
+    fclose(config_pointer);
+
+    if (config.HasMember(&quot;files_path&quot;)) {
+
+        sprintf(_files_path_buffer, &quot;%s/drugs.json&quot;, config[&quot;files_path&quot;].GetString());
+        FILE* drugs_pointer = fopen(_files_path_buffer, &quot;r&quot;);
+
+        if (drugs_pointer) {
+            FileReadStream drugs_stream(drugs_pointer, _drugs_buffer, sizeof(_drugs_buffer));
+            drugs.ParseStream(drugs_stream);
+            fclose(drugs_pointer);
+
+            Writer&amp;lt;StringBuffer&amp;gt; writer(drugs_buffer);
+            drugs.Accept(writer);
+
+            response.send(Http::Code::Ok, drugs_buffer.GetString());
+
+        } else {
+            response.send(Http::Code::Internal_Server_Error);
+        }
+    } else {
+        response.send(Http::Code::Internal_Server_Error);
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-03-30T21:40:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</link>
+            <atom:link href="http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</guid>
+        </item>
+                <item>
+            <title>Pistache i RapidJSON - prosty obiekt w odpowiedzi</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;Zdecydowałem się wykorzystać bibliotekę RapidJSON w mojej aplikacji DDS. Kilka 
+kolejnych artykułów będzie jej poświęconych. W tym wpisie pokażę jak zbudować i 
+zwrócić przy pomocy Pistache prosty obiekt JSON.&lt;/p&gt;
+
+&lt;h3 id=&quot;budowniczy-obiekt%C3%B3w-json-w-rapidjson&quot;&gt;Budowniczy obiektów JSON w RapidJSON&lt;/h3&gt;
+
+&lt;p&gt;Jak zarejestrować metodę odpowiadającą na żądanie REST pisałem na blogu w wpisie
+&lt;a href=&quot;/2017/03/25/front-controller-w-pistache.html&quot;&gt;&quot;Front controller w Pistache&quot;&lt;/a&gt;. Gdy już mamy to gotowe, najprostsza metoda
+może wyglądać następująco:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void ProjectHandler::onRequest(const Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
+    StringBuffer s;
+    Writer&amp;lt;StringBuffer&amp;gt; writer(s);
+    writer.StartObject();
+    writer.Key(&quot;name&quot;);
+    writer.String(DDS_NAME);
+    writer.Key(&quot;full_name&quot;);
+    writer.String(DDS_FULL_NAME);
+    writer.Key(&quot;version&quot;);
+    writer.String(DDS_VERSION);
+    writer.Key(&quot;license&quot;);
+    writer.String(DDS_LICENSE);
+    writer.EndObject();
+    response.send(Http::Code::Ok, s.GetString());
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To co tu widać, to najprostsza budowa obiektu JSON w RapidJSON. Nie ma
+tu żadnej interakcji z użytkownikiem, otwierania strumieni, zaczytywania JSON z pliku 
+itp. &quot;Otwieramy&quot; obiekt, dodajemy kolejne pola-klucze i ich wartości, &quot;zamykamy&quot;
+obiekt. Tekstową reprezentację obiektu wysyłamy w odpowiedzi HTTP do użytkownika.
+Prawda że proste? Można by oczywiście ten łańcuch znaków przygotować po prost sklejając
+wszystko przy pomocy podstawowych operacji na łańcuchach, czy też wykorzystując sprint,
+ale API oferowane przez RapidJSON wydaje się po prostu ładniejsze od własnoręcznego
+rzeźbienia w JSON.&lt;/p&gt;
+
+&lt;p&gt;W kolejnych wpisach postaram się pokazać jak przesłać odpowiedź w formacie JSON
+pobraną z pliku.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-03-28T22:05:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html</link>
+            <atom:link href="http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html</guid>
+        </item>
+                <item>
+            <title>Front Controller w Pistache</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;Front controller to jeden z najczęściej wykorzystywanych wzorców projektowych.
+W tym wpisie pokażę jak wykorzystać go w Pistache do stworzenia klasy zarządzającej
+routingiem.&lt;/p&gt;
+
+&lt;h3 id=&quot;routing-w-pistache&quot;&gt;Routing w Pistache&lt;/h3&gt;
+
+&lt;h4 id=&quot;http%3A%3Ahandler&quot;&gt;Http::Handler&lt;/h4&gt;
+
+&lt;p&gt;Temat trasowania w Pistache można rozwiązać na kilka sposobów. Najłatwiejszym,
+pierwszym na jaki natkniesz się czytając dokumentację frameworka, jest zarejestrowanie
+klasy implementującej interfejsy &lt;em&gt;Http::Handler&lt;/em&gt; metodą &lt;em&gt;onRequest&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Metoda ta może wyglądać następująco:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void VersionHandler::onRequest(const Http::Request&amp;amp; request, Http::ResponseWriter response) {
+    response.send(Http::Code::Ok, &quot;DDS &quot; DDS_VERSION);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A kod ją rejestrujący tak:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int main() {
+    Http::listenAndServe&amp;lt;VersionHandler&amp;gt;(&quot;*:9080&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;routes%3A%3Aget&quot;&gt;Routes::Get&lt;/h4&gt;
+
+&lt;p&gt;Jednak, gdy chcemy udostępnić więcej niż jedną metodę, warto poszukać czegoś 
+bardziej zaawansowanego. Tym krokiem na przód będzie stworzenie klasy 
+kontrolującej routing. Klasa ta będzie wykorzystywała wbudowany w Pistache 
+mechanizm routingu. Poszczególne żądania będą obsługiwane przez wyspecjalizowane 
+klasy - handlery. Może to wyglądać na przykład tak:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &quot;pistache/endpoint.h&quot;
+#include &quot;handlers/VersionHandler.h&quot;
+
+class Endpoint
+{
+
+public:
+
+    Endpoint(Net::Address addr)
+        : httpEndpoint(std::make_shared&amp;lt;Net::Http::Endpoint&amp;gt;(addr))
+    {
+    }
+
+    void init(size_t thr = 2) {
+        auto opts = Net::Http::Endpoint::options()
+            .threads(thr)
+            .flags(Net::Tcp::Options::InstallSignalHandler);
+        httpEndpoint-&amp;gt;init(opts);
+        setupRoutes();
+    }
+
+    void start() {
+        httpEndpoint-&amp;gt;setHandler(router.handler());
+        httpEndpoint-&amp;gt;serve();
+    }
+
+    void shutdown() {
+        httpEndpoint-&amp;gt;shutdown();
+    }
+
+    private:
+
+        Rest::Router router;
+        std::shared_ptr&amp;lt;Net::Http::Endpoint&amp;gt; httpEndpoint;
+        VersionHandler version_handler;
+
+        void setupRoutes() {
+            using namespace Net::Rest;
+            Routes::Get(router, &quot;/version&quot;, Routes::bind(&amp;amp;VersionHandler::onRequest, &amp;amp;version_handler));
+
+        }
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Po tej zmianie kod rejestrujący może wyglądać w ten sposób:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int main() {
+
+    Net::Port port(9080);
+
+    int thr = 2;
+
+    Net::Address addr(Net::Ipv4::any(), port);
+
+    Endpoint stats(addr);
+
+    stats.init(thr);
+    stats.start();
+
+    stats.shutdown();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Wykorzystując &lt;em&gt;Routes::Get** należy zwrócić uwagę aby zmienić interfejs metody *onRequest&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void VersionHandler::onRequest(const Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
+    response.send(Http::Code::Ok, &quot;DDS &quot; DDS_VERSION);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I to wszystko. Po tej małej zmianie mamy do dyspozycji front controller, w którym
+możemy rejestrować w prosty sposób kolejne wyspecjalizowane handlery obsługujące 
+żądania użytkowników naszej aplikacji.&lt;/p&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-03-25T21:05:00+01:00</pubDate>
+            <link>http://lion.net.pl/2017/03/25/front-controller-w-pistache.html</link>
+            <atom:link href="http://lion.net.pl/2017/03/25/front-controller-w-pistache.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/03/25/front-controller-w-pistache.html</guid>
+        </item>
+            </channel>
+</rss>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Quality Meetup #7</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Relacja z siódmego spotkania osób związanych i zainteresowanych tworzeniem oprogramowania wysokiej jakości"/>
+    <meta name="keywords" content="quality meetup, continous integration, selenium grid, śląska karta usług publicznych kontenery docker, ciągła integracja, testy akceptacyjne, testy integracyjne"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Quality Meetup #7</h2>
+    <hr>
+
+    <p>Z powodu coraz większego nacisku na testy integracyjne w projektach w których biorę
+udział i pojawiających się z tego powodu problemów do rozwiązania, wybrałem się na
+<strong>spotkanie grupy osób związanych i/lub zainteresowanych tworzeniem oprogramowania
+wysokiej jakości - Quality Meetup #7</strong>. O spotkaniu dowiedziałem się obserwując
+wiadomości związane z Quality Excites, konferencją na której już kiedyś byłem i
+której tematyka i poziom wykładów oraz warsztatów bardzo mi się spodobały. Poświęcenie
+kilku godzin na Quality Meetup również okazało się być dobrym pomysłem, a dlaczego
+napiszę za chwilę. <a href="http://www.meetup.com/Quality-Meetup/">Meetup jest wydarzeniem cyklicznym</a>,
+odbywa się na ono na terenie Górnego Śląska, wszystkim którzy są w jego zasięgu 
+polecam się wybrać. Na to spotkanie przyszło około 30 osób i mieliśmy okazję 
+wysłuchać dwóch prezentacji.</p>
+
+<h2 id="jak-powsta%C5%82-%C5%9Akup-%E2%80%93-historia-projektu">Jak powstał ŚKUP – historia projektu</h2>
+
+<p>Radek Smilgin opowiedział nam o swoich doświadczeniach z pracy jako konsultant
+podczas specyfikowania wymagań dla ŚKUP, doradzania zleceniodawcy oraz zleceniobiorcy
+podczas etapu tworzenia, wdrażania i odbioru projektu. Dowiedzieliśmy się jak
+ważne może okazać się dokładne określenie wymagań, jak może wyglądać rzeczywistość
+w dużych projektach (waterfall, brak wglądu w kod), co może pójść nie tak i ile 
+to może kosztować.</p>
+
+<h2 id="testy-przegl%C4%85darkowe-w-%C5%9Brodowisku-rozproszonym">Testy przeglądarkowe w środowisku rozproszonym</h2>
+
+<p>Łukasz Rosłonek pokazał jak można w łatwy sposób przygotować sobie środowisko
+pod testy przeglądarkowe. Środowisko oparte było o Selenium Grid i Dockera.
+Docker służył do tworzenia na jednym OS wielu kontenerów jak LXC, z których jednak
+każdy był odpowiedzialny za uruchomienie testów na tylko jednej z przeglądarek.
+Wszystko zostało zaprezentowane "na żywo". Mogliśmy obserwować proces instalowania
+i uruchamiania huba oraz nodów Selenium, a także 
+<a href="https://github.com/lroslonek/qm7">uruchamiania testów</a> na tak utworzonej 
+architekturze. Jest to ciekawe podejście które zamierzam przetestować także w 
+moich projektach. Więcej na ten temat można znaleźć na 
+<a href="http://testdetective.com/selenium-grid-with-docker/">blogu autora</a>.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Apache Cordova, Ionic Framework i starsze wersje Androida</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Jak uruchomić aplikację zbudowaną w Ionic Framework na starszych wersjach Androida"/>
+    <meta name="keywords" content="daj się poznać 2016, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, yeoman, ionic framework, generator aplikacji, jasmine, bdd, testowanie aplikacji"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Apache Cordova, Ionic Framework i starsze wersje Androida</h2>
+    <hr>
+
+    <p>Stanąłem dziś przed problemem wgrania mojej aplikacji stworzonej w Ionic Framework
+na kilkuletni już telefon z trochę starszą wersją Androida, a co za tym idzie także
+wymaganą wersją SDK na którym budowano aplikację. Opiszę co udało mi się po kilku 
+godzinach walki zrobić aby to zadziałało.</p>
+
+<h3 id="uruchamianie-aplikacji-na-telefonie">Uruchamianie aplikacji na telefonie</h3>
+
+<p>Uruchomić aplikację zbudowaną w Ionic Framework możemy na kilka sposobów. Do tej
+listy dołączyła się opcja przegotowana przez <a href="/2016/03/03/yeoman-idziemy-na-front.html">szablon Yeoman</a>. 
+Lista ta, posortowana od najbardziej opakowujących poleceń do najbardziej 
+"niskopoziomowych", wygląda tak:</p>
+
+<ul>
+<li>grunt run</li>
+<li>ionic run</li>
+<li>cordova run</li>
+</ul>
+
+<h4 id="grunt-run">grunt run</h4>
+
+<p>To polecenie opakowuje polecenie ionic run. Polecenie czyści śmieci powstałe
+przy poprzednich wywołaniach zadań takich jak run, build czy serve, po czym buduje paczkę.
+Po jej zbudowaniu i wgraniu jej na telefon dodatkowo obserwuje projekt i w razie 
+zmian powtarza automatycznie ten proces.</p>
+
+<h4 id="ionic-run">ionic run</h4>
+
+<p>To polecenie tworzy paczkę i wgrywa ją na telefon. W tle wykonywane jest cordova run.</p>
+
+<h4 id="cordova-run">cordova run</h4>
+
+<p>To polecenie wykonuje całe budowanie paczki APK. Na podstawie manifestu jest w 
+stanie określić jakiego ma użyć SDK.</p>
+
+<h4 id="gradle">gradle</h4>
+
+<p>Uruchomienie powyższych poleceń powoduje uruchomienie narzędzia Gradle (choć można je 
+zmienić na Ant), zbudowanie paczki .apk i wgranie na podłączony do komputera 
+telefon.</p>
+
+<h3 id="opcja-minsdkversion">Opcja minSdkVersion</h3>
+
+<p>Aby uruchomić aplikacje na starszym Androidzie musimy dowiedzieć się jakiemu
+numerowi SDK odpowiada wersja Androida. Powiedzmy że mamy Androida 2.3.6, a 
+odpowiadająca mu wersja SDK to 9. Apache Cordova domyślnie obsługuje minimalnie
+wersję 14. A więc mamy problem. Jeśli korzystamy z Gradle możemy przekazać opcję
+ustawiającą minimalna wersję SDK (z Ant nie działa).</p>
+
+<pre><code>ionic run -- --minSdkVersion=9
+</code></pre>
+
+<p>Możemy także, aby nie musieć ciągle podawać tego parametru, umieścić to w <strong>pliku
+<em>config.xml</em> naszej aplikacji. Należy dodać taką sekcję:</strong></p>
+
+<pre><code>&lt;platform name="android"&gt;
+    &lt;preference name="android-minSdkVersion" value="9" /&gt;
+    &lt;preference name="android-targetSdkVersion" value="9" /&gt;
+&lt;/platform&gt;
+</code></pre>
+
+<p>Spowoduje to że w pliku manifestu będziemy już mieli zapisane jakiej chcemy używać
+wersji, ale nadal nie da się wgrać aplikacji na telefon z powodu:</p>
+
+<blockquote>
+  <p>What went wrong:
+  Execution failed for task ':processDebugManifest'.
+  Manifest merger failed : uses-sdk:minSdkVersion 9 cannot be smaller than version 
+  14 declared in library [android:CordovaLib:unspecified:debug]
+  Suggestion: use tools:overrideLibrary="org.apache.cordova" to force usage</p>
+</blockquote>
+
+<p>Wygląda na to że wystarczy dodać w config.xml taki wpis:</p>
+
+<pre><code>&lt;preference name="tools-overrideLibrary" value="org.apache.cordova" /&gt;
+</code></pre>
+
+<p>lub taki:</p>
+
+<pre><code>&lt;preference name="tools:overrideLibrary" value="org.apache.cordova" /&gt;
+</code></pre>
+
+<p>Niestety to nie zadziała (a w każdym razie długo debugowałem czemu nie zadziała 
+i wygląda na to że nie zadziała i już).</p>
+
+<p><strong>Jedynym wyjściem jest oszukanie Cordovy w taki sposób że wyedytujemy jej plik
+manifestu i zmniejszymy wartość minSdkVersion. Plik ten znajduje się w katalogu
+<em>platforms/android/CordovaLib/AndroidManifest.xml</em>.</strong></p>
+
+<p>Po takim zabiegu zobaczymy w końcu <strong>BUILD SUCCESSFUL</strong> i <strong>LAUNCH SUCCESS</strong> co 
+oznacza, że możemy się już bawić naszą aplikacją na starszym telefonie.</p>
+
+<p>Przykładowy plik <em>config.xml</em> można znaleźć w <a href="https://github.com/maciejlew/drug-dose-framework">repozytorium DDF</a>.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

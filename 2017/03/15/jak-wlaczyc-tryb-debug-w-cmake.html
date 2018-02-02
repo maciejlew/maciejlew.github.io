@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Jak włączyć tryb debug w cmake?</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Podpowiedź jak włączyć debugi podczas wykonywania Makefile wygenerowanego w cmake"/>
+    <meta name="keywords" content="daj się poznać 2017, konkurs programistyczny, aplikacja konkursowa, drug dose framework, aplikacja mobilna, pas pediatryczny, dawkowanie leków, framework pistache, rest, cmake, debug"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Jak włączyć tryb debug w cmake?</h2>
+    <hr>
+
+    <p>W tym krótkim wpisie pokażę jak włączyć tryb debug podczas wykonywania Makefile
+wygenerowanego przez narzędzie cmake.</p>
+
+<h3 id="po-co-debugowa%C4%87-makefile%3F">Po co debugować Makefile?</h3>
+
+<p>Natrafiłem dziś na dziwny problem podczas budowania <a href="http://lion.net.pl/2017/03/01/powtorka-z-rozrywki.html">aplikacji DDS</a>. Błędy kompilacji
+wskazywały na problem z linkowaniem zewnętrznych bibliotek. Wygenerowany przez
+cmake plik Makefile był długi i skomplikowany a ja nie do końca wiedziałem co
+w rzeczywistości dzieje się podczas wykonywania polecenia make. Przydałoby się
+zobaczyć polecenie przekazywane do g++.</p>
+
+<h3 id="konfiguracja-cmake">Konfiguracja cmake</h3>
+
+<p>Podczas budowania pliku Makefile, cmake tworzy także plik CMakeCache.txt. W pliku
+tym znajduje się dodatkowa konfiguracja dla make. Znajdziesz tam opcję 
+<em>CMAKE_VERBOSE_MAKEFILE</em> z wartością domyślnie ustawioną na <em>FALSE</em>. Aby zobaczyć 
+bardziej szczegółowe logi podczas wykonywania polecenia make należy ustawić tę
+opcję na <em>TRUE</em>.</p>
+
+<h3 id="co-mo%C5%BCna-zobaczy%C4%87%3F">Co można zobaczyć?</h3>
+
+<p>Z opcją <em>CMAKE_VERBOSE_MAKEFILE</em> równą <em>FALSE</em> przykładowe wyjście z make wygląda tak:</p>
+
+<pre><code>$ make
+[100%] Building CXX object CMakeFiles/http_server.dir/src/main.cpp.o
+Linking CXX executable http_server
+[100%] Built target http_server
+$ make
+[100%] Built target http_server
+$ make clean
+</code></pre>
+
+<p>Z tą samą opcją ustawioną na <em>TRUE</em> wyjście wygląda następująco:</p>
+
+<pre><code>$ make
+/usr/bin/cmake -H/home/user/drug-dose-server -B/home/user/drug-dose-server --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/user/drug-dose-server/CMakeFiles /home/user/drug-dose-server/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Wejście do katalogu '/home/user/drug-dose-server'
+make -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/depend
+make[2]: Wejście do katalogu '/home/user/drug-dose-server'
+cd /home/user/drug-dose-server &amp;&amp; /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/user/drug-dose-server /home/user/drug-dose-server /home/user/drug-dose-server /home/user/drug-dose-server /home/user/drug-dose-server/CMakeFiles/http_server.dir/DependInfo.cmake --color=
+make[2]: Opuszczenie katalogu '/home/user/drug-dose-server'
+make -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/build
+make[2]: Wejście do katalogu '/home/user/drug-dose-server'
+Linking CXX executable http_server
+/usr/bin/cmake -E cmake_link_script CMakeFiles/http_server.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -pthread    CMakeFiles/http_server.dir/src/main.cpp.o  -o http_server -rdynamic -lnet_static 
+make[2]: Opuszczenie katalogu '/home/user/drug-dose-server'
+/usr/bin/cmake -E cmake_progress_report /home/user/drug-dose-server/CMakeFiles  1
+[100%] Built target http_server
+make[1]: Opuszczenie katalogu '/home/user/drug-dose-server'
+/usr/bin/cmake -E cmake_progress_start /home/user/drug-dose-server/CMakeFiles 0
+$ make
+/usr/bin/cmake -H/home/user/drug-dose-server -B/home/user/drug-dose-server --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/user/drug-dose-server/CMakeFiles /home/user/drug-dose-server/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Wejście do katalogu '/home/user/drug-dose-server'
+make -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/depend
+make[2]: Wejście do katalogu '/home/user/drug-dose-server'
+cd /home/user/drug-dose-server &amp;&amp; /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/user/drug-dose-server /home/user/drug-dose-server /home/user/drug-dose-server /home/user/drug-dose-server /home/user/drug-dose-server/CMakeFiles/http_server.dir/DependInfo.cmake --color=
+make[2]: Opuszczenie katalogu '/home/user/drug-dose-server'
+make -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/build
+make[2]: Wejście do katalogu '/home/user/drug-dose-server'
+make[2]: Nie ma nic do zrobienia w 'CMakeFiles/http_server.dir/build'.
+make[2]: Opuszczenie katalogu '/home/user/drug-dose-server'
+/usr/bin/cmake -E cmake_progress_report /home/user/drug-dose-server/CMakeFiles  1
+[100%] Built target http_server
+make[1]: Opuszczenie katalogu '/home/user/drug-dose-server'
+/usr/bin/cmake -E cmake_progress_start /home/user/drug-dose-server/CMakeFiles 0
+$ make clean
+make -f CMakeFiles/Makefile2 clean
+make[1]: Wejście do katalogu '/home/user/drug-dose-server'
+make -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/clean
+make[2]: Wejście do katalogu '/home/user/drug-dose-server'
+/usr/bin/cmake -P CMakeFiles/http_server.dir/cmake_clean.cmake
+make[2]: Opuszczenie katalogu '/home/user/drug-dose-server'
+make[1]: Opuszczenie katalogu '/home/user/drug-dose-server'
+</code></pre>
+
+<p>Jak widać log jest bardziej szczegółowy. Widać tu przede wszystkim polecenie
+przekazywane do g++ (c++) podczas kompilacji, co może bardzo pomóc w dalszym
+debugowaniu ewentualnych problemów.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

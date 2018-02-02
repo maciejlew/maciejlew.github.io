@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Typy wyjątków w JavaScript</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Omówienie typów wyjątków dostępnych w JavaScript"/>
+    <meta name="keywords" content="wyjątki w JavaScript, obsługa błędów w JavaScript, rzucanie wyjątków, dobre wzorce programowanie, jakość oprogramowania"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Typy wyjątków w JavaScript</h2>
+    <hr>
+
+    <p>W tym wpisie znajdziesz informacje wbudowanych w JS typach wyjątków. Przedstawię 
+także moje spostrzeżenia kiedy i jakich wyjątków używać.</p>
+
+<h2 id="rzucanie-wyj%C4%85tkami">Rzucanie wyjątkami</h2>
+
+<p>Nikt nie lubi gdy go aplikacja znienacka atakuje błędem. Jeszcze gorzej jest gdy
+z opisu błędu nic nie wynika. Czujemy się wtedy niepewnie. Być może jest to pierwsze
+nasze spotkanie z apką a tu od razu taka niespodzianka. Przeklinamy wtedy wszytko
+i wszystkich - aplikację za to że jest taka do niczego, programistów za to że w 
+ogóle zaczęli zajmować się w życiu programowaniem (no chyba że to nasza aplikacja 
+i na dodatek jesteśmy pewni że to my to napisaliśmy ;)). Jedynym co w takiej chwili
+mogłoby nas troszeczkę uspokoić to jasny i jednoznaczny komunikat błędu. Niestety
+nie zawsze tak jest.</p>
+
+<p>W moich aplikacjach staram się implementować jak najbardziej intuicyjną obsługę
+błędów i wyjątków - czyli stanu aplikacji który jest nietypowy i nie powinien się
+zdarzyć. W obecnych czasach aplikacje to już nie proste, monolityczne twory. 
+Coraz częściej zdarza się że aplikacje mają budowę modułową, a moduły mogą zostać
+ponownie wykorzystane w innych miejscach. Z tego powodu kontekst w jakim sytuacja 
+staje się wyjątkowa zawęża się. Dobrym zwyczajem staje się jak największe 
+ograniczenie odpowiedzialności modułu/klasy - tylko do intuicyjnie im przypisywanych 
+zachowań. Z tego powodu coś co w ogólnym kontekście jest sytuacją jasną i obsługiwaną
+przez program w kontekście modułu/klasy jest sytuacją wyjątkową. W takim przypadku
+rzucany z moduły wyjątek jest obsługiwany przez wyższe warstwy aplikacji.</p>
+
+<h2 id="typy-wyj%C4%85tk%C3%B3w">Typy wyjątków</h2>
+
+<p>W chwili obecnej JS udostępnia 7 typów błędów. Są to Error i dziedziczące po nim
+EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError. Z tymi 
+błędami możemy się spotkać podczas wykonywania skryptu, nie muszą być one przez 
+nas specjalnie implementowane aby je zobaczyć. Poza wymienionymi typami możemy 
+także przygotować swój własny obiekt który rzucimy w niestandardowej sytuacji 
+poleceniem throw.</p>
+
+<p>Wszystkie standardowe obiekty błędów w JS tworzy się w analogiczny sposób:</p>
+
+<pre><code>throw new Error(message);
+throw new EvalError(message);
+throw new RangeError(message);
+throw new ReferenceError(message);
+throw new SyntaxError(message);
+throw new TypeError(message);
+throw new URIError(message);
+</code></pre>
+
+<h3 id="error">Error</h3>
+
+<p>Jest to podstawowy typ błędu, najczęściej wykorzystywany w znanych mi aplikacjach
+(ale to raczej z braku wiedzy o innych bardziej opisowych typach).
+Poza samą treścią nie niesie on z sobą żadnej informacji. We własnych programach
+wykorzystuję go gdy nic innego nie pasuje do kontekstu danej sytuacji wyjątkowej.</p>
+
+<h3 id="evalerror">EvalError</h3>
+
+<p>Ten błąd mógł się pojawić w przypadku problemów podczas wykonywania funkcji eval.
+Obecnie zastąpiony SyntaxError. Mam nadzieję że nie wykorzystujesz funkcji eval, 
+lub robisz to z głową i jeśli nie ma innego wyjścia. Osobiście nie widzę
+zastosowania dla tego typu błędów, choć nic nie broni go rzucić w dowolnym miejscu 
+aplikacji niekoniecznie związanym z eval.</p>
+
+<h3 id="rangeerror">RangeError</h3>
+
+<p>Błąd zakresu jest jednym z bardziej przydatnych typów błędu w JS. Może się on 
+pojawić podczas zabaw z tablicami w JS lub typem Number. Można go wykorzystać
+tworząc <a href="http://lion.net.pl/2016/03/24/walidacja-w-akcesorach-javascript.html">walidację danych przekazywanych do funkcji i metod, w tym do setterów</a>.
+<strong>Przydaje się on gdy sprawdzamy czy wartość numeryczna znajduje się w zbiorze wartości
+z określonej dziedziny</strong> - ja tak często robię.</p>
+
+<h3 id="referenceerror">ReferenceError</h3>
+
+<p>Jeden z częściej spotykanych błędów rzucanych przez silnik przeglądarki. 
+Powstaje gdy wykonywana jest próba przypisania nieistniejącego obiektu do zmiennej.
+Podobnie jak dla EvalError, nie widzę zastosowania w innych przypadkach.</p>
+
+<h3 id="syntaxerror">SyntaxError</h3>
+
+<p>To typ błędu to to samo co EvalError, tyle że istnieje w obecnym oficjalnym 
+standardzie JS.</p>
+
+<h3 id="typeerror">TypeError</h3>
+
+<p>Błąd typu. Jeden z częściej rzucanych przez JS. Występuje np. gdy pobierany jest 
+jakiś obiekt drzewa DOM, a następnie bez sprawdzenia czy ta akcja przyniosła 
+zamierzony efekt wykonywane są na nim inne operacje. Lub gdy na typie string 
+próbujemy wykonać metody specyficzne dla typu numeric itp. Ogólnie gdy obiekt 
+nie ma metody której chcemy użyć. Tak jak RangeError może być
+wykorzystywany w walidacji argumentów funkcji i metod. <strong>Możemy go rzucać gdy typ
+przekazanego argumentu nie zgadza się z dziedziną. Jest to pewien substytut braku
+silnego typowania w JS</strong>. Tego typ także często (nad)używam w swoich aplikacjach.</p>
+
+<h3 id="urierror">URIError</h3>
+
+<p>Błąd URI może pojawić się podczas próby sparsowania błędnego URI (czego pewnie
+nie trudno się było domyślić, ale właśnie po to by się nie domyślać tworzymy typy
+błędów). Funkcje które można podejrzewać o rzucanie wyjątkami URIError to:</p>
+
+<ul>
+<li>decodeURI(),</li>
+<li>decodeURIComponent(),</li>
+<li>encodeURI(),</li>
+<li>encodeURIComponent(),</li>
+<li>escape(),</li>
+<li>unescape().</li>
+</ul>
+
+<h2 id="czym-rzuca%C4%87%3F">Czym rzucać?</h2>
+
+<p>Jak widać mamy sporo fajnych typów błędów w JS, jednak <strong>w moim subiektywnym rankingu
+wygrywają TypeError i RangeError</strong>. Pozostałe typy poza przypisanymi do siebie
+sytuacjami raczej nie pasują opisu spotykanych w aplikacjach problemów, ale być 
+może Tobie uda się im znaleźć jakieś dodatkowe zastosowanie. Oczywiście nic nie
+broni nas przed tym aby <strong>rozszerzać wachlarz dostępnych typów błędów o własne,
+bardziej adekwatne do kontekstu typy wyjątków</strong>.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>

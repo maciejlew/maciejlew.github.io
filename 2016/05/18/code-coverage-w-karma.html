@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Code Coverage w Karma</title>
+    <meta name="robots" content="index,follow"/> 
+    <meta name="revisit-after" content="1 days"/>        
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="description" content="Jak włączyć raport pokrycia kodu testami w Karma i jak go interpretować?"/>
+    <meta name="keywords" content="java script, karma, jasmine, jakość oprogramowania, testy jednostkowe, pokrycie kodu testami, code coverage, yeoman, grunt, tdd, test driven development"/>
+    <meta name="author" content="Maciej Lew"/>
+    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
+</head>
+<body>
+    <header>
+        <div id="name_module" class="module">
+            <h1>
+                <a href="/" rel="index">LionNet</a>
+            </h1>
+        </div>
+        
+        <nav id="navigation_module" class="module">
+            <h2 class="hidden">Nawigacja</h2>
+            <ul>
+                <li>
+                    <a href="/" rel="index author">O mnie</a>
+                </li>
+                <li>
+                    <a href="/umiejetnosci/" rel="author">Umiejętności</a>
+                </li>
+                <li>
+                    <a href="/lan-management-system/">Lan Managment System</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog informatyczny</a>
+                </li>
+                <li>
+                    <a href="/mapa/">Mapa strony</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="description_module" class="module">
+            Programowanie, sieci komputerowe, informatyka.
+        </div>
+        
+        
+    </header>
+    
+    <main>
+        
+<article class="blog_module module">
+    <h2>Code Coverage w Karma</h2>
+    <hr>
+
+    <p>Raporty pokrycia kodu testami jednostkowymi pozwalają szybko i przyjemnie przeanalizować
+stan projektu. Wskazują miejsca gdzie kod nie jest dostatecznie przetestowany.
+W tym wpisie dowiesz się jak wygenerować i jak interpretować <em>code coverage</em> w 
+narzędziu Karma dla JS.</p>
+
+<h3 id="konfiguracja-karma-dla-code-coverage">Konfiguracja Karma dla code coverage</h3>
+
+<p>Aby skorzystać z raportów pokrycia kodu testami jednostkowymi musimy doinstalować
+bibliotekę <em>karma-coverage</em>:</p>
+
+<pre><code>npm install karma-coverage
+</code></pre>
+
+<p>Następnie w konfiguracji, w pliku karma.conf.js bądź Gruntfile.js, należy dodać
+następujące wpisy:</p>
+
+<pre><code>plugins: ['karma-coverage'],
+reporters: ['coverage'],
+preprocessors: { '*.js': ['coverage'] }
+</code></pre>
+
+<p>Przykładowy wpis w Gruntfile.js, częściowo <a href="/2016/03/03/yeoman-idziemy-na-front.html">wygenerowany przez Yeoman</a>, może 
+wyglądać po wprowadzeniu powyższych zmian tak:</p>
+
+<pre><code>karma: {
+  options: {
+    basePath: '',
+    frameworks: ['jasmine'],
+    files: [
+      '&lt;%= yeoman.app %&gt;/&lt;%= yeoman.scripts %&gt;/**/*.js',
+      '&lt;%= yeoman.test %&gt;/mock/**/*.js',
+      '&lt;%= yeoman.test %&gt;/spec/**/*.js'
+    ],
+    autoWatch: true,
+    plugins: [
+        'karma-jasmine',
+        'karma-coverage',
+        'karma-phantomjs-launcher'
+    ],
+    reporters: ['dots', 'coverage'],
+    port: 8080,
+    singleRun: false,
+    preprocessors: {
+      '&lt;%= yeoman.app %&gt;/&lt;%= yeoman.scripts %&gt;/**/*.js': ['coverage']
+    },
+    coverageReporter: {
+      reporters: [
+        { type: 'html', dir: 'coverage/' },
+        { type: 'text-summary' }
+      ]
+    }
+  },
+  unit: {
+    browsers: ['PhantomJS'],
+    background: false
+  },
+  continuous: {
+    browsers: ['PhantomJS'],
+    singleRun: true
+  }
+},
+</code></pre>
+
+<p>Od tej chwili po wykonaniu testów Karma w folderze coverage przygotuje raporty dla
+każdej przeglądarki dla której testy zostały przeprowadzone. W katalogach tych 
+znajdziemy pliki <em>index.php</em>, które po uruchomieniu w przeglądarce przedstawią
+nam raport. Poniżej kilka przykładowych zrzutów ekranu z raportem:</p>
+
+<p><img src="img/DSP2016/karma-code-coverage-1.png" alt="Karma code coverage report #1" /></p>
+
+<p><img src="img/DSP2016/karma-code-coverage-2.png" alt="Karma code coverage report #2" /></p>
+
+<p><img src="img/DSP2016/karma-code-coverage-3.png" alt="Karma code coverage report #3" /></p>
+
+<p>Na zrzutach widzimy, że raport HTML pozwala nam szybko przejrzeć strukturę projektu,
+odnaleźć pliki dla których brakuje bądź jest za mało testów. <strong>Mamy wyszczególnione
+pokrycie testami linii, funkcji oraz gałęzi</strong>, czyli ścieżek którymi może nasz kod 
+przejść od startu do końca podczas jego wykonywania.</p>
+
+<p>Dodatkowo, po przejściu do konkretnego pliku, Karma a właściwie wykorzystywane 
+przez nią w tle narzędzie o nazwie Istanbul, wskaże nam podejrzane rozgałęzienia 
+kodu, oznaczając je symbolami <em>I (if path not taken)</em> lub <em>E (else path not taken)</em>.</p>
+
+
+</article>
+
+
+
+    </main>
+    
+    </body>
+</html>
