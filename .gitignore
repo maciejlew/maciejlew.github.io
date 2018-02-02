@@ -1,6 +1,2 @@
-_site
-nbproject
-/Gemfile
-/Gemfile.lock
-/.sass-cache
-/_drafts
+vendor/
+output_dev/
