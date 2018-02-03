@@ -1,0 +1,26 @@
+@import 'utils/variables';
+
+section#headline {
+
+    display: block;
+
+    background-color: $color1;
+    padding: 3rem 0;
+
+    header {
+        width: $width1;
+        min-width: $width1 - 100px;
+        max-width: $width1;
+        margin: 0 auto;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+
+    }
+
+}
+
+

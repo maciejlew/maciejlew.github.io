@@ -11,19 +11,14 @@
     <meta name="description" content="{{ page.description }}"/>
     <meta name="keywords" content="{{ page.keywords }}"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="{{ site.url }}/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">{{ site.name }}</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,29 +27,31 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            {{ site.description }}
         </div>
-        
-        
-    </header>
-    
-    <main>
-        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+    </nav>
 
-    </main>
-    
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>{{ site.description }}</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}</div>
+
+        </section>
+
+    </section>
+
     {% if page.math %}<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>{% endif %}
 </body>
 </html>

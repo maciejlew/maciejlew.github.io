@@ -1,0 +1,50 @@
+@import 'utils/variables';
+
+$navHeight: 64px;
+
+nav#topnav {
+
+    display: block;
+
+    background-color: $color1;
+
+    div {
+        width: $width1;
+        min-width: $width1 - 100px;
+        max-width: $width1;
+        margin: 0 auto;
+
+        img {
+            float: left;
+            height: $navHeight;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: square;
+            margin: 0 0;
+
+            li {
+                margin-right: 32px;
+                display: block;
+
+                a {
+                    padding: 0px 16px;
+                    text-decoration: none;
+                    font-weight: 900;
+                    display: block;
+                    line-height: $navHeight;
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: $color2;
+                }
+
+            }
+
+        }
+
+    }
+
+}

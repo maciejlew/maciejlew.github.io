@@ -1,0 +1,27 @@
+@import 'utils/variables';
+
+table {
+
+    margin-top: 1rem;
+    width: 100%;
+
+    border: 5px solid $color1;
+
+    thead th {
+        padding: 0.5rem;
+        background-color: $color2;
+        border-bottom: 2px solid $color1;
+    }
+
+    tbody td {
+        padding: 0.5rem;
+        line-height: 1.2;
+    }
+
+    tbody tr:hover {
+        background-color: lighten($color2, 10%);
+    }
+
+}
+
+

@@ -1,0 +1,45 @@
+@import 'utils/variables';
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    font-family: $font-family;
+    border: 5px solid $color1;
+    padding: 15px;
+
+    legend {
+        background: $color1;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: $font-size;
+        box-shadow: 0 0 0 5px $color2;
+        margin-left: 20px;
+    }
+
+    div {
+        display: inline;
+    }
+
+    input[type=text] {
+        border: 1px solid $color1;
+        padding: 0.5rem 0.75rem;
+    }
+
+    input[type=submit] {
+        background-color: $color1;
+        color: #fff;
+        padding: 0.5rem;
+        border: 0;
+        font-size: $font-size;
+    }
+
+}
+
+
+form.horizontal {
+    display: flex;
+    justify-content: space-around;
+}
+
