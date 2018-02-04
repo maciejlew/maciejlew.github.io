@@ -11,19 +11,14 @@
     <meta name="description" content="Przekształcenia morfologiczne, kontekstowe i rozmyte"/>
     <meta name="keywords" content="grafika komputerowa, przekształcenia obrazu, przekształcenia morfologiczne, przekształcenia kontekstowe, przekształcenia rozmyte, logika rozmyta, translacja, erozja, dylacja, otwarcie, zamknięcie, black top hat, white top hat, gradient morfologiczny, filtr medianowy"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,26 +27,26 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
+    </nav>
+
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
 <article class="blog_module module">
     <h2>Przekształcenia morfologiczne, kontekstowe i rozmyte</h2>
     <hr>
@@ -197,7 +192,7 @@ przynależności danego elementu do zbioru[<a href="#ster-rozm">3</a>].</p>
 </blockquote>
 
 <figure>
-    <img src="/img/gkiro/podobienstwo_pikseli_fuzzy.png" 
+    <img src="/assets/img/gkiro/podobienstwo_pikseli_fuzzy.png" 
         alt="Zbiory rozmyte - podobieństwo pikseli, przykład rysunek poglądowy">
     <figcaption>
         Rysunek 1: Zbiory rozmyte - podobieństwo pikseli, przykład rysunek poglądowy
@@ -247,7 +242,7 @@ to różnica w intensywności koloru pomiędzy danym pikselem a pikselami w jego
 <p>$$ dif = min|f(x, y)-f(x', y')| $$</p>
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_dif_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_dif_chart.png" 
         alt="Wykres stopnia przynależności parametru dif">
     <figcaption>
         Rysunek 2: Wykres stopnia przynależności parametru <em>dif</em>. 
@@ -266,7 +261,7 @@ a powyżej którego niepodobieństwo dwóch pikseli:</p>
 <p>$$ num = &#123; (x', y')|(x', y') \in N_8 (x, y) \&amp; |f(x, y) - f (x', y')| &lt; treshold &#125; $$</p>
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_num_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_num_chart.png" 
         alt="Wykres stopnia przynależności parametru num">
     <figcaption>
         Rysunek 3: Wykres stopnia przynależności parametru <em>num</em>. 
@@ -301,7 +296,7 @@ lingwistyczne takie jak <em>Small</em>, <em>Moderate</em>, <em>Big</em>, <em>Ver
 <p><strong>jeżeli</strong> (dif jest High) <strong>i</strong> (num jest Many) <strong>to</strong> (deg jest Moderate)</p>
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_deg_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_deg_chart.png" 
         alt="Wykres stopnia przynależności parametru deg">
     <figcaption>
         Rysunek 4: Wykres stopnia przynależności parametru <em>deg</em>. 
@@ -319,7 +314,7 @@ algorytmie, aby wyliczyć wagi dla wszystkich pikseli znajdujących się w
 <p>$$ diff = |f(x,y) - f(x-k, y-l)| $$</p>
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_diff_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_diff_chart.png" 
         alt="Wykres stopnia przynależności parametru diff">
     <figcaption>
         Rysunek 5: Wykres stopnia przynależności parametru <em>diff</em>. 
@@ -361,7 +356,7 @@ danego piksela:</p>
 <p><strong>jeżeli</strong> (diff jest Large) <strong>i</strong> (deg jest Very Big) <strong>to</strong> (weight jest Very Big)</p>
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_weight_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_weight_chart.png" 
         alt="Wykres stopnia przynależności parametru weight">
     <figcaption>
         Rysunek 6: Wykres stopnia przynależności parametru <em>weight</em>. 
@@ -404,8 +399,11 @@ obrębie zębów widocznych na zdjęciach RTG"</strong>.</p>
 </article>
 
 
+</div>
 
-    </main>
-    
+        </section>
+
+    </section>
+
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script></body>
 </html>

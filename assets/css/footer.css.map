@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,UAAW,CAEP,OAAO,CAAE,KAAK,CAEd,gBAAgB,CCNX,OAAO,CDOZ,aAAa,CAAE,cAA+B,CAE9C,cAAI,CACA,KAAK,CCZJ,MAAM,CDaP,SAAS,CAAE,KAAe,CAC1B,SAAS,CCdR,MAAM,CDeP,MAAM,CAAE,SAAS,CACjB,OAAO,CAAE,MAAM,CAEf,gBAAE,CAEE,SAAS,CAAE,OAAO,CAClB,MAAM,CAAE,QAAQ,CAChB,WAAW,CAAE,GAAG,CAEhB,KAAK,CAAE,IAAI,CAEX,kBAAE,CACE,KAAK,CAAE,IAAI,CAGf,wBAAQ,CACJ,KAAK,CC5BZ,OAAO",
+"sources": ["../../../assets/scss/footer.scss","../../../assets/scss/utils/variables.scss"],
+"names": [],
+"file": "footer.css"
+}

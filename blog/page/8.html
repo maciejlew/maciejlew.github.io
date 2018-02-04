@@ -11,19 +11,14 @@
     <meta name="description" content="Blog informatyczny. Ciekawostki z dziedziny informatyki. Rozwój Lan Management System."/>
     <meta name="keywords" content="programowanie, informatyka, inżynieria oprogramowania, sieci komputerowe, rozwój osobisty, branża IT, lan manage system, refaktoryzacja, legacy code, zarządzanie sieciami LAN, system zarządzania siecią, sieci komputerowe, sieci osiedlowe"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,56 +27,69 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
-<h2 class="hidden">Wpisy na blogu</h2>
+    </nav>
 
-<article class="module blog_module">
-    <h3><a class="red" href="/2014/07/16/lmsconfig-nowy-system-zarzadzania-konfiguracja-lms.html">LMSConfig - nowy system zarządzania konfiguracją LMS</a></h3>
-    <time datetime='2014-07-16T20:27:00+02:00'>16/07/2014</time>
-    <p>Z głównej gałęzi LMS na GitHubie można już pobierać LMS w wersji, w której stara
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
+<article class="blog_module module">
+
+    <h2 class="hidden">Wpisy na blogu</h2>
+
+    <hr>
+
+        <article class="module blog_module">
+        <h3><a class="red" href="/2014/07/16/lmsconfig-nowy-system-zarzadzania-konfiguracja-lms.html">LMSConfig - nowy system zarządzania konfiguracją LMS</a></h3>
+        <time datetime='2014-07-16T20:27:00+02:00'>16/07/2014</time>
+        <p>Z głównej gałęzi LMS na GitHubie można już pobierać LMS w wersji, w której stara
 i dobrze znana globalna tablica $CONFIG została zastąpiona poprzez nowy mechanizm
 dostępu do zmiennych konfiguracyjnych LMSConfig. W tym artykule opiszę co się
 zmieniło ...</p>
-</article>
+    </article>
 
-<article class="module blog_module">
-    <h3><a href="/2014/07/13/phpers-silesia-czerwiec-2014.html">PHPers Silesia czerwiec 2014</a></h3>
-    <time datetime='2014-07-13T14:52:00+02:00'>13/07/2014</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2014/06/30/industriada-2014-wystawa-zabytkowych-komputerow.html">Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja</a></h3>
-    <time datetime='2014-06-30T22:07:00+02:00'>30/06/2014</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2014/06/19/ready-steady-blog.html">Ready, steady, blog</a></h3>
-    <time datetime='2014-06-19T20:54:00+02:00'>19/06/2014</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/_posts/2017-12-12-slowniczek-voip.md"></a></h3>
-    <time datetime='2017-12-12T00:00:00+01:00'>12/12/2017</time>
-</article>
-
-
-    </main>
+        <article class="module blog_module">
+        <h3><a href="/2014/07/13/phpers-silesia-czerwiec-2014.html">PHPers Silesia czerwiec 2014</a></h3>
+        <time datetime='2014-07-13T14:52:00+02:00'>13/07/2014</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2014/06/30/industriada-2014-wystawa-zabytkowych-komputerow.html">Industriada 2014 - wystawa zabytkowych komputerów - fotorelacja</a></h3>
+        <time datetime='2014-06-30T22:07:00+02:00'>30/06/2014</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2014/06/19/ready-steady-blog.html">Ready, steady, blog</a></h3>
+        <time datetime='2014-06-19T20:54:00+02:00'>19/06/2014</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/_posts/2017-12-12-slowniczek-voip.md"></a></h3>
+        <time datetime='2017-12-12T00:00:00+01:00'>12/12/2017</time>
+    </article>
     
+    <nav id="blognav">
+                        <span id="newer"><a href="http://lion.net.pl//blog/page/7.html">Nowsze wpisy</a></span>
+                            </nav>
+
+</article>
+
+</div>
+
+        </section>
+
+    </section>
+
     </body>
 </html>

@@ -11,19 +11,14 @@
     <meta name="description" content="Opis aplikacja do testowania segmentacji wododziałowej"/>
     <meta name="keywords" content="grafika komputerowa, przekształcenia obrazu, przekształcenia morfologiczne, przekształcenia kontekstowe, przekształcenia rozmyte, logika rozmyta, translacja, erozja, dylacja, otwarcie, zamknięcie, black top hat, white top hat, gradient morfologiczny, filtr medianowy, segmentacja wododziałowa, opencv"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,26 +27,26 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
+    </nav>
+
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
 <article class="blog_module module">
     <h2>EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej</h2>
     <hr>
@@ -92,7 +87,7 @@ filtrów na obraz i jego późniejszą segmentację.</p>
 <h4 id="emgucvdemo">EmguCVDemo</h4>
 
 <figure>
-    <img src="/img/gkiro/emgucvdemo.png" alt="EmguCVDemo - okno programu testowego">
+    <img src="/assets/img/gkiro/emgucvdemo.png" alt="EmguCVDemo - okno programu testowego">
     <figcaption>Rysunek 1: EmguCVDemo - okno programu testowego</figcaption>
 </figure>
 
@@ -203,8 +198,11 @@ obrębie zębów widocznych na zdjęciach RTG"</strong>.</p>
 </article>
 
 
+</div>
 
-    </main>
-    
+        </section>
+
+    </section>
+
     </body>
 </html>

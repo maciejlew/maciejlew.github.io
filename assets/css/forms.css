@@ -1,0 +1,2 @@
+form{width:100%}fieldset{font-family:"Open Sans",sans-serif;border:5px solid #C19A6B;padding:15px}fieldset legend{background:#C19A6B;color:#fff;padding:5px 10px;font-size:16px;box-shadow:0 0 0 5px #6F4E37;margin-left:20px}fieldset div{display:inline}fieldset input[type=text]{border:1px solid #C19A6B;padding:0.5rem 0.75rem}fieldset input[type=submit]{background-color:#C19A6B;color:#fff;padding:0.5rem;border:0;font-size:16px}form.horizontal{display:flex;justify-content:space-around}
+/*# sourceMappingURL=forms.css.map */

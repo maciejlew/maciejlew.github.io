@@ -970,7 +970,7 @@ zliczono &lt;strong&gt;30919&lt;/strong&gt; segmentów. Sprawdzono także wpływ
 na ilość segmentów, w wyniku otrzymano obraz z &lt;strong&gt;30196&lt;/strong&gt; segmentami.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/bez_filtracji.jpg&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/bez_filtracji.jpg&quot; 
         alt=&quot;Wynik segmentacji obrazu bez wstępnej filtracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 1: Wynik segmentacji obrazu bez wstępnej filtracji
@@ -1128,7 +1128,7 @@ pomiędzy którymi występowały niewielkie regiony o odcieniach szarości mniej
 &lt;/table&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/badania_podstawowe_filtry_morfologiczne.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_podstawowe_filtry_morfologiczne.png&quot; 
         alt=&quot;Podstawowe przekształcenia morfologiczne - erozja i dylacja - zależność ilości segmentów od ilości iteracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 2: Podstawowe przekształcenia morfologiczne - erozja i dylacja - 
@@ -1216,7 +1216,7 @@ badania dla otwarcia, zamknięcia oraz połączenia tych filtrów.&lt;/p&gt;
 &lt;/table&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/badania_otwarcie.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_otwarcie.png&quot; 
         alt=&quot;Złożone przekształcenia morfologiczne - otwarcie - zależność ilości segmentów od ilości iteracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 3: Złożone przekształcenia morfologiczne - otwarcie - zależność 
@@ -1313,7 +1313,7 @@ jasnych obszarów.&lt;/p&gt;
 &lt;/table&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/badania_zamkniecie.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_zamkniecie.png&quot; 
         alt=&quot;Złożone przekształcenia morfologiczne - zamknięcie - zależność ilości segmentów od ilości iteracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 4: Złożone przekształcenia morfologiczne - zamknięcie - zależność 
@@ -1406,7 +1406,7 @@ niż erozja, a następnie na obrazie pośrednim wykonywana jest erozja.&lt;/p&gt
 &lt;/table&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/badania_otwarcie_zamkniecie.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_otwarcie_zamkniecie.png&quot; 
         alt=&quot;Złożone przekształcenia morfologiczne - otwarcie i zamknięcie - zależność ilości segmentów od ilości iteracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 5: Złożone przekształcenia morfologiczne - otwarcie i zamknięcie 
@@ -1542,7 +1542,7 @@ filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami.&lt;/p&gt;
 &lt;/table&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/badania_mediana.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_mediana.png&quot; 
         alt=&quot;Filtr medianowy - zależność ilości segmentów od ilości iteracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 6: Filtr medianowy - zależność ilości segmentów od ilości iteracji
@@ -1550,7 +1550,7 @@ filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami.&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/filtr_medianowy_w3x3_x5.jpg&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/filtr_medianowy_w3x3_x5.jpg&quot; 
         alt=&quot;Wynik segmentacji obrazu po wstępnej filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 7: Wynik segmentacji obrazu po wstępnej filtracji filtrem 
@@ -1776,7 +1776,7 @@ obrazu po wstępnej filtracji filtrem rozmytym z progiem podobieństwa 8px.&lt;/
 &lt;/table&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/badania_fuzzy.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_fuzzy.png&quot; 
         alt=&quot;Filtr rozmyty - zależność ilości segmentów od ilości iteracji&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 8: Filtr rozmyty - zależność ilości segmentów od ilości iteracji
@@ -1784,7 +1784,7 @@ obrazu po wstępnej filtracji filtrem rozmytym z progiem podobieństwa 8px.&lt;/
 &lt;/figure&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/badania/filtr_rozmyty_t8.jpg&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/badania/filtr_rozmyty_t8.jpg&quot; 
         alt=&quot;Wynik segmentacji obrazu po filtracji filtrem rozmytym z progiem podobieństwa 8px&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 9: Wynik segmentacji obrazu po filtracji filtrem rozmytym z 

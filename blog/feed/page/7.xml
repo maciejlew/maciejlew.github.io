@@ -107,9 +107,9 @@ wiele różnych rzeczy, m.in.:&lt;/p&gt;
 
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;/img/lms_routing/lms_routing.png&quot;&gt;
+            &lt;a href=&quot;/assets/img/lms_routing/lms_routing.png&quot;&gt;
                 &lt;img
-                    src=&quot;/img/lms_routing/lms_routing.png&quot;
+                    src=&quot;/assets/img/lms_routing/lms_routing.png&quot;
                     alt=&quot;Podstawowy routing w LMS&quot;
                     title=&quot;Podstawowy routing w LMS&quot;
                 /&gt;
@@ -143,9 +143,9 @@ pluginy. Przebieg pokazano na rysunku poniżej:&lt;/p&gt;
 
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;/img/lms_routing/lms_routing_with_plugins.png&quot;&gt;
+            &lt;a href=&quot;/assets/img/lms_routing/lms_routing_with_plugins.png&quot;&gt;
                 &lt;img
-                    src=&quot;/img/lms_routing/lms_routing_with_plugins.png&quot;
+                    src=&quot;/assets/img/lms_routing/lms_routing_with_plugins.png&quot;
                     alt=&quot;Routing w LMS z uwzględnieniem pluginów&quot;
                     title=&quot;Routing w LMS z uwzględnieniem pluginów&quot;
                 /&gt;
@@ -353,16 +353,16 @@ akcji w specjalizowany dla danego modelu urządzenia sposób.&lt;/p&gt;
 
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;/img/lms_netdevicemodel/lms_netdevicemodel_1.png&quot;&gt;
-                &lt;img src=&quot;/img/lms_netdevicemodel/lms_netdevicemodel_1.png&quot; alt=&quot;Opcja pobierania modelu urządzenia sieciowego&quot; title=&quot;Opcja pobierania modelu urządzenia sieciowego&quot;/&gt;
+            &lt;a href=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_1.png&quot;&gt;
+                &lt;img src=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_1.png&quot; alt=&quot;Opcja pobierania modelu urządzenia sieciowego&quot; title=&quot;Opcja pobierania modelu urządzenia sieciowego&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;/img/lms_netdevicemodel/lms_netdevicemodel_2.png&quot;&gt;
-                &lt;img src=&quot;/img/lms_netdevicemodel/lms_netdevicemodel_2.png&quot; alt=&quot;Wybieranie modelu urządzenia sieciowego z listy&quot; title=&quot;Wybieranie modelu urządzenia sieciowego z listy&quot;/&gt;
+            &lt;a href=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_2.png&quot;&gt;
+                &lt;img src=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_2.png&quot; alt=&quot;Wybieranie modelu urządzenia sieciowego z listy&quot; title=&quot;Wybieranie modelu urządzenia sieciowego z listy&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;

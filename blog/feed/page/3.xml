@@ -48,7 +48,7 @@ filtrów na obraz i jego późniejszą segmentację.&lt;/p&gt;
 &lt;h4 id=&quot;emgucvdemo&quot;&gt;EmguCVDemo&lt;/h4&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/emgucvdemo.png&quot; alt=&quot;EmguCVDemo - okno programu testowego&quot;&gt;
+    &lt;img src=&quot;/assets/img/gkiro/emgucvdemo.png&quot; alt=&quot;EmguCVDemo - okno programu testowego&quot;&gt;
     &lt;figcaption&gt;Rysunek 1: EmguCVDemo - okno programu testowego&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -339,7 +339,7 @@ przynależności danego elementu do zbioru[&lt;a href=&quot;#ster-rozm&quot;&gt;
 &lt;/blockquote&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/podobienstwo_pikseli_fuzzy.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/podobienstwo_pikseli_fuzzy.png&quot; 
         alt=&quot;Zbiory rozmyte - podobieństwo pikseli, przykład rysunek poglądowy&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 1: Zbiory rozmyte - podobieństwo pikseli, przykład rysunek poglądowy
@@ -389,7 +389,7 @@ to różnica w intensywności koloru pomiędzy danym pikselem a pikselami w jego
 &lt;p&gt;$$ dif = min|f(x, y)-f(x&#039;, y&#039;)| $$&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/fuzzy/fuzzy_dif_chart.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/fuzzy/fuzzy_dif_chart.png&quot; 
         alt=&quot;Wykres stopnia przynależności parametru dif&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 2: Wykres stopnia przynależności parametru &lt;em&gt;dif&lt;/em&gt;. 
@@ -408,7 +408,7 @@ a powyżej którego niepodobieństwo dwóch pikseli:&lt;/p&gt;
 &lt;p&gt;$$ num = &amp;#123; (x&#039;, y&#039;)|(x&#039;, y&#039;) \in N_8 (x, y) \&amp;amp; |f(x, y) - f (x&#039;, y&#039;)| &amp;lt; treshold &amp;#125; $$&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/fuzzy/fuzzy_num_chart.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/fuzzy/fuzzy_num_chart.png&quot; 
         alt=&quot;Wykres stopnia przynależności parametru num&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 3: Wykres stopnia przynależności parametru &lt;em&gt;num&lt;/em&gt;. 
@@ -443,7 +443,7 @@ lingwistyczne takie jak &lt;em&gt;Small&lt;/em&gt;, &lt;em&gt;Moderate&lt;/em&gt
 &lt;p&gt;&lt;strong&gt;jeżeli&lt;/strong&gt; (dif jest High) &lt;strong&gt;i&lt;/strong&gt; (num jest Many) &lt;strong&gt;to&lt;/strong&gt; (deg jest Moderate)&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/fuzzy/fuzzy_deg_chart.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/fuzzy/fuzzy_deg_chart.png&quot; 
         alt=&quot;Wykres stopnia przynależności parametru deg&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 4: Wykres stopnia przynależności parametru &lt;em&gt;deg&lt;/em&gt;. 
@@ -461,7 +461,7 @@ algorytmie, aby wyliczyć wagi dla wszystkich pikseli znajdujących się w
 &lt;p&gt;$$ diff = |f(x,y) - f(x-k, y-l)| $$&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/fuzzy/fuzzy_diff_chart.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/fuzzy/fuzzy_diff_chart.png&quot; 
         alt=&quot;Wykres stopnia przynależności parametru diff&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 5: Wykres stopnia przynależności parametru &lt;em&gt;diff&lt;/em&gt;. 
@@ -503,7 +503,7 @@ danego piksela:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;jeżeli&lt;/strong&gt; (diff jest Large) &lt;strong&gt;i&lt;/strong&gt; (deg jest Very Big) &lt;strong&gt;to&lt;/strong&gt; (weight jest Very Big)&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/img/gkiro/fuzzy/fuzzy_weight_chart.png&quot; 
+    &lt;img src=&quot;/assets/img/gkiro/fuzzy/fuzzy_weight_chart.png&quot; 
         alt=&quot;Wykres stopnia przynależności parametru weight&quot;&gt;
     &lt;figcaption&gt;
         Rysunek 6: Wykres stopnia przynależności parametru &lt;em&gt;weight&lt;/em&gt;. 
@@ -723,57 +723,57 @@ widoki:&lt;/p&gt;
 
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-drug-list-polish.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-drug-list-polish.png&quot; alt=&quot;lista leków&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-drug-list-polish.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-drug-list-polish.png&quot; alt=&quot;lista leków&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-drug-details.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-drug-details.png&quot; alt=&quot;szczegóły leku&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-drug-details.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-drug-details.png&quot; alt=&quot;szczegóły leku&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-dose-calculator.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-dose-calculator.png&quot; alt=&quot;kalkulator dawki leku&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-dose-calculator.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-dose-calculator.png&quot; alt=&quot;kalkulator dawki leku&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-dose-result.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-dose-result.png&quot; alt=&quot;wynik obliczenia dawki leku&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-dose-result.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-dose-result.png&quot; alt=&quot;wynik obliczenia dawki leku&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-dose-exception.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-dose-exception.png&quot; alt=&quot;komunikat o błędzie podczas obliczania dawki leku&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-dose-exception.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-dose-exception.png&quot; alt=&quot;komunikat o błędzie podczas obliczania dawki leku&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-language-settings-1.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-language-settings-1.png&quot; alt=&quot;boczne menu prowadzące do widoku zmiany języka aplikacji&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-language-settings-1.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-language-settings-1.png&quot; alt=&quot;boczne menu prowadzące do widoku zmiany języka aplikacji&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-language-settings-2.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-language-settings-2.png&quot; alt=&quot;formularz zmiany języka aplikacji&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-language-settings-2.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-language-settings-2.png&quot; alt=&quot;formularz zmiany języka aplikacji&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;galleryItem&quot;&gt;
         &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;{{site.url}}/img/DSP2016/ddf-drug-list-english.png&quot;&gt;
-                &lt;img src=&quot;{{site.url}}/img/DSP2016/ddf-drug-list-english.png&quot; alt=&quot;lista leków po angielsku&quot;/&gt;
+            &lt;a href=&quot;{{site.url}}/assets/img/DSP2016/ddf-drug-list-english.png&quot;&gt;
+                &lt;img src=&quot;{{site.url}}/assets/img/DSP2016/ddf-drug-list-english.png&quot; alt=&quot;lista leków po angielsku&quot;/&gt;
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;

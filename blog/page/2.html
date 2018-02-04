@@ -11,19 +11,14 @@
     <meta name="description" content="Blog informatyczny. Ciekawostki z dziedziny informatyki. Rozwój Lan Management System."/>
     <meta name="keywords" content="programowanie, informatyka, inżynieria oprogramowania, sieci komputerowe, rozwój osobisty, branża IT, lan manage system, refaktoryzacja, legacy code, zarządzanie sieciami LAN, system zarządzania siecią, sieci komputerowe, sieci osiedlowe"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,77 +27,91 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
-<h2 class="hidden">Wpisy na blogu</h2>
+    </nav>
 
-<article class="module blog_module">
-    <h3><a class="red" href="/2017/03/20/analiza-wymagan-dla-serwera-dawek-lekow.html">Analiza wymagań dla serwera dawek leków</a></h3>
-    <time datetime='2017-03-20T20:00:00+01:00'>20/03/2017</time>
-    <p>Po wyborze technologii w jakiej rozwijany będzie DDS przyszedł czas na zastanowienie
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
+<article class="blog_module module">
+
+    <h2 class="hidden">Wpisy na blogu</h2>
+
+    <hr>
+
+        <article class="module blog_module">
+        <h3><a class="red" href="/2017/03/20/analiza-wymagan-dla-serwera-dawek-lekow.html">Analiza wymagań dla serwera dawek leków</a></h3>
+        <time datetime='2017-03-20T20:00:00+01:00'>20/03/2017</time>
+        <p>Po wyborze technologii w jakiej rozwijany będzie DDS przyszedł czas na zastanowienie
 się jaki w ogóle będzie cel tego projektu (poza nauką C++), co da się zrobić w
 czasie trwania konkursu (zostało jeszcze trochę ponad 2 miesiące). Czas na MoSCoW.
 
 No...</p>
-</article>
+    </article>
 
-<article class="module blog_module">
-    <h3><a href="/2017/03/15/jak-wlaczyc-tryb-debug-w-cmake.html">Jak włączyć tryb debug w cmake?</a></h3>
-    <time datetime='2017-03-15T21:00:00+01:00'>15/03/2017</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2017/03/14/pistacja.html">Pistacja</a></h3>
-    <time datetime='2017-03-14T20:00:00+01:00'>14/03/2017</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2017/03/01/powtorka-z-rozrywki.html">Powtórka z rozrywki</a></h3>
-    <time datetime='2017-03-01T20:00:00+01:00'>01/03/2017</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2017/02/13/dokumenty_w_lan_management_system.html">Dokumenty w LAN Management System</a></h3>
-    <time datetime='2017-02-13T20:00:00+01:00'>13/02/2017</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/11/20/spreadit-2016-relacja.html">SpreadIT 2016 - relacja</a></h3>
-    <time datetime='2016-11-20T20:15:00+01:00'>20/11/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/11/13/zbliza-sie-spreadit-2016.html">Zbliża się SpreadIT 2016!</a></h3>
-    <time datetime='2016-11-13T13:00:00+01:00'>13/11/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html">Jak zrobić zrzut ekranu całej strony internetowej?</a></h3>
-    <time datetime='2016-09-02T19:20:00+02:00'>02/09/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/08/07/recenzja-javascript-programowanie-obiektowe.html">Recenzja &#039;JavaScript. Programowanie obiektowe&#039;</a></h3>
-    <time datetime='2016-08-07T19:20:00+02:00'>07/08/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html">Wpływ wstępnej filtracji na segmentację wododziałową</a></h3>
-    <time datetime='2016-08-06T15:50:00+02:00'>06/08/2016</time>
-</article>
-
-
-    </main>
+        <article class="module blog_module">
+        <h3><a href="/2017/03/15/jak-wlaczyc-tryb-debug-w-cmake.html">Jak włączyć tryb debug w cmake?</a></h3>
+        <time datetime='2017-03-15T21:00:00+01:00'>15/03/2017</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2017/03/14/pistacja.html">Pistacja</a></h3>
+        <time datetime='2017-03-14T20:00:00+01:00'>14/03/2017</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2017/03/01/powtorka-z-rozrywki.html">Powtórka z rozrywki</a></h3>
+        <time datetime='2017-03-01T20:00:00+01:00'>01/03/2017</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2017/02/13/dokumenty_w_lan_management_system.html">Dokumenty w LAN Management System</a></h3>
+        <time datetime='2017-02-13T20:00:00+01:00'>13/02/2017</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/11/20/spreadit-2016-relacja.html">SpreadIT 2016 - relacja</a></h3>
+        <time datetime='2016-11-20T20:15:00+01:00'>20/11/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/11/13/zbliza-sie-spreadit-2016.html">Zbliża się SpreadIT 2016!</a></h3>
+        <time datetime='2016-11-13T13:00:00+01:00'>13/11/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html">Jak zrobić zrzut ekranu całej strony internetowej?</a></h3>
+        <time datetime='2016-09-02T19:20:00+02:00'>02/09/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/08/07/recenzja-javascript-programowanie-obiektowe.html">Recenzja &#039;JavaScript. Programowanie obiektowe&#039;</a></h3>
+        <time datetime='2016-08-07T19:20:00+02:00'>07/08/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html">Wpływ wstępnej filtracji na segmentację wododziałową</a></h3>
+        <time datetime='2016-08-06T15:50:00+02:00'>06/08/2016</time>
+    </article>
     
+    <nav id="blognav">
+                        <span id="newer"><a href="http://lion.net.pl/blog/">Nowsze wpisy</a></span>
+                        <span id="older"><a href="http://lion.net.pl//blog/page/3.html">Starsze wpisy</a></span>
+                    </nav>
+
+</article>
+
+</div>
+
+        </section>
+
+    </section>
+
     </body>
 </html>

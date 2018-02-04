@@ -11,19 +11,14 @@
     <meta name="description" content="Wyniki i wnioski dotyczące wpływu wstępnej filtracji obrazu na jego segmentację wododziałową"/>
     <meta name="keywords" content="grafika komputerowa, przekształcenia obrazu, przekształcenia morfologiczne, przekształcenia kontekstowe, przekształcenia rozmyte, logika rozmyta, translacja, erozja, dylacja, otwarcie, zamknięcie, black top hat, white top hat, gradient morfologiczny, filtr medianowy, segmentacja wododziałowa, opencv, filtracja obrazu"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,26 +27,26 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
+    </nav>
+
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
 <article class="blog_module module">
     <h2>Wpływ wstępnej filtracji na segmentację wododziałową</h2>
     <hr>
@@ -87,7 +82,7 @@ zliczono <strong>30919</strong> segmentów. Sprawdzono także wpływ samego wyr�
 na ilość segmentów, w wyniku otrzymano obraz z <strong>30196</strong> segmentami.</p>
 
 <figure>
-    <img src="/img/gkiro/badania/bez_filtracji.jpg" 
+    <img src="/assets/img/gkiro/badania/bez_filtracji.jpg" 
         alt="Wynik segmentacji obrazu bez wstępnej filtracji">
     <figcaption>
         Rysunek 1: Wynik segmentacji obrazu bez wstępnej filtracji
@@ -245,7 +240,7 @@ pomiędzy którymi występowały niewielkie regiony o odcieniach szarości mniej
 </table>
 
 <figure>
-    <img src="/img/gkiro/badania/badania_podstawowe_filtry_morfologiczne.png" 
+    <img src="/assets/img/gkiro/badania/badania_podstawowe_filtry_morfologiczne.png" 
         alt="Podstawowe przekształcenia morfologiczne - erozja i dylacja - zależność ilości segmentów od ilości iteracji">
     <figcaption>
         Rysunek 2: Podstawowe przekształcenia morfologiczne - erozja i dylacja - 
@@ -333,7 +328,7 @@ badania dla otwarcia, zamknięcia oraz połączenia tych filtrów.</p>
 </table>
 
 <figure>
-    <img src="/img/gkiro/badania/badania_otwarcie.png" 
+    <img src="/assets/img/gkiro/badania/badania_otwarcie.png" 
         alt="Złożone przekształcenia morfologiczne - otwarcie - zależność ilości segmentów od ilości iteracji">
     <figcaption>
         Rysunek 3: Złożone przekształcenia morfologiczne - otwarcie - zależność 
@@ -430,7 +425,7 @@ jasnych obszarów.</p>
 </table>
 
 <figure>
-    <img src="/img/gkiro/badania/badania_zamkniecie.png" 
+    <img src="/assets/img/gkiro/badania/badania_zamkniecie.png" 
         alt="Złożone przekształcenia morfologiczne - zamknięcie - zależność ilości segmentów od ilości iteracji">
     <figcaption>
         Rysunek 4: Złożone przekształcenia morfologiczne - zamknięcie - zależność 
@@ -523,7 +518,7 @@ niż erozja, a następnie na obrazie pośrednim wykonywana jest erozja.</p>
 </table>
 
 <figure>
-    <img src="/img/gkiro/badania/badania_otwarcie_zamkniecie.png" 
+    <img src="/assets/img/gkiro/badania/badania_otwarcie_zamkniecie.png" 
         alt="Złożone przekształcenia morfologiczne - otwarcie i zamknięcie - zależność ilości segmentów od ilości iteracji">
     <figcaption>
         Rysunek 5: Złożone przekształcenia morfologiczne - otwarcie i zamknięcie 
@@ -659,7 +654,7 @@ filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami.</p>
 </table>
 
 <figure>
-    <img src="/img/gkiro/badania/badania_mediana.png" 
+    <img src="/assets/img/gkiro/badania/badania_mediana.png" 
         alt="Filtr medianowy - zależność ilości segmentów od ilości iteracji">
     <figcaption>
         Rysunek 6: Filtr medianowy - zależność ilości segmentów od ilości iteracji
@@ -667,7 +662,7 @@ filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami.</p>
 </figure>
 
 <figure>
-    <img src="/img/gkiro/badania/filtr_medianowy_w3x3_x5.jpg" 
+    <img src="/assets/img/gkiro/badania/filtr_medianowy_w3x3_x5.jpg" 
         alt="Wynik segmentacji obrazu po wstępnej filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami">
     <figcaption>
         Rysunek 7: Wynik segmentacji obrazu po wstępnej filtracji filtrem 
@@ -893,7 +888,7 @@ obrazu po wstępnej filtracji filtrem rozmytym z progiem podobieństwa 8px.</p>
 </table>
 
 <figure>
-    <img src="/img/gkiro/badania/badania_fuzzy.png" 
+    <img src="/assets/img/gkiro/badania/badania_fuzzy.png" 
         alt="Filtr rozmyty - zależność ilości segmentów od ilości iteracji">
     <figcaption>
         Rysunek 8: Filtr rozmyty - zależność ilości segmentów od ilości iteracji
@@ -901,7 +896,7 @@ obrazu po wstępnej filtracji filtrem rozmytym z progiem podobieństwa 8px.</p>
 </figure>
 
 <figure>
-    <img src="/img/gkiro/badania/filtr_rozmyty_t8.jpg" 
+    <img src="/assets/img/gkiro/badania/filtr_rozmyty_t8.jpg" 
         alt="Wynik segmentacji obrazu po filtracji filtrem rozmytym z progiem podobieństwa 8px">
     <figcaption>
         Rysunek 9: Wynik segmentacji obrazu po filtracji filtrem rozmytym z 
@@ -1194,8 +1189,11 @@ obrębie zębów widocznych na zdjęciach RTG"</strong>.</p>
 </article>
 
 
+</div>
 
-    </main>
-    
+        </section>
+
+    </section>
+
     </body>
 </html>

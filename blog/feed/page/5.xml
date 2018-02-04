@@ -30,7 +30,7 @@ wydaje mi się że prace nad modelem zostały ukończone.&lt;/p&gt;
 
 &lt;p&gt;Rozbudowałem diagram UML o nowe klasy oraz zaznaczyłem interakcję  między nimi:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;{{site.url}}/img/ddf002.png&quot;&gt;Diagram klas w projekcie DDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;{{site.url}}/assets/img/ddf002.png&quot;&gt;Diagram klas w projekcie DDF&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;kontroler&quot;&gt;Kontroler&lt;/h2&gt;
 
@@ -522,7 +522,7 @@ znajdziecie w
 &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework/blob/master/doc/ddf.dia&quot;&gt;repozytorium&lt;/a&gt;, 
 poniżej prezentuję wspomniany diagram klas:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;{{site.url}}/img/ddf001.png&quot;&gt;Diagram klas w projekcie DDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;{{site.url}}/assets/img/ddf001.png&quot;&gt;Diagram klas w projekcie DDF&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;kontroler&quot;&gt;Kontroler&lt;/h2&gt;
 

@@ -11,19 +11,14 @@
     <meta name="description" content="Blog informatyczny. Ciekawostki z dziedziny informatyki. Rozwój Lan Management System."/>
     <meta name="keywords" content="programowanie, informatyka, inżynieria oprogramowania, sieci komputerowe, rozwój osobisty, branża IT, lan manage system, refaktoryzacja, legacy code, zarządzanie sieciami LAN, system zarządzania siecią, sieci komputerowe, sieci osiedlowe"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,32 +27,36 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
-<h2 class="hidden">Wpisy na blogu</h2>
+    </nav>
 
-<article class="module blog_module">
-    <h3><a class="red" href="/2016/04/14/raport-2-z-prac-nad-ddf.html">Raport #2 z prac nad DDF</a></h3>
-    <time datetime='2016-04-14T22:50:00+02:00'>14/04/2016</time>
-    <p>Konkurs DSP2016 jest już na półmetku. Czas po raz kolejny pochwalić się postępami
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
+<article class="blog_module module">
+
+    <h2 class="hidden">Wpisy na blogu</h2>
+
+    <hr>
+
+        <article class="module blog_module">
+        <h3><a class="red" href="/2016/04/14/raport-2-z-prac-nad-ddf.html">Raport #2 z prac nad DDF</a></h3>
+        <time datetime='2016-04-14T22:50:00+02:00'>14/04/2016</time>
+        <p>Konkurs DSP2016 jest już na półmetku. Czas po raz kolejny pochwalić się postępami
 w pracy nad DDF.
 
 Prace dotarły do takiego etapu że uznałem za stosowne wydanie na świat wersji 0.1
@@ -66,47 +65,57 @@ mojej aplikacji &amp;lt;&gt;.
 Model
 
 Model aplikacji rozrósł się do 10 kla...</p>
-</article>
+    </article>
 
-<article class="module blog_module">
-    <h3><a href="/2016/04/12/phpers-silesia-8-relacja.html">PHPers Silesia #8 - relacja</a></h3>
-    <time datetime='2016-04-12T23:25:00+02:00'>12/04/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/04/07/debugowanie-testow-jasmine-i-karma.html">Debugowanie testów. Jasmine i Karma</a></h3>
-    <time datetime='2016-04-07T22:35:00+02:00'>07/04/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/04/05/typy-wyjatkow-w-javascript.html">Typy wyjątków w JavaScript</a></h3>
-    <time datetime='2016-04-05T21:45:00+02:00'>05/04/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/03/26/wyszukiwanie-binarne-i-interpolacja-liniowa-w-javascript.html">Wyszukiwanie binarne i interpolacja liniowa w JavaScript</a></h3>
-    <time datetime='2016-03-26T23:40:00+01:00'>26/03/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/03/24/walidacja-w-akcesorach-javascript.html">Walidacja w akcesorach JavaScript</a></h3>
-    <time datetime='2016-03-24T19:20:00+01:00'>24/03/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/03/17/raport-1-z-prac-nad-ddf.html">Raport #1 z prac nad DDF</a></h3>
-    <time datetime='2016-03-17T21:10:00+01:00'>17/03/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/03/15/testowanie-wyjatkow-w-jasmine.html">Testowanie wyjątków w Jasmine</a></h3>
-    <time datetime='2016-03-15T19:00:00+01:00'>15/03/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/03/12/format-opisu-lekow-w-ddf.html">Format opisu leków w DDF</a></h3>
-    <time datetime='2016-03-12T09:00:00+01:00'>12/03/2016</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2016/03/07/zapach-jasminu.html">Zapach Jaśminu</a></h3>
-    <time datetime='2016-03-07T21:00:00+01:00'>07/03/2016</time>
-</article>
-
-
-    </main>
+        <article class="module blog_module">
+        <h3><a href="/2016/04/12/phpers-silesia-8-relacja.html">PHPers Silesia #8 - relacja</a></h3>
+        <time datetime='2016-04-12T23:25:00+02:00'>12/04/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/04/07/debugowanie-testow-jasmine-i-karma.html">Debugowanie testów. Jasmine i Karma</a></h3>
+        <time datetime='2016-04-07T22:35:00+02:00'>07/04/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/04/05/typy-wyjatkow-w-javascript.html">Typy wyjątków w JavaScript</a></h3>
+        <time datetime='2016-04-05T21:45:00+02:00'>05/04/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/03/26/wyszukiwanie-binarne-i-interpolacja-liniowa-w-javascript.html">Wyszukiwanie binarne i interpolacja liniowa w JavaScript</a></h3>
+        <time datetime='2016-03-26T23:40:00+01:00'>26/03/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/03/24/walidacja-w-akcesorach-javascript.html">Walidacja w akcesorach JavaScript</a></h3>
+        <time datetime='2016-03-24T19:20:00+01:00'>24/03/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/03/17/raport-1-z-prac-nad-ddf.html">Raport #1 z prac nad DDF</a></h3>
+        <time datetime='2016-03-17T21:10:00+01:00'>17/03/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/03/15/testowanie-wyjatkow-w-jasmine.html">Testowanie wyjątków w Jasmine</a></h3>
+        <time datetime='2016-03-15T19:00:00+01:00'>15/03/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/03/12/format-opisu-lekow-w-ddf.html">Format opisu leków w DDF</a></h3>
+        <time datetime='2016-03-12T09:00:00+01:00'>12/03/2016</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2016/03/07/zapach-jasminu.html">Zapach Jaśminu</a></h3>
+        <time datetime='2016-03-07T21:00:00+01:00'>07/03/2016</time>
+    </article>
     
+    <nav id="blognav">
+                        <span id="newer"><a href="http://lion.net.pl//blog/page/4.html">Nowsze wpisy</a></span>
+                        <span id="older"><a href="http://lion.net.pl//blog/page/6.html">Starsze wpisy</a></span>
+                    </nav>
+
+</article>
+
+</div>
+
+        </section>
+
+    </section>
+
     </body>
 </html>

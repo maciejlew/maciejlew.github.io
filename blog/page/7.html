@@ -11,19 +11,14 @@
     <meta name="description" content="Blog informatyczny. Ciekawostki z dziedziny informatyki. Rozwój Lan Management System."/>
     <meta name="keywords" content="programowanie, informatyka, inżynieria oprogramowania, sieci komputerowe, rozwój osobisty, branża IT, lan manage system, refaktoryzacja, legacy code, zarządzanie sieciami LAN, system zarządzania siecią, sieci komputerowe, sieci osiedlowe"/>
     <meta name="author" content="Maciej Lew"/>
-    <link rel="stylesheet" href="/css/main.css" type='text/css'>
+    <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 </head>
 <body>
-    <header>
-        <div id="name_module" class="module">
-            <h1>
-                <a href="/" rel="index">LionNet</a>
-            </h1>
-        </div>
-        
-        <nav id="navigation_module" class="module">
-            <h2 class="hidden">Nawigacja</h2>
+
+    <nav id="topnav">
+        <div>
+            <img src="/assets/img/lion.net.pl.svg" width="64px" height="64px">
             <ul>
                 <li>
                     <a href="/" rel="index author">O mnie</a>
@@ -32,79 +27,93 @@
                     <a href="/umiejetnosci/" rel="author">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/lan-management-system/">Lan Managment System</a>
-                </li>
-                <li>
                     <a href="/blog/">Blog informatyczny</a>
                 </li>
                 <li>
                     <a href="/mapa/">Mapa strony</a>
                 </li>
             </ul>
-        </nav>
-
-        <div id="description_module" class="module">
-            Programowanie, sieci komputerowe, informatyka.
         </div>
-        
-        
-    </header>
-    
-    <main>
-        
-<h2 class="hidden">Wpisy na blogu</h2>
+    </nav>
 
-<article class="module blog_module">
-    <h3><a class="red" href="/2015/09/21/ksiazeczka-oplat-nowe-funkcje.html">Książeczka opłat - nowe funkcje</a></h3>
-    <time datetime='2015-09-21T23:00:00+02:00'>21/09/2015</time>
-    <p>Dodałem do oferowanego przeze mnie 
+    <section id="content">
+
+        <section id="headline">
+            <header>
+                <h1>Programowanie, sieci komputerowe, informatyka.</h1>
+            </header>
+        </section>
+
+        <section id="body">
+
+            <div>
+<article class="blog_module module">
+
+    <h2 class="hidden">Wpisy na blogu</h2>
+
+    <hr>
+
+        <article class="module blog_module">
+        <h3><a class="red" href="/2015/09/21/ksiazeczka-oplat-nowe-funkcje.html">Książeczka opłat - nowe funkcje</a></h3>
+        <time datetime='2015-09-21T23:00:00+02:00'>21/09/2015</time>
+        <p>Dodałem do oferowanego przeze mnie 
 [szablonu książeczki opłat]({{ site.url }}/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
 nowe funkcje i usprawnienia:
 
 
 opcja drukowania na wszystkich drukach sumy zobowiązań klienta wynikającej z
 prz...</p>
-</article>
+    </article>
 
-<article class="module blog_module">
-    <h3><a href="/2015/08/08/wezwania-do-zaplaty-adresy-korespondencyjne-klientow.html">Wezwania do zapłaty - adresy korespondencyjne klientów</a></h3>
-    <time datetime='2015-08-08T03:00:00+02:00'>08/08/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/08/08/grupa-lms-na-goldenline.html">Grupa LMS na Goldenline</a></h3>
-    <time datetime='2015-08-08T02:00:00+02:00'>08/08/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/07/28/routing-w-lms.html">Routing w LMS</a></h3>
-    <time datetime='2015-07-28T02:00:00+02:00'>28/07/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/07/21/usprawnienia-dla-lms-3.html">Usprawnienia dla LMS, część 3</a></h3>
-    <time datetime='2015-07-21T20:45:00+02:00'>21/07/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/06/16/usprawnienia-dla-lms-2.html">Usprawnienia dla LMS, część 2</a></h3>
-    <time datetime='2015-06-16T20:00:00+02:00'>16/06/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/04/20/usprawnienia-dla-lms.html">Usprawnienia dla LMS</a></h3>
-    <time datetime='2015-04-20T22:00:00+02:00'>20/04/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html">Baza modeli urządzeń sieciowych w LMS</a></h3>
-    <time datetime='2015-02-15T23:00:00+01:00'>15/02/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2015/02/07/lms-co-dalej.html">LMS - co dalej?</a></h3>
-    <time datetime='2015-02-07T19:00:00+01:00'>07/02/2015</time>
-</article>
-<article class="module blog_module">
-    <h3><a href="/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html">LMS - system zarządzania sieciami LAN i nie tylko</a></h3>
-    <time datetime='2014-07-27T16:53:00+02:00'>27/07/2014</time>
-</article>
-
-
-    </main>
+        <article class="module blog_module">
+        <h3><a href="/2015/08/08/wezwania-do-zaplaty-adresy-korespondencyjne-klientow.html">Wezwania do zapłaty - adresy korespondencyjne klientów</a></h3>
+        <time datetime='2015-08-08T03:00:00+02:00'>08/08/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/08/08/grupa-lms-na-goldenline.html">Grupa LMS na Goldenline</a></h3>
+        <time datetime='2015-08-08T02:00:00+02:00'>08/08/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/07/28/routing-w-lms.html">Routing w LMS</a></h3>
+        <time datetime='2015-07-28T02:00:00+02:00'>28/07/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/07/21/usprawnienia-dla-lms-3.html">Usprawnienia dla LMS, część 3</a></h3>
+        <time datetime='2015-07-21T20:45:00+02:00'>21/07/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/06/16/usprawnienia-dla-lms-2.html">Usprawnienia dla LMS, część 2</a></h3>
+        <time datetime='2015-06-16T20:00:00+02:00'>16/06/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/04/20/usprawnienia-dla-lms.html">Usprawnienia dla LMS</a></h3>
+        <time datetime='2015-04-20T22:00:00+02:00'>20/04/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html">Baza modeli urządzeń sieciowych w LMS</a></h3>
+        <time datetime='2015-02-15T23:00:00+01:00'>15/02/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2015/02/07/lms-co-dalej.html">LMS - co dalej?</a></h3>
+        <time datetime='2015-02-07T19:00:00+01:00'>07/02/2015</time>
+    </article>
+        <article class="module blog_module">
+        <h3><a href="/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html">LMS - system zarządzania sieciami LAN i nie tylko</a></h3>
+        <time datetime='2014-07-27T16:53:00+02:00'>27/07/2014</time>
+    </article>
     
+    <nav id="blognav">
+                        <span id="newer"><a href="http://lion.net.pl//blog/page/6.html">Nowsze wpisy</a></span>
+                        <span id="older"><a href="http://lion.net.pl//blog/page/8.html">Starsze wpisy</a></span>
+                    </nav>
+
+</article>
+
+</div>
+
+        </section>
+
+    </section>
+
     </body>
 </html>
