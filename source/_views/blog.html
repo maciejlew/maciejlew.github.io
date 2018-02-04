@@ -22,6 +22,17 @@
     </article>
     {% endfor %}
 
+    <nav id="blognav">
+        {% if page.pagination.previous_page or page.pagination.next_page %}
+        {% if page.pagination.previous_page %}
+        <span id="newer"><a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Nowsze wpisy</a></span>
+        {% endif %}
+        {% if page.pagination.next_page %}
+        <span id="older"><a href="{{ site.url }}{{ page.pagination.next_page.url }}">Starsze wpisy</a></span>
+        {% endif %}
+        {% endif %}
+    </nav>
+
 </article>
 
 {% endblock %}
