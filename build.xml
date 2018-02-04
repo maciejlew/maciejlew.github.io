@@ -27,6 +27,14 @@
 
     <target name="build-assets" depends="build-assets-css,build-assets-js,build-assets-img"/>
 
-    <target name="build" depends="clean,build-assets"/>
+    <target name="build" depends="clean,build-assets">
+        <echo msg="building page"/>
+        <exec command="vendor/bin/sculpin generate"/>
+    </target>
+
+    <target name="serve" depends="build">
+        <echo msg="launching page"/>
+        <exec command="vendor/bin/sculpin serve"/>
+    </target>
 
 </project>
