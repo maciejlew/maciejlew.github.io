@@ -48,7 +48,7 @@ uwagami.
 
 ### Przykłady:
 
- * [Formatka dodawania dokumentu z szablonu odstąpienia od umowy zawartej poza lokalem](http://lion.net.pl/img/szablony_dokumentow/odstapienie_od_umowy_zawartej_poza_lokalem.png)
+ * [Formatka dodawania dokumentu z szablonu odstąpienia od umowy zawartej poza lokalem](http://lion.net.pl/assets/img/szablony_dokumentow/odstapienie_od_umowy_zawartej_poza_lokalem.png)
 
 ### Instalacja:
 

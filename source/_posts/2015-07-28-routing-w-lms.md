@@ -45,9 +45,9 @@ Przebieg ten pokazano na rysunku poniżej:
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/lms_routing/lms_routing.png">
+            <a href="/assets/img/lms_routing/lms_routing.png">
                 <img
-                    src="/img/lms_routing/lms_routing.png"
+                    src="/assets/img/lms_routing/lms_routing.png"
                     alt="Podstawowy routing w LMS"
                     title="Podstawowy routing w LMS"
                 />
@@ -82,9 +82,9 @@ pluginy. Przebieg pokazano na rysunku poniżej:
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/lms_routing/lms_routing_with_plugins.png">
+            <a href="/assets/img/lms_routing/lms_routing_with_plugins.png">
                 <img
-                    src="/img/lms_routing/lms_routing_with_plugins.png"
+                    src="/assets/img/lms_routing/lms_routing_with_plugins.png"
                     alt="Routing w LMS z uwzględnieniem pluginów"
                     title="Routing w LMS z uwzględnieniem pluginów"
                 />

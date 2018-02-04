@@ -36,7 +36,7 @@ wydaje mi się że prace nad modelem zostały ukończone.
 
 Rozbudowałem diagram UML o nowe klasy oraz zaznaczyłem interakcję  między nimi:
 
-[Diagram klas w projekcie DDF]({{site.url}}/img/ddf002.png)
+[Diagram klas w projekcie DDF]({{site.url}}/assets/img/ddf002.png)
 
 ## Kontroler
 

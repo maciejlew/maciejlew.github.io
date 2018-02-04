@@ -158,7 +158,7 @@ lingwistyczną, jeśli jej wartości są wyrażone słowami, a nie liczbami, to 
 *nie bardzo młody* itd. zamiast 20, 21, 22, 23, ...[[3](#ster-rozm)]
 
 <figure>
-    <img src="/img/gkiro/podobienstwo_pikseli_fuzzy.png" 
+    <img src="/assets/img/gkiro/podobienstwo_pikseli_fuzzy.png" 
         alt="Zbiory rozmyte - podobieństwo pikseli, przykład rysunek poglądowy">
     <figcaption>
         Rysunek 1: Zbiory rozmyte - podobieństwo pikseli, przykład rysunek poglądowy
@@ -208,7 +208,7 @@ to różnica w intensywności koloru pomiędzy danym pikselem a pikselami w jego
 $$ dif = min|f(x, y)-f(x', y')| $$
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_dif_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_dif_chart.png" 
         alt="Wykres stopnia przynależności parametru dif">
     <figcaption>
         Rysunek 2: Wykres stopnia przynależności parametru <em>dif</em>. 
@@ -227,7 +227,7 @@ a powyżej którego niepodobieństwo dwóch pikseli:
 $$ num = \{ (x', y')|(x', y') \in N_8 (x, y) \& |f(x, y) - f (x', y')| < treshold \} $$
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_num_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_num_chart.png" 
         alt="Wykres stopnia przynależności parametru num">
     <figcaption>
         Rysunek 3: Wykres stopnia przynależności parametru <em>num</em>. 
@@ -262,7 +262,7 @@ lingwistyczne takie jak *Small*, *Moderate*, *Big*, *Very Big*:
 **jeżeli** (dif jest High) **i** (num jest Many) **to** (deg jest Moderate)
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_deg_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_deg_chart.png" 
         alt="Wykres stopnia przynależności parametru deg">
     <figcaption>
         Rysunek 4: Wykres stopnia przynależności parametru <em>deg</em>. 
@@ -280,7 +280,7 @@ algorytmie, aby wyliczyć wagi dla wszystkich pikseli znajdujących się w
 $$ diff = |f(x,y) - f(x-k, y-l)| $$
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_diff_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_diff_chart.png" 
         alt="Wykres stopnia przynależności parametru diff">
     <figcaption>
         Rysunek 5: Wykres stopnia przynależności parametru <em>diff</em>. 
@@ -322,7 +322,7 @@ danego piksela:
 **jeżeli** (diff jest Large) **i** (deg jest Very Big) **to** (weight jest Very Big)
 
 <figure>
-    <img src="/img/gkiro/fuzzy/fuzzy_weight_chart.png" 
+    <img src="/assets/img/gkiro/fuzzy/fuzzy_weight_chart.png" 
         alt="Wykres stopnia przynależności parametru weight">
     <figcaption>
         Rysunek 6: Wykres stopnia przynależności parametru <em>weight</em>. 

@@ -32,16 +32,16 @@ Poniżej zamieszczam kilka zrzutów ekranu pokazujących nową funkcjonalność 
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/lms_netdevicemodel/lms_netdevicemodel_1.png">
-                <img src="/img/lms_netdevicemodel/lms_netdevicemodel_1.png" alt="Opcja pobierania modelu urządzenia sieciowego" title="Opcja pobierania modelu urządzenia sieciowego"/>
+            <a href="/assets/img/lms_netdevicemodel/lms_netdevicemodel_1.png">
+                <img src="/assets/img/lms_netdevicemodel/lms_netdevicemodel_1.png" alt="Opcja pobierania modelu urządzenia sieciowego" title="Opcja pobierania modelu urządzenia sieciowego"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/lms_netdevicemodel/lms_netdevicemodel_2.png">
-                <img src="/img/lms_netdevicemodel/lms_netdevicemodel_2.png" alt="Wybieranie modelu urządzenia sieciowego z listy" title="Wybieranie modelu urządzenia sieciowego z listy"/>
+            <a href="/assets/img/lms_netdevicemodel/lms_netdevicemodel_2.png">
+                <img src="/assets/img/lms_netdevicemodel/lms_netdevicemodel_2.png" alt="Wybieranie modelu urządzenia sieciowego z listy" title="Wybieranie modelu urządzenia sieciowego z listy"/>
             </a>
         </div>
     </div>

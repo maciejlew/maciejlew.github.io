@@ -39,7 +39,7 @@ znajdziecie w
 [repozytorium](https://github.com/maciejlew/drug-dose-framework/blob/master/doc/ddf.dia), 
 poniżej prezentuję wspomniany diagram klas:
 
-[Diagram klas w projekcie DDF]({{site.url}}/img/ddf001.png)
+[Diagram klas w projekcie DDF]({{site.url}}/assets/img/ddf001.png)
 
 ## Kontroler
 

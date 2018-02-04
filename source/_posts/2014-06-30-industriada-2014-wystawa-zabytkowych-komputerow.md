@@ -58,24 +58,24 @@ stracić trochę czasu grając w niezapomniane Mario lub PacMan.
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/AEG_MIGNON.jpg">
-                <img src="/img/industriada_2014/AEG_MIGNON_thumbnail.jpg" alt="AEG MIGNON" title="AEG MIGNON"/>
+            <a href="/assets/img/industriada_2014/AEG_MIGNON.jpg">
+                <img src="/assets/img/industriada_2014/AEG_MIGNON_thumbnail.jpg" alt="AEG MIGNON" title="AEG MIGNON"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/AMIGA.jpg">
-                <img src="/img/industriada_2014/AMIGA_thumbnail.jpg" alt="AMIGA" title="AMIGA"/>
+            <a href="/assets/img/industriada_2014/AMIGA.jpg">
+                <img src="/assets/img/industriada_2014/AMIGA_thumbnail.jpg" alt="AMIGA" title="AMIGA"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/ATARI_800.jpg">
-                <img src="/img/industriada_2014/ATARI_800_thumbnail.jpg" alt="ATARI 800" title="ATARI 800"/>
+            <a href="/assets/img/industriada_2014/ATARI_800.jpg">
+                <img src="/assets/img/industriada_2014/ATARI_800_thumbnail.jpg" alt="ATARI 800" title="ATARI 800"/>
             </a>
         </div>
     </div>
@@ -83,24 +83,24 @@ stracić trochę czasu grając w niezapomniane Mario lub PacMan.
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/COMMODORE_64_2.jpg">
-                <img src="/img/industriada_2014/COMMODORE_64_2_thumbnail.jpg" alt="COMMODORE 64" title="COMMODORE 64"/>
+            <a href="/assets/img/industriada_2014/COMMODORE_64_2.jpg">
+                <img src="/assets/img/industriada_2014/COMMODORE_64_2_thumbnail.jpg" alt="COMMODORE 64" title="COMMODORE 64"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/ELWRO_800-2_JUNIOR.jpg">
-                <img src="/img/industriada_2014/ELWRO_800-2_JUNIOR_thumbnail.jpg" alt="ELWRO 800-2 JUNIOR" title="ELWRO 800-2 JUNIOR"/>
+            <a href="/assets/img/industriada_2014/ELWRO_800-2_JUNIOR.jpg">
+                <img src="/assets/img/industriada_2014/ELWRO_800-2_JUNIOR_thumbnail.jpg" alt="ELWRO 800-2 JUNIOR" title="ELWRO 800-2 JUNIOR"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/ELWRO_ELWIRKA.jpg">
-                <img src="/img/industriada_2014/ELWRO_ELWIRKA_thumbnail.jpg" alt="ELWRO ELWIRKA" title="ELWRO ELWIRKA"/>
+            <a href="/assets/img/industriada_2014/ELWRO_ELWIRKA.jpg">
+                <img src="/assets/img/industriada_2014/ELWRO_ELWIRKA_thumbnail.jpg" alt="ELWRO ELWIRKA" title="ELWRO ELWIRKA"/>
             </a>
         </div>
     </div>
@@ -108,72 +108,72 @@ stracić trochę czasu grając w niezapomniane Mario lub PacMan.
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/MACINTOSH_CLASSIC.jpg">
-                <img src="/img/industriada_2014/MACINTOSH_CLASSIC_thumbnail.jpg" alt="MACINTOSH CLASSIC" title="MACINTOSH CLASSIC"/>
+            <a href="/assets/img/industriada_2014/MACINTOSH_CLASSIC.jpg">
+                <img src="/assets/img/industriada_2014/MACINTOSH_CLASSIC_thumbnail.jpg" alt="MACINTOSH CLASSIC" title="MACINTOSH CLASSIC"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/maszyny_liczace.jpg">
-                <img src="/img/industriada_2014/maszyny_liczace_thumbnail.jpg" alt="maszyny liczące" title="maszyny liczące"/>
+            <a href="/assets/img/industriada_2014/maszyny_liczace.jpg">
+                <img src="/assets/img/industriada_2014/maszyny_liczace_thumbnail.jpg" alt="maszyny liczące" title="maszyny liczące"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/NOVA_BRUNSVIGA.jpg">
-                <img src="/img/industriada_2014/NOVA_BRUNSVIGA_thumbnail.jpg" alt="NOVA BRUNSVIGA" title="NOVA BRUNSVIGA"/>
+            <a href="/assets/img/industriada_2014/NOVA_BRUNSVIGA.jpg">
+                <img src="/assets/img/industriada_2014/NOVA_BRUNSVIGA_thumbnail.jpg" alt="NOVA BRUNSVIGA" title="NOVA BRUNSVIGA"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/ZX81.jpg">
-                <img src="/img/industriada_2014/ZX81_thumbnail.jpg" alt="ZX81" title="ZX81"/>
+            <a href="/assets/img/industriada_2014/ZX81.jpg">
+                <img src="/assets/img/industriada_2014/ZX81_thumbnail.jpg" alt="ZX81" title="ZX81"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/COMMODORE_64_1.jpg">
-                <img src="/img/industriada_2014/COMMODORE_64_1_thumbnail.jpg" alt="COMMODORE 64" title="COMMODORE 64"/>
+            <a href="/assets/img/industriada_2014/COMMODORE_64_1.jpg">
+                <img src="/assets/img/industriada_2014/COMMODORE_64_1_thumbnail.jpg" alt="COMMODORE 64" title="COMMODORE 64"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/GESTETNER_320.jpg">
-                <img src="/img/industriada_2014/GESTETNER_320_thumbnail.jpg" alt="GESTETNER 320" title="GESTETNER 320"/>
+            <a href="/assets/img/industriada_2014/GESTETNER_320.jpg">
+                <img src="/assets/img/industriada_2014/GESTETNER_320_thumbnail.jpg" alt="GESTETNER 320" title="GESTETNER 320"/>
             </a>
         </div>
     </div>
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/HAWLETT_PACKARD.jpg">
-                <img src="/img/industriada_2014/HAWLETT_PACKARD_thumbnail.jpg" alt="HAWLETT PACKARD" title="HAWLETT PACKARD"/>
+            <a href="/assets/img/industriada_2014/HAWLETT_PACKARD.jpg">
+                <img src="/assets/img/industriada_2014/HAWLETT_PACKARD_thumbnail.jpg" alt="HAWLETT PACKARD" title="HAWLETT PACKARD"/>
             </a>
         </div>
     </div>
     
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/MERITUM.jpg">
-                <img src="/img/industriada_2014/MERITUM_thumbnail.jpg" alt="MERITUM" title="MERITUM"/>
+            <a href="/assets/img/industriada_2014/MERITUM.jpg">
+                <img src="/assets/img/industriada_2014/MERITUM_thumbnail.jpg" alt="MERITUM" title="MERITUM"/>
             </a>
         </div>
     </div>
     
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="/img/industriada_2014/PACMAN.jpg">
-                <img src="/img/industriada_2014/PACMAN_thumbnail.jpg" alt="PACMAN" title="PACMAN"/>
+            <a href="/assets/img/industriada_2014/PACMAN.jpg">
+                <img src="/assets/img/industriada_2014/PACMAN_thumbnail.jpg" alt="PACMAN" title="PACMAN"/>
             </a>
         </div>
     </div>

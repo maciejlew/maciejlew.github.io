@@ -55,7 +55,7 @@ filtrów na obraz i jego późniejszą segmentację.
 #### EmguCVDemo
 
 <figure>
-    <img src="/img/gkiro/emgucvdemo.png" alt="EmguCVDemo - okno programu testowego">
+    <img src="/assets/img/gkiro/emgucvdemo.png" alt="EmguCVDemo - okno programu testowego">
     <figcaption>Rysunek 1: EmguCVDemo - okno programu testowego</figcaption>
 </figure>
 

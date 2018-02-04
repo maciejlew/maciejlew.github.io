@@ -36,8 +36,8 @@ breadcrumbs:
 
 Przykłady:
 
- * [Przykładowe wezwanie do zapłaty](http://lion.net.pl/img/szablony_dokumentow/wezwanie_do_zaplaty_przyklad.pdf)
- * [Przykładowe wezwanie do zapłaty z odsetkami](http://lion.net.pl/img/szablony_dokumentow/wezwanie_do_zaplaty_odsetki_ustawowe_przyklad.pdf)
+ * [Przykładowe wezwanie do zapłaty](http://lion.net.pl/assets/img/szablony_dokumentow/wezwanie_do_zaplaty_przyklad.pdf)
+ * [Przykładowe wezwanie do zapłaty z odsetkami](http://lion.net.pl/assets/img/szablony_dokumentow/wezwanie_do_zaplaty_odsetki_ustawowe_przyklad.pdf)
 
 * * *
 

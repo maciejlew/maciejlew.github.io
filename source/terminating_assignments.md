@@ -31,7 +31,7 @@ podczas wyszukiwania kończących się zobowiązań.
 
 ### Zrzuty ekranu:
 
- * [Lista kończących się zobowiązań](http://lion.net.pl/img/pluginy/konczace_sie_zobowiazania.png)
+ * [Lista kończących się zobowiązań](http://lion.net.pl/assets/img/pluginy/konczace_sie_zobowiazania.png)
 
 ### Instalacja:
 

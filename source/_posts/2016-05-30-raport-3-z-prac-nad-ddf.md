@@ -58,57 +58,57 @@ widoki:
 
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-drug-list-polish.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-drug-list-polish.png" alt="lista leków"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-drug-list-polish.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-drug-list-polish.png" alt="lista leków"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-drug-details.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-drug-details.png" alt="szczegóły leku"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-drug-details.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-drug-details.png" alt="szczegóły leku"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-dose-calculator.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-dose-calculator.png" alt="kalkulator dawki leku"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-dose-calculator.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-dose-calculator.png" alt="kalkulator dawki leku"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-dose-result.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-dose-result.png" alt="wynik obliczenia dawki leku"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-dose-result.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-dose-result.png" alt="wynik obliczenia dawki leku"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-dose-exception.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-dose-exception.png" alt="komunikat o błędzie podczas obliczania dawki leku"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-dose-exception.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-dose-exception.png" alt="komunikat o błędzie podczas obliczania dawki leku"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-language-settings-1.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-language-settings-1.png" alt="boczne menu prowadzące do widoku zmiany języka aplikacji"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-language-settings-1.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-language-settings-1.png" alt="boczne menu prowadzące do widoku zmiany języka aplikacji"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-language-settings-2.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-language-settings-2.png" alt="formularz zmiany języka aplikacji"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-language-settings-2.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-language-settings-2.png" alt="formularz zmiany języka aplikacji"/>
             </a>
         </div>
     </div>
     <div class="galleryItem">
         <div class="stack twisted">
-            <a href="{{site.url}}/img/DSP2016/ddf-drug-list-english.png">
-                <img src="{{site.url}}/img/DSP2016/ddf-drug-list-english.png" alt="lista leków po angielsku"/>
+            <a href="{{site.url}}/assets/img/DSP2016/ddf-drug-list-english.png">
+                <img src="{{site.url}}/assets/img/DSP2016/ddf-drug-list-english.png" alt="lista leków po angielsku"/>
             </a>
         </div>
     </div>

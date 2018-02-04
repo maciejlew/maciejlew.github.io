@@ -31,7 +31,7 @@ podczas wyszukiwania kończących się umów.
 
 ### Zrzuty ekranu:
 
- * [Lista kończących się umów](http://lion.net.pl/img/pluginy/konczace_sie_umowy.png)
+ * [Lista kończących się umów](http://lion.net.pl/assets/img/pluginy/konczace_sie_umowy.png)
 
 ### Instalacja:
 

@@ -54,7 +54,7 @@ uwagami.
 
 ### Przykłady:
 
- * [Formatka dodawania dokumentu z szablonu informacji do umowy zawartej poza lokalem](http://lion.net.pl/img/szablony_dokumentow/informacje_do_umowy_zawartej_poza_lokalem.png)
+ * [Formatka dodawania dokumentu z szablonu informacji do umowy zawartej poza lokalem](http://lion.net.pl/assets/img/szablony_dokumentow/informacje_do_umowy_zawartej_poza_lokalem.png)
 
 ### Instalacja:
 
