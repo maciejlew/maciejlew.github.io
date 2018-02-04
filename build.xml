@@ -3,7 +3,7 @@
 
     <target name="clean">
         <echo msg="cleaning output directory"/>
-        <exec command="rm -Rf output_dir/"/>
+        <exec command="rm -Rf output_dev/"/>
         <echo msg="cleaning source assets directory"/>
         <exec command="rm -Rf source/assets/"/>
     </target>
