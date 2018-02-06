@@ -4,7 +4,6 @@ title: "Umiejętności LionNet"
 description: "Umiejętności firmy LionNet. Systemy informatyczne. Oprogramowanie dla ISP. Rozwój LMS."
 keywords: OOP, TDD, wzorce projektowe, programowanie wielowątkowe, technologie web, sieci komputerowe, LMS, Lan Management System, systemy B2B
 permalink: /umiejetnosci/
-redirect_from: /skills/
 type: ProfilePage
 date: "2014-06-28 19:01:00"
 breadcrumbs:
@@ -15,6 +14,16 @@ breadcrumbs:
     title: page.title
     type: ProfilePage
 ---
+
+Projektowanie i wdrażanie systemów informatycznych.
+
+Zajmuję się projektowaniem, programowaniem i wdrażaniem systemów 
+informatycznych. Mogę pomóc Ci w wyborze rozwiązania przystosowanego 
+do Twoich potrzeb lub stworzyć je specjalnie dla Ciebie!
+
+Posiadam ponad 8-letnie doświadczenie w branży IT. Specjalizuję się w 
+aplikacjach dla rynku telekomunikacji, ale nieobce są mi inne branże. 
+Posiadam także doświadczenie w pracy z administracją samorządową.
 
 ### Posiadam ponad 8-letnie doświadczenie w tworzeniu systemów informatycznych
 
