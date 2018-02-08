@@ -1,0 +1,33 @@
+@import 'utils/variables';
+
+#projects {
+
+    display: flex;
+
+    article {
+
+        width: $width1 \ 2;
+        border: 4px solid $color1;
+        border-radius: 16px;
+        padding: 4rem;
+        margin: 2rem;
+        box-shadow: 4px 2px $color2;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            hyphens: auto;
+        }
+
+        header {
+            h2 {
+                text-shadow: 4px 2px #ddd;
+            }
+        }
+
+    }
+
+}
