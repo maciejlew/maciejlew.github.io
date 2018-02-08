@@ -8,6 +8,12 @@
         <exec command="rm -Rf source/assets/"/>
     </target>
 
+    <target name="clean-watch">
+        <echo msg="cleaning after previous watch"/>
+        <exec command="killall sass"/>
+        <exec command="killall php"/>
+    </target>
+
     <target name="build-assets-css">
         <echo msg="building css files"/>
         <exec command="sass --update --force assets/scss/:source/assets/css/ --style=compressed"/>
@@ -35,6 +41,12 @@
     <target name="serve" depends="build">
         <echo msg="launching page"/>
         <exec command="vendor/bin/sculpin serve"/>
+    </target>
+
+    <target name="watch" depends="build">
+        <echo msg="watching page"/>
+        <exec command="sass --watch assets/scss/:source/assets/css/ --style=compressed" spawn="true"/>
+        <exec command="vendor/bin/sculpin generate --server --watch"/>
     </target>
 
 </project>
