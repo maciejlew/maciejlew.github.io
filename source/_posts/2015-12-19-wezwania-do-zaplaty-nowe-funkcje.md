@@ -28,7 +28,3 @@ były wystawione korekty;
  * opcja wyliczania odsetek ustawowych dla okresów gdy stawki tych odsetek wynosiły
 13% (poprzednia stawka) i 8% (obecna stawka) z uwzględnieniem przesuwania dnia
 rozpoczęcia naliczania odsetek gdy wypada on w dniu ustawowo wolnym od pracy.
-
-Osoby zainteresowane tymi oraz [innymi szablonami dla systemu LMS]({{ site.url }}/lan-management-system/szablony-dokumentow)
-zapraszam do [kontaktu]({{ site.url }}/kontakt).
-

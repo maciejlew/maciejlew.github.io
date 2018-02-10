@@ -47,6 +47,3 @@ Obecnie pracuję nad:
  * Lista kończących się zobowiązań, powiadamianie BOK o kończących się zobowiązaniach;
  * Terminarz - rozbudowa systemu komentarzy;
  * Pobieranie informacji z SerwerSMS.
-
-
-Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu]({{ site.url }}/kontakt).

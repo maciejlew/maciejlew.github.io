@@ -116,10 +116,6 @@ na obrazie. Po zakończonej operacji użytkownik otrzymuje podsumowanie z liczb�
 segmentów oraz czasem zliczania. Wykonanie tej operacji jest niezbędne, aby móc 
 oznaczać segmenty na obrazie.
 
-##### Demo
-
-Jeśli chcesz przetestować aplikację EmguCVDemo [skontaktuj się ze mną][2].
-
 ### Literatura
 
 1. <a name="wyklady-gkiro">
@@ -137,9 +133,8 @@ obrębie zębów widocznych na zdjęciach RTG"**.
 Zobacz także:
 
  * [Przekształcenia morfologiczne, kontekstowe i rozmyte][1]
- * [Wpływ wstępnej filtracji na segmentację wododziałową][3]
+ * [Wpływ wstępnej filtracji na segmentację wododziałową][2]
 
 
 [1]: /2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html
-[2]: /kontakt/
-[3]: /2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html
+[2]: /2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html

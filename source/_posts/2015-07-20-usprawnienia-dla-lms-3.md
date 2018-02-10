@@ -36,5 +36,3 @@ Obecnie pracuję nad:
  * Terminarz - rozbudowa systemu komentarzy;
  * Pobieranie informacji z SerwerSMS.
  * Jednorazowe rabaty
-
-Jeśli na liście jest coś co chciałbyś bym wdrożył także w Twoim LMS to [zapraszam do kontaktu]({{ site.url }}/kontakt).
