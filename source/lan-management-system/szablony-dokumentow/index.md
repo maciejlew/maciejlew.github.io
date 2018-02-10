@@ -3,7 +3,6 @@ layout: page
 title: "Szablony dokumentów dla Lan Management System"
 description: "Gotowe szablony dokumentów dla systemu Lan Management System"
 keywords: LMS, Lan Management System, sieci LAN, programowanie webowe, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat
-permalink: /lan-management-system/szablony-dokumentow/
 type: CollectionPage
 date: "2015-08-02 15:39:00"
 breadcrumbs:
@@ -42,8 +41,8 @@ dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in
 
 Przygotowane przeze mnie szablony działają zarówno w LMS GIT jak i INET LMS.
 
-[1]: wezwanie-do-zaplaty/
-[2]: przedsadowe-wezwanie-do-zaplaty/
-[3]: ksiazeczka-oplat/
-[4]: informacje-do-umowy-zawartej-poza-lokalem/
-[5]: odstapienie-od-umowy-zawartej-poza-lokalem/
+[1]: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty/
+[2]: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
+[3]: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
+[4]: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
+[5]: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/

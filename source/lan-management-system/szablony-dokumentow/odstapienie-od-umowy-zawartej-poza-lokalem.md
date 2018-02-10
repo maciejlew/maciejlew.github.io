@@ -3,7 +3,6 @@ layout: page
 title: "Szablon odstąpienia od umowy zawartej poza lokalem dla LMS"
 description: "Szablon odstąpienia od umowy zawartej poza lokalem dla Lan Management System"
 keywords: LMS, Lan Management System, sieci LAN, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat, uokik, umowa w lokalu, umowa poza lokalem, odstąpienie od umowy, telekomunikacja, internet
-permalink: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
 type: ItemPage
 date: "2015-10-18 12:25:00"
 breadcrumbs:
@@ -48,7 +47,7 @@ uwagami.
 
 ### Przykłady:
 
- * [Formatka dodawania dokumentu z szablonu odstąpienia od umowy zawartej poza lokalem](http://lion.net.pl/assets/img/szablony_dokumentow/odstapienie_od_umowy_zawartej_poza_lokalem.png)
+ * [Formatka dodawania dokumentu z szablonu odstąpienia od umowy zawartej poza lokalem](/assets/img/szablony_dokumentow/odstapienie_od_umowy_zawartej_poza_lokalem.png)
 
 ### Instalacja:
 
@@ -70,10 +69,10 @@ dokumentu:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](../wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](../przedsadowe-wezwanie-do-zaplaty)
- * [Książeczka opłat](../ksiazeczka-oplat)
- * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
+ * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
+ * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
 
 
 

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Przedsądowe wezwanie do zapłaty dla LMS"
-description: "Szablon przedsądowego wezwania do zapłaty dla Lan Management System"
+title: "Wezwanie do zapłaty dla LMS"
+description: "Szablon wezwania do zapłaty dla Lan Management System"
 keywords: LMS, Lan Management System, sieci LAN, programowanie webowe, platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat
-permalink: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
+permalink: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty/
 type: ItemPage
 date: "2015-08-02 15:39:00"
 breadcrumbs:
@@ -36,14 +36,14 @@ breadcrumbs:
 
 Przykłady:
 
- * [Przykładowe przedsądowe wezwanie do zapłaty](http://lion.net.pl/assets/img/szablony_dokumentow/przedsadowe_wezwanie_do_zaplaty_przyklad.pdf)
- * [Przykładowe przedsądowe wezwanie do zapłaty z odsetkami](http://lion.net.pl/assets/img/szablony_dokumentow/przedsadowe_wezwanie_do_zaplaty_odsetki_ustawowe_przyklad.pdf)
+ * [Przykładowe wezwanie do zapłaty](/assets/img/szablony_dokumentow/wezwanie_do_zaplaty_przyklad.pdf)
+ * [Przykładowe wezwanie do zapłaty z odsetkami](/assets/img/szablony_dokumentow/wezwanie_do_zaplaty_odsetki_ustawowe_przyklad.pdf)
 
 * * *
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](../wezwanie-do-zaplaty)
- * [Książeczka opłat](../ksiazeczka-oplat)
- * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
- * [Odstąpienie od umowy zawartej poza lokalem](../odstapienie-od-umowy-zawartej-poza-lokalem)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
+ * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
+ * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
+ * [Odstąpienie od umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem)

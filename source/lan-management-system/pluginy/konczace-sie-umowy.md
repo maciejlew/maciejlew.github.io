@@ -2,7 +2,6 @@
 layout: page
 title: "Lista kończących się umów w LMS"
 description: kończące się umowy, kończące się zobowiązania, marketing w lms, pluginy dla lms
-permalink: /lan-management-system/pluginy/konczace-sie-umowy/
 type: ItemPage
 date: "2015-09-30 20:04:00"
 breadcrumbs:
@@ -31,7 +30,7 @@ podczas wyszukiwania kończących się umów.
 
 ### Zrzuty ekranu:
 
- * [Lista kończących się umów](http://lion.net.pl/assets/img/pluginy/konczace_sie_umowy.png)
+ * [Lista kończących się umów](/assets/img/pluginy/konczace_sie_umowy.png)
 
 ### Instalacja:
 
@@ -46,7 +45,7 @@ W menu konfiguracji, w module *Wtyczki*, należy uruchomić plugin
 
 Zobacz także:
 
- * [Lista kończących się zobowiązań](../konczace-sie-zobowiazania)
+ * [Lista kończących się zobowiązań](/lan-management-system/pluginy/konczace-sie-zobowiazania)
 
 
 

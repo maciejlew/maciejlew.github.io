@@ -3,7 +3,6 @@ layout: page
 title: "Książeczka opłat dla LMS"
 description: "Szablon książeczki opłat dla Lan Management System"
 keywords: LMS, Lan Management System, sieci LAN, programowanie webowe, platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat
-permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
 type: ItemPage
 date: "2015-08-02 15:39:00"
 breadcrumbs:
@@ -58,7 +57,7 @@ następujące zmienne:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](../wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](../przedsadowe-wezwanie-do-zaplaty)
- * [Informacje do umowy zawartej poza lokalem](../informacje-do-umowy-zawartej-poza-lokalem)
- * [Odstąpienie od umowy zawartej poza lokalem](../odstapienie-od-umowy-zawartej-poza-lokalem)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
+ * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
+ * [Odstąpienie od umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem)

@@ -3,7 +3,6 @@ layout: page
 title: "Szablon informacji do umowy zawartej poza lokalem dla LMS"
 description: "Szablon informacji do umowy zawartej poza lokalem dla Lan Management System"
 keywords: LMS, Lan Management System, sieci LAN, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat, uokik, umowa w lokalu, umowa poza lokalem
-permalink: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
 type: ItemPage
 date: "2015-10-17 12:30:00"
 breadcrumbs:
@@ -54,7 +53,7 @@ uwagami.
 
 ### Przykłady:
 
- * [Formatka dodawania dokumentu z szablonu informacji do umowy zawartej poza lokalem](http://lion.net.pl/assets/img/szablony_dokumentow/informacje_do_umowy_zawartej_poza_lokalem.png)
+ * [Formatka dodawania dokumentu z szablonu informacji do umowy zawartej poza lokalem](/assets/img/szablony_dokumentow/informacje_do_umowy_zawartej_poza_lokalem.png)
 
 ### Instalacja:
 
@@ -81,9 +80,9 @@ dokumentu:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](../wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](../przedsadowe-wezwanie-do-zaplaty)
- * [Książeczka opłat](../ksiazeczka-oplat)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
+ * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
 
 
 

@@ -1,10 +1,8 @@
 ---
 layout: page
-title: "Dodatki do Lan Management System"
+title: "Lan Management System"
 description: "Gotowe komponenty dla systemu Lan Management System"
 keywords: LMS, Lan Management System, sieci LAN, programowanie webowe, platformy VoIP, dodatki, komponenty, LMS GIT, LMS INET, wezwanie do zapłaty, przedsądowe wezwanie do zapłaty, ostateczne przedsądowe wezwanie do zapłaty, druki wpłat
-permalink: /lan-management-system/
-redirect-from: /lms/
 type: CollectionPage
 date: "2015-05-04 21:50:00"
 breadcrumbs:
@@ -15,9 +13,6 @@ breadcrumbs:
     title: page.title
     type: CollectionPage
 ---
-
-Poniżej przedstawiam moje gotowe komponenty dla systemu LMS, które nie są dostępne
-w głównej gałęzi projektu:
 
 ## Szablony dokumentów
 
@@ -35,7 +30,7 @@ Moje gotowe szablony dokumentów:
  * [Książeczka opłat][3]
 
 Poza gotowymi szablonami oferuję także usługi przenoszenia istniejących szablonów 
-dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in.:
+dokumentów klienta do wersji działającej z LMS. Dotychczas przenosiłem m. in.:
 
  * Umowy
  * Regulaminy
@@ -59,7 +54,27 @@ ingerencji w kod projektu. Dzięki temu utrzymanie i aktualizacje LMS stają si�
 Pluginy działają z wersją LMS GIT, chyba że w opisie zaznaczono inaczej. Na 
 życzenie klienta istnieje możliwość przerobienia pluginu na moduł INET LMS.
 
+* * *
 
+## Artykuły nt. LMS
+
+Od czasu do czasu piszę posty na temat LMS, które mogą Cię zainteresować:
+
+ * [Nowa stabilna wersja LMS 1.11.22](/2017/06/28/nowa-stabilna-wersja-lms-1-11-22.html)
+ * [Dokumenty w LAN Management System](/2017/02/13/dokumenty_w_lan_management_system.html)
+ * [Serwer CI dla LMS](/2016/02/13/konfiguracja-serwera-ci-dla-lms.html)
+ * [Wezwania do zapłaty - nowe funkcje](/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html)
+ * [Książeczka opłat - nowe funkcje](/2015/09/21/ksiazeczka-oplat-nowe-funkcje.html)
+ * [Wezwania do zapłaty - adresy korespondencyjne klientów](/2015/08/08/wezwania-do-zaplaty-adresy-korespondencyjne-klientow.html)
+ * [Grupa LMS na Goldenline](/2015/08/08/grupa-lms-na-goldenline.html)
+ * [Routing w LMS](/2015/07/28/routing-w-lms.html)
+ * [Usprawnienia dla LMS, część 3](/2015/07/21/usprawnienia-dla-lms-3.html)
+ * [Usprawnienia dla LMS, część 2](/2015/06/16/usprawnienia-dla-lms-2.html)
+ * [Usprawnienia dla LMS](/2015/04/20/usprawnienia-dla-lms.html)
+ * [Baza modeli urządzeń sieciowych w LMS](/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html)
+ * [LMS - co dalej?](/2015/02/07/lms-co-dalej.html)
+ * [LMS - system zarządzania sieciami LAN i nie tylko](/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html)
+ * [LMSConfig - nowy system zarządzania konfiguracją LMS](/2014/07/16/lmsconfig-nowy-system-zarzadzania-konfiguracja-lms.html)
 
 [1]: szablony-dokumentow/wezwanie-do-zaplaty/
 [2]: szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
