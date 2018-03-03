@@ -17,7 +17,7 @@ breadcrumbs:
     type: CollectionPage
 ---
 
-DDS to aplikacja serwerowa pozwająca na dostarczenie przy pomocy webserwisów danych o lekach DDF lub innych
+[DDS][1] to aplikacja serwerowa pozwająca na dostarczenie przy pomocy webserwisów danych o lekach DDF lub innych
 aplikacji.
 
 Więcej o aplikacji możesz dowiedzieć się czytając artykuły powstałe podczas prac nad nią:
@@ -34,3 +34,5 @@ Więcej o aplikacji możesz dowiedzieć się czytając artykuły powstałe podcz
  * [Jak włączyć tryb debug w cmake?](../2017/03/15/jak-wlaczyc-tryb-debug-w-cmake.html)
  * [Pistacja](../2017/03/14/pistacja.html)
  * [Powtórka z rozrywki](../2017/03/01/powtorka-z-rozrywki.html)
+ 
+[1]: https://github.com/maciejlew/drug-dose-server

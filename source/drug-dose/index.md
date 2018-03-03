@@ -14,7 +14,7 @@ breadcrumbs:
     type: CollectionPage
 ---
 
-Drug Dose Framework i Drug Dose Server to aplikacje mające na celu pomoc w obliczaniu dawek leków.
+[Drug Dose Framework][1] i [Drug Dose Server][2] to aplikacje mające na celu pomoc w obliczaniu dawek leków.
 
 Przeliczanie dawki leku nie jest proste. Zwłaszcza gdy mamy zrobić to szybko, a od naszych obliczeń
 zależy życie nasze lub innego człowieka. Sprawa komplikuje się jeszcze bardziej, gdy mamy do czynienia
@@ -75,3 +75,6 @@ Więcej o aplikacjach możesz dowiedzieć się czytając artykuły powstałe pod
  * [Yeoman! Idziemy na front!](../2016/03/03/yeoman-idziemy-na-front.html)
  * [Dam się poznać](../2016/03/01/dam-sie-poznac.html)
  * [Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować](../2016/02/29/jak-skonfigurowac-srodowisko-programistyczne-z-apache-cordova-android-sdk-i-nodejs-na-debianie-8-i386-i-nie-zwariowac.html)
+ 
+[1]: https://github.com/maciejlew/drug-dose-framework
+[2]: https://github.com/maciejlew/drug-dose-server

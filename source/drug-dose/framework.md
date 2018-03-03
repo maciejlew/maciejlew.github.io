@@ -17,7 +17,7 @@ breadcrumbs:
     type: CollectionPage
 ---
 
-DDF to szkielet pozwalający na zbudowanie hybrydowej, mobilnej aplikacji działającej na szerokiej
+[DDF][1] to szkielet pozwalający na zbudowanie hybrydowej, mobilnej aplikacji działającej na szerokiej
 gamie urządzeń mobilnych.
 
 Więcej o aplikacji możesz dowiedzieć się czytając artykuły powstałe podczas prac nad nią:
@@ -51,3 +51,5 @@ Więcej o aplikacji możesz dowiedzieć się czytając artykuły powstałe podcz
  * [Yeoman! Idziemy na front!](../2016/03/03/yeoman-idziemy-na-front.html)
  * [Dam się poznać](../2016/03/01/dam-sie-poznac.html)
  * [Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować](../2016/02/29/jak-skonfigurowac-srodowisko-programistyczne-z-apache-cordova-android-sdk-i-nodejs-na-debianie-8-i386-i-nie-zwariowac.html)
+ 
+[1]: https://github.com/maciejlew/drug-dose-framework
