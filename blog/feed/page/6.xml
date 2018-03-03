@@ -9,6 +9,48 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Zapach Jaśminu</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2016</category>
+                        <category>JS</category>
+                                    <content:encoded>&lt;p&gt;Postanowiłem, aby uniknąć w przyszłości nieprzyjemnych zapachów w mojej aplikacji
+&lt;a href=&quot;http://lion.net.pl/2016/03/01/dam-sie-poznac.html&quot;&gt;Drug Dose Framework&lt;/a&gt;, 
+dodać do projektu wsparcie dla Jasmine - frameworka dla testów BDD w JS.&lt;/p&gt;
+
+&lt;p&gt;W tym celu musiałem trochę zaktualizować zależności w projekcie. Nie obyło się
+bez chwili walki z NPM. Należało odinstalować kilka innych modułów konkurencyjnych
+bibliotek do testowania aby możliwe było uruchomienie Jasmine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm uninstall karma-chai
+npm uninstall karma-mocha
+npm install karma grunt-karma karma-phantomjs-launcher karma-coverage --save-dev
+npm install karma-jasmine karma-chrome-launcher --save-dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Wygląda na to że stos narzędzi JS do zainstalowania i nauczenia się w ramach 
+jednego małego projektu może rozrastać się z dnia na dzień. Przypomnę tylko że 
+do tej pory to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NodeJS&lt;/li&gt;
+&lt;li&gt;NPM&lt;/li&gt;
+&lt;li&gt;AngularJS&lt;/li&gt;
+&lt;li&gt;Ionic&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lion.net.pl/2016/03/03/yeoman-idziemy-na-front.html&quot;&gt;Yeoman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bower&lt;/li&gt;
+&lt;li&gt;Grunt&lt;/li&gt;
+&lt;li&gt;Karma&lt;/li&gt;
+&lt;li&gt;Jasmine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Zobaczymy co przyniesie jutro.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-03-07T21:00:00+01:00</pubDate>
+            <link>http://lion.net.pl/2016/03/07/zapach-jasminu.html</link>
+            <atom:link href="http://lion.net.pl/2016/03/07/zapach-jasminu.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/03/07/zapach-jasminu.html</guid>
+        </item>
+                <item>
             <title>Yeoman! Idziemy na front!</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>DSP2016</category>
@@ -763,31 +805,6 @@ edycji SpreadIT!&lt;/p&gt;
             <link>http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html</link>
             <atom:link href="http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html</guid>
-        </item>
-                <item>
-            <title>SpreadIT 2015</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>OOP, QA, SpreadIT, MEETING</category>
-                                    <content:encoded>&lt;p&gt;Już jutro kolejna edycja popularnej na Śląsku konferencji SpreadIT. I tym razem
-zamierzam się wybrać na to wydarzenie - agenda konferencji jak zwykle wygląda 
-bardzo interesująco. Spotykamy się, tak jak ostatnio, na wydziale AEiI Politechniki
-Śląskiej w Gliwicach. Więcej informacji znajdziecie 
-&lt;a href=&quot;http://spreadit.pl/&quot;&gt;na stronie konferencji&lt;/a&gt;.
-Do zobaczenia na miejscu.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Zobacz także:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;{{site.url}}/2015/11/22/spreadit-2015-relacja.html&quot;&gt;SpreadIT 2015 - relacja&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;{{site.url}}/2016/11/20/spreadit-2016-relacja.html&quot;&gt;SpreadIT 2016 - relacja&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-            <pubDate>2015-11-20T20:30:00+01:00</pubDate>
-            <link>http://lion.net.pl/2015/11/20/spreadit-2015.html</link>
-            <atom:link href="http://lion.net.pl/2015/11/20/spreadit-2015.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2015/11/20/spreadit-2015.html</guid>
         </item>
             </channel>
 </rss>

@@ -9,6 +9,101 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Code Coverage w Karma</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>QA</category>
+                        <category>JS</category>
+                        <category>DDF</category>
+                        <category>DSP2016</category>
+                                    <content:encoded>&lt;p&gt;Raporty pokrycia kodu testami jednostkowymi pozwalają szybko i przyjemnie przeanalizować
+stan projektu. Wskazują miejsca gdzie kod nie jest dostatecznie przetestowany.
+W tym wpisie dowiesz się jak wygenerować i jak interpretować &lt;em&gt;code coverage&lt;/em&gt; w 
+narzędziu Karma dla JS.&lt;/p&gt;
+
+&lt;h3 id=&quot;konfiguracja-karma-dla-code-coverage&quot;&gt;Konfiguracja Karma dla code coverage&lt;/h3&gt;
+
+&lt;p&gt;Aby skorzystać z raportów pokrycia kodu testami jednostkowymi musimy doinstalować
+bibliotekę &lt;em&gt;karma-coverage&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install karma-coverage
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Następnie w konfiguracji, w pliku karma.conf.js bądź Gruntfile.js, należy dodać
+następujące wpisy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;plugins: [&#039;karma-coverage&#039;],
+reporters: [&#039;coverage&#039;],
+preprocessors: { &#039;*.js&#039;: [&#039;coverage&#039;] }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Przykładowy wpis w Gruntfile.js, częściowo &lt;a href=&quot;/2016/03/03/yeoman-idziemy-na-front.html&quot;&gt;wygenerowany przez Yeoman&lt;/a&gt;, może 
+wyglądać po wprowadzeniu powyższych zmian tak:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;karma: {
+  options: {
+    basePath: &#039;&#039;,
+    frameworks: [&#039;jasmine&#039;],
+    files: [
+      &#039;&amp;lt;%= yeoman.app %&amp;gt;/&amp;lt;%= yeoman.scripts %&amp;gt;/**/*.js&#039;,
+      &#039;&amp;lt;%= yeoman.test %&amp;gt;/mock/**/*.js&#039;,
+      &#039;&amp;lt;%= yeoman.test %&amp;gt;/spec/**/*.js&#039;
+    ],
+    autoWatch: true,
+    plugins: [
+        &#039;karma-jasmine&#039;,
+        &#039;karma-coverage&#039;,
+        &#039;karma-phantomjs-launcher&#039;
+    ],
+    reporters: [&#039;dots&#039;, &#039;coverage&#039;],
+    port: 8080,
+    singleRun: false,
+    preprocessors: {
+      &#039;&amp;lt;%= yeoman.app %&amp;gt;/&amp;lt;%= yeoman.scripts %&amp;gt;/**/*.js&#039;: [&#039;coverage&#039;]
+    },
+    coverageReporter: {
+      reporters: [
+        { type: &#039;html&#039;, dir: &#039;coverage/&#039; },
+        { type: &#039;text-summary&#039; }
+      ]
+    }
+  },
+  unit: {
+    browsers: [&#039;PhantomJS&#039;],
+    background: false
+  },
+  continuous: {
+    browsers: [&#039;PhantomJS&#039;],
+    singleRun: true
+  }
+},
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Od tej chwili po wykonaniu testów Karma w folderze coverage przygotuje raporty dla
+każdej przeglądarki dla której testy zostały przeprowadzone. W katalogach tych 
+znajdziemy pliki &lt;em&gt;index.php&lt;/em&gt;, które po uruchomieniu w przeglądarce przedstawią
+nam raport. Poniżej kilka przykładowych zrzutów ekranu z raportem:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;img/DSP2016/karma-code-coverage-1.png&quot; alt=&quot;Karma code coverage report #1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;img/DSP2016/karma-code-coverage-2.png&quot; alt=&quot;Karma code coverage report #2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;img/DSP2016/karma-code-coverage-3.png&quot; alt=&quot;Karma code coverage report #3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Na zrzutach widzimy, że raport HTML pozwala nam szybko przejrzeć strukturę projektu,
+odnaleźć pliki dla których brakuje bądź jest za mało testów. &lt;strong&gt;Mamy wyszczególnione
+pokrycie testami linii, funkcji oraz gałęzi&lt;/strong&gt;, czyli ścieżek którymi może nasz kod 
+przejść od startu do końca podczas jego wykonywania.&lt;/p&gt;
+
+&lt;p&gt;Dodatkowo, po przejściu do konkretnego pliku, Karma a właściwie wykorzystywane 
+przez nią w tle narzędzie o nazwie Istanbul, wskaże nam podejrzane rozgałęzienia 
+kodu, oznaczając je symbolami &lt;em&gt;I (if path not taken)&lt;/em&gt; lub &lt;em&gt;E (else path not taken)&lt;/em&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-05-18T15:30:00+02:00</pubDate>
+            <link>http://lion.net.pl/2016/05/18/code-coverage-w-karma.html</link>
+            <atom:link href="http://lion.net.pl/2016/05/18/code-coverage-w-karma.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/05/18/code-coverage-w-karma.html</guid>
+        </item>
+                <item>
             <title>JSHint - jakość kodu JS pod kontrolą</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>QA</category>
@@ -999,110 +1094,6 @@ o wyniku obliczeń lub o zaistniałym wyjątku.&lt;/p&gt;
             <link>http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html</link>
             <atom:link href="http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html</guid>
-        </item>
-                <item>
-            <title>Apache Cordova, Ionic Framework i starsze wersje Androida</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2016</category>
-                        <category>JS</category>
-                        <category>DDF</category>
-                                    <content:encoded>&lt;p&gt;Stanąłem dziś przed problemem wgrania mojej aplikacji stworzonej w Ionic Framework
-na kilkuletni już telefon z trochę starszą wersją Androida, a co za tym idzie także
-wymaganą wersją SDK na którym budowano aplikację. Opiszę co udało mi się po kilku 
-godzinach walki zrobić aby to zadziałało.&lt;/p&gt;
-
-&lt;h3 id=&quot;uruchamianie-aplikacji-na-telefonie&quot;&gt;Uruchamianie aplikacji na telefonie&lt;/h3&gt;
-
-&lt;p&gt;Uruchomić aplikację zbudowaną w Ionic Framework możemy na kilka sposobów. Do tej
-listy dołączyła się opcja przegotowana przez &lt;a href=&quot;/2016/03/03/yeoman-idziemy-na-front.html&quot;&gt;szablon Yeoman&lt;/a&gt;. 
-Lista ta, posortowana od najbardziej opakowujących poleceń do najbardziej 
-&quot;niskopoziomowych&quot;, wygląda tak:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;grunt run&lt;/li&gt;
-&lt;li&gt;ionic run&lt;/li&gt;
-&lt;li&gt;cordova run&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;grunt-run&quot;&gt;grunt run&lt;/h4&gt;
-
-&lt;p&gt;To polecenie opakowuje polecenie ionic run. Polecenie czyści śmieci powstałe
-przy poprzednich wywołaniach zadań takich jak run, build czy serve, po czym buduje paczkę.
-Po jej zbudowaniu i wgraniu jej na telefon dodatkowo obserwuje projekt i w razie 
-zmian powtarza automatycznie ten proces.&lt;/p&gt;
-
-&lt;h4 id=&quot;ionic-run&quot;&gt;ionic run&lt;/h4&gt;
-
-&lt;p&gt;To polecenie tworzy paczkę i wgrywa ją na telefon. W tle wykonywane jest cordova run.&lt;/p&gt;
-
-&lt;h4 id=&quot;cordova-run&quot;&gt;cordova run&lt;/h4&gt;
-
-&lt;p&gt;To polecenie wykonuje całe budowanie paczki APK. Na podstawie manifestu jest w 
-stanie określić jakiego ma użyć SDK.&lt;/p&gt;
-
-&lt;h4 id=&quot;gradle&quot;&gt;gradle&lt;/h4&gt;
-
-&lt;p&gt;Uruchomienie powyższych poleceń powoduje uruchomienie narzędzia Gradle (choć można je 
-zmienić na Ant), zbudowanie paczki .apk i wgranie na podłączony do komputera 
-telefon.&lt;/p&gt;
-
-&lt;h3 id=&quot;opcja-minsdkversion&quot;&gt;Opcja minSdkVersion&lt;/h3&gt;
-
-&lt;p&gt;Aby uruchomić aplikacje na starszym Androidzie musimy dowiedzieć się jakiemu
-numerowi SDK odpowiada wersja Androida. Powiedzmy że mamy Androida 2.3.6, a 
-odpowiadająca mu wersja SDK to 9. Apache Cordova domyślnie obsługuje minimalnie
-wersję 14. A więc mamy problem. Jeśli korzystamy z Gradle możemy przekazać opcję
-ustawiającą minimalna wersję SDK (z Ant nie działa).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ionic run -- --minSdkVersion=9
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Możemy także, aby nie musieć ciągle podawać tego parametru, umieścić to w &lt;strong&gt;pliku
-&lt;em&gt;config.xml&lt;/em&gt; naszej aplikacji. Należy dodać taką sekcję:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;platform name=&quot;android&quot;&amp;gt;
-    &amp;lt;preference name=&quot;android-minSdkVersion&quot; value=&quot;9&quot; /&amp;gt;
-    &amp;lt;preference name=&quot;android-targetSdkVersion&quot; value=&quot;9&quot; /&amp;gt;
-&amp;lt;/platform&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Spowoduje to że w pliku manifestu będziemy już mieli zapisane jakiej chcemy używać
-wersji, ale nadal nie da się wgrać aplikacji na telefon z powodu:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What went wrong:
-  Execution failed for task &#039;:processDebugManifest&#039;.
-  Manifest merger failed : uses-sdk:minSdkVersion 9 cannot be smaller than version 
-  14 declared in library [android:CordovaLib:unspecified:debug]
-  Suggestion: use tools:overrideLibrary=&quot;org.apache.cordova&quot; to force usage&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Wygląda na to że wystarczy dodać w config.xml taki wpis:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;preference name=&quot;tools-overrideLibrary&quot; value=&quot;org.apache.cordova&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;lub taki:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;preference name=&quot;tools:overrideLibrary&quot; value=&quot;org.apache.cordova&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Niestety to nie zadziała (a w każdym razie długo debugowałem czemu nie zadziała 
-i wygląda na to że nie zadziała i już).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Jedynym wyjściem jest oszukanie Cordovy w taki sposób że wyedytujemy jej plik
-manifestu i zmniejszymy wartość minSdkVersion. Plik ten znajduje się w katalogu
-&lt;em&gt;platforms/android/CordovaLib/AndroidManifest.xml&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Po takim zabiegu zobaczymy w końcu &lt;strong&gt;BUILD SUCCESSFUL&lt;/strong&gt; i &lt;strong&gt;LAUNCH SUCCESS&lt;/strong&gt; co 
-oznacza, że możemy się już bawić naszą aplikacją na starszym telefonie.&lt;/p&gt;
-
-&lt;p&gt;Przykładowy plik &lt;em&gt;config.xml&lt;/em&gt; można znaleźć w &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework&quot;&gt;repozytorium DDF&lt;/a&gt;.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-04-16T23:30:00+02:00</pubDate>
-            <link>http://lion.net.pl/2016/04/16/apache-cordova-ionic-framework-i-starsze-wersje-androida.html</link>
-            <atom:link href="http://lion.net.pl/2016/04/16/apache-cordova-ionic-framework-i-starsze-wersje-androida.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/04/16/apache-cordova-ionic-framework-i-starsze-wersje-androida.html</guid>
         </item>
             </channel>
 </rss>

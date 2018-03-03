@@ -9,6 +9,1149 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Wpływ wstępnej filtracji na segmentację wododziałową</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>GKIRO</category>
+                                    <content:encoded>&lt;p&gt;W trzecim, a zarazem ostatnim, wpisie z cyklu związanego z moimi badaniami wpływu
+wstępnej filtracji obrazu na jego segmentację przedstawię wyniki jakie udało się
+mi zaobserwować i płynące z nich wnioski.&lt;/p&gt;
+
+&lt;h3 id=&quot;badanie-wp%C5%82ywu-wst%C4%99pnej-filtracji-obrazu-na-ilo%C5%9B%C4%87-segment%C3%B3w-po-segmentacji&quot;&gt;Badanie wpływu wstępnej filtracji obrazu na ilość segmentów po segmentacji&lt;/h3&gt;
+
+&lt;p&gt;W części badawczej pracy postanowiono przeprowadzić analizę wpływu zastosowanych 
+wstępnych filtrów na ilość segmentów na obrazie po segmentacji wododziałowej. 
+Przebadano następujące filtry:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;erozja, parametrem jest ilość iteracji&lt;/li&gt;
+&lt;li&gt;dylacja, parametrem jest ilość iteracji&lt;/li&gt;
+&lt;li&gt;otwarcie, parametrem jest ilość iteracji erozji i dylacji, oraz rozmiar elementu strukturalnego&lt;/li&gt;
+&lt;li&gt;zamknięcie, parametrem jest ilość iteracji erozji i dylacji, oraz rozmiar elementu strukturalnego&lt;/li&gt;
+&lt;li&gt;otwarcie i zamknięcie, parametrem jest ilość iteracji erozji i dylacji, oraz rozmiar elementu strukturalnego&lt;/li&gt;
+&lt;li&gt;filtr medianowy, parametrem jest rozmiar okna&lt;/li&gt;
+&lt;li&gt;filtr rozmyty, parametrem jest próg podobieństwa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ponadto powtórzono badania dla obrazu po zastosowaniu wyrównania histogramu.&lt;/p&gt;
+
+&lt;p&gt;Badania przeprowadzono na &lt;a href=&quot;https://www.flickr.com/photos/bc_the_path/3234972460/&quot;&gt;obrazie RTG przedstawiającym dysplazję w postaci 
+torbieli okołowierzchołkowej&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Badania rozpoczęto od wykonania segmentacji na obrazie nie poddawanym wcześniej 
+żadnym filtracjom, rysunek 1. W tym przypadku na obrazie 
+zliczono &lt;strong&gt;30919&lt;/strong&gt; segmentów. Sprawdzono także wpływ samego wyrównania histogramu 
+na ilość segmentów, w wyniku otrzymano obraz z &lt;strong&gt;30196&lt;/strong&gt; segmentami.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/bez_filtracji.jpg&quot; 
+        alt=&quot;Wynik segmentacji obrazu bez wstępnej filtracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 1: Wynik segmentacji obrazu bez wstępnej filtracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;podstawowe-przekszta%C5%82cenia-morfologiczne---erozja-i-dylacja&quot;&gt;Podstawowe przekształcenia morfologiczne - erozja i dylacja&lt;/h4&gt;
+
+&lt;p&gt;Badania postanowiono rozpocząć od sprawdzenia wpływu podstawowych filtrów 
+morfologicznych - erozji i dylacji - na ilość segmentów w obrazie po segmentacji 
+wododziałowej. Przyjęto kształt elementu strukturalnego jako kwadrat o boku 
+równym 3, z punktem odniesienia ustawionym pośrodku. Jako parametr postanowiono 
+przyjąć ilość wywołań filtru na obrazie wejściowym. Wyniki przedstawiono w 
+tabelach 1, 2, 3, 4. Graficzną interpretację wyników pokazano na rysunku 2. Na 
+wykresie można zauważyć, że zarówno w przypadku zastosowania erozji jak i dylacji, 
+uzyskano ponad dwukrotne zmniejszenie ilości segmentów już przy pierwszej iteracji. 
+Ilość segmentów spada wraz z kolejnymi iteracjami w podobnym tempie dla erozji i 
+dylacji. Wyrównanie histogramu przynosi zawsze jedynie niewielki spadek ilości 
+segmentów. Oba filtry, wraz z kolejnymi iteracjami powodują coraz większe zmiany 
+w kształcie wyodrębnianych segmentów. Jest to zwłaszcza widoczne na granicy 
+pomiędzy obserwowaną zmianą chorobową, której kolor jest ciemny, a korzeniem 
+zęba przy którym zmiana się ta znajduje, który jest jasny. W przypadku dylacji 
+jasne segmenty w obrębie korzenia poszerzają się nachodząc na obszar pierwotnie 
+rozpoznawany jako lezja. Jest to spowodowane tym, że dylacja działa jak filtr 
+maksymalny. W przypadku erozji obserwowany efekt jest odwrotny, segmenty mające 
+reprezentować korzeń zostają zmniejszone, a w ich miejsce narastają segmenty 
+reprezentujące lezje. Dzieje się tak ponieważ erozja działa jak filtr minimalny. 
+Uzyskane wyniki badań wskazują, że w przypadku dylacji liczba segmentów jest 
+mniejsza niż przy tej samej ilości iteracji dla erozji. Dzieje się tak, ponieważ 
+w przypadku dylacji dochodzi do złączenia regionów o podobnych poziomach szarości, 
+pomiędzy którymi występowały niewielkie regiony o odcieniach szarości mniejszych.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 1: Erozja - ilość segmentów w zależności od ilości iteracji, bez 
+        wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/th&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;1&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;11313&lt;/td&gt;
+            &lt;td&gt;6294&lt;/td&gt;
+            &lt;td&gt;4070&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 2: Erozja - ilość segmentów w zależności od ilości iteracji, z 
+        wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;1&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;10957&lt;/td&gt;
+            &lt;td&gt;6042&lt;/td&gt;
+            &lt;td&gt;3911&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 3: Dylacja - ilość segmentów w zależności od ilości iteracji, bez 
+        wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;1&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;13238&lt;/td&gt;
+            &lt;td&gt;7900&lt;/td&gt;
+            &lt;td&gt;5150&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 4: Dylacja - ilość segmentów w zależności od ilości iteracji, z 
+        wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;1&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;12827&lt;/td&gt;
+            &lt;td&gt;7644&lt;/td&gt;
+            &lt;td&gt;4929&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_podstawowe_filtry_morfologiczne.png&quot; 
+        alt=&quot;Podstawowe przekształcenia morfologiczne - erozja i dylacja - zależność ilości segmentów od ilości iteracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 2: Podstawowe przekształcenia morfologiczne - erozja i dylacja - 
+        zależność ilości segmentów od ilości iteracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;z%C5%82o%C5%BCone-przekszta%C5%82cenia-morfologiczne---otwarcie-i-zamkni%C4%99cie&quot;&gt;Złożone przekształcenia morfologiczne - otwarcie i zamknięcie&lt;/h4&gt;
+
+&lt;p&gt;Kolejnym krokiem po przebadaniu podstawowych filtrów morfologicznych była analiza 
+skutków połączenia tych filtrów w bardziej złożone algorytmy. Przeprowadzono 
+badania dla otwarcia, zamknięcia oraz połączenia tych filtrów.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 5: Otwarcie - ilość segmentów w zależności od ilości iteracji i 
+        rozmiaru elementu strukturalnego, bez wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;14569&lt;/td&gt;
+            &lt;td&gt;8616&lt;/td&gt;
+            &lt;td&gt;5693&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;8616&lt;/td&gt;
+            &lt;td&gt;4025&lt;/td&gt;
+            &lt;td&gt;2380&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 6: Otwarcie - ilość segmentów w zależności od ilości iteracji i 
+        rozmiaru elementu strukturalnego, z wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col span=&quot;1&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;14102&lt;/td&gt;
+            &lt;td&gt;8310&lt;/td&gt;
+            &lt;td&gt;5477&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;8300&lt;/td&gt;
+            &lt;td&gt;3843&lt;/td&gt;
+            &lt;td&gt;2222&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_otwarcie.png&quot; 
+        alt=&quot;Złożone przekształcenia morfologiczne - otwarcie - zależność ilości segmentów od ilości iteracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 3: Złożone przekształcenia morfologiczne - otwarcie - zależność 
+        ilości segmentów od ilości iteracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;W tabelach 5 i 6 zawarto wartości ilości zliczonych segmentów po zastosowaniu 
+operacji otwarcia morfologicznego. Na rysunku 3 pokazano te wyniki w postaci 
+wykresu. Można zauważyć, że dla otwarcia z elementem strukturalnym o rozmiarze 
+3x3, wyniki są porównywalne do wyników otrzymanych dla podstawowych filtrów 
+morfologicznych, gdzie zastosowano element strukturalny o tym samym rozmiarze. 
+Po zmianie rozmiaru elementu strukturalnego na 5x5, zauważono dwukrotny spadek 
+ilości segmentów na obrazie wyjściowym. W przypadku otwarcia problem zmiany 
+kształtu segmentów granicznych pomiędzy lezją a jej otoczeniem, nie jest tak 
+duży jak w przypadku podstawowych filtrów morfologicznych, zwłaszcza dla elementu 
+strukturalnego 3x3 i pierwszej iteracji elementem 5x5. Spowodowane jest to tym, 
+że operacja otwarcie jest złożeniem operacji erozji i dylacji. Operacja otwarcia 
+powoduje usunięcie niewielkich ciemniejszych obszarów z otoczenia większych 
+jasnych obszarów.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 7: Zamknięcie - ilość segmentów w zależności od ilości iteracji i 
+        rozmiaru elementu strukturalnego, bez wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;10463&lt;/td&gt;
+            &lt;td&gt;5892&lt;/td&gt;
+            &lt;td&gt;3846&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;5892&lt;/td&gt;
+            &lt;td&gt;2698&lt;/td&gt;
+            &lt;td&gt;1654&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 8: Zamknięcie - ilość segmentów w zależności od ilości iteracji i 
+        rozmiaru elementu strukturalnego, z wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;10105&lt;/td&gt;
+            &lt;td&gt;5687&lt;/td&gt;
+            &lt;td&gt;3729&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;5715&lt;/td&gt;
+            &lt;td&gt;2590&lt;/td&gt;
+            &lt;td&gt;1578&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_zamkniecie.png&quot; 
+        alt=&quot;Złożone przekształcenia morfologiczne - zamknięcie - zależność ilości segmentów od ilości iteracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 4: Złożone przekształcenia morfologiczne - zamknięcie - zależność 
+        ilości segmentów od ilości iteracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;W tabelach 7 i 8 zawarto wartości ilości zliczonych segmentów po zastosowaniu 
+operacji zamknięcia morfologicznego. Na rysunku 4 pokazano te wyniki w postaci 
+wykresu. Można zauważyć, że ilość segmentów jest mniejsza od ilości otrzymanej 
+w wyniku zastosowania otwarcia. Również w tym przypadku problem zmiany kształtu 
+segmentów granicznych został ograniczony. Spowodowane to jest także tym, że 
+operacja zamknięcia jest złożeniem erozji i dylacji, jednak w odwrotnej 
+kolejności wykonywania tych operacji składowych. Segmentów jest mniej ponieważ 
+najpierw wykonywana jest dylacja, która sama daje już mniejszą ilość segmentów 
+niż erozja, a następnie na obrazie pośrednim wykonywana jest erozja.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 9: Otwarcie + zamknięcie - ilość segmentów w zależności od ilości 
+        iteracji i rozmiaru elementu strukturalnego, bez wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;6542&lt;/td&gt;
+            &lt;td&gt;3179&lt;/td&gt;
+            &lt;td&gt;1879&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;3179&lt;/td&gt;
+            &lt;td&gt;1259&lt;/td&gt;
+            &lt;td&gt;709&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 10: Otwarcie + zamknięcie - ilość segmentów w zależności od ilości 
+        iteracji i rozmiaru elementu strukturalnego, z wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;3&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;6350&lt;/td&gt;
+            &lt;td&gt;3070&lt;/td&gt;
+            &lt;td&gt;1813&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;3070&lt;/td&gt;
+            &lt;td&gt;1211&lt;/td&gt;
+            &lt;td&gt;676&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_otwarcie_zamkniecie.png&quot; 
+        alt=&quot;Złożone przekształcenia morfologiczne - otwarcie i zamknięcie - zależność ilości segmentów od ilości iteracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 5: Złożone przekształcenia morfologiczne - otwarcie i zamknięcie 
+        - zależność ilości segmentów od ilości iteracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Postanowiono także przetestować działanie złożenia operacji otwarcia i zamknięcia. 
+Wyniki testów umieszczono w tabelach 9 i 10, a ich wizualizację pokazano na 
+rysunku 5. Uzyskano jeszcze większe ograniczenie ilości segmentów. Zastosowanie 
+elementu strukturalnego 5x5 powoduje powstanie dużych segmentów i utratę 
+informacji o kształcie torbieli. Podobne wyniki uzyskuje się dla elementu 
+strukturalnego 3x3 przy dużej ilości iteracji. Jedynie po jednokrotnym 
+zastosowaniu tego filtru otrzymane wyniki zachowują rozpoznawany kształt torbieli 
+i korzenia.&lt;/p&gt;
+
+&lt;h4 id=&quot;filtr-medianowy&quot;&gt;Filtr medianowy&lt;/h4&gt;
+
+&lt;p&gt;Ze zbioru uśredniających filtrów kontekstowych wybrano filtr medianowy. W tabelach
+11 i 12 pokazano wyniki, a ich reprezentację graficzną umieszczono na rysunku 6. 
+Można zauważyć, że otrzymane wielkości są porównywalne do wartości otrzymanych 
+poprzednio dla złożonych filtrów morfologicznych. Wraz z zwiększaniem ilości 
+iteracji, zachowując ten sam rozmiar okna otrzymuje się coraz mniej segmentów. 
+Różnice te są jednak coraz mniejsze. Zwiększanie wielkości okna powoduje 
+zmniejszenie ilości segmentów przy tej samej ilości iteracji. W tym przypadku 
+także zwiększanie okna powoduje coraz mniejsze różnice w wynikach. W przypadku 
+filtru medianowego problem zmiany kształtu segmentów granicznych nie jest 
+widoczny nawet na obrazach poddanych wielu iteracjom, także tym gdzie rozmiar 
+okna był większy. Granica pomiędzy torbielą, a korzeniem jest dobrze zaznaczona, 
+wyostrzyła się. Na rysunku 7 pokazano wynik segmentacji obrazu po wstępnej 
+filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 11: Filtr medianowy - ilość segmentów w zależności od ilości 
+        iteracji i rozmiaru okna, bez wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;5&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+            &lt;th&gt;4&lt;/th&gt;
+            &lt;th&gt;5&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;3&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;12215&lt;/td&gt;
+            &lt;td&gt;8484&lt;/td&gt;
+            &lt;td&gt;7515&lt;/td&gt;
+            &lt;td&gt;6947&lt;/td&gt;
+            &lt;td&gt;6664&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;7655&lt;/td&gt;
+            &lt;td&gt;4752&lt;/td&gt;
+            &lt;td&gt;4036&lt;/td&gt;
+            &lt;td&gt;3551&lt;/td&gt;
+            &lt;td&gt;3303&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;7x7&lt;/th&gt;
+            &lt;td&gt;5740&lt;/td&gt;
+            &lt;td&gt;3440&lt;/td&gt;
+            &lt;td&gt;2830&lt;/td&gt;
+            &lt;td&gt;2510&lt;/td&gt;
+            &lt;td&gt;2283&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 12: Filtr medianowy - ilość segmentów w zależności od ilości 
+        iteracji i rozmiaru okna, z wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;5&quot;&gt;Ilość iteracji&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;3&lt;/th&gt;
+            &lt;th&gt;4&lt;/th&gt;
+            &lt;th&gt;5&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;3&quot;&gt;Rozmiar elementu strukturalnego&lt;/th&gt;
+            &lt;th&gt;3x3&lt;/th&gt;
+            &lt;td&gt;11784&lt;/td&gt;
+            &lt;td&gt;8202&lt;/td&gt;
+            &lt;td&gt;7241&lt;/td&gt;
+            &lt;td&gt;6727&lt;/td&gt;
+            &lt;td&gt;6449&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5x5&lt;/th&gt;
+            &lt;td&gt;7420&lt;/td&gt;
+            &lt;td&gt;4665&lt;/td&gt;
+            &lt;td&gt;3922&lt;/td&gt;
+            &lt;td&gt;3462&lt;/td&gt;
+            &lt;td&gt;3213&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;7x7&lt;/th&gt;
+            &lt;td&gt;5621&lt;/td&gt;
+            &lt;td&gt;3327&lt;/td&gt;
+            &lt;td&gt;2766&lt;/td&gt;
+            &lt;td&gt;2427&lt;/td&gt;
+            &lt;td&gt;2187&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_mediana.png&quot; 
+        alt=&quot;Filtr medianowy - zależność ilości segmentów od ilości iteracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 6: Filtr medianowy - zależność ilości segmentów od ilości iteracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/filtr_medianowy_w3x3_x5.jpg&quot; 
+        alt=&quot;Wynik segmentacji obrazu po wstępnej filtracji filtrem medianowym o oknie 3x3, pięcioma iteracjami&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 7: Wynik segmentacji obrazu po wstępnej filtracji filtrem 
+        medianowym o oknie 3x3, pięcioma iteracjami
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;filtr-rozmyty&quot;&gt;Filtr rozmyty&lt;/h4&gt;
+
+&lt;p&gt;Ostatnim testowanym filtrem był filtr rozmyty zaimplementowany według opisu 
+umieszczonego we &lt;a href=&quot;/2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html&quot;&gt;wpisie wprowadzającym&lt;/a&gt;. Otrzymane wyniki pokazano w tabelach
+13 i 14 oraz na rysunku 8. Parametrem dla którego badano wpływ jego zmian na 
+ilość segmentów był próg podobieństwa, czyli wartość różnicy pomiędzy wartościami 
+dwóch sąsiadujących pikseli po przekroczeniu której para ta była uznawana za 
+niepodobną. Ponieważ wynik działania filtru ma charakter losowy, dla każdej 
+wartości progu podobieństwa przeprowadzono pięć prób, po czym obliczono średnie 
+wartości oraz rozrzut wokół wartości średniej. Okazało się, że filtr 
+charakteryzuje się dużą stabilnością otrzymywanych wyników. Z otrzymanego wykresu 
+wynika, że najmniej segmentów otrzymuje się dla wartości progu podobieństwa 
+mieszczących się pomiędzy 5 a 10. Dla wartości mniejszych ilość segmentów jest 
+największa, a dla wartości większych rośnie i stabilizuje się. Otrzymane minimalne 
+wartości są trzy razy mniejsze niż w przypadku braku filtracji. Podobnie jak w 
+przypadku filtru medianowego, nie występuje problem zmiany kształtu granic 
+oddzielających torbiel od otoczenia. Na rysunku 9 pokazano wynik segmentacji 
+obrazu po wstępnej filtracji filtrem rozmytym z progiem podobieństwa 8px.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 13: Filtr rozmyty - ilość segmentów w zależności od progu 
+        podobieństwa i próby, bez wyrównania histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;7&quot;&gt;Próg podobieństwa&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;5&lt;/th&gt;
+            &lt;th&gt;8&lt;/th&gt;
+            &lt;th&gt;10&lt;/th&gt;
+            &lt;th&gt;20&lt;/th&gt;
+            &lt;th&gt;30&lt;/th&gt;
+            &lt;th&gt;40&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;5&quot;&gt;Próba&lt;/th&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;td&gt;9894&lt;/td&gt;
+            &lt;td&gt;10089&lt;/td&gt;
+            &lt;td&gt;9747&lt;/td&gt;
+            &lt;td&gt;9865&lt;/td&gt;
+            &lt;td&gt;9974&lt;/td&gt;
+            &lt;td&gt;9944&lt;/td&gt;
+            &lt;td&gt;9967&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;td&gt;9858&lt;/td&gt;
+            &lt;td&gt;10101&lt;/td&gt;
+            &lt;td&gt;9782&lt;/td&gt;
+            &lt;td&gt;9893&lt;/td&gt;
+            &lt;td&gt;9939&lt;/td&gt;
+            &lt;td&gt;9967&lt;/td&gt;
+            &lt;td&gt;9945&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;3&lt;/th&gt;
+            &lt;td&gt;9881&lt;/td&gt;
+            &lt;td&gt;10137&lt;/td&gt;
+            &lt;td&gt;9784&lt;/td&gt;
+            &lt;td&gt;9886&lt;/td&gt;
+            &lt;td&gt;9956&lt;/td&gt;
+            &lt;td&gt;9976&lt;/td&gt;
+            &lt;td&gt;9955&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;4&lt;/th&gt;
+            &lt;td&gt;9880&lt;/td&gt;
+            &lt;td&gt;10071&lt;/td&gt;
+            &lt;td&gt;9808&lt;/td&gt;
+            &lt;td&gt;9860&lt;/td&gt;
+            &lt;td&gt;10001&lt;/td&gt;
+            &lt;td&gt;9973&lt;/td&gt;
+            &lt;td&gt;9943&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5&lt;/th&gt;
+            &lt;td&gt;9983&lt;/td&gt;
+            &lt;td&gt;10051&lt;/td&gt;
+            &lt;td&gt;9772&lt;/td&gt;
+            &lt;td&gt;9830&lt;/td&gt;
+            &lt;td&gt;9951&lt;/td&gt;
+            &lt;td&gt;9986&lt;/td&gt;
+            &lt;td&gt;9959&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Średnia&lt;/th&gt;
+            &lt;td&gt;9899,2&lt;/td&gt;
+            &lt;td&gt;10089,8&lt;/td&gt;
+            &lt;td&gt;9778,6&lt;/td&gt;
+            &lt;td&gt;9866,8&lt;/td&gt;
+            &lt;td&gt;9964,2&lt;/td&gt;
+            &lt;td&gt;9969,2&lt;/td&gt;
+            &lt;td&gt;9953,8&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Odchylenie standardowe&lt;/th&gt;
+            &lt;td&gt;48,60&lt;/td&gt;
+            &lt;td&gt;32,45&lt;/td&gt;
+            &lt;td&gt;22,06&lt;/td&gt;
+            &lt;td&gt;24,79&lt;/td&gt;
+            &lt;td&gt;24,12&lt;/td&gt;
+            &lt;td&gt;15,67&lt;/td&gt;
+            &lt;td&gt;9,96&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 14: Filtr rozmyty - ilość segmentów w zależności od progu 
+        podobieństwa i próby, z wyrównaniem histogramu
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;7&quot;&gt;Próg podobieństwa&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;th&gt;5&lt;/th&gt;
+            &lt;th&gt;8&lt;/th&gt;
+            &lt;th&gt;10&lt;/th&gt;
+            &lt;th&gt;20&lt;/th&gt;
+            &lt;th&gt;30&lt;/th&gt;
+            &lt;th&gt;40&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;5&quot;&gt;Próba&lt;/th&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;td&gt;10457&lt;/td&gt;
+            &lt;td&gt;10072&lt;/td&gt;
+            &lt;td&gt;10060&lt;/td&gt;
+            &lt;td&gt;10067&lt;/td&gt;
+            &lt;td&gt;10294&lt;/td&gt;
+            &lt;td&gt;10199&lt;/td&gt;
+            &lt;td&gt;10238&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;td&gt;10527&lt;/td&gt;
+            &lt;td&gt;10103&lt;/td&gt;
+            &lt;td&gt;10043&lt;/td&gt;
+            &lt;td&gt;10046&lt;/td&gt;
+            &lt;td&gt;10229&lt;/td&gt;
+            &lt;td&gt;10216&lt;/td&gt;
+            &lt;td&gt;10192&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;3&lt;/th&gt;
+            &lt;td&gt;10595&lt;/td&gt;
+            &lt;td&gt;10107&lt;/td&gt;
+            &lt;td&gt;10016&lt;/td&gt;
+            &lt;td&gt;10000&lt;/td&gt;
+            &lt;td&gt;10165&lt;/td&gt;
+            &lt;td&gt;10212&lt;/td&gt;
+            &lt;td&gt;10187&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;4&lt;/th&gt;
+            &lt;td&gt;10503&lt;/td&gt;
+            &lt;td&gt;10091&lt;/td&gt;
+            &lt;td&gt;10024&lt;/td&gt;
+            &lt;td&gt;10028&lt;/td&gt;
+            &lt;td&gt;10231&lt;/td&gt;
+            &lt;td&gt;10213&lt;/td&gt;
+            &lt;td&gt;10187&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5&lt;/th&gt;
+            &lt;td&gt;10518&lt;/td&gt;
+            &lt;td&gt;10120&lt;/td&gt;
+            &lt;td&gt;10013&lt;/td&gt;
+            &lt;td&gt;10002&lt;/td&gt;
+            &lt;td&gt;10246&lt;/td&gt;
+            &lt;td&gt;10218&lt;/td&gt;
+            &lt;td&gt;10197&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Średnia&lt;/th&gt;
+            &lt;td&gt;10520,0&lt;/td&gt;
+            &lt;td&gt;10098,6&lt;/td&gt;
+            &lt;td&gt;10031,2&lt;/td&gt;
+            &lt;td&gt;10028,6&lt;/td&gt;
+            &lt;td&gt;10233,0&lt;/td&gt;
+            &lt;td&gt;10211,6&lt;/td&gt;
+            &lt;td&gt;10200,2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Odchylenie standardowe&lt;/th&gt;
+            &lt;td&gt;49,84&lt;/td&gt;
+            &lt;td&gt;18,12&lt;/td&gt;
+            &lt;td&gt;19,89&lt;/td&gt;
+            &lt;td&gt;28,74&lt;/td&gt;
+            &lt;td&gt;46,19&lt;/td&gt;
+            &lt;td&gt;7,44&lt;/td&gt;
+            &lt;td&gt;21,53&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/badania_fuzzy.png&quot; 
+        alt=&quot;Filtr rozmyty - zależność ilości segmentów od ilości iteracji&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 8: Filtr rozmyty - zależność ilości segmentów od ilości iteracji
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/gkiro/badania/filtr_rozmyty_t8.jpg&quot; 
+        alt=&quot;Wynik segmentacji obrazu po filtracji filtrem rozmytym z progiem podobieństwa 8px&quot;&gt;
+    &lt;figcaption&gt;
+        Rysunek 9: Wynik segmentacji obrazu po filtracji filtrem rozmytym z 
+        progiem podobieństwa 8px
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;badanie-wp%C5%82ywu-wst%C4%99pnej-filtracji-obrazu-na-czas-wykonania-procesu-segmentacji&quot;&gt;Badanie wpływu wstępnej filtracji obrazu na czas wykonania procesu segmentacji&lt;/h3&gt;
+
+&lt;p&gt;Postanowiono zbadać czas wykonania procesu dla dwóch wybranych najlepszymi filtrów 
+- filtru medianowego z oknem 3x3 i pięcioma iteracjami oraz dla filtru rozmytego 
+z progiem podobieństwa ustawionym na 10 pikseli. Oba filtry zostały poprzedzone 
+wyrównaniem histogramu. Postanowiono przeprowadzić po pięć prób dla każdego z 
+filtrów. Badania przeprowadzono na tym samym &lt;a href=&quot;https://www.flickr.com/photos/bc_the_path/3234972460/&quot;&gt;obrazie testowym który zastosowano 
+w poprzednich badaniach&lt;/a&gt;. Badania przeprowadzono na komputerze wyposażonym w 
+procesor Athlon II X2 250 i 4GB pamięci RAM.&lt;/p&gt;
+
+&lt;h4 id=&quot;filtr-medianowy---czas-wykonania-procesu&quot;&gt;Filtr medianowy - czas wykonania procesu&lt;/h4&gt;
+
+&lt;p&gt;W tabeli 15 umieszczono czasy wykonani poszczególnych operacji składających się 
+na proces segmentacji, tj.: wstępnej filtracji, segmentacji oraz oznaczania 
+segmentów. Operację oznaczania segmentów sprawdzono dla dwóch zaproponowanych 
+algorytmów, &lt;em&gt;SegmentMarkerBasic&lt;/em&gt; - powolnego algorytmu polegającego na złączaniu 
+segmentów, &lt;em&gt;SegmentMarkerFlooding&lt;/em&gt; - szybkiego algorytmu polegającego na 
+sprawdzaniu pikseli sąsiadujących w pierwszej kolejności, algorytmy te zostaną 
+opisane w kolejnych wpisach. W tabeli tej podano także całkowity czas wykonania 
+procesu. W wyniku, dla obrazu testowego, otrzymano średni całkowity czas równy 
+182,33 sekund w przypadku zastosowania algorytmu &lt;em&gt;SegmentMarkerBasic&lt;/em&gt; oraz 1,32 
+sekundy w przypadku zastosowania algorytmu &lt;em&gt;SegmentMarkerFlooding&lt;/em&gt;. Operacja 
+wykonania filtru medianowego na obrazie miała najmniejszy wpłyn na czas całkowity, 
+podobnie operacja segmentacji wododziałowej. Operacja oznaczania segmentów, w 
+przypadku wybrania wolniejszego algorytmu ma największy wpływ na całkowity czas 
+procesu.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 15: Filtr medianowy - czas wykonania procesu segmentacji
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;6&quot;&gt;Czas [s]&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;filtracja&lt;/th&gt;
+            &lt;th&gt;segmentacja&lt;/th&gt;
+            &lt;th&gt;oznaczanie segmentów (basic)&lt;/th&gt;
+            &lt;th&gt;oznaczanie segmentów (flooding)&lt;/th&gt;
+            &lt;th&gt;razem (basic)&lt;/th&gt;
+            &lt;th&gt;razem (flooding)&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;5&quot;&gt;Próba&lt;/th&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;172,88&lt;/td&gt;
+            &lt;td&gt;0,32&lt;/td&gt;
+            &lt;td&gt;173,88&lt;/td&gt;
+            &lt;td&gt;1,32&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;166,60&lt;/td&gt;
+            &lt;td&gt;0,39&lt;/td&gt;
+            &lt;td&gt;167,60&lt;/td&gt;
+            &lt;td&gt;1,39&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;3&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;198,29&lt;/td&gt;
+            &lt;td&gt;0,44&lt;/td&gt;
+            &lt;td&gt;199,29&lt;/td&gt;
+            &lt;td&gt;1,44&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;4&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;2,00&lt;/td&gt;
+            &lt;td&gt;199,82&lt;/td&gt;
+            &lt;td&gt;0,42&lt;/td&gt;
+            &lt;td&gt;201,82&lt;/td&gt;
+            &lt;td&gt;2,42&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;168,05&lt;/td&gt;
+            &lt;td&gt;0,30&lt;/td&gt;
+            &lt;td&gt;169,05&lt;/td&gt;
+            &lt;td&gt;1,30&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Średnia&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;1,20&lt;/td&gt;
+            &lt;td&gt;181,13&lt;/td&gt;
+            &lt;td&gt;0,37&lt;/td&gt;
+            &lt;td&gt;182,33&lt;/td&gt;
+            &lt;td&gt;1,57&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Odchylenie standardowe&lt;/th&gt;
+            &lt;td&gt;0,00&lt;/td&gt;
+            &lt;td&gt;0,45&lt;/td&gt;
+            &lt;td&gt;16,54&lt;/td&gt;
+            &lt;td&gt;0,06&lt;/td&gt;
+            &lt;td&gt;16,82&lt;/td&gt;
+            &lt;td&gt;0,48&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;filtr-rozmyty---czas-wykonania-procesu&quot;&gt;Filtr rozmyty - czas wykonania procesu&lt;/h4&gt;
+
+&lt;p&gt;W tabeli 16 umieszczono zmierzone czasy poszczególnych składowych procesu w 
+przypadku zastosowania filtru rozmytego. Składowe procesu są takie same jak w 
+przypadku filtru medianowego. Wyniki wskazują na wzrost znaczenia czasy potrzebnego 
+na filtrację obrazu w całym procesie. Średnio ten czas wynosi 24,40 sekund, co 
+jest zauważalnym czasem, zwłaszcza przy zastosowaniu szybkiego algorytmu oznaczania 
+segmentów. Jest to także duży wzrost w porównaniu do filtracji medianowej która 
+wykonywana była niemal natychmiastowo. Średni czas całego procesu, w przypadku 
+zastosowania algorytmu &lt;em&gt;SegmentMarkerBasic&lt;/em&gt; wzrósł do 212,38 sekund, a w przypadku 
+algorytmu &lt;em&gt;SegmentMarkerFlooding&lt;/em&gt; czas ten wzrósł do 25,98 sekund.&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;
+        Tabela 16: Filtr rozmyty - czas wykonania procesu segmentacji
+    &lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style=&quot;width: 20%&quot;&gt;
+        &lt;col style=&quot;width: 10%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot; rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;th colspan=&quot;6&quot;&gt;Czas [s]&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;filtracja&lt;/th&gt;
+            &lt;th&gt;segmentacja&lt;/th&gt;
+            &lt;th&gt;oznaczanie segmentów (basic)&lt;/th&gt;
+            &lt;th&gt;oznaczanie segmentów (flooding)&lt;/th&gt;
+            &lt;th&gt;razem (basic)&lt;/th&gt;
+            &lt;th&gt;razem (flooding)&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;5&quot;&gt;Próba&lt;/th&gt;
+            &lt;th&gt;1&lt;/th&gt;
+            &lt;td&gt;28,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;188,42&lt;/td&gt;
+            &lt;td&gt;0,47&lt;/td&gt;
+            &lt;td&gt;217,42&lt;/td&gt;
+            &lt;td&gt;29,47&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;2&lt;/th&gt;
+            &lt;td&gt;22,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;180,15&lt;/td&gt;
+            &lt;td&gt;0,37&lt;/td&gt;
+            &lt;td&gt;203,15&lt;/td&gt;
+            &lt;td&gt;23,37&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;3&lt;/th&gt;
+            &lt;td&gt;23,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;197,79&lt;/td&gt;
+            &lt;td&gt;0,37&lt;/td&gt;
+            &lt;td&gt;221,79&lt;/td&gt;
+            &lt;td&gt;24,37&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;4&lt;/th&gt;
+            &lt;td&gt;23,00&lt;/td&gt;
+            &lt;td&gt;1,00&lt;/td&gt;
+            &lt;td&gt;168,58&lt;/td&gt;
+            &lt;td&gt;0,37&lt;/td&gt;
+            &lt;td&gt;192,58&lt;/td&gt;
+            &lt;td&gt;24,37&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;5&lt;/th&gt;
+            &lt;td&gt;26,00&lt;/td&gt;
+            &lt;td&gt;2,00&lt;/td&gt;
+            &lt;td&gt;198,98&lt;/td&gt;
+            &lt;td&gt;0,34&lt;/td&gt;
+            &lt;td&gt;226,98&lt;/td&gt;
+            &lt;td&gt;28,34&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Średnia&lt;/th&gt;
+            &lt;td&gt;24,40&lt;/td&gt;
+            &lt;td&gt;1,20&lt;/td&gt;
+            &lt;td&gt;186,78&lt;/td&gt;
+            &lt;td&gt;0,38&lt;/td&gt;
+            &lt;td&gt;212,38&lt;/td&gt;
+            &lt;td&gt;25,98&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Odchylenie standardowe&lt;/th&gt;
+            &lt;td&gt;2,51&lt;/td&gt;
+            &lt;td&gt;0,45&lt;/td&gt;
+            &lt;td&gt;12,73&lt;/td&gt;
+            &lt;td&gt;0,05&lt;/td&gt;
+            &lt;td&gt;14,18&lt;/td&gt;
+            &lt;td&gt;2,73&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;wnioski&quot;&gt;Wnioski&lt;/h3&gt;
+
+&lt;p&gt;Przeprowadzono badania mające na celu wskazanie najlepszego, biorąc pod uwagę 
+ilość i jakość otrzymanych segmentów, algorytmu przygotowującego zdjęcie do 
+analizy. Wzięto pod uwagę podstawowe filtry morfologiczne, tj.: erozję i dylację, 
+złożone filtry morfologiczne, tj.: otwarcie i zamknięcie oraz ich złożenie, 
+filtr medianowy oraz filtr wykorzystujący logikę rozmytą. &lt;strong&gt;W wyniku przeprowadzonych 
+badań, okazało się że filtry morfologiczne z powodu zmiany kształtu otrzymywanych 
+w następstwie ich użycia segmentów granicznych, czyli znajdujących się w miejscach 
+o największych zmianach gradientu, nie powinny być wykorzystywane do wstępnej 
+filtracji obrazu przed jego segmentacją. Otrzymano dobre wyniki dla filtru 
+medianowego o oknie 3x3, dla każdej ze zbadanych ilości iteracji. Filtr ten nie 
+powoduje także zmiany kształtu segmentów granicznych. Dobre wyniki przyniosło 
+także zastosowanie zaimplementowanego algorytmu wykorzystującego logikę rozmytą&lt;/strong&gt;. 
+Przeprowadzono badania polegające na znalezieniu optymalnej wartości progu 
+podobieństwa, jednego z parametrów tego algorytmu, dla której ilość segmentów jest 
+najmniejsza. Wyznaczono lokalne minimum dla tego parametru, wynoszące 10 pikseli. 
+Oznacza to że dla mniejszej i większej wartości progu filtr ten działa gorzej 
+nie odnajdując wszystkich zaszumionych pikseli co powoduje wzrost lokalnych 
+minimów obrazu a co za tym idzie ilości segmentów.&lt;/p&gt;
+
+&lt;p&gt;Przeprowadzono także badania polegające na zmierzeniu czasu jaki potrzebny jest 
+na przeprowadzenie całego procesu segmentacji dla dwóch filtrów: filtru rozmytego 
+z progiem 10px oraz filtru medianowego z oknem 3x3 i pięcioma iteracjami. 
+Otrzymane wyniki wskazują, że &lt;strong&gt;filtr medianowy jest znacznie szybszy od 
+zaimplementowanego filtru rozmytego&lt;/strong&gt;. Jest to spowodowane większą złożonością 
+obliczeniową algorytmu rozmytego, a także tym że filtr medianowy pochodził z 
+napisanej w C++ i zoptymalizowanej do tego celu biblioteki OpenCV.&lt;/p&gt;
+
+&lt;p&gt;Po przeprowadzeniu badań zdecydowano się zaimplementować w systemie obsługującym 
+gabinet dentystyczny algorytm wykorzystujący filtr medianowy z oknem 3x3 i 
+pięcioma iteracjami.&lt;/p&gt;
+
+&lt;p&gt;Podczas testów czasu wykonania procesu segmentacji pokazano że największe narzut 
+generuje algorytm &lt;em&gt;SegmentMarkerBasic&lt;/em&gt;. Z powodu mogącego się pojawić wyjątku 
+generowanego przez alternatywny algorytm został on jednak wybrany i zaimplementowany 
+w systemie obsługi gabinetu dentystycznego.&lt;/p&gt;
+
+&lt;p&gt;Zamierzano napisać algorytm pozwalający na zautomatyzowanie procesu oznaczania na 
+zdjęciach RTG patologicznych zmian okołowierzchołkowych zęba spowodowanych stanem 
+zapalnym. &lt;strong&gt;Napisano algorytm wykorzystujący oznaczone segmenty, ograniczający 
+ingerencję użytkownika do wybrania segmentu znajdującego się wewnątrz takiej 
+zmiany oraz drugiego poza nią. Algorytm ten wybiera kolejne segmenty biorąc pod 
+uwagę średnie wartości pikseli we wskazanych segmentach.&lt;/strong&gt; Nie zawsze jednak wynik 
+jego działania jest zgodny z oczekiwaniami. W związku z tym należałoby go 
+rozbudować o algorytm działający w sposób adaptacyjny.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Treść tego wpisu zawiera fragmenty mojej pracy dyplomowej &lt;strong&gt;&quot;Badanie wpływu 
+wstępnej filtracji na proces segmentacji w analizie patologicznych zmian w 
+obrębie zębów widocznych na zdjęciach RTG&quot;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Zobacz także:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/2016/07/03/przeksztalcenia-morfologiczne-kontekstowe-i-rozmyte.html&quot;&gt;Przekształcenia morfologiczne, kontekstowe i rozmyte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2016/07/24/emgucvdemo-aplikacja-testujaca-wplyw-wybranych-filtrow-na-wyniki-segmentacji-wododzialowej.html&quot;&gt;EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+            <pubDate>2016-08-06T15:50:00+02:00</pubDate>
+            <link>http://lion.net.pl/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html</link>
+            <atom:link href="http://lion.net.pl/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/08/06/wplyw-wstepnej-filtracji-na-segmentacje-wododzialowa.html</guid>
+        </item>
+                <item>
             <title>EmguCVDemo - aplikacja testująca wpływ wybranych filtrów na wyniki segmentacji wododziałowej</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>GKIRO</category>
@@ -1089,101 +2232,6 @@ dużo mniej. Ilość przypadków testowych dla testów jednostkowych także spad
             <link>http://lion.net.pl/2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html</link>
             <atom:link href="http://lion.net.pl/2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html</guid>
-        </item>
-                <item>
-            <title>Code Coverage w Karma</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>QA</category>
-                        <category>JS</category>
-                        <category>DDF</category>
-                        <category>DSP2016</category>
-                                    <content:encoded>&lt;p&gt;Raporty pokrycia kodu testami jednostkowymi pozwalają szybko i przyjemnie przeanalizować
-stan projektu. Wskazują miejsca gdzie kod nie jest dostatecznie przetestowany.
-W tym wpisie dowiesz się jak wygenerować i jak interpretować &lt;em&gt;code coverage&lt;/em&gt; w 
-narzędziu Karma dla JS.&lt;/p&gt;
-
-&lt;h3 id=&quot;konfiguracja-karma-dla-code-coverage&quot;&gt;Konfiguracja Karma dla code coverage&lt;/h3&gt;
-
-&lt;p&gt;Aby skorzystać z raportów pokrycia kodu testami jednostkowymi musimy doinstalować
-bibliotekę &lt;em&gt;karma-coverage&lt;/em&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;npm install karma-coverage
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Następnie w konfiguracji, w pliku karma.conf.js bądź Gruntfile.js, należy dodać
-następujące wpisy:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;plugins: [&#039;karma-coverage&#039;],
-reporters: [&#039;coverage&#039;],
-preprocessors: { &#039;*.js&#039;: [&#039;coverage&#039;] }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Przykładowy wpis w Gruntfile.js, częściowo &lt;a href=&quot;/2016/03/03/yeoman-idziemy-na-front.html&quot;&gt;wygenerowany przez Yeoman&lt;/a&gt;, może 
-wyglądać po wprowadzeniu powyższych zmian tak:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;karma: {
-  options: {
-    basePath: &#039;&#039;,
-    frameworks: [&#039;jasmine&#039;],
-    files: [
-      &#039;&amp;lt;%= yeoman.app %&amp;gt;/&amp;lt;%= yeoman.scripts %&amp;gt;/**/*.js&#039;,
-      &#039;&amp;lt;%= yeoman.test %&amp;gt;/mock/**/*.js&#039;,
-      &#039;&amp;lt;%= yeoman.test %&amp;gt;/spec/**/*.js&#039;
-    ],
-    autoWatch: true,
-    plugins: [
-        &#039;karma-jasmine&#039;,
-        &#039;karma-coverage&#039;,
-        &#039;karma-phantomjs-launcher&#039;
-    ],
-    reporters: [&#039;dots&#039;, &#039;coverage&#039;],
-    port: 8080,
-    singleRun: false,
-    preprocessors: {
-      &#039;&amp;lt;%= yeoman.app %&amp;gt;/&amp;lt;%= yeoman.scripts %&amp;gt;/**/*.js&#039;: [&#039;coverage&#039;]
-    },
-    coverageReporter: {
-      reporters: [
-        { type: &#039;html&#039;, dir: &#039;coverage/&#039; },
-        { type: &#039;text-summary&#039; }
-      ]
-    }
-  },
-  unit: {
-    browsers: [&#039;PhantomJS&#039;],
-    background: false
-  },
-  continuous: {
-    browsers: [&#039;PhantomJS&#039;],
-    singleRun: true
-  }
-},
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Od tej chwili po wykonaniu testów Karma w folderze coverage przygotuje raporty dla
-każdej przeglądarki dla której testy zostały przeprowadzone. W katalogach tych 
-znajdziemy pliki &lt;em&gt;index.php&lt;/em&gt;, które po uruchomieniu w przeglądarce przedstawią
-nam raport. Poniżej kilka przykładowych zrzutów ekranu z raportem:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;img/DSP2016/karma-code-coverage-1.png&quot; alt=&quot;Karma code coverage report #1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;img/DSP2016/karma-code-coverage-2.png&quot; alt=&quot;Karma code coverage report #2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;img/DSP2016/karma-code-coverage-3.png&quot; alt=&quot;Karma code coverage report #3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Na zrzutach widzimy, że raport HTML pozwala nam szybko przejrzeć strukturę projektu,
-odnaleźć pliki dla których brakuje bądź jest za mało testów. &lt;strong&gt;Mamy wyszczególnione
-pokrycie testami linii, funkcji oraz gałęzi&lt;/strong&gt;, czyli ścieżek którymi może nasz kod 
-przejść od startu do końca podczas jego wykonywania.&lt;/p&gt;
-
-&lt;p&gt;Dodatkowo, po przejściu do konkretnego pliku, Karma a właściwie wykorzystywane 
-przez nią w tle narzędzie o nazwie Istanbul, wskaże nam podejrzane rozgałęzienia 
-kodu, oznaczając je symbolami &lt;em&gt;I (if path not taken)&lt;/em&gt; lub &lt;em&gt;E (else path not taken)&lt;/em&gt;.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-05-18T15:30:00+02:00</pubDate>
-            <link>http://lion.net.pl/2016/05/18/code-coverage-w-karma.html</link>
-            <atom:link href="http://lion.net.pl/2016/05/18/code-coverage-w-karma.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/05/18/code-coverage-w-karma.html</guid>
         </item>
             </channel>
 </rss>

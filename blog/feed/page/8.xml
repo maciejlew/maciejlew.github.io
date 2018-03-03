@@ -9,6 +9,121 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>LMS - system zarządzania sieciami LAN i nie tylko</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>LMS</category>
+                                    <content:encoded>&lt;p&gt;Wpis ten będzie dotyczył systemu LMS jako całości. Z jego lektury dowiesz
+się czym jest LMS, jakie są jego podstawowe funkcjonalności, dlaczego &lt;strong&gt;warto z 
+niego skorzystać prowadząc własną sieć osiedlową&lt;/strong&gt;, a także dlaczego &lt;strong&gt;może być 
+przydatny dla innych przedsiębiorców&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;opis-systemu-lms&quot;&gt;Opis systemu LMS&lt;/h4&gt;
+
+&lt;p&gt;LMS ma już kilkanaście lat. W ciągu tego czasu powstało &lt;strong&gt;pełnowartościowe 
+środowisko do zarządzania sieciami osiedlowymi LAN&lt;/strong&gt;. Kod projektu udostępniany jest 
+na licencji GNU GPL v2. &lt;a href=&quot;http://lms.org.pl/download.php&quot;&gt;Stabilną wersję systemu można pobrać z oficjalnej strony 
+projektu&lt;/a&gt;, natomiast wersja rozwojowa dostępna 
+jest w &lt;a href=&quot;http://github.com/lmsgit/lms&quot;&gt;repozytorium GitHub LMS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Można powiedzieć, że na cały system składają się rozbudowana baza danych, webowy 
+frontend oraz oparty na skryptach backend. Frontend napisany został w PHP, 
+wykorzystuje szablony Smarty oraz różne pomocnicze biblioteki: do obsługi Ajax, 
+generowania plików pdf itp. Backend napisany pierwotnie w C i PERL powoli 
+przepisywany jest także w PHP. O podstawowych funkcjonalnościach jakich dostarcza 
+frontend i backend dowiesz się w dalszej części wpisu.&lt;/p&gt;
+
+&lt;p&gt;LMS dostarczany jest wraz z dokumentacją, z której możesz dowiedzieć się jak wygląda
+procedura jego instalacji oraz konfiguracji.&lt;/p&gt;
+
+&lt;p&gt;Projekt przetłumaczony został na kilka języków. Obecnie wspierane są języki:
+angielski, czeski, litewski, polski, rosyjski i słowacki.&lt;/p&gt;
+
+&lt;h4 id=&quot;funkcje-frontendu&quot;&gt;Funkcje frontendu&lt;/h4&gt;
+
+&lt;p&gt;Poniżej przedstawiono niektóre, moim zdaniem najważniejsze, funkcje frontendu.&lt;/p&gt;
+
+&lt;h4 id=&quot;u%C5%BCytkownicy&quot;&gt;Użytkownicy&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;LMS pozwala na pracę grupową&lt;/strong&gt; poprzez tworzenie kont użytkowników. Utworzeni
+użytkownicy mogą logować się do systemu i wykonywać swoją pracę nie mając
+jednocześnie dostępu do informacji które nie są przeznaczone dla ich oczu 
+dzięki rozbudowanemu systemowi uprawnień.&lt;/p&gt;
+
+&lt;h4 id=&quot;klienci-i-komputery&quot;&gt;Klienci i komputery&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;W systemie możemy dodawać i zarządzać dowolną pulą klientów. Każdemu z klientów
+możemy przypisać wiele komputerów.&lt;/strong&gt; Zarówno klienci i ich komputery są opisani 
+wieloma parametrami, których przechowywanie w bazie danych LMS znacznie ułatwia
+pracę każdemu przedsiębiorcy.&lt;/p&gt;
+
+&lt;h4 id=&quot;urz%C4%85dzenia-sieciowe&quot;&gt;Urządzenia sieciowe&lt;/h4&gt;
+
+&lt;p&gt;Oprócz końcówek klienckich naszej sieci &lt;strong&gt;możemy w LMS dodawać urządzenia sieciowe
+tworzące infrastrukturę naszej sieci&lt;/strong&gt;. Pozwala to na łatwiejsze zorientowanie się
+jak działa nasza sieć. LMS oferuje nam także generowanie map sieci w różnych 
+formatach oraz &lt;strong&gt;wspiera raportowanie do UKE&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;operacje-finansowe&quot;&gt;Operacje finansowe&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;LMS przewiduje możliwość rozliczania w systemie klientów z ich zobowiązań&lt;/strong&gt;. Istnieje
+możliwość definiowania taryf, importowania listy płatności, generowanie faktur, not
+obciążeniowych, rejestrów kasowych i innych. W każdej chwili możemy w systemie podejrzeć
+listę operacji finansowych danego klienta, wygenerować raporty, dokonać korekt.&lt;/p&gt;
+
+&lt;h4 id=&quot;dokumenty&quot;&gt;Dokumenty&lt;/h4&gt;
+
+&lt;p&gt;Oprócz wystawiania dokumentów takich jak faktury, LMS pozwala na wystawianie wielu innych
+typów dokumentów i przypisywanie ich konkretnym klientom. &lt;strong&gt;Rozbudowana możliwość tworzenia 
+szablonów i automatycznego przepisywania danych klientów z bazy danych na dokumenty&lt;/strong&gt; pozwala
+na łatwe i przyjemne zarządzanie dokumentami takimi jak billingi, umowy, książeczki opłat,
+wezwania do zapłat i inne.&lt;/p&gt;
+
+&lt;h4 id=&quot;userpanel&quot;&gt;Userpanel&lt;/h4&gt;
+
+&lt;p&gt;Userpanel to osobny system pozwalający klientowi znającemu swój numer i pin na zalogowanie
+i wykonanie kilku podstawowych czynności administracyjnych związanych z jego kontem w systemie.&lt;/p&gt;
+
+&lt;h4 id=&quot;helpdesk&quot;&gt;Helpdesk&lt;/h4&gt;
+
+&lt;p&gt;Helpdesk pozwala na odbieranie zgłoszeń od klientów i zarządzanie nimi. Dzięki niemu &lt;strong&gt;administratorzy
+sieci mają możliwość śledzenia zgłoszeń&lt;/strong&gt;, delegowania pracowników do ich rozwiązania i prowadzenia
+dialogu z klientem.&lt;/p&gt;
+
+&lt;h4 id=&quot;funkcje-backendu&quot;&gt;Funkcje backendu&lt;/h4&gt;
+
+&lt;p&gt;LMS to nie tylko działająca w przeglądarce wizualna nakładka na bazę danych naszej sieci komputerowej,
+ale także &lt;strong&gt;rozbudowany system skryptów pomagających w zarządzaniu siecią w sposób zautomatyzowany&lt;/strong&gt;.
+Dzięki temu cyklicznie wykonywane zadania stają się prostsze i pozostają pod kontrolą jednego spójnego
+systemu.&lt;/p&gt;
+
+&lt;h4 id=&quot;generowanie-faktur&quot;&gt;Generowanie faktur&lt;/h4&gt;
+
+&lt;p&gt;Po uruchomieniu, skrypt generujący faktury sprawdza w systemie LMS, czy któryś z klientów powinien mieć
+na danych dzień wystawioną fakturę. Jeśli tak jest to &lt;strong&gt;faktura jest generowana, konto klienta zostaje obciążone
+odpowiednią kwotą a zmiany są natychmiast widoczne w systemie dla administratora i dla samego klienta&lt;/strong&gt;.
+W razie potrzeby istnieje możliwość uruchomienia tego skryptu z datą ustawiona na dowolny dzień.&lt;/p&gt;
+
+&lt;h4 id=&quot;wysy%C5%82ka-faktur&quot;&gt;Wysyłka faktur&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Wystawione faktury mogą zostać automatycznie wysłane do klienta, na wskazany
+adres e-mail&lt;/strong&gt;. Skrypt wysyłający faktury codziennie sprawdza czy zostały 
+wystawione nowe faktury i jeśli takie zostaną znalezione, a klient podał adres
+e-mail i zgodził się na dostarczanie faktur drogą elektroniczną, to nastąpi próba
+ wysyłki danej faktury.&lt;/p&gt;
+
+&lt;h4 id=&quot;blokowanie-klient%C3%B3w&quot;&gt;Blokowanie klientów&lt;/h4&gt;
+
+&lt;p&gt;Prowadzenie historii operacji klienta, tzn. jego obciążeń i wpłat, pozwala na
+uruchomienie automatycznego blokowania klienta po przekroczeniu wskazanego
+limitu zadłużenia. LMS dostarcza w tym celu &lt;strong&gt;prosty skrypt wykonujący całą 
+pracę&lt;/strong&gt; za nas.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2014-07-27T16:53:00+02:00</pubDate>
+            <link>http://lion.net.pl/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html</link>
+            <atom:link href="http://lion.net.pl/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html</guid>
+        </item>
+                <item>
             <title>LMSConfig - nowy system zarządzania konfiguracją LMS</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>LMS</category>
@@ -414,42 +529,6 @@ Jekyll, a widoczny tu szablon strony to zmodyfikowany szablon &lt;a href=&quot;h
             <link>http://lion.net.pl/2014/06/19/ready-steady-blog.html</link>
             <atom:link href="http://lion.net.pl/2014/06/19/ready-steady-blog.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2014/06/19/ready-steady-blog.html</guid>
-        </item>
-                <item>
-            <title></title>
-            <dc:creator>Maciej Lew</dc:creator>
-                        <content:encoded>&lt;p&gt;Przepracowałem trochę czasu nad rozwojem oprogramowania do zarządzania centralą VoIP. W tym czasie miałem styczność z wieloma nowymi technologiami i usługami. Często w rozmowach i w kodzie posługiwaliśmy się akronimami. Ich rozszyfrowanie nie zawsze było łatwe, zwłaszcza przy pierwszym z nimi kontakcie. Pomyślałem więc że fajnie będzie zebrać jak najwięcej tych akronimów w jedym miejscu, być może komuś (Tobie?) się przydadzą.&lt;/p&gt;
-
-&lt;h2 id=&quot;us%C5%82ugi-voip&quot;&gt;Usługi VoIP&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ACREJ - Anonymous Call Reject&lt;/li&gt;
-&lt;li&gt;ACT - Acknowledge Call Transfer&lt;/li&gt;
-&lt;li&gt;BCT - Blind Call Transfer&lt;/li&gt;
-&lt;li&gt;BLF - Busy Lamp Field&lt;/li&gt;
-&lt;li&gt;C2C - Click To Call&lt;/li&gt;
-&lt;li&gt;CFU - Call Forward Unconditional&lt;/li&gt;
-&lt;li&gt;CFB - Call Forward Busy&lt;/li&gt;
-&lt;li&gt;CFNR - Call Forward Not Responding&lt;/li&gt;
-&lt;li&gt;CFUR - Call Forward Unregistered&lt;/li&gt;
-&lt;li&gt;CLIP - Connected Line Identification Presentation&lt;/li&gt;
-&lt;li&gt;CLIR - Calling Line Identification Restriction&lt;/li&gt;
-&lt;li&gt;CW - Call Wait&lt;/li&gt;
-&lt;li&gt;DND - Do Not Disturb&lt;/li&gt;
-&lt;li&gt;F2M - Fax To Mail&lt;/li&gt;
-&lt;li&gt;F2W - Fax To Web&lt;/li&gt;
-&lt;li&gt;FWDREJ - Forward Reject&lt;/li&gt;
-&lt;li&gt;IVR - Interactive Voice Response&lt;/li&gt;
-&lt;li&gt;OCB - Outgoing Call Blocker&lt;/li&gt;
-&lt;li&gt;V2M - Voice To Mail&lt;/li&gt;
-&lt;li&gt;V2W - Voice To Web&lt;/li&gt;
-&lt;li&gt;W2F - Web To Fax&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-            <pubDate>2017-12-12T00:00:00+01:00</pubDate>
-            <link>http://lion.net.pl/_posts/2017-12-12-slowniczek-voip.md</link>
-            <atom:link href="http://lion.net.pl/_posts/2017-12-12-slowniczek-voip.md" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/_posts/2017-12-12-slowniczek-voip.md</guid>
         </item>
             </channel>
 </rss>

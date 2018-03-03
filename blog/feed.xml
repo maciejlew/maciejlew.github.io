@@ -9,6 +9,54 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Słowniczek VoIP</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>VoIP</category>
+                                    <content:encoded>&lt;p&gt;Przepracowałem trochę czasu nad rozwojem oprogramowania do zarządzania centralą VoIP. W tym czasie miałem styczność z wieloma nowymi technologiami i usługami. Często w rozmowach i w kodzie posługiwaliśmy się akronimami. Ich rozszyfrowanie nie zawsze było łatwe, zwłaszcza przy pierwszym z nimi kontakcie. Pomyślałem więc, że fajnie będzie zebrać jak najwięcej tych akronimów w jedym miejscu, być może komuś (Tobie?) się przydadzą.&lt;/p&gt;
+
+&lt;h2 id=&quot;poj%C4%99cia-podstawowe&quot;&gt;Pojęcia podstawowe&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MGCP - Media Gateway Control Protocol&lt;/li&gt;
+&lt;li&gt;PBX - Private Branch Exchange&lt;/li&gt;
+&lt;li&gt;SIP - Session Initiation Protocol&lt;/li&gt;
+&lt;li&gt;VoIP - Voice over Internet Protocol&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;us%C5%82ugi-voip&quot;&gt;Usługi VoIP&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ACREJ - Anonymous Call Reject&lt;/li&gt;
+&lt;li&gt;ACT - Acknowledge Call Transfer&lt;/li&gt;
+&lt;li&gt;BCT - Blind Call Transfer&lt;/li&gt;
+&lt;li&gt;BLF - Busy Lamp Field&lt;/li&gt;
+&lt;li&gt;C2C - Click To Call&lt;/li&gt;
+&lt;li&gt;CFU - Call Forward Unconditional&lt;/li&gt;
+&lt;li&gt;CFB - Call Forward Busy&lt;/li&gt;
+&lt;li&gt;CFNR - Call Forward Not Responding&lt;/li&gt;
+&lt;li&gt;CFUR - Call Forward Unregistered&lt;/li&gt;
+&lt;li&gt;CLIP - Connected Line Identification Presentation&lt;/li&gt;
+&lt;li&gt;CLIR - Calling Line Identification Restriction&lt;/li&gt;
+&lt;li&gt;CW - Call Wait&lt;/li&gt;
+&lt;li&gt;DND - Do Not Disturb&lt;/li&gt;
+&lt;li&gt;F2M - Fax To Mail&lt;/li&gt;
+&lt;li&gt;F2W - Fax To Web&lt;/li&gt;
+&lt;li&gt;FWDREJ - Forward Reject&lt;/li&gt;
+&lt;li&gt;IVR - Interactive Voice Response&lt;/li&gt;
+&lt;li&gt;OCB - Outgoing Call Blocker&lt;/li&gt;
+&lt;li&gt;V2M - Voice To Mail&lt;/li&gt;
+&lt;li&gt;V2W - Voice To Web&lt;/li&gt;
+&lt;li&gt;W2F - Web To Fax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lista nie jest pełna, będzie sukcesywanie uzupełniana gdy tylko coś mi się przypomni. A może ty znasz jakiś akronik związany z VoIP którego tu jeszcze nie ma? Znasz? Napisz Nam o nim w komentarzu!&lt;/p&gt;
+</content:encoded>
+            <pubDate>2018-02-03T11:30:00+01:00</pubDate>
+            <link>http://lion.net.pl/2018/02/03/slowniczek-voip.html</link>
+            <atom:link href="http://lion.net.pl/2018/02/03/slowniczek-voip.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2018/02/03/slowniczek-voip.html</guid>
+        </item>
+                <item>
             <title>SpreadIT 2017 - relacja</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>OOP, QA, SpreadIT, MEETING</category>
@@ -525,127 +573,6 @@ pobraną z pliku.&lt;/p&gt;
             <link>http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html</link>
             <atom:link href="http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html</guid>
-        </item>
-                <item>
-            <title>Front Controller w Pistache</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2017</category>
-                        <category>C++</category>
-                        <category>DDS</category>
-                                    <content:encoded>&lt;p&gt;Front controller to jeden z najczęściej wykorzystywanych wzorców projektowych.
-W tym wpisie pokażę jak wykorzystać go w Pistache do stworzenia klasy zarządzającej
-routingiem.&lt;/p&gt;
-
-&lt;h3 id=&quot;routing-w-pistache&quot;&gt;Routing w Pistache&lt;/h3&gt;
-
-&lt;h4 id=&quot;http%3A%3Ahandler&quot;&gt;Http::Handler&lt;/h4&gt;
-
-&lt;p&gt;Temat trasowania w Pistache można rozwiązać na kilka sposobów. Najłatwiejszym,
-pierwszym na jaki natkniesz się czytając dokumentację frameworka, jest zarejestrowanie
-klasy implementującej interfejsy &lt;em&gt;Http::Handler&lt;/em&gt; metodą &lt;em&gt;onRequest&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Metoda ta może wyglądać następująco:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;void VersionHandler::onRequest(const Http::Request&amp;amp; request, Http::ResponseWriter response) {
-    response.send(Http::Code::Ok, &quot;DDS &quot; DDS_VERSION);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A kod ją rejestrujący tak:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;int main() {
-    Http::listenAndServe&amp;lt;VersionHandler&amp;gt;(&quot;*:9080&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;routes%3A%3Aget&quot;&gt;Routes::Get&lt;/h4&gt;
-
-&lt;p&gt;Jednak, gdy chcemy udostępnić więcej niż jedną metodę, warto poszukać czegoś 
-bardziej zaawansowanego. Tym krokiem na przód będzie stworzenie klasy 
-kontrolującej routing. Klasa ta będzie wykorzystywała wbudowany w Pistache 
-mechanizm routingu. Poszczególne żądania będą obsługiwane przez wyspecjalizowane 
-klasy - handlery. Może to wyglądać na przykład tak:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#include &quot;pistache/endpoint.h&quot;
-#include &quot;handlers/VersionHandler.h&quot;
-
-class Endpoint
-{
-
-public:
-
-    Endpoint(Net::Address addr)
-        : httpEndpoint(std::make_shared&amp;lt;Net::Http::Endpoint&amp;gt;(addr))
-    {
-    }
-
-    void init(size_t thr = 2) {
-        auto opts = Net::Http::Endpoint::options()
-            .threads(thr)
-            .flags(Net::Tcp::Options::InstallSignalHandler);
-        httpEndpoint-&amp;gt;init(opts);
-        setupRoutes();
-    }
-
-    void start() {
-        httpEndpoint-&amp;gt;setHandler(router.handler());
-        httpEndpoint-&amp;gt;serve();
-    }
-
-    void shutdown() {
-        httpEndpoint-&amp;gt;shutdown();
-    }
-
-    private:
-
-        Rest::Router router;
-        std::shared_ptr&amp;lt;Net::Http::Endpoint&amp;gt; httpEndpoint;
-        VersionHandler version_handler;
-
-        void setupRoutes() {
-            using namespace Net::Rest;
-            Routes::Get(router, &quot;/version&quot;, Routes::bind(&amp;amp;VersionHandler::onRequest, &amp;amp;version_handler));
-
-        }
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Po tej zmianie kod rejestrujący może wyglądać w ten sposób:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;int main() {
-
-    Net::Port port(9080);
-
-    int thr = 2;
-
-    Net::Address addr(Net::Ipv4::any(), port);
-
-    Endpoint stats(addr);
-
-    stats.init(thr);
-    stats.start();
-
-    stats.shutdown();
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Wykorzystując &lt;em&gt;Routes::Get** należy zwrócić uwagę aby zmienić interfejs metody *onRequest&lt;/em&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;void VersionHandler::onRequest(const Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
-    response.send(Http::Code::Ok, &quot;DDS &quot; DDS_VERSION);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I to wszystko. Po tej małej zmianie mamy do dyspozycji front controller, w którym
-możemy rejestrować w prosty sposób kolejne wyspecjalizowane handlery obsługujące 
-żądania użytkowników naszej aplikacji.&lt;/p&gt;
-
-&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2017-03-25T21:05:00+01:00</pubDate>
-            <link>http://lion.net.pl/2017/03/25/front-controller-w-pistache.html</link>
-            <atom:link href="http://lion.net.pl/2017/03/25/front-controller-w-pistache.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2017/03/25/front-controller-w-pistache.html</guid>
         </item>
             </channel>
 </rss>
