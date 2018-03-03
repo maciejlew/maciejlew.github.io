@@ -18,7 +18,7 @@ breadcrumbs:
     type: BlogPosting
 ---
 
-Przepracowałem trochę czasu nad rozwojem oprogramowania do zarządzania centralą VoIP. W tym czasie miałem styczność z wieloma nowymi technologiami i usługami. Często w rozmowach i w kodzie posługiwaliśmy się akronimami. Ich rozszyfrowanie nie zawsze było łatwe, zwłaszcza przy pierwszym z nimi kontakcie. Pomyślałem więc, że fajnie będzie zebrać jak najwięcej tych akronimów w jedym miejscu, być może komuś (Tobie?) się przydadzą.
+Przepracowałem trochę czasu nad rozwojem oprogramowania do zarządzania centralą VoIP. W tym czasie miałem styczność z wieloma nowymi technologiami i usługami. Często w rozmowach i w kodzie posługiwaliśmy się akronimami. Ich rozszyfrowanie nie zawsze było łatwe, zwłaszcza przy pierwszym z nimi kontakcie. Pomyślałem więc, że fajnie będzie zebrać jak najwięcej tych akronimów w jednym miejscu, być może komuś (Tobie?) się przydadzą.
 
 ## Pojęcia podstawowe
 
@@ -51,4 +51,4 @@ Przepracowałem trochę czasu nad rozwojem oprogramowania do zarządzania centra
 * V2W - Voice To Web
 * W2F - Web To Fax
 
-Lista nie jest pełna, będzie sukcesywanie uzupełniana gdy tylko coś mi się przypomni. A może ty znasz jakiś akronik związany z VoIP którego tu jeszcze nie ma? Znasz? Napisz Nam o nim w komentarzu!
+Lista nie jest pełna, będzie sukcesywnie uzupełniana gdy tylko coś mi się przypomni. A może ty znasz jakiś akronim związany z VoIP którego tu jeszcze nie ma? Znasz? Napisz Nam o nim w komentarzu!
