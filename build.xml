@@ -16,19 +16,19 @@
 
     <target name="build-assets-css">
         <echo msg="building css files"/>
-        <exec command="sass --update --force assets/scss/:source/assets/css/ --style=compressed"/>
+        <exec command="sass --update --force source-assets/scss/:source/assets/css/ --style=compressed"/>
     </target>
 
     <target name="build-assets-js">
         <echo msg="building js files"/>
         <exec command="mkdir -p source/assets/"/>
-        <exec command="cp -R assets/js/ source/assets/"/>
+        <exec command="cp -R source-assets/js/ source/assets/"/>
     </target>
 
     <target name="build-assets-img">
         <echo msg="building images"/>
         <exec command="mkdir -p source/assets/"/>
-        <exec command="cp -R assets/img/ source/assets/"/>
+        <exec command="cp -R source-assets/img/ source/assets/"/>
     </target>
 
     <target name="build-assets" depends="build-assets-css,build-assets-js,build-assets-img"/>
