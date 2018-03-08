@@ -12,6 +12,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
 Od czasu do czasu piszę posty na temat LMS, które mogą Cię zainteresować:

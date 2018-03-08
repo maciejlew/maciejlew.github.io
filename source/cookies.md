@@ -13,6 +13,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: QAPage
+generator: pagination
+use:
+  - posts
 ---
 
 Strona internetowa [lion.net.pl][1] wykorzystuje tzw. pliki cookies,

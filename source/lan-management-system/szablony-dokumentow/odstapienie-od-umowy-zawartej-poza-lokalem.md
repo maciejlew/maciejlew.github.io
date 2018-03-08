@@ -18,6 +18,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: ItemPage
+generator: pagination
+use:
+  - posts
 ---
 
 Przyjmuję zlecenia przenoszenia istniejących szablonów odstąpienia od umowy zawartej

@@ -15,6 +15,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
 [DDS][1] to aplikacja serwerowa pozwająca na dostarczenie przy pomocy webserwisów danych o lekach DDF lub innych

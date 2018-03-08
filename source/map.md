@@ -14,6 +14,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
  * [LionNet](/)

@@ -15,6 +15,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
 Od momentu wprowadzenia do LMS mechanizmu pluginów zacząłem przygotowywać część

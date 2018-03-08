@@ -18,6 +18,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: ItemPage
+generator: pagination
+use:
+  - posts
 ---
 
  * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe, korekty faktur VAT)

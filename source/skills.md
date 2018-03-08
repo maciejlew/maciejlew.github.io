@@ -13,6 +13,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: ProfilePage
+generator: pagination
+use:
+  - posts
 ---
 
 Projektowanie i wdrażanie systemów informatycznych.

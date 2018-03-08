@@ -17,6 +17,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: ItemPage
+generator: pagination
+use:
+  - posts
 ---
 
  * lista kończących się zobowiązań

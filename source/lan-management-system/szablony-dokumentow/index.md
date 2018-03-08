@@ -15,6 +15,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
 Szablony dokumentów w LMS pozwalają na automatyczne generowanie umów, regulaminów,

@@ -18,6 +18,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: ItemPage
+generator: pagination
+use:
+  - posts
 ---
 
 Podejmuję się przenoszenia istniejących szablonów informacji dodatkowych 

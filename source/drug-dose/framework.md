@@ -15,6 +15,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
 [DDF][1] to szkielet pozwalający na zbudowanie hybrydowej, mobilnej aplikacji działającej na szerokiej

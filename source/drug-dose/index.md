@@ -12,6 +12,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
+generator: pagination
+use:
+  - posts
 ---
 
 [Drug Dose Framework][1] i [Drug Dose Server][2] to aplikacje mające na celu pomoc w obliczaniu dawek leków.

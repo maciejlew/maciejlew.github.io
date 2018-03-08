@@ -18,6 +18,9 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: ItemPage
+generator: pagination
+use:
+  - posts
 ---
 
  * wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej
