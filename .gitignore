@@ -2,3 +2,8 @@ vendor/
 output_dev/
 source/
 .sass-cache/
+page/
+drug-dose/**/page/
+lan-management-system/**/page/
+mapa/page/
+
