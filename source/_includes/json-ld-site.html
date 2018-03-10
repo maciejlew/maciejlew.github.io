@@ -1,0 +1,27 @@
+{% set site_modified = site.date %}
+{% set posts = page.pagination.items %}
+{% if posts %}
+    {% set break = false %}
+    {% for post in posts if not break %}
+        {% if post.date %}
+            {% set site_modified = post.date | date("Y-m-d") %}
+            {% set break = true %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        {% if site.name %}"name": "{{ site.name }}",{% endif %}
+        {% if site.description %}"description": "{{ site.description }}",{% endif %}
+        {% if site.url %}"url": "{{ site.url }}",{% endif %}
+        {% if site.author %}"author": 
+            {
+                "@type": "Person",
+                "name": "{{ site.author }}"
+            },{% endif %}
+        {% if site.date %}"dateCreated": "{{ site.date }}",{% endif %}
+        "dateModified": "{{ site_modified }}"
+    }
+</script>
