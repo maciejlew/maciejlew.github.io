@@ -9,6 +9,81 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Nie używaj String|Numer|Boolean jako konstruktorów w JavaScript!</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>QA</category>
+                        <category>JS</category>
+                        <category>DDF</category>
+                        <category>DSP2016</category>
+                        <category>OOP</category>
+                                    <content:encoded>&lt;p&gt;Śmieszne może się wydawać to że w języku obiektowym (czy też prototypowanym) jest 
+możliwość utworzenia prostych obiektów opakowujących wartości proste, a 
+jednocześnie wszyscy odradzają korzystania z nich. W tym wpisie dowiesz się dlaczego
+tak właśnie dzieje się w JavaScript.&lt;/p&gt;
+
+&lt;h3 id=&quot;typy-proste-w-js&quot;&gt;Typy proste w JS&lt;/h3&gt;
+
+&lt;p&gt;JS posiada kilka prymitywów, czyli typów reprezentujących najprostsze i najczęściej
+wykorzystywane w aplikacjach byty. Są to &lt;em&gt;boolean, number, string, null, undefined&lt;/em&gt;.
+Pierwsze trzy możemy utworzyć wykorzystując konstruktory obiektów o tej samej nazwie:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var b1 = true;
+var b2 = new Boolean(true);
+var n1 = 1;
+var n2 = new Number(1);
+var s1 = &#039;a&#039;;
+var s2 = new String(&#039;a&#039;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Wszystko fajnie, dopóki nie musimy gdzieś w kodzie sprawdzić typu zmiennej by np.
+&lt;a href=&quot;/2016/04/05/typy-wyjatkow-w-javascript.html&quot;&gt;rzucić odpowiednim wyjątkiem&lt;/a&gt;. Jeśli w naszej domenie zmienna powinna być 
+stringiem to musimy to zrobić np. tak:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if (!(s instanceof String) || typeof s !== &#039;string&#039;) {
+    throw new TypeError(&#039;Wrong type!&#039;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sprawdzenie samym &lt;em&gt;typeof&lt;/em&gt; nic nam niestety nie pomoże bo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;typeof new String(&#039;a&#039;) === &#039;object&#039;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kolejne problemy pojawią się gdy będziemy chcieli porównać wartość zmiennej:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if (s === &#039;a&#039;) {
+    console.log(&#039;wartość s to a&#039;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;W przypadku gdy &lt;em&gt;s = s2&lt;/em&gt; powyższe sprawdzenie nam nie zadziała. W przypadku gdy 
+&lt;em&gt;s = s1&lt;/em&gt;, zobaczymy w konsoli log. Możemy, co prawda, zrezygnować z operatora ===
+i zastąpić go słabszym porównaniem ==, ale nie jest to zalecana praktyka która 
+pociąga za sobą inne problemy.&lt;/p&gt;
+
+&lt;p&gt;Przedstawione powyżej problemy są dwoma głównymi przyczynami dla których &lt;strong&gt;nie zaleca
+się korzystać z wbudowanych w JS obiektów String, Number i Boolean&lt;/strong&gt;. &lt;a href=&quot;/2016/05/16/jshint-jakosc-kodu-js-pod-kontrola.html&quot;&gt;Narzędzie
+do analizy statycznej kodu JSHint&lt;/a&gt; po natrafieniu na wykorzystanie w kodzie 
+konstruktora &lt;em&gt;new&lt;/em&gt; powyższych typów zgłasza błąd, np: &lt;em&gt;&quot;Do not use Number as a 
+constructor&quot;&lt;/em&gt;. Na szczęście wykrycie tego typu pułapek w kodzie i zastąpienie
+ich typami prostymi jest bardzo łatwe, a może zaoszczędzić wielu nieporozumień
+w przyszłości.&lt;/p&gt;
+
+&lt;p&gt;Muszę się przyznać, że sam nadużywałem tworzenia obiektów Number i String. Robiłem 
+to aby choć trochę zapanować nad tym co się dzieje ze zmiennymi w moim &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework&quot;&gt;projekcie
+DDF&lt;/a&gt; i zrobić sobie substytut silnego typowania. Taki podejście niestety wiąże 
+się z dużą ilością nadmiarowego kodu sprawdzającego typy zmiennych i konwertującego
+prymitywy do obiektów je opakowujących. To się po prostu nie opłaca. Po 
+refraktoryzacji do typów prostych kod wygląda bardziej czytelnie, jest go także
+dużo mniej. Ilość przypadków testowych dla testów jednostkowych także spada.
+Łatwiej jest zadbać o dobre &lt;a href=&quot;/2016/05/18/code-coverage-w-karma.html&quot;&gt;pokrycie kodu testami&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-05-19T19:00:00+02:00</pubDate>
+            <link>http://lion.net.pl/2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html</link>
+            <atom:link href="http://lion.net.pl/2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/05/19/nie-uzywaj-string-number-boolean-jako-konstruktorow-w-javascript.html</guid>
+        </item>
+                <item>
             <title>Code Coverage w Karma</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>QA</category>
@@ -1006,94 +1081,6 @@ W razie problemów napisz komentarz - postaram się pomóc.&lt;/p&gt;
             <link>http://lion.net.pl/2016/04/26/i18n-z-angularjs-gettext.html</link>
             <atom:link href="http://lion.net.pl/2016/04/26/i18n-z-angularjs-gettext.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/04/26/i18n-z-angularjs-gettext.html</guid>
-        </item>
-                <item>
-            <title>Powiadomienia w Ionic Framework</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2016</category>
-                        <category>JS</category>
-                        <category>DDF</category>
-                                    <content:encoded>&lt;p&gt;Czasem trzeba przedstawić użytkownikowi aplikacji pewien komunikat w taki sposób
-aby na pewno go zauważył. Po przeczytaniu tego wpisu dowiesz się jak można to 
-zrobić fajnie w Ionic Framework.&lt;/p&gt;
-
-&lt;h3 id=&quot;3-sposoby-na-komunikat&quot;&gt;3 sposoby na komunikat&lt;/h3&gt;
-
-&lt;p&gt;Jeśli znasz JS nie od dziś to na pewno wiesz że istnieje w nim coś takiego jak
-metoda &lt;strong&gt;alert&lt;/strong&gt;. Może nawet wiesz i korzystasz w metody &lt;strong&gt;confirm&lt;/strong&gt;? Te dwie wbudowane
-w silnik JS przeglądarek od tysięcy lat metody mogą być pierwszym sposobem jaki
-przyjdzie Ci na myśl gdy staniesz przed zadaniem zrobienia powiadomień w Ionic
-Framework. Ale zaczekaj chwilę. Jak się domyślasz &lt;strong&gt;są na pewno inne, lepsze, 
-rozwiązania przygotowane przez twórców Ionic&lt;/strong&gt;. No i nie mylisz się, masz do wyboru
-serwisy &lt;strong&gt;$ionicPopup&lt;/strong&gt; i &lt;strong&gt;$ionicModal&lt;/strong&gt;!&lt;/p&gt;
-
-&lt;h4 id=&quot;metody-alert-i-confirm&quot;&gt;Metody alert i confirm&lt;/h4&gt;
-
-&lt;p&gt;Metody alert i confirm spełniają swoje zadanie, także w Ionic i także podczas 
-uruchamiania aplikacji na telefonie. &lt;strong&gt;Jest z nimi tylko jeden problem - nie można 
-ich ostylować&lt;/strong&gt;. Zostaną wyświetlone zgodnie ze stylami wbudowanymi w przeglądarki
-i środowiska UI na telefonach. Tak więc np. na moim smartfonie z Androidem metoda
-alert powoduje przyciemnienie całego ekranu i wyświetlenie komunikatu w małym,
-niebieskim prostokącie. Nie jest on nawet taki zły i brzydki, jednak niefajną sprawą 
-jest to, że poza zdefiniowanym w programie komunikatem otrzymamy także w nagłówku 
-tego prostokąta napis &quot;Alert&quot;, a nie zawsze to co chcemy wyświetlić będzie przecież
-ostrzeżeniem.&lt;/p&gt;
-
-&lt;h4 id=&quot;serwis-%24ionicpopup&quot;&gt;Serwis $ionicPopup&lt;/h4&gt;
-
-&lt;p&gt;Serwis $ionicPopup, po wstrzyknięciu do kontrolera, daje nam do wyboru trzy metody:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;show&lt;/li&gt;
-&lt;li&gt;confirm&lt;/li&gt;
-&lt;li&gt;alert&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Każda z tych metod przyjmuje jak argument obiekt konfiguracyjny. Metodą &lt;strong&gt;show&lt;/strong&gt;
-możemy sobie zbudować &lt;strong&gt;najbardziej kompleksowy pop-up&lt;/strong&gt;. Przyjmuje ona masę parametrów,
-opisujących komunikat i jego budowę (HTML i CSS). Pozwala ponad to zdefiniować 
-listę przycisków z czego każdy może zostać ostylowany, dostać własny callback 
-reagujący na kliknięcie. &lt;strong&gt;Metody confirm i alert są dużo prostsze&lt;/strong&gt;, pozwalają na 
-zdefiniowanie komunikatu jak metoda show, a przyciski dostajemy już gotowe.
-Wszystkie 3 metody stosują się do wzorca promise, a więc możemy zdefiniować
-także akcję w przypadku udanego scenariusza (a dla confirm i alert jest to nawet 
-wymagane by zrobić za ich pomocą coś sensownego).&lt;/p&gt;
-
-&lt;h4 id=&quot;serwis-%24ionicmodal&quot;&gt;Serwis $ionicModal&lt;/h4&gt;
-
-&lt;p&gt;Serwis $ionicModal przyda nam się gdy ww. metoda show serwisu $ionicPopup stanie
-się niewystarczająca. &lt;strong&gt;Dzięki temu serwisowi możemy przygotować szablon wyskakującego
-okienka, tak jak każdy inny partial w Ionic&lt;/strong&gt;. Serwis ten oczekuje od nas albo
-przekazania szablony jako ciągu znaków lub wskazania mu URL do szablonu
-(osobiście uważam że wskazanie URL jest lepsze bo pozwala na lepszą organizację 
-kodu w projekcie). Ponadto, analogicznie jak w przypadku $ionicPopop, 
-przekazujemy obiekt z konfiguracją. W konfiguracji wskazujemy scope naszego 
-kontrolera, rodzaj animacji wykonywanej podczas wyskakiwania powiadomienia, czy 
-chcemy aby focus ustawał się na pierwszym polu input szablonu i czy chcemy 
-obsługiwać inne sposoby na zamknięcie okienka. Przygotowanie powiadomienia w 
-ten sposób pozwala na bardzo kompleksowe jego ostylowanie, pozwala także na 
-skorzystanie wewnątrz modalu z przychodzących wraz z AngularJS funkcjonalności.&lt;/p&gt;
-
-&lt;h3 id=&quot;najlepszy-spos%C3%B3b-na-komunikat&quot;&gt;Najlepszy sposób na komunikat&lt;/h3&gt;
-
-&lt;p&gt;Każdy ze wspomnianych wyżej sposobów ma swoje wady i zalety. Każdy z nich jest w 
-stanie spełnić swoje zadanie zarówno w środowisku przeglądarki jak i na telefonie.
-Z powodu braku możliwości wpłynięcia na wygląd renderowanych alertów i confirmów
-odradzałbym je jednak a w ich miejsce zastosował, w zależności od potrzeb serwis
-$ionicPopup lub $ionicModal. &lt;strong&gt;Dla prostych ostrzeżeń i potwierdzeń na pewno wybrałbym
-metody alert i confirm z $ionicPopup. W przypadku bardziej złożonych formatek
-warto zastanowić się nad $ionicModal.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Bardzo dobre przykłady zastosowania $ionicPopup i $ionicModal znajdziesz w 
-&lt;a href=&quot;http://ionicframework.com/docs/api/&quot;&gt;dokumentacji frameworka&lt;/a&gt;. Możesz także 
-zajrzeć do &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework&quot;&gt;repozytorium DDF&lt;/a&gt;
-gdzie ostatnio udało mi się zaimplementować $ionicModal do powiadamiania użytkownika
-o wyniku obliczeń lub o zaistniałym wyjątku.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-04-19T20:25:00+02:00</pubDate>
-            <link>http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html</link>
-            <atom:link href="http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html</guid>
         </item>
             </channel>
 </rss>

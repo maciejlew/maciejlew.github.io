@@ -9,6 +9,94 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Powiadomienia w Ionic Framework</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2016</category>
+                        <category>JS</category>
+                        <category>DDF</category>
+                                    <content:encoded>&lt;p&gt;Czasem trzeba przedstawić użytkownikowi aplikacji pewien komunikat w taki sposób
+aby na pewno go zauważył. Po przeczytaniu tego wpisu dowiesz się jak można to 
+zrobić fajnie w Ionic Framework.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-sposoby-na-komunikat&quot;&gt;3 sposoby na komunikat&lt;/h3&gt;
+
+&lt;p&gt;Jeśli znasz JS nie od dziś to na pewno wiesz że istnieje w nim coś takiego jak
+metoda &lt;strong&gt;alert&lt;/strong&gt;. Może nawet wiesz i korzystasz w metody &lt;strong&gt;confirm&lt;/strong&gt;? Te dwie wbudowane
+w silnik JS przeglądarek od tysięcy lat metody mogą być pierwszym sposobem jaki
+przyjdzie Ci na myśl gdy staniesz przed zadaniem zrobienia powiadomień w Ionic
+Framework. Ale zaczekaj chwilę. Jak się domyślasz &lt;strong&gt;są na pewno inne, lepsze, 
+rozwiązania przygotowane przez twórców Ionic&lt;/strong&gt;. No i nie mylisz się, masz do wyboru
+serwisy &lt;strong&gt;$ionicPopup&lt;/strong&gt; i &lt;strong&gt;$ionicModal&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h4 id=&quot;metody-alert-i-confirm&quot;&gt;Metody alert i confirm&lt;/h4&gt;
+
+&lt;p&gt;Metody alert i confirm spełniają swoje zadanie, także w Ionic i także podczas 
+uruchamiania aplikacji na telefonie. &lt;strong&gt;Jest z nimi tylko jeden problem - nie można 
+ich ostylować&lt;/strong&gt;. Zostaną wyświetlone zgodnie ze stylami wbudowanymi w przeglądarki
+i środowiska UI na telefonach. Tak więc np. na moim smartfonie z Androidem metoda
+alert powoduje przyciemnienie całego ekranu i wyświetlenie komunikatu w małym,
+niebieskim prostokącie. Nie jest on nawet taki zły i brzydki, jednak niefajną sprawą 
+jest to, że poza zdefiniowanym w programie komunikatem otrzymamy także w nagłówku 
+tego prostokąta napis &quot;Alert&quot;, a nie zawsze to co chcemy wyświetlić będzie przecież
+ostrzeżeniem.&lt;/p&gt;
+
+&lt;h4 id=&quot;serwis-%24ionicpopup&quot;&gt;Serwis $ionicPopup&lt;/h4&gt;
+
+&lt;p&gt;Serwis $ionicPopup, po wstrzyknięciu do kontrolera, daje nam do wyboru trzy metody:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;show&lt;/li&gt;
+&lt;li&gt;confirm&lt;/li&gt;
+&lt;li&gt;alert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Każda z tych metod przyjmuje jak argument obiekt konfiguracyjny. Metodą &lt;strong&gt;show&lt;/strong&gt;
+możemy sobie zbudować &lt;strong&gt;najbardziej kompleksowy pop-up&lt;/strong&gt;. Przyjmuje ona masę parametrów,
+opisujących komunikat i jego budowę (HTML i CSS). Pozwala ponad to zdefiniować 
+listę przycisków z czego każdy może zostać ostylowany, dostać własny callback 
+reagujący na kliknięcie. &lt;strong&gt;Metody confirm i alert są dużo prostsze&lt;/strong&gt;, pozwalają na 
+zdefiniowanie komunikatu jak metoda show, a przyciski dostajemy już gotowe.
+Wszystkie 3 metody stosują się do wzorca promise, a więc możemy zdefiniować
+także akcję w przypadku udanego scenariusza (a dla confirm i alert jest to nawet 
+wymagane by zrobić za ich pomocą coś sensownego).&lt;/p&gt;
+
+&lt;h4 id=&quot;serwis-%24ionicmodal&quot;&gt;Serwis $ionicModal&lt;/h4&gt;
+
+&lt;p&gt;Serwis $ionicModal przyda nam się gdy ww. metoda show serwisu $ionicPopup stanie
+się niewystarczająca. &lt;strong&gt;Dzięki temu serwisowi możemy przygotować szablon wyskakującego
+okienka, tak jak każdy inny partial w Ionic&lt;/strong&gt;. Serwis ten oczekuje od nas albo
+przekazania szablony jako ciągu znaków lub wskazania mu URL do szablonu
+(osobiście uważam że wskazanie URL jest lepsze bo pozwala na lepszą organizację 
+kodu w projekcie). Ponadto, analogicznie jak w przypadku $ionicPopop, 
+przekazujemy obiekt z konfiguracją. W konfiguracji wskazujemy scope naszego 
+kontrolera, rodzaj animacji wykonywanej podczas wyskakiwania powiadomienia, czy 
+chcemy aby focus ustawał się na pierwszym polu input szablonu i czy chcemy 
+obsługiwać inne sposoby na zamknięcie okienka. Przygotowanie powiadomienia w 
+ten sposób pozwala na bardzo kompleksowe jego ostylowanie, pozwala także na 
+skorzystanie wewnątrz modalu z przychodzących wraz z AngularJS funkcjonalności.&lt;/p&gt;
+
+&lt;h3 id=&quot;najlepszy-spos%C3%B3b-na-komunikat&quot;&gt;Najlepszy sposób na komunikat&lt;/h3&gt;
+
+&lt;p&gt;Każdy ze wspomnianych wyżej sposobów ma swoje wady i zalety. Każdy z nich jest w 
+stanie spełnić swoje zadanie zarówno w środowisku przeglądarki jak i na telefonie.
+Z powodu braku możliwości wpłynięcia na wygląd renderowanych alertów i confirmów
+odradzałbym je jednak a w ich miejsce zastosował, w zależności od potrzeb serwis
+$ionicPopup lub $ionicModal. &lt;strong&gt;Dla prostych ostrzeżeń i potwierdzeń na pewno wybrałbym
+metody alert i confirm z $ionicPopup. W przypadku bardziej złożonych formatek
+warto zastanowić się nad $ionicModal.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bardzo dobre przykłady zastosowania $ionicPopup i $ionicModal znajdziesz w 
+&lt;a href=&quot;http://ionicframework.com/docs/api/&quot;&gt;dokumentacji frameworka&lt;/a&gt;. Możesz także 
+zajrzeć do &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework&quot;&gt;repozytorium DDF&lt;/a&gt;
+gdzie ostatnio udało mi się zaimplementować $ionicModal do powiadamiania użytkownika
+o wyniku obliczeń lub o zaistniałym wyjątku.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-04-19T20:25:00+02:00</pubDate>
+            <link>http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html</link>
+            <atom:link href="http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/04/19/powiadomienia-w-ionic-framework.html</guid>
+        </item>
+                <item>
             <title>Apache Cordova, Ionic Framework i starsze wersje Androida</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>DSP2016</category>
@@ -733,63 +821,6 @@ np. &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework/blob/maste
             <link>http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html</link>
             <atom:link href="http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html</guid>
-        </item>
-                <item>
-            <title>Format opisu leków w DDF</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2016</category>
-                        <category>JS</category>
-                        <category>DDF</category>
-                                    <content:encoded>&lt;p&gt;Na potrzeby &lt;a href=&quot;{{site.url}}/2016/03/01/dam-sie-poznac.html&quot;&gt;aplikacji DDF&lt;/a&gt; 
-(fajnie jest wprowadzać swoje własne 3-znakowe akronimy - informatycy to uwielbiają) 
-wymyśliłem format w jakim opisywane będą leki i ich dawkowanie.&lt;/p&gt;
-
-&lt;p&gt;Wszystkie dane przechowywane będą w plikach JSON, dzięki czemu nie będzie problemów
-z ich tworzeniem, pobieraniem i przetwarzaniem w aplikacji DDF. Format ten jest 
-także bardzo &quot;ludzki&quot; więc myślę że nawet osoby nietechniczne będą w stanie 
-przygotować swoje zestawy leków.&lt;/p&gt;
-
-&lt;h2 id=&quot;zestawy-lek%C3%B3w&quot;&gt;Zestawy leków&lt;/h2&gt;
-
-&lt;p&gt;Zestawy leków opisywane będą w plikach o następującej strukturze:&lt;/p&gt;
-
-&lt;p&gt;(Przykład)[https://gist.github.com/maciejlew/aaef76a1781717f15743]&lt;/p&gt;
-
-&lt;h2 id=&quot;dane-o-leku%2C-dawkowanie&quot;&gt;Dane o leku, dawkowanie&lt;/h2&gt;
-
-&lt;p&gt;Każdy lek powinien posiadać identyfikator, nazwę, opis oraz parametry funkcji
-dawkowania. Wyróżniłem dwa podstawowe typy opisu dawkowania: przy pomocy funkcji
-liniowej (&lt;em&gt;simple&lt;/em&gt;) oraz przy pomocy wartości dyskretnych (&lt;em&gt;complex&lt;/em&gt;). Typ będzie
-potrzebny aby algorytm wiedział z czym ma do czynienia przed rozpoczęciem parsowania
-danych. Zazwyczaj wzór potrzebny do wyliczenia podawany jest w postaci prostej 
-zależności liniowej:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;y(x) = a * x&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;ogólnie:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;y(x) = a * x + b&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;(Przykład)[https://gist.github.com/maciejlew/df0aef76b78203fc2034]&lt;/p&gt;
-
-&lt;p&gt;jednak być może ktoś chciałby stworzyć bardziej wyrafinowane zależności, jak:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;y_min(x) = a_min * x + b; y_max(x) = a_max * x + b&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;(Przykład)[https://gist.github.com/maciejlew/bbb28441759d7262922d]&lt;/p&gt;
-
-&lt;p&gt;lub nawet:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;y_1 = a_1; y_2 = a_2; ...; y_n = a_n&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;(Przykład)[https://gist.github.com/maciejlew/35eaf86339e6fad33e14]&lt;/p&gt;
-
-&lt;p&gt;Te wszystkie typy opisów zamierzam obsługiwać w DDF.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-03-12T09:00:00+01:00</pubDate>
-            <link>http://lion.net.pl/2016/03/12/format-opisu-lekow-w-ddf.html</link>
-            <atom:link href="http://lion.net.pl/2016/03/12/format-opisu-lekow-w-ddf.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/03/12/format-opisu-lekow-w-ddf.html</guid>
         </item>
             </channel>
 </rss>

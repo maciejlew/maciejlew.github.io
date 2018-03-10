@@ -9,6 +9,29 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>JSON-LD dla generatorów statycznych stron</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>BLOG</category>
+                        <category>JSON-LD</category>
+                                    <content:encoded>&lt;p&gt;Przeniosłem stronę LionNet z &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&#039;a&lt;/a&gt; do &lt;a href=&quot;https://sculpin.io/&quot;&gt;Sculpin&#039;a&lt;/a&gt;. Przy okazji 
+postanowiłem opublikować w odrębnych repozytoriach gotowe skrypty generujące 
+JSON-LD dla witryny, strony oraz recenzji.&lt;/p&gt;
+
+&lt;p&gt;Skrypty wraz z instrukcją instalacji znajdziesz na GitHub&#039;ie pod adresami:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maciejlew/jekyll-json-ld&quot;&gt;JSON-LD dla Jekyll&#039;a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maciejlew/sculpin-json-ld&quot;&gt;JSON-LD dla Sculpin&#039;a&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Skrypty publikuję na licencji MIT - możesz je śmiało wykorzystać na swoim blogu.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2018-03-10T21:00:00+01:00</pubDate>
+            <link>http://lion.net.pl/2018/03/10/json-ld-dla-generatorow-statycznych-stron.html</link>
+            <atom:link href="http://lion.net.pl/2018/03/10/json-ld-dla-generatorow-statycznych-stron.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2018/03/10/json-ld-dla-generatorow-statycznych-stron.html</guid>
+        </item>
+                <item>
             <title>Słowniczek VoIP</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>VoIP</category>
@@ -523,56 +546,6 @@ funkcje.&lt;/p&gt;
             <link>http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</link>
             <atom:link href="http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</guid>
-        </item>
-                <item>
-            <title>Pistache i RapidJSON - prosty obiekt w odpowiedzi</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2017</category>
-                        <category>C++</category>
-                        <category>DDS</category>
-                                    <content:encoded>&lt;p&gt;Zdecydowałem się wykorzystać bibliotekę RapidJSON w mojej aplikacji DDS. Kilka 
-kolejnych artykułów będzie jej poświęconych. W tym wpisie pokażę jak zbudować i 
-zwrócić przy pomocy Pistache prosty obiekt JSON.&lt;/p&gt;
-
-&lt;h3 id=&quot;budowniczy-obiekt%C3%B3w-json-w-rapidjson&quot;&gt;Budowniczy obiektów JSON w RapidJSON&lt;/h3&gt;
-
-&lt;p&gt;Jak zarejestrować metodę odpowiadającą na żądanie REST pisałem na blogu w wpisie
-&lt;a href=&quot;/2017/03/25/front-controller-w-pistache.html&quot;&gt;&quot;Front controller w Pistache&quot;&lt;/a&gt;. Gdy już mamy to gotowe, najprostsza metoda
-może wyglądać następująco:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;void ProjectHandler::onRequest(const Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
-    StringBuffer s;
-    Writer&amp;lt;StringBuffer&amp;gt; writer(s);
-    writer.StartObject();
-    writer.Key(&quot;name&quot;);
-    writer.String(DDS_NAME);
-    writer.Key(&quot;full_name&quot;);
-    writer.String(DDS_FULL_NAME);
-    writer.Key(&quot;version&quot;);
-    writer.String(DDS_VERSION);
-    writer.Key(&quot;license&quot;);
-    writer.String(DDS_LICENSE);
-    writer.EndObject();
-    response.send(Http::Code::Ok, s.GetString());
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To co tu widać, to najprostsza budowa obiektu JSON w RapidJSON. Nie ma
-tu żadnej interakcji z użytkownikiem, otwierania strumieni, zaczytywania JSON z pliku 
-itp. &quot;Otwieramy&quot; obiekt, dodajemy kolejne pola-klucze i ich wartości, &quot;zamykamy&quot;
-obiekt. Tekstową reprezentację obiektu wysyłamy w odpowiedzi HTTP do użytkownika.
-Prawda że proste? Można by oczywiście ten łańcuch znaków przygotować po prost sklejając
-wszystko przy pomocy podstawowych operacji na łańcuchach, czy też wykorzystując sprint,
-ale API oferowane przez RapidJSON wydaje się po prostu ładniejsze od własnoręcznego
-rzeźbienia w JSON.&lt;/p&gt;
-
-&lt;p&gt;W kolejnych wpisach postaram się pokazać jak przesłać odpowiedź w formacie JSON
-pobraną z pliku.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2017-03-28T22:05:00+02:00</pubDate>
-            <link>http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html</link>
-            <atom:link href="http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html</guid>
         </item>
             </channel>
 </rss>

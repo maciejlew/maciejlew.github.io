@@ -2,19 +2,19 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
-    <title>Drug Dose Server</title>
+    <title>JSON-LD dla generatorów statycznych stron</title>
     <meta name="robots" content="index,follow"/> 
     <meta name="revisit-after" content="1 days"/>        
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta name="HandheldFriendly" content="True"/>
     <meta name="MobileOptimized" content="320"/>
-    <meta name="description" content="Drug Dose Server"/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="Skrypty JSON-LD dla Jekyll i Sculpin"/>
+    <meta name="keywords" content="json-ld, sculpin, jekyll, generator statycznych stron, blog"/>
     <meta name="author" content="Maciej Lew"/>
     <link rel="stylesheet" href="/assets/css/base.css" type='text/css'>
     <link href="http://lion.net.pl/blog/feed.xml" type="application/atom+xml" rel="alternate" title="LionNet blog posts (atom)" />
 
-                                                        <script type="application/ld+json">
+    <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
@@ -22,18 +22,18 @@
             {
                 "@type": "Person",
                 "name": "Maciej Lew"
-            },        "dateCreated": "2014-06-19",        "dateModified": "2018-03-10"
+            },        "dateCreated": "2014-06-19",        "dateModified": "2014-06-19"
     }
 </script>
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
-        "@type": "CollectionPage",
-        "name": "Drug Dose Server",        "description": "Drug Dose Server",        "author": 
+        "@type": "WebPage",
+        "name": "JSON-LD dla generatorów statycznych stron",        "description": "Skrypty JSON-LD dla Jekyll i Sculpin",        "author": 
             {
                 "@type": "Person",
                 "name": "Maciej Lew"
-            },        "dateCreated": "2015-05-04",        "breadcrumb":
+            },        "dateCreated": "2018-03-10",        "breadcrumb":
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [                    {
@@ -49,19 +49,19 @@
                         "position": ,
                         "item": {
                             "@type": "CollectionPage",
-                            "@id": "http://lion.net.pl/drug-dose/",
-                            "name": "LionNet"
+                            "@id": "http://lion.net.pl/blog/",
+                            "name": "Blog"
                         }
                     },                                    {
                         "@type": "ListItem",
                         "position": ,
                         "item": {
-                            "@type": "CollectionPage",
-                            "@id": "http://lion.net.pl/drug-dose/server",
-                            "name": "Drug Dose Server"
+                            "@type": "BlogPosting",
+                            "@id": "http://lion.net.pl/2018/03/10/json-ld-dla-generatorow-statycznych-stron.html",
+                            "name": "JSON-LD dla generatorów statycznych stron"
                         }
                     },                ]
-            },        "url": "http://lion.net.pl/drug-dose/server"
+            },        "url": "http://lion.net.pl/2018/03/10/json-ld-dla-generatorow-statycznych-stron.html"
     }
 </script>
 
@@ -104,7 +104,7 @@
 
         <section id="headline">
             <header>
-                <h1>Drug Dose Server</h1>
+                <h1>JSON-LD dla generatorów statycznych stron</h1>
             </header>
         </section>
 
@@ -113,31 +113,22 @@
             <div>
 <article class="blog_module module">
 
-    <p><a href="https://github.com/maciejlew/drug-dose-server">DDS</a> to aplikacja serwerowa pozwająca na dostarczenie przy pomocy webserwisów danych o lekach DDF lub innych
-aplikacji.</p>
+    <p>Przeniosłem stronę LionNet z <a href="https://jekyllrb.com/">Jekyll'a</a> do <a href="https://sculpin.io/">Sculpin'a</a>. Przy okazji 
+postanowiłem opublikować w odrębnych repozytoriach gotowe skrypty generujące 
+JSON-LD dla witryny, strony oraz recenzji.</p>
 
-<p>Więcej o aplikacji możesz dowiedzieć się czytając artykuły powstałe podczas prac nad nią:</p>
-
-<ul>
-<li><a href="/drug-dose/server/">Drug Dose Server</a>
+<p>Skrypty wraz z instrukcją instalacji znajdziesz na GitHub'ie pod adresami:</p>
 
 <ul>
-<li><a href="../2017/04/15/silnik-zarzadzania-konfiguracja-aplikacji-w-c++.html">Silnik zarządzania konfiguracją aplikacji w C++</a></li>
-<li><a href="../2017/04/14/pistache-i-rapidjson-pliki-statyczne.html">Pistache i RapidJSON - pliki statyczne</a></li>
-<li><a href="../2017/04/09/pistache-i-rapidjson-typ-odpowiedzi-w-naglowku.html">Pistache i RapidJSON - typ odpowiedzi w nagłówku</a></li>
-<li><a href="../2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html">Pistache i RapidJSON - przekazywanie zmiennych w URL</a></li>
-<li><a href="../2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html">Pistache i RapidJSON - czytanie danych z pliku</a></li>
-<li><a href="../2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html">Pistache i RapidJSON - prosty obiekt w odpowiedzi</a></li>
-<li><a href="../2017/03/25/front-controller-w-pistache.html">Front Controller w Pistache</a></li>
-<li><a href="../2017/03/20/analiza-wymagan-dla-serwera-dawek-lekow.html">Analiza wymagań dla serwera dawek leków</a></li>
-<li><a href="../2017/03/15/jak-wlaczyc-tryb-debug-w-cmake.html">Jak włączyć tryb debug w cmake?</a></li>
-<li><a href="../2017/03/14/pistacja.html">Pistacja</a></li>
-<li><a href="../2017/03/01/powtorka-z-rozrywki.html">Powtórka z rozrywki</a></li>
-</ul></li>
+<li><a href="https://github.com/maciejlew/jekyll-json-ld">JSON-LD dla Jekyll'a</a></li>
+<li><a href="https://github.com/maciejlew/sculpin-json-ld">JSON-LD dla Sculpin'a</a></li>
 </ul>
+
+<p>Skrypty publikuję na licencji MIT - możesz je śmiało wykorzystać na swoim blogu.</p>
 
 
 </article>
+
 
 </div>
 

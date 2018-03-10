@@ -9,6 +9,116 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>SpreadIT 2015 - relacja</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>OOP, QA, SpreadIT, MEETING</category>
+                                    <content:encoded>&lt;p&gt;Miałem przyjemność wziąć udział na konferencji SpreadIT jako jeden z jej 600 
+uczestników. Postanowiłem napisać krótką relację - notkę z tego wydarzenia podsumowującą
+tegoroczną edycję tej popularnej konferencji na którą tłumnie przybywają osoby
+związane z IT z całego Śląska.&lt;/p&gt;
+
+&lt;p&gt;SpreadIT 2015 było trzecią odsłoną tego wydarzenia i jak się okazało cieszy się
+ono z roku na rok coraz większym zainteresowaniem. Podczas przemowy otwieracjącej
+konferencję dowiedzieliśmy się że jest nas około 600 zapisanych uczestników oraz
+że tradycyjnie nie dla wszystkich starczy koszulek - mnie w tym roku akurat się
+udało jedną dostać ;). Ogłoszone zostało także, że ustandaryzowano wymowę
+nazwy konferencji: spread[aj][ti] ;).&lt;/p&gt;
+
+&lt;p&gt;Konferencja podzielona została na trzy bloki tematyczne: inżynieria
+oprogramowania, tematyki miękkie oraz tworzenie gier komputerowych. Można było 
+wysłuchać do pięciu wykładów lub wziąć udział w warsztatach. Spośród tej bogatej 
+oferty wybrałem cztery wykłady o które postaram się Wam zrecenzować.&lt;/p&gt;
+
+&lt;h3 id=&quot;migracja-z-architektury-%E2%80%9Espaghetti%E2%80%9D-do-soa.-case-study&quot;&gt;Migracja z architektury „spaghetti” do SOA. Case study&lt;/h3&gt;
+
+&lt;p&gt;Prezentacja ta przeprowadzona została przez Grzegorza Mazura. Przedstawił on nam
+założenia, proces realizacji i końcowy produkt prowadzonej przez jego zespół
+migracji dość skomplikowanego systemu dostarczania muzyki i innej treści 
+multimedialnej na żądania do systemu również nico skomplikowanego ale o 
+ustandaryzowanym interfejsie opartym o szynę danych. Dla osób niezwiązanych z
+programowaniem na szynie prezentacja ta była na pewno pomocna bo pozwalała 
+zrozumieć po co w ogóle się to robi, jakie są tego zalety oraz że w przypadku
+rozbudowanych, drogich w utrzymaniu systemów wprowadzenia SOA może się zwrócić.
+Na pewno interesującym było przedstawienie SOA w oparciu o gotowy projekt, łatwy
+do zrozumienia dla każdego model biznesowy w którego realizacji SOA może być
+wybawieniem.&lt;/p&gt;
+
+&lt;h3 id=&quot;jaka-pi%C4%99kna-katastrofa-w-doskona%C5%82ym-%C5%9Bwiecie%2C-rzecz-o-architekturze-skazanej-na-kl%C4%99sk%C4%99&quot;&gt;Jaka piękna katastrofa w doskonałym świecie, rzecz o architekturze skazanej na klęskę&lt;/h3&gt;
+
+&lt;p&gt;Moim zdaniem wykład wygłoszony przez Jarosława Pałkę był najlepszym ze wszystkich
+w których miałem okazję uczestniczyć podczas SpreadIT 2015. Poprowadzony został
+&quot;z jajem&quot;, w sposób bardzo przejrzysty i trafiający do każdego developera. 
+Dowidzieliśmy się, co w większości pewnie już wiedzieliśmy lub przeczuwaliśmy,
+jak ważne są takie pojęcia i kryjące się pod nimi techniki jak &quot;fail fast&quot;, 
+&quot;circuit braker&quot;, &quot;supervisor&quot;. Powiedziane zostało, że to że systemy upadają nie jest czymś niesamowitym,
+zdążającym się tylko najgorszym oraz że ważne jest za to dobre przygotowanie się do 
+tego co i tak jest nieuchronne aby móc spokojnie pójść spać po wpuszczeniu systemu
+na produkcję.&lt;/p&gt;
+
+&lt;h3 id=&quot;genealogia-ddd&quot;&gt;Genealogia DDD&lt;/h3&gt;
+
+&lt;p&gt;Trzeci z kolei wykład z inżynierii oprogramowania. Przygotowany przez Szymona Homę.
+Dowiedzieliśmy się o rodowodzie DDD. Przedstawione zostały analogie pomiędzy DDD
+a wcześniejszymi podejściami do tematyki modelowania systemów jak np. RDD. Podczas
+tej prezentacji na przykładzie pulek w magazynie pokazane było jak modelować 
+zależności w DDD, jak w kodzie używać języka domeny (Ubiquitous Language) oraz jak
+refaktoryzować kod do DDD.&lt;/p&gt;
+
+&lt;p&gt;Podczas tej prezentacji zauważyłem odnośniki do kilku nieznanych mi wcześniej źródeł.
+Ich pobieżne przejrzenie pozawala mi już w tej chwili polecić ich eksploracje
+osobom zainteresowanym DDD oraz ogólnie inżynierii oprogramowania:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://c2.com/&quot;&gt;Cunningham &amp;amp; Cunningham&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://c2.com/cgi/wiki?RoadMaps&quot;&gt;Road Maps&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://c2.com/cgi/wiki?ExtremeProgrammingRoadmap&quot;&gt;Extreme Programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://c2.com/cgi/wiki?DesignPatternsRoadMap&quot;&gt;Design Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://domainlanguage.com/ddd&quot;&gt;Domain Language - strona o DDD&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://domainlanguage.com/ddd/reference/&quot;&gt;Dokument opisujący DDD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://domainlanguage.com/ddd/legacy/&quot;&gt;Dokument opisujący proces migracji do DDD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;http-wykorzystany-w-stu-procentach%2C-czyli-klucz-do-tworzenia-wydajnych-serwis%C3%B3w-internetowych&quot;&gt;HTTP wykorzystany w stu procentach, czyli klucz do tworzenia wydajnych serwisów internetowych&lt;/h3&gt;
+
+&lt;p&gt;Ostatni wykład na którym byłem także okazał się być trafnym wyborem. Tomasz Kajtoch
+zaprezentował kilka rzadziej wykorzystywanych mechanizmów protokołu HTTP. W pierwszej
+części przedstawione zostały rożne potencjalnie przydatne, ale nie wykorzystywane 
+przez początkujących, typy żądań oraz odpowiedzi HTTP. W dzisiejszych czasach 
+gdy wszyscy chcą mieć API stare, choć zapomniane, mechanizmy HTTP wracają do łask.
+W drugiej części wykładu dowiedzieliśmy się więcej o mechanizmie cache w HTTP.
+Bardzo ciekawe i dające do myślenia były teorie o wykorzystaniu ETag i microcache.
+Na sam koniec przedstawione zostały założenia nadchodzącego HTTP/2.0. Myślę że
+ta prezentacja najbardziej wpłynie na moją pracę w najbliższym czasie bo tak samo 
+jak jej autor lubię optymalizować różne rzeczy gdzie się tylko da ;).&lt;/p&gt;
+
+&lt;p&gt;Całą konferencję oceniam jako bardzo udana i fajnie przygotowaną. Organizatorzy 
+spisali się, jak zresztą co roku, na piątkę. Do zobaczenia już za rok na kolejnej
+edycji SpreadIT!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Zobacz także:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;{{site.url}}/2017/11/19/spreadit-2017-relacja.html&quot;&gt;SpreadIT 2017 - relacja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;{{site.url}}/2016/11/20/spreadit-2016-relacja.html&quot;&gt;SpreadIT 2016 - relacja&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+            <pubDate>2015-11-22T11:50:00+01:00</pubDate>
+            <link>http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html</link>
+            <atom:link href="http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2015/11/22/spreadit-2015-relacja.html</guid>
+        </item>
+                <item>
             <title>SpreadIT 2015</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>OOP, QA, SpreadIT, MEETING</category>
@@ -392,38 +502,6 @@ akcji w specjalizowany dla danego modelu urządzenia sposób.&lt;/p&gt;
             <link>http://lion.net.pl/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html</link>
             <atom:link href="http://lion.net.pl/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html</guid>
-        </item>
-                <item>
-            <title>LMS - co dalej?</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>LMS</category>
-                                    <content:encoded>&lt;p&gt;W ciągu kliku ostatnich tygodni na grupie dyskusyjnej LMS mogliśmy obserwować 
-wzmożoną aktywność, związaną głównie z wyznaczaniem kierunku w jakim powinien
-zmierzać projekt LMS. Było &lt;a href=&quot;http://lists.lms.org.pl/pipermail/lms/2015-January/028183.html&quot;&gt;porównywanie LMS GIT vs. LMS INET&lt;/a&gt;, 
-&lt;a href=&quot;http://lists.lms.org.pl/pipermail/lms/2015-January/028221.html&quot;&gt;zapowiedzi nowego LMS+&lt;/a&gt;, 
-kłótnie, udowadnianie kto tu jest lepszym programistą, czyja wizja rozwoju 
-jest bardziej światła itd.&lt;/p&gt;
-
-&lt;p&gt;Przeczytałem wszystkie te wątki, nawet w kilku miejscach sie wypowiedziałem. 
-Niestety, w tym chaosie trudno wywnioskować czego tak naprawdę potrzebują użytkownicy 
-LMS. Postanowiłem więc wydzielić kilka najpilniejszych tematów do nowych wątków,
-w których zainteresowani mogą się wypowiedzieć:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://lists.lms.org.pl/pipermail/lms/2015-January/028281.html&quot;&gt;Syslog w LMS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lists.lms.org.pl/pipermail/lms/2015-January/028282.html&quot;&gt;IPv6 w LMS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lists.lms.org.pl/pipermail/lms/2015-January/028283.html&quot;&gt;Jambox w LMS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lists.lms.org.pl/pipermail/lms/2015-January/028284.html&quot;&gt;Hiperus w LMS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Jeśli jesteś zainteresowany i masz jakieś uwagi to &lt;a href=&quot;http://lists.lms.org.pl/mailman/listinfo/lms&quot;&gt;zapraszam na listę użytkowników
-LMS&lt;/a&gt; - to w jakim kierunku pójdzie 
-projekt może zależeć także od Ciebie!&lt;/p&gt;
-</content:encoded>
-            <pubDate>2015-02-07T19:00:00+01:00</pubDate>
-            <link>http://lion.net.pl/2015/02/07/lms-co-dalej.html</link>
-            <atom:link href="http://lion.net.pl/2015/02/07/lms-co-dalej.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2015/02/07/lms-co-dalej.html</guid>
         </item>
             </channel>
 </rss>
