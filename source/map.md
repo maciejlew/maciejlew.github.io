@@ -90,6 +90,7 @@ use:
      * [Dam się poznać](/2016/03/01/dam-sie-poznac.html)
      * [Jak skonfigurować środowisko programistyczne z Apache Cordova, Android SKD i NodeJS na Debianie 8 i386 i nie zwariować](/2016/02/29/jak-skonfigurowac-srodowisko-programistyczne-z-apache-cordova-android-sdk-i-nodejs-na-debianie-8-i386-i-nie-zwariowac.html)
  * [Blog informatyczny](/blog/)
+   * [Słowniczek VoIP](/2018/02/03/slowniczek-voip.html)
    * [SpreadIT 2017 - relacja](/2017/11/19/spreadit-2017-relacja.html)
    * [Jak instalować Debiana i przy okazji nie oszaleć](/2017/10/23/jak-instalowac-debiana-i-przy-okazji-nie-oszalec.html)
    * [SpreadIT 2016 - relacja](/2016/11/20/spreadit-2016-relacja.html)
