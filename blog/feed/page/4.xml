@@ -9,6 +9,68 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Ikony i splash screen aplikacji w Ionic Framework</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>JS</category>
+                        <category>DDF</category>
+                        <category>DSP2016</category>
+                                    <content:encoded>&lt;p&gt;Przygotowanie ikony aplikacji i jej &quot;splash screena&quot; w Ionic Framework jest bardzo 
+proste. W tym wpisie dowiesz się jak zrobić to w mgnieniu oka i to na wszystkie
+najbardziej popularne urządzenia za jednym zamachem!&lt;/p&gt;
+
+&lt;h3 id=&quot;tworzenie-ikony&quot;&gt;Tworzenie ikony&lt;/h3&gt;
+
+&lt;p&gt;Utworzenie ikony dla aplikacji rozwijanej w Ionic polega na dwóch prostych krokach.
+Po pierwsze należy przygotować wyjściowy obrazek. Powinien on mieć rozmiary 512x512
+pikseli. Należy go umieścić w katalogu projektu w podkatalogu &lt;em&gt;resources&lt;/em&gt;. Nazwą
+obrazka ikony powinno być &lt;em&gt;icon&lt;/em&gt;, obsługiwane rozszerzenia to &lt;em&gt;.psd&lt;/em&gt;, &lt;em&gt;.png&lt;/em&gt; i 
+&lt;em&gt;.ai&lt;/em&gt;. Kolejnym krokiem jest wydanie polecenia:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ionic resources --icon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ionic Framework wygeneruje w tym momencie zestaw ikon dla wszystkich skonfigurowanych
+środowisk uruchomieniowych (android, ios, itd.) i dla wszystkich najpopularniejszych
+rozmiarów urządzeń.&lt;/p&gt;
+
+&lt;h3 id=&quot;tworzenie-splash-screen&quot;&gt;Tworzenie splash screen&lt;/h3&gt;
+
+&lt;p&gt;Tworzenie obrazu powitalnego aplikacji nie odbiega bardzo od tworzenia ikony.
+Należy jednak dobrze przygotować wyjściowy obrazek. Powinien on mieć 2208x2208
+pikseli, z czego najważniejsze jego elementy powinny się zmieścić w kwadracie
+o rozmiarze 1200x1200 pikseli. Pozostałe części obrazka mogą zostać przycięte 
+podczas generowania splash screena na poszczególne rozdzielczości urządzeń.
+Niestety jest to dość nieprzewidywalne i jedynym wyjściem jest próbowanie do skutku
+aż uzyskamy zadowalający rezultat dla większości rozdzielczości. Poleceniem
+które uruchamia generowanie splash screenów jest:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ionic resources --splash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;optymalizacja&quot;&gt;Optymalizacja&lt;/h3&gt;
+
+&lt;p&gt;Zarówno wynikowe ikony jak i obrazy powitalne aplikacji nie są zoptymalizowane.
+Przepuszczając je przez narzędzie optipng można zyskać kilkanaście procent na wadze
+obrazków, co może się przełożyć nawet na kilkadziesiąt kilobajtów mniej w 
+rozmiarze całej aplikacji.&lt;/p&gt;
+
+&lt;h3 id=&quot;testowanie-ikony-i-splash-screena&quot;&gt;Testowanie ikony i splash screena&lt;/h3&gt;
+
+&lt;p&gt;Aby przetestować działanie ikon i splash screena należy wgrać aplikację na urządzenie
+poleceniem:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ionic run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jeśli aplikacja była już wcześniej testowana na urządzeniu pomocne może okazać
+się wyczyszczenie cache aplikacji na urządzeniu.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-05-26T19:40:00+02:00</pubDate>
+            <link>http://lion.net.pl/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html</link>
+            <atom:link href="http://lion.net.pl/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html</guid>
+        </item>
+                <item>
             <title>Nie używaj String|Numer|Boolean jako konstruktorów w JavaScript!</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>QA</category>
@@ -854,233 +916,6 @@ wymaganie uznano za spełnione.&lt;/p&gt;
             <link>http://lion.net.pl/2016/04/29/podroz-na-wschod-roadmap-z-moscow.html</link>
             <atom:link href="http://lion.net.pl/2016/04/29/podroz-na-wschod-roadmap-z-moscow.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/04/29/podroz-na-wschod-roadmap-z-moscow.html</guid>
-        </item>
-                <item>
-            <title>I18N z angular-gettext</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2016</category>
-                        <category>JS</category>
-                        <category>DDF</category>
-                                    <content:encoded>&lt;p&gt;I18N aplikacji może być niemałym problemem jeśli się o niej nie pomyśli zawczasu.
-W tym wpisie dowiesz się jak można przeprowadzić łatwo i przyjemnie &lt;strong&gt;proces 
-internacjonalizacji w AngularJS&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Internacjonalizacja to takie przygotowanie aplikacji, aby jej późniejsze 
-przystosowanie dla odbiorców posługujących się innym językiem było jak najłatwiejsze
-i jak najbardziej ustandaryzowane w ramach aplikacji. Dzięki I18N możemy otworzyć 
-naszą aplikację na użytkowników którzy nie posługują się jej natywnym językiem.&lt;/p&gt;
-
-&lt;h3 id=&quot;biblioteka-angular-gettext&quot;&gt;Biblioteka angular-gettext&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://angular-gettext.rocketeer.be/&quot;&gt;Biblioteka angular-gettext&lt;/a&gt; 
-pozwala w łatwy sposób przystosować treść szablonów,
-dyrektyw, a nawet komunikatów generowanych w kontrolerach frameworka AngularJS do
-pracy w wielojęzycznym środowisku.&lt;/p&gt;
-
-&lt;h4 id=&quot;instalacja-biblioteki&quot;&gt;Instalacja biblioteki&lt;/h4&gt;
-
-&lt;p&gt;Instalacja biblioteki w projekcie polega na wydaniu kilku poleceń:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;bower install --save angular-gettext
-npm install grunt-angular-gettext --save-dev
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Po ich wydaniu mamy bibliotekę dołączoną do zależności naszego projektu. Należy 
-jeszcze ją odpowiednio skonfigurować.&lt;/p&gt;
-
-&lt;h4 id=&quot;konfiguracja-biblioteki-i-narz%C4%99dzi-pomocniczych&quot;&gt;Konfiguracja biblioteki i narzędzi pomocniczych&lt;/h4&gt;
-
-&lt;p&gt;Aby dodać przygotowane przez autora biblioteki pomocnicze narzędzia do grunta 
-należy, w pliku &lt;em&gt;Gruntfile.js&lt;/em&gt;, wprowadzić następujące zmiany:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;grunt.loadNpmTasks(&#039;grunt-angular-gettext&#039;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Powyższe polecenie zaimportuje nam zestaw wbudowanych w angular-gettext narzędzi,
-które także należy skonfigurować:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nggettext_extract: {
-  pot: {
-    options: {
-      attributes: [&#039;placeholder&#039;]
-    },
-    files: {
-      &#039;app/locale/en_UK/LC_MESSAGES/ddf.pot&#039;: [&#039;app/partials/*.html&#039;]
-    }
-  },
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Narzędzie &lt;strong&gt;nggettext_compile służy do wyszukiwania w kodzie aplikacji tekstów
-do przetłumaczenia&lt;/strong&gt;. W powyższej konfiguracji dodajemy dodatkowy atrybut HTML,
-którego wartość ma być również brana pod uwagę podczas analizowania kodu (o tym 
-jak oznaczać teksty do tłumaczenia a także o własnych dyrektywach przeczytasz
-poniżej). Wskazujemy także lokalizację pliku POT, czyli szablonu dla wszystkich 
-tłumaczeń oraz lokalizację, która ma zostać przeszukana pod kątem tekstów oznaczonych
-jako do przetłumaczenia.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nggettext_compile: {
-  all: {
-    files: {
-      &#039;app/scripts/translations.js&#039;: [&#039;app/locale/**/*.po&#039;]
-    }
-  },
-},
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Narzędzie &lt;strong&gt;nggettext_extract służy do kompilacji przygotowanych plików PO z 
-tłumaczeniami do kodu JS&lt;/strong&gt;. Wskazujemy tu ścieżkę w której ma zostać utworzony 
-skompilowany plik oraz ścieżkę w której znajdują się pliki z gotowymi tłumaczeniami.&lt;/p&gt;
-
-&lt;p&gt;Ponad to, należy w pliku index.html załadować bibliotekę oraz plik z tłumaczeniami,
-najlepiej przed kodem samej aplikacji:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;bower_components/angular-gettext/dist/angular-gettext.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script src=&quot;scripts/translations.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Kolejnym krokiem jest wstrzyknięcie modułu do naszej aplikacji, np:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var dependencies = [&#039;gettext&#039;, &#039;ionic&#039;, &#039;ui.router&#039;, &#039;DrugDoseFrameworkControllers&#039;];
-var app = angular.module(&#039;DrugDoseFrameworkApp&#039;, dependencies);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Możemy także uzależnić język aplikacji od ustawień przeglądarki klienta:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;app.run(function ($ionicPlatform, gettextCatalog) {
-    switch (window.navigator.language.substr(0, 2)) {
-        case &#039;pl&#039;:
-            gettextCatalog.setCurrentLanguage(&#039;pl_PL&#039;);
-            break;
-        case &#039;de&#039;:
-            gettextCatalog.setCurrentLanguage(&#039;de_DE&#039;);
-            break;
-    }
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;lub podpiąć metodę &lt;em&gt;setCurrentLanguage&lt;/em&gt; pod jakiś element interfejsu umożliwiając
-tym samym zmianę języka samemu użytkownikowi, wedle jego upodobań.&lt;/p&gt;
-
-&lt;h4 id=&quot;przygotowanie-tekst%C3%B3w&quot;&gt;Przygotowanie tekstów&lt;/h4&gt;
-
-&lt;p&gt;Biblioteka angular-gettext definiuje kilka sposobów w jaki możemy przygotować
-teksty do tłumaczeń tak, aby mogły zostać przez nie odnalezione. Pierwszym z nich 
-jest &lt;strong&gt;otoczenie tekstu znacznikiem \&amp;lt;translate&amp;#62;&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;translate&amp;gt;sentence to translate&amp;lt;/translate&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Jeśli nasz tekst znajduje się już w innym znaczniku nie musimy wprowadzać kolejnego,
-&lt;strong&gt;możemy użyć atrybutu translate&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;span translate&amp;gt;sentence to translate&amp;lt;/span&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Innym pomysłem może być &lt;strong&gt;użycie filtru translate&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{ &quot;{{ &#039;sentence to translate&#039; | translate &quot; }}}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Możemy także przygotować własną dyrektywę wspierającą tłumaczenia:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;app.directive(&#039;placeholder&#039;, [&#039;gettextCatalog&#039;, function (gettextCatalog) {
-    return {
-        restrict: &#039;A&#039;,
-        link: function (scope, element, attrs) {
-            element.attr(&#039;placeholder&#039;, gettextCatalog.getString(attrs.placeholder));
-        }
-    };
-}]);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Jeśli chcemy przetłumaczyć coś w kontrolerze to należy do tego wykorzystać metodę
-getString, jak pokazałem w powyższym przykładzie.&lt;/p&gt;
-
-&lt;p&gt;Biblioteka angular-gettext wspiera także takie zaawansowane opcje jak: komentarze 
-do tłumaczeń, kontekst tłumaczeń (rzeczownik, czasownik, itp.), tłumaczenia w 
-liczbie mnogiej, interpolację zmiennych w tłumaczone teksty, lazy-loading tłumaczeń.
-O tym wszystkim możesz poczytać w 
-&lt;a href=&quot;https://angular-gettext.rocketeer.be/dev-guide/&quot;&gt;bardzo dobrej dokumentacji biblioteki&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;t%C5%82umaczenie-tekst%C3%B3w&quot;&gt;Tłumaczenie tekstów&lt;/h4&gt;
-
-&lt;p&gt;Gdy mamy już oznaczony tekst który chcemy przetłumaczyć, nadchodzi pora aby się 
-za to zabrać. Na szczęście nie musimy go teraz szukać ponownie i przepisywać do
-plików z tłumaczeniami. Należy wykonać komendę &lt;strong&gt;grunt nggettext_extract&lt;/strong&gt;. W
-lokalizacji wskazanej w konfiguracji tego narzędzia znajdziemy plik POT, a w nim 
-wszystkie znalezione teksty, wraz z ich lokalizacją w projekcie. W kolejnym kroku 
-należy skopiować szablon, zmieniając mu rozszerzenie na PO, do lokalizacji tłumaczeń
-które chcemy obsługiwać (nazwa pliku może być dowolna), np:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;app
-
-&lt;ul&gt;
-&lt;li&gt;locale
-
-&lt;ul&gt;
-&lt;li&gt;en_UK&lt;/li&gt;
-&lt;li&gt;LC_MESSAGES
-
-&lt;ul&gt;
-&lt;li&gt;ddf.pot&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;pl_PL&lt;/li&gt;
-&lt;li&gt;LC_MESSAGES
-
-&lt;ul&gt;
-&lt;li&gt;ddf.po&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;de_DE&lt;/li&gt;
-&lt;li&gt;LC_MESSAGES
-
-&lt;ul&gt;
-&lt;li&gt;ddf.po&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Do pliku &lt;em&gt;ddf.po&lt;/em&gt; z polskimi tłumaczeniami należy skopiować zawartość szablonu POT.
-Oprócz samego tłumaczenia możemy także uzupełnić nagłówki tego pliku, zgodnie z
-&lt;a href=&quot;https://www.gnu.org/software/gettext/manual/html_node/Header-Entry.html&quot;&gt;dokumentacją formatu PO&lt;/a&gt;.
-Nie jest to wymagane, ale może pomóc przyszłym tłumaczom naszej aplikacji.&lt;/p&gt;
-
-&lt;p&gt;Gdy mamy już wszystko przetłumaczone należy skompilować to do pliku JS. Pomoże nam
-w tym polecenie &lt;strong&gt;grunt nggettext_compile&lt;/strong&gt;. Po jego wykonaniu w pliku &lt;em&gt;translations.js&lt;/em&gt;
-powinno znaleźć się coś podobnego do :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;angular.module(&#039;gettext&#039;).run([&#039;gettextCatalog&#039;, function (gettextCatalog) {
-/* jshint -W100 */
-    gettextCatalog.setStrings(&#039;de_DE&#039;, {
-        &quot;Type drug name&quot;:&quot;Schreiben Sie die Medikamentennamen&quot;,
-        &quot;calculate&quot;:&quot;berechnen&quot;
-    });
-    gettextCatalog.setStrings(&#039;pl_PL&#039;, {
-        &quot;Type drug name&quot;:&quot;Wpisz nazwę leku&quot;,
-        &quot;calculate&quot;:&quot;oblicz&quot;
-    });
-/* jshint +W100 */
-}]);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(linie zostały celowo zwinięte dla lepszej czytelności, normalnie wszystko jest 
-zminimalizowane).&lt;/p&gt;
-
-&lt;p&gt;Od teraz tłumaczenia są dostępne dla aplikacji. Jeśli zmiana języka aplikacji 
-oparta jest o &lt;strong&gt;window.navigator.language&lt;/strong&gt; to możemy wszystko łatwo przetestować
-zmieniając ustawienia języka w opcjach przeglądarki.&lt;/p&gt;
-
-&lt;p&gt;Opisana tu procedura została przeze mnie wdrożona w mojej konkursowej aplikacji 
-DDF. Jak to zrobiłem możesz 
-&lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework/commit/030e2680373f6f51471b34e085b1c687303a49f6&quot;&gt;zobaczyć na GitHubie&lt;/a&gt;. 
-W razie problemów napisz komentarz - postaram się pomóc.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-04-26T22:10:00+02:00</pubDate>
-            <link>http://lion.net.pl/2016/04/26/i18n-z-angularjs-gettext.html</link>
-            <atom:link href="http://lion.net.pl/2016/04/26/i18n-z-angularjs-gettext.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/04/26/i18n-z-angularjs-gettext.html</guid>
         </item>
             </channel>
 </rss>

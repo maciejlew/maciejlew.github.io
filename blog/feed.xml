@@ -9,6 +9,124 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Quality Excites 2016</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>QA</category>
+                                    <content:encoded>&lt;p&gt;Zachęcam do zapoznania się moją relacją z siódmej już edycji konferencji Quality Excites.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-thrive-as-a-software-tester&quot;&gt;How to thrive as a Software Tester&lt;/h2&gt;
+
+&lt;p&gt;Wykład otwierający konferencję poprowadził Rob Lambert. W 10 punktach pokazał co robić aby cały czas rozwijać się jako
+tester. Robert mówił o tym że nasz czas jest tu i teraz, że to sami musimy wywołać w sobie proces &quot;rozkwitania&quot;, że z 
+głową należy sprzedawać swoją wolność i ostrożnie wybierać pracę, aby nie stracić zdrowego kompromisu życie-praca.&lt;/p&gt;
+
+&lt;p&gt;Poruszona została także kwestia prawdziwego celu pracy testera. To dzięki testerom klient powinien móc otrzymać zamówiony
+produkt. Jeśli zespół nic nie dostarcza to klient traci.&lt;/p&gt;
+
+&lt;p&gt;Było też coś dla zwolenników testów manualnych nad wszechobecną automatyzacją - należy skupić się na tym w czym członkowie
+zespołu testerskiego są dobrzy - jeśli nie lubią bądź nie potrafią programować, to nie powinny tego robić a zamiast tego 
+skupić się na innych swoich cechach które powodują że są dobrymi testerami. Należy w takich ludziach wzmacniać motywację
+poprzez przypisywanie ich do właściwych dla nich zadań.&lt;/p&gt;
+
+&lt;p&gt;Napotykane podczas testowania błędy to tak na prawdę szanse na dalszy rozwój dla każdego testera. Nie powinny one wzbudzać
+w nich frustracji a raczej spoglądać na nie jak na nowe możliwości. Przy okazji można oczywiście rozwijać swoje pasje i 
+uczyć się rzeczy które interesują testera, nie zawsze na pierwszy rzut oka związanych z jakością oprogramowania.&lt;/p&gt;
+
+&lt;p&gt;Każdy tester powinien także ciągle uczyć się jak zadawać właściwe pytania i robić to. Buduje on w ten sposób swoje relacje
+z zespołem i staje się partnerem, zarówno dla biznesu jak i dla deweloperów.&lt;/p&gt;
+
+&lt;p&gt;Można by powiedzieć że to oklepane frazesy, banialuki i lanie wody. Może i tak, ale Rob potrafił wytłuścić te
+tematy jak nikt inny i swoim występem rozkręcił całą konferencję. Oby każdy z nasz w swojej pracy rozkwitał, a nie 
+kwitnął :)&lt;/p&gt;
+
+&lt;p&gt;Swoją drogą, czy to nie dziwne że w naszym języku zwrot &quot;rozkwitać&quot; kojarzy się pozytywnie, a &quot;kwitnąć&quot; już niekoniecznie?&lt;/p&gt;
+
+&lt;h2 id=&quot;wsp%C3%B3%C5%82czesne-strategie-testowania-dla-rozwijaj%C4%85cych-si%C4%99-ekosystem%C3%B3w&quot;&gt;Współczesne strategie testowania dla rozwijających się ekosystemów&lt;/h2&gt;
+
+&lt;p&gt;Prelekcja Juliana Warszawskiego była przeglądem znanych i usystematyzowanych typów testów. Przypomnieliśmy sobie więc
+czym jest piramida testów, V-model, czym są oraz jakie są zalety i wady testów jednostkowych, integracyjnych. Ciekawostkami
+były opisane testy mutacyjne oraz &quot;property based testing&quot;. Padło kilka słów o statycznej analizie kodu oraz architekturze heksagonalnej (service stubs, in memory services), które wspierają tworzenie testowalnego kodu.&lt;/p&gt;
+
+&lt;p&gt;Niestety, gdy już akcja zaczęła się rozwijać, czas prezentacji minął i trzeba było zwijać manatki. Julian zdążył jedynie wspomnieć o testach funkcjonalnych, eksploracyjnych, smoke oraz a/b testach. A szkoda. Moim zdaniem można było poświęcić mniej czasu na oczywiste oczywistości, jak testy jednostkowe i integracyjne, o których mówi się wszędzie od lat, a skupić się na zagadnieniach rzadko omawianych na konferencjach programistycznych.&lt;/p&gt;
+
+&lt;h2 id=&quot;riders-on-the-storm%3A-api-gateways-not-only-for-developers&quot;&gt;Riders On The Storm: API Gateways not only for developers&lt;/h2&gt;
+
+&lt;p&gt;Ciekawy wykład przygotował Tomasz Skowroński. Oprawa prezentacji nawiązywała do przygód Geralta z Rivii, chcącego zapanować nad API.
+Nawiązano do takich pojęć jak wzorce fasady, anti-corruption layer, filter-map-reduce, zagadnień przekrojowych, forward proxy, reverse proxy w kontekście API gateway.&lt;/p&gt;
+
+&lt;p&gt;Przedstawione zostały narzędzia związane z budową API gateway, czyli Kony, Tyk i KrakenD. Mowa była także o traffic controll, load balancerach, circuit breakerach, service discovery, blue-green deploymencie, canary releases, backend for frontend (BFF) i testach a/b - w tych wszystkich zagadnieniach może nam pomóc API gateway.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-batch-and-streaming-spark-applications&quot;&gt;Testing batch and streaming Spark applications&lt;/h2&gt;
+
+&lt;p&gt;Czwarta z kolei prezentacja dotyczyła testowania Apache Sparka. Dobrze się stało że Łukasz Gawron zrobił na wstępie szybką ankietę
+- &quot;kto zna i używa Apache Spark?&quot; - bo wyszło z niej że nie jestem na sali jedynym który nic nie wie na ten temat i że 90% osób przyszło na ten wykład z ciekawości. Wstęp do wykładu był dobry, dowiedzieliśmy że Apache Spark służy do obliczeń na spartycjonowanych na różnych maszynach zbiorach danych, czym różni się High Velicity Data od Big Data (reakcje w czasie rzeczywistym).&lt;/p&gt;
+
+&lt;p&gt;Niestety, jeśli chodzi o testowanie to prezentacja nie przemówiła do mnie. Przykłady w Scali, opisywały abstrakcyjne dla laików takich jak 90% słuchaczy, problemy. Spodziewałem się bardziej przykładów problemów &quot;z życia wziętych&quot; i ich rozwiązań, a pokazano problemy
+z testowalnością kodu, refaktoryzacją i tworzeniem dubli dla testów - czyli coś co dotyka każdego kodu, nie tylko tego związanego z
+Apache Spark.&lt;/p&gt;
+
+&lt;h2 id=&quot;testy%2C-kt%C3%B3re-tworz%C4%85-si%C4%99-same-prawie&quot;&gt;Testy, które tworzą się same (prawie)&lt;/h2&gt;
+
+&lt;p&gt;Celem tego wykłady było przedstawienie idei modelowania testów i generowania ich kodu z modelu (model based testing). 
+Arnika Horeszko przedstawiła nam tę ideę oraz działanie programu Mista. Zbudowany przy jego pomocy model eksportowany był do kodu Selenium. Idea zacna, o ile ktoś jeszcze testuje aplikacje webowe przy pomocy Selenium lub innego niszowego ale wspieranego przez Mistę narzędzia.&lt;/p&gt;
+
+&lt;h2 id=&quot;universal-design-%E2%80%93-wprowadzenie-do-tematu-dost%C4%99pno%C5%9Bci-w-oparciu-o-wcag&quot;&gt;Universal Design – wprowadzenie do tematu dostępności w oparciu o WCAG&lt;/h2&gt;
+
+&lt;p&gt;Bardzo ciekawy wykład przeprowadziła Joanna Falkowska. Były to co prawda podstawy wiedzy o WCAG, ale myślę że nawet osoby śledzące ten temat mogły dowiedzieć się czegoś nowego. Było więc kilka słów o universal design, przedstawiono statystyki niepełnosprawności, pokazano relację pomiędzy starzejącym się społeczeństwem a rynkiem. Wśród przykładów dominowały kwestie formularzy, tekstów alternatywnych, transkrypcji, podsumowań i ogólnie UX. Prelegentka wspomniała także o narzędziach które tester może wykorzystać sprawdzając dostępność strony: accessibility developer tools, koa11y, a11y, tota11y oraz o normie ISO-40500.&lt;/p&gt;
+
+&lt;h2 id=&quot;zacznij-gdziekolwiek&quot;&gt;Zacznij gdziekolwiek&lt;/h2&gt;
+
+&lt;p&gt;Pełen energii wykład motywujący poprowadził Przemysław Barański z jaktestować.pl. Mówił on o samorealizacji, samokształceniu i
+samodoskonaleniu w pracy testera. Było kilka słów i anegdotek o prowadzeniu bloga, zmianie pracy, IKIGAI i KAIZEN. Po tym wykładzie
+wyszedłem umotywowany żeby dalej próbować walczyć o bycie jeszcze lepszym specjalistą ;)&lt;/p&gt;
+
+&lt;h2 id=&quot;nawet-j%C4%99zyk-programowania-s%C5%82u%C5%BCy-do-komunikowania-si%C4%99%2C-nie-do-kodzenia&quot;&gt;Nawet język programowania służy do komunikowania się, nie do kodzenia&lt;/h2&gt;
+
+&lt;p&gt;Myślę że wykład Damiana Legutko miał wskazać jak ważną rolę pełni tester w projekcie. Wpisywał się on w zauważony przeze mnie 
+trend tej konferencji, czyli &quot;automatyzacja to nie wszystko&quot;. Jedno dobrze postawione przez testera pytanie może mieć kluczowy
+wpływ na sukces projektu. Damian przedstawił nam wypracowany przez siebie model zadawania pytań, który można spróbować zastosować
+w codziennej pracy.&lt;/p&gt;
+
+&lt;h2 id=&quot;testy-wydajno%C5%9Bciowe-w-%C5%9Bwiecie-mikroserwis%C3%B3w&quot;&gt;Testy wydajnościowe w świecie mikroserwisów&lt;/h2&gt;
+
+&lt;p&gt;Bardzo dobrze ze swoja prezentacją poradził sobie Tomasz Dubikowski. Po tej prezentacji, rzeczy wartych dalszego przemyślenia dodam sobie load testy, stress testy, peak testy, endurance testy. Słuchaliśmy także o tym jaki organizacja ma wpływ kod (prawo Conwaya). Tomasz przedstawił także w akcji oprogramowanie gatling.io.&lt;/p&gt;
+
+&lt;h2 id=&quot;web-application-security-test-automation&quot;&gt;Web Application Security Test Automation&lt;/h2&gt;
+
+&lt;p&gt;Wykład Marka Puchalskiego był wprowadzeniem w tematy poruszane przez OWASP oraz propozycją aby spróbować w swoim projekcie pokryć
+testami problemy związane z bezpieczeństwem. Mowa była o miejscu testów bezpieczeństwa w projektach prowadzonych w metodologiach Agile oraz Waterfall. O pojawiającej się na horyzoncie nowej specjalizacji, czyli o DebSecOps. Prelegent pokazał proste testy sprawdzające czy strona WWW implementuje pewne mechanizmy zwiększające bezpieczeństwo (OWASP 11.8, 5.5, 10.16). Cały wykład oceniam dobrze, jedyną rzeczą jaka mi się nie podobała to sugestia by testować bezpieczeństwo produkcyjnych aplikacji przy pomocy narzędzi online - po co cały świat ma wiedzieć że coś u nas nie działa?!&lt;/p&gt;
+
+&lt;h2 id=&quot;automating-assurance%3A-tools%2C-collaboration-and-devops&quot;&gt;Automating Assurance: Tools, Collaboration and DevOps&lt;/h2&gt;
+
+&lt;p&gt;Wykładem zamykającym tegoroczne Quality Excites był wykład Paula Gerrarda z gerrardconsulting.com. Była to kolejna tego dnia mowa
+motywująca do dalszego rozwoju. Paul tłumaczył dlaczego jego zdaniem zawód testera nadal ma przed sobą przyszłość. Mówił o erze
+postępującej cyfryzacji, w której coraz więcej i więcej usług wymaga rozbudowanych systemów. W ich testowaniu niezbędni są i będą
+testerze. Nie da się ich zastąpić, nie wszystko da się zautomatyzować. Słowa digitalizacja padało podczas tej prezentacji nadzwyczaj
+często i nie było to spowodowane tylko aktualną modą i marketingowym szumem. Paul wierzy w cyfrową rewolucję i szanse z nią związane.
+Związane zapewne także coachingiem, w końcu Agile znamy od kilkunastu lat - ile można słuchać wykładów o tym samym ;)&lt;/p&gt;
+
+&lt;p&gt;Digitalizacja to obecnie jeden z najszybciej nabierających rozgłosu buzzword. Kolejnym ciekawymi akronimami przewijającym się przez
+prezentację był SMAC - Social Media Analytics Cloud oraz CXO - Customer Expirience Optimalization. Oba są ściśle powiązane z
+testerską profesją.&lt;/p&gt;
+
+&lt;p&gt;Mowa była także o tym że IT coraz częściej robione jest dla zwykłych ludzi. I żeby było ono przyjemne i użyteczne ktoś musi wiedzieć
+czego oczekują użytkownicy - tu też pole do popisu mają testerzy.&lt;/p&gt;
+
+&lt;p&gt;Poruszony był także problem usystematyzowania procesu testowania, czyli znowu pooglądaliśmy sobie piramidki, kwadranty oraz autorski model Paula definiujący cały proces testowania i dzielący go na części poddające się automatyzacji i te gdzie człowiek gra główną rolę. Było także o roli narzędzi (i że nie zastąpią one myślenia), o modelowaniu testów.&lt;/p&gt;
+
+&lt;p&gt;Tak więc, według Paula, współczesny tester powinien być wizjonerem, adwokatem klienta, analitykiem ryzyka, managerem, racjonalizatorem, trenerem i mentorem. Przy okazji może też sobie od czasu do czasu coś potestować :)&lt;/p&gt;
+
+&lt;h2 id=&quot;podsumowanie&quot;&gt;Podsumowanie&lt;/h2&gt;
+
+&lt;p&gt;Tegoroczny, siódmy już Quality Excites, minął pod hasłami szukania nowej drogi dla testerów. Postępująca digitalizacja powinna
+pozwolić nabrać im wiatru w skrzydła, nie powinni oni także obawiać się szerzącej się automatyzacji testów. Całą konferencję oceniam dobrze i mam nadzieję że w przyszłym roku także utrzyma ona swój poziom.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2018-06-23T13:10:00+02:00</pubDate>
+            <link>http://lion.net.pl/2018/06/23/quality-excites-2018.html</link>
+            <atom:link href="http://lion.net.pl/2018/06/23/quality-excites-2018.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2018/06/23/quality-excites-2018.html</guid>
+        </item>
+                <item>
             <title>JSON-LD dla generatorów statycznych stron</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>BLOG</category>
@@ -479,73 +597,6 @@ kolejne pozycje w sekwencji zaślepek.&lt;/p&gt;
             <link>http://lion.net.pl/2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html</link>
             <atom:link href="http://lion.net.pl/2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2017/04/08/pistache-i-rapidjson-przekazywanie-zmiennych-w-url.html</guid>
-        </item>
-                <item>
-            <title>Pistache i RapidJSON - czytanie danych z pliku</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>DSP2017</category>
-                        <category>C++</category>
-                        <category>DDS</category>
-                                    <content:encoded>&lt;p&gt;&lt;a href=&quot;/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html&quot;&gt;Zapowiadałem&lt;/a&gt;, że pokażę jak wczytać przy pomocy RapidJSON dane z pliku i odesłać
-je do użytkownika webserwisu stworzonego w Pistache. Oto jak to możesz zrobić.&lt;/p&gt;
-
-&lt;h3 id=&quot;strumie%C5%84-z-pliku-json&quot;&gt;Strumień z pliku JSON&lt;/h3&gt;
-
-&lt;p&gt;Po otwarciu pliku, wykorzystując standardowe fopen, możesz w RapidJSON nakazać 
-aby dane z tego pliku były zaczytane przy pomocy obiektu strumienia &lt;em&gt;FileReadStream&lt;/em&gt;.
-Następnie należy przetworzyć te dane używając metody &lt;em&gt;parseStream&lt;/em&gt; obiektu &lt;em&gt;Document&lt;/em&gt;.
-W ten nieskomplikowany sposób możesz w kilku linijkach kody w szybki i wydajny
-sposób uzyskać dostęp do zapisanych w plikach JSON. Możesz sprawdzać ich wartości,
-manipulować nimi, zapisywać ponownie do pliku (tu pomocny może okazać się obiekt
-klasy &lt;em&gt;FileWriteStream&lt;/em&gt;). Poniższy przykład pokazuje jak otwieram plik z konfiguracją
-na podstawie której otwieram docelowy plik z danymi, po czym odsyłam całą jego 
-zawartość do użytkownika webserwisu. Oczywiście dla takiej funkcjonalności parsowanie
-pliku jest trochę przerostem formy nad treścią, ale jest to dobra baza pod to by
-w przyszłości wprowadzić w tej metodzie paginację, wyszukiwanie i inne zaawansowane
-funkcje.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;void DrugsHandler::onRequest(const Net::Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
-
-    Document drugs, config;
-    char _drugs_buffer[65536], _config_buffer[65536], _files_path_buffer[65536];
-    StringBuffer drugs_buffer;
-
-    FILE* config_pointer = fopen(&quot;config.json&quot;, &quot;r&quot;);
-    FileReadStream config_stream(config_pointer, _config_buffer, sizeof(_config_buffer));
-    config.ParseStream(config_stream);
-    fclose(config_pointer);
-
-    if (config.HasMember(&quot;files_path&quot;)) {
-
-        sprintf(_files_path_buffer, &quot;%s/drugs.json&quot;, config[&quot;files_path&quot;].GetString());
-        FILE* drugs_pointer = fopen(_files_path_buffer, &quot;r&quot;);
-
-        if (drugs_pointer) {
-            FileReadStream drugs_stream(drugs_pointer, _drugs_buffer, sizeof(_drugs_buffer));
-            drugs.ParseStream(drugs_stream);
-            fclose(drugs_pointer);
-
-            Writer&amp;lt;StringBuffer&amp;gt; writer(drugs_buffer);
-            drugs.Accept(writer);
-
-            response.send(Http::Code::Ok, drugs_buffer.GetString());
-
-        } else {
-            response.send(Http::Code::Internal_Server_Error);
-        }
-    } else {
-        response.send(Http::Code::Internal_Server_Error);
-    }
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2017-03-30T21:40:00+02:00</pubDate>
-            <link>http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</link>
-            <atom:link href="http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</guid>
         </item>
             </channel>
 </rss>

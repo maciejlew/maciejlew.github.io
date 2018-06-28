@@ -9,6 +9,74 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Testowanie wyjątków w Jasmine</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2016</category>
+                        <category>JS</category>
+                        <category>DDF</category>
+                        <category>OOP</category>
+                        <category>QA</category>
+                                    <content:encoded>&lt;p&gt;Czasami jest tak źle, że aż chce się rzucić mięsem... eee, tzn. wyjątkiem. Dobrze
+by było przetestować także i takie scenariusze, aby nie rzucić nim przypadkiem 
+w twarz całkiem niewinnemu użytkownikowi naszej aplikacji.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jasmine ma wbudowany matcher toThrow&lt;/strong&gt;. Gdy tylko go znajdujemy w API tego 
+frameworka dla testów JS, a mamy doświadczenie z PHPUnit, pierwsze co przychodzi 
+na myśl to wywołanie go w następujący sposób:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;expect().toThrow(TypeError);
+object.method();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;co, jak się pewnie domyślasz, kończy się katastrofą:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Error: Actual is not a Function&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Asercja, w tym przypadku, oczekuje od nas że przekazana zostanie funkcja. &lt;strong&gt;Najlepszym
+rozwiązaniem jest opakowanie metody która ma wyrzucić wyjątek w funkcję anonimową.&lt;/strong&gt;
+Spróbujmy ponownie:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;expect(function(){object.method();}).toThrow(TypeError);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Expected function to throw Function, but it threw TypeError&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jest już lepiej, nasz test się wykonał. Niestety nie jest zielono. Dostajemy 
+podpowiedź, mówiącą że oczekiwaliśmy funkcji, a w rzeczywistości dostaliśmy wyjątek
+typu TypeError, bo załóżmy że ta metoda akurat taki wyjątek powinna nam rzucić.
+Poprawmy w takim razie nasz kod tak, aby oczekiwać tego co w rzeczywistości jest
+nam zwracane:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;expect(function(){object.method();}).toThrow(new TypeError());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Expected function to throw TypeError, but it threw TypeError: Dose value must be numeric!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ha! Okazuje się że &lt;strong&gt;matcher toThow porównuje także komunikaty błędu!&lt;/strong&gt; Tak więc przed 
+nami jeszcze jedna poprawka (Jasmine nie sprawdza pozostałych argumentów możliwych 
+do podania podczas tworzenia obiektów wyjątków, tj.: fileName i lineNumber):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;expect(function(){object.method();}).toThrow(new TypeError(&#039;Dose value must be numeric!&#039;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Teraz możemy podziwiać wynik naszego testu wypisany zielonymi zgłoskami.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Więcej przykładów testowania wyjątków w Jasmine można zobaczyć przeglądając 
+&lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework&quot;&gt;repozytorium projektu DDF&lt;/a&gt;, 
+np. &lt;a href=&quot;https://github.com/maciejlew/drug-dose-framework/blob/master/test/spec/DoseSpec.js&quot;&gt;test modelu dawki leku&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-03-15T19:00:00+01:00</pubDate>
+            <link>http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html</link>
+            <atom:link href="http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/03/15/testowanie-wyjatkow-w-jasmine.html</guid>
+        </item>
+                <item>
             <title>Format opisu leków w DDF</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>DSP2016</category>
@@ -730,28 +798,6 @@ zgłoszone propozycje do listy.&lt;/p&gt;
             <link>http://lion.net.pl/2016/01/24/przeglad-aplikacji-dla-sysadminow.html</link>
             <atom:link href="http://lion.net.pl/2016/01/24/przeglad-aplikacji-dla-sysadminow.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/01/24/przeglad-aplikacji-dla-sysadminow.html</guid>
-        </item>
-                <item>
-            <title>Wezwania do zapłaty - nowe funkcje</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>LMS</category>
-                                    <content:encoded>&lt;p&gt;[Szablon wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
-oraz 
-[szablon przedsądowego wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty), 
-cieszące się sporym zainteresowaniem klientów, zostały wyposażone w nowe funkcje:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;uwzględnianie korekt faktur VAT, opcja oznaczania pozycji na wezwaniu do których 
-były wystawione korekty;&lt;/li&gt;
-&lt;li&gt;opcja wyliczania odsetek ustawowych dla okresów gdy stawki tych odsetek wynosiły
-13% (poprzednia stawka) i 8% (obecna stawka) z uwzględnieniem przesuwania dnia
-rozpoczęcia naliczania odsetek gdy wypada on w dniu ustawowo wolnym od pracy.&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-            <pubDate>2015-12-19T18:45:00+01:00</pubDate>
-            <link>http://lion.net.pl/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html</link>
-            <atom:link href="http://lion.net.pl/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html</guid>
         </item>
             </channel>
 </rss>

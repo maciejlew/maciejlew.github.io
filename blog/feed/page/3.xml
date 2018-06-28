@@ -9,6 +9,47 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Jak zrobić zrzut ekranu całej strony internetowej?</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>WWW</category>
+                                    <content:encoded>&lt;p&gt;Czasami chcemy zrobić szybko zrzut ekranu całej strony internetowej. Nie kawałka
+strony widocznego aktualnie na ekranie monitora, tylko całej jej zawartości. Jak
+zrobić to szybko i przy pomocy znanych narzędzi?&lt;/p&gt;
+
+&lt;h3 id=&quot;chytre-narz%C4%99dzie&quot;&gt;Chytre narzędzie&lt;/h3&gt;
+
+&lt;p&gt;Przeglądarkę stron WWW Mozilla FireFox zna chyba każdy. To świetne narzędzie do 
+przeglądania ma w sobie wbudowaną funkcjonalność robienia &lt;em&gt;&quot;screenów&quot;&lt;/em&gt; całej 
+strony. Aby wykonać zrzut ekranu należy:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Wejść do narzędzi dla programistów klikając w ikonę menu, &lt;em&gt;&quot;Otwórz menu&quot;&lt;/em&gt;, (trzy 
+poziome belki na pasku narzędzi przeglądarki) bądź naciskając klawisz F12 (o ile 
+nie mamy go zarezerwowanego pod inną funkcjonalność, np. FireBuga).&lt;/li&gt;
+&lt;li&gt;Kliknąć w ikonę aparatu fotograficznego, &lt;em&gt;&quot;Zrzut ekranu całej strony&quot;&lt;/em&gt;,
+znajdującą się na pasku narzędzi dla programistów.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Jeśli nie możesz znaleźć na pasku narzędzi dla programistów ww. ikony aparatu 
+fotograficznego oznacza to najprawdopodobniej że masz ją ukrytą. Aby to sprawdzić
+należy wybrać znajdującą się na tym samym pasku ikonę koła zębatego, &lt;em&gt;&quot;Ustawienia
+narzędzi&quot;&lt;/em&gt; i upewnić się że w sekcji &lt;em&gt;&quot;Przyciski narzędzi dla programistów&quot;&lt;/em&gt; 
+zaznaczona jest opcja &lt;em&gt;&quot;Zrzut ekranu całej strony&quot;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Po kliknięciu w ikonę aparatu zrzut od razu powinien zapisać się w domyślnym 
+katalogu do którego FireFox zapisuje pobrane pliki.&lt;/p&gt;
+
+&lt;p&gt;Opisane rozwiązanie jest bardzo wygodne, przeglądarka FF działa zarówno na systemach
+Windows, jak i Linuks. Ponad to nie wymaga ono instalowania dodatkowych narzędzi
+gdy działamy na systemie już wyposażonym w FF, co może być kluczowe gdy nie mamy
+odpowiednich uprawnień by instalować dodatkowe oprogramowanie na danym systemie.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2016-09-02T19:20:00+02:00</pubDate>
+            <link>http://lion.net.pl/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html</link>
+            <atom:link href="http://lion.net.pl/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html</guid>
+        </item>
+                <item>
             <title>Recenzja &#039;JavaScript. Programowanie obiektowe&#039;</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>JS</category>
@@ -2195,68 +2236,6 @@ na rozwiązanie.&lt;/p&gt;
             <link>http://lion.net.pl/2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html</link>
             <atom:link href="http://lion.net.pl/2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/05/27/tlumaczenie-atrybutow-html-w-angular-gettext.html</guid>
-        </item>
-                <item>
-            <title>Ikony i splash screen aplikacji w Ionic Framework</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>JS</category>
-                        <category>DDF</category>
-                        <category>DSP2016</category>
-                                    <content:encoded>&lt;p&gt;Przygotowanie ikony aplikacji i jej &quot;splash screena&quot; w Ionic Framework jest bardzo 
-proste. W tym wpisie dowiesz się jak zrobić to w mgnieniu oka i to na wszystkie
-najbardziej popularne urządzenia za jednym zamachem!&lt;/p&gt;
-
-&lt;h3 id=&quot;tworzenie-ikony&quot;&gt;Tworzenie ikony&lt;/h3&gt;
-
-&lt;p&gt;Utworzenie ikony dla aplikacji rozwijanej w Ionic polega na dwóch prostych krokach.
-Po pierwsze należy przygotować wyjściowy obrazek. Powinien on mieć rozmiary 512x512
-pikseli. Należy go umieścić w katalogu projektu w podkatalogu &lt;em&gt;resources&lt;/em&gt;. Nazwą
-obrazka ikony powinno być &lt;em&gt;icon&lt;/em&gt;, obsługiwane rozszerzenia to &lt;em&gt;.psd&lt;/em&gt;, &lt;em&gt;.png&lt;/em&gt; i 
-&lt;em&gt;.ai&lt;/em&gt;. Kolejnym krokiem jest wydanie polecenia:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ionic resources --icon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Ionic Framework wygeneruje w tym momencie zestaw ikon dla wszystkich skonfigurowanych
-środowisk uruchomieniowych (android, ios, itd.) i dla wszystkich najpopularniejszych
-rozmiarów urządzeń.&lt;/p&gt;
-
-&lt;h3 id=&quot;tworzenie-splash-screen&quot;&gt;Tworzenie splash screen&lt;/h3&gt;
-
-&lt;p&gt;Tworzenie obrazu powitalnego aplikacji nie odbiega bardzo od tworzenia ikony.
-Należy jednak dobrze przygotować wyjściowy obrazek. Powinien on mieć 2208x2208
-pikseli, z czego najważniejsze jego elementy powinny się zmieścić w kwadracie
-o rozmiarze 1200x1200 pikseli. Pozostałe części obrazka mogą zostać przycięte 
-podczas generowania splash screena na poszczególne rozdzielczości urządzeń.
-Niestety jest to dość nieprzewidywalne i jedynym wyjściem jest próbowanie do skutku
-aż uzyskamy zadowalający rezultat dla większości rozdzielczości. Poleceniem
-które uruchamia generowanie splash screenów jest:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ionic resources --splash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;optymalizacja&quot;&gt;Optymalizacja&lt;/h3&gt;
-
-&lt;p&gt;Zarówno wynikowe ikony jak i obrazy powitalne aplikacji nie są zoptymalizowane.
-Przepuszczając je przez narzędzie optipng można zyskać kilkanaście procent na wadze
-obrazków, co może się przełożyć nawet na kilkadziesiąt kilobajtów mniej w 
-rozmiarze całej aplikacji.&lt;/p&gt;
-
-&lt;h3 id=&quot;testowanie-ikony-i-splash-screena&quot;&gt;Testowanie ikony i splash screena&lt;/h3&gt;
-
-&lt;p&gt;Aby przetestować działanie ikon i splash screena należy wgrać aplikację na urządzenie
-poleceniem:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ionic run
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Jeśli aplikacja była już wcześniej testowana na urządzeniu pomocne może okazać
-się wyczyszczenie cache aplikacji na urządzeniu.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-05-26T19:40:00+02:00</pubDate>
-            <link>http://lion.net.pl/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html</link>
-            <atom:link href="http://lion.net.pl/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/05/26/ikony-i-splash-screen-aplikacji-w-ionic-framework.html</guid>
         </item>
             </channel>
 </rss>

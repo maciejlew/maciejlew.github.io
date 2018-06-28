@@ -9,6 +9,28 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Wezwania do zapłaty - nowe funkcje</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>LMS</category>
+                                    <content:encoded>&lt;p&gt;[Szablon wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
+oraz 
+[szablon przedsądowego wezwania do zapłaty]({{ site.url }}/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty), 
+cieszące się sporym zainteresowaniem klientów, zostały wyposażone w nowe funkcje:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;uwzględnianie korekt faktur VAT, opcja oznaczania pozycji na wezwaniu do których 
+były wystawione korekty;&lt;/li&gt;
+&lt;li&gt;opcja wyliczania odsetek ustawowych dla okresów gdy stawki tych odsetek wynosiły
+13% (poprzednia stawka) i 8% (obecna stawka) z uwzględnieniem przesuwania dnia
+rozpoczęcia naliczania odsetek gdy wypada on w dniu ustawowo wolnym od pracy.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+            <pubDate>2015-12-19T18:45:00+01:00</pubDate>
+            <link>http://lion.net.pl/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html</link>
+            <atom:link href="http://lion.net.pl/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2015/12/19/wezwania-do-zaplaty-nowe-funkcje.html</guid>
+        </item>
+                <item>
             <title>SpreadIT 2015 - relacja</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>OOP, QA, SpreadIT, MEETING</category>
@@ -463,45 +485,6 @@ Poniżej przedstawiam listę:&lt;/p&gt;
             <link>http://lion.net.pl/2015/04/20/usprawnienia-dla-lms.html</link>
             <atom:link href="http://lion.net.pl/2015/04/20/usprawnienia-dla-lms.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2015/04/20/usprawnienia-dla-lms.html</guid>
-        </item>
-                <item>
-            <title>Baza modeli urządzeń sieciowych w LMS</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>LMS</category>
-                                    <content:encoded>&lt;p&gt;Dodałem do głównej gałęzi LMS &lt;strong&gt;możliwość przechowywania w bazie danych LMS nazw 
-producentów i ich modeli urządzeń sieciowych&lt;/strong&gt;. Obecnie wgrane zostały modele 
-wyprodukowane przez firmy Mikrotik i Ubiquiti. Ponadto udostępniłem mechanizm 
-pobierania tych nazw na formatce dodawania i edycji nowego urządzenia sieciowego.
-Identyfikator modelu urządzenia jest w tle przypisywany do urządzenia. Pozwoli
-to w przyszłości na taka rozbudowę systemu LMS, aby możliwe było wykonywanie różnych
-akcji w specjalizowany dla danego modelu urządzenia sposób.&lt;/p&gt;
-
-&lt;p&gt;Poniżej zamieszczam kilka zrzutów ekranu pokazujących nową funkcjonalność w akcji:&lt;/p&gt;
-
-&lt;div class=&quot;gallery&quot;&gt;
-
-    &lt;div class=&quot;galleryItem&quot;&gt;
-        &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_1.png&quot;&gt;
-                &lt;img src=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_1.png&quot; alt=&quot;Opcja pobierania modelu urządzenia sieciowego&quot; title=&quot;Opcja pobierania modelu urządzenia sieciowego&quot;/&gt;
-            &lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;galleryItem&quot;&gt;
-        &lt;div class=&quot;stack twisted&quot;&gt;
-            &lt;a href=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_2.png&quot;&gt;
-                &lt;img src=&quot;/assets/img/lms_netdevicemodel/lms_netdevicemodel_2.png&quot; alt=&quot;Wybieranie modelu urządzenia sieciowego z listy&quot; title=&quot;Wybieranie modelu urządzenia sieciowego z listy&quot;/&gt;
-            &lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;
-</content:encoded>
-            <pubDate>2015-02-15T23:00:00+01:00</pubDate>
-            <link>http://lion.net.pl/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html</link>
-            <atom:link href="http://lion.net.pl/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html</guid>
         </item>
             </channel>
 </rss>

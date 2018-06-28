@@ -9,6 +9,73 @@
         <category>IT</category>
         <atom:link href="http://lion.net.pl/blog/feed.xml" rel="self" type="application/rss+xml" />
                 <item>
+            <title>Pistache i RapidJSON - czytanie danych z pliku</title>
+            <dc:creator>Maciej Lew</dc:creator>
+                                    <category>DSP2017</category>
+                        <category>C++</category>
+                        <category>DDS</category>
+                                    <content:encoded>&lt;p&gt;&lt;a href=&quot;/2017/03/28/pistache-i-rapidjson-prosty-obiekt-json-w-odpowiedzi.html&quot;&gt;Zapowiadałem&lt;/a&gt;, że pokażę jak wczytać przy pomocy RapidJSON dane z pliku i odesłać
+je do użytkownika webserwisu stworzonego w Pistache. Oto jak to możesz zrobić.&lt;/p&gt;
+
+&lt;h3 id=&quot;strumie%C5%84-z-pliku-json&quot;&gt;Strumień z pliku JSON&lt;/h3&gt;
+
+&lt;p&gt;Po otwarciu pliku, wykorzystując standardowe fopen, możesz w RapidJSON nakazać 
+aby dane z tego pliku były zaczytane przy pomocy obiektu strumienia &lt;em&gt;FileReadStream&lt;/em&gt;.
+Następnie należy przetworzyć te dane używając metody &lt;em&gt;parseStream&lt;/em&gt; obiektu &lt;em&gt;Document&lt;/em&gt;.
+W ten nieskomplikowany sposób możesz w kilku linijkach kody w szybki i wydajny
+sposób uzyskać dostęp do zapisanych w plikach JSON. Możesz sprawdzać ich wartości,
+manipulować nimi, zapisywać ponownie do pliku (tu pomocny może okazać się obiekt
+klasy &lt;em&gt;FileWriteStream&lt;/em&gt;). Poniższy przykład pokazuje jak otwieram plik z konfiguracją
+na podstawie której otwieram docelowy plik z danymi, po czym odsyłam całą jego 
+zawartość do użytkownika webserwisu. Oczywiście dla takiej funkcjonalności parsowanie
+pliku jest trochę przerostem formy nad treścią, ale jest to dobra baza pod to by
+w przyszłości wprowadzić w tej metodzie paginację, wyszukiwanie i inne zaawansowane
+funkcje.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;void DrugsHandler::onRequest(const Net::Rest::Request&amp;amp; request, Net::Http::ResponseWriter response) {
+
+    Document drugs, config;
+    char _drugs_buffer[65536], _config_buffer[65536], _files_path_buffer[65536];
+    StringBuffer drugs_buffer;
+
+    FILE* config_pointer = fopen(&quot;config.json&quot;, &quot;r&quot;);
+    FileReadStream config_stream(config_pointer, _config_buffer, sizeof(_config_buffer));
+    config.ParseStream(config_stream);
+    fclose(config_pointer);
+
+    if (config.HasMember(&quot;files_path&quot;)) {
+
+        sprintf(_files_path_buffer, &quot;%s/drugs.json&quot;, config[&quot;files_path&quot;].GetString());
+        FILE* drugs_pointer = fopen(_files_path_buffer, &quot;r&quot;);
+
+        if (drugs_pointer) {
+            FileReadStream drugs_stream(drugs_pointer, _drugs_buffer, sizeof(_drugs_buffer));
+            drugs.ParseStream(drugs_stream);
+            fclose(drugs_pointer);
+
+            Writer&amp;lt;StringBuffer&amp;gt; writer(drugs_buffer);
+            drugs.Accept(writer);
+
+            response.send(Http::Code::Ok, drugs_buffer.GetString());
+
+        } else {
+            response.send(Http::Code::Internal_Server_Error);
+        }
+    } else {
+        response.send(Http::Code::Internal_Server_Error);
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pokazane w tym wpisie przykłady są zaczerpnięte z &lt;a href=&quot;https://github.com/maciejlew/drug-dose-server&quot;&gt;aplikacji DDS&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+            <pubDate>2017-03-30T21:40:00+02:00</pubDate>
+            <link>http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</link>
+            <atom:link href="http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html" rel="self" type="application/rss+xml" />
+            <guid isPermaLink="true">http://lion.net.pl/2017/03/30/pistache-i-rapidjson-czytanie-danych-z-pliku.html</guid>
+        </item>
+                <item>
             <title>Pistache i RapidJSON - prosty obiekt w odpowiedzi</title>
             <dc:creator>Maciej Lew</dc:creator>
                                     <category>DSP2017</category>
@@ -964,47 +1031,6 @@ odebrać bardzo fajną koszulkę związaną z tym wydarzeniem. Polecam.&lt;/p&gt
             <link>http://lion.net.pl/2016/11/13/zbliza-sie-spreadit-2016.html</link>
             <atom:link href="http://lion.net.pl/2016/11/13/zbliza-sie-spreadit-2016.html" rel="self" type="application/rss+xml" />
             <guid isPermaLink="true">http://lion.net.pl/2016/11/13/zbliza-sie-spreadit-2016.html</guid>
-        </item>
-                <item>
-            <title>Jak zrobić zrzut ekranu całej strony internetowej?</title>
-            <dc:creator>Maciej Lew</dc:creator>
-                                    <category>WWW</category>
-                                    <content:encoded>&lt;p&gt;Czasami chcemy zrobić szybko zrzut ekranu całej strony internetowej. Nie kawałka
-strony widocznego aktualnie na ekranie monitora, tylko całej jej zawartości. Jak
-zrobić to szybko i przy pomocy znanych narzędzi?&lt;/p&gt;
-
-&lt;h3 id=&quot;chytre-narz%C4%99dzie&quot;&gt;Chytre narzędzie&lt;/h3&gt;
-
-&lt;p&gt;Przeglądarkę stron WWW Mozilla FireFox zna chyba każdy. To świetne narzędzie do 
-przeglądania ma w sobie wbudowaną funkcjonalność robienia &lt;em&gt;&quot;screenów&quot;&lt;/em&gt; całej 
-strony. Aby wykonać zrzut ekranu należy:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Wejść do narzędzi dla programistów klikając w ikonę menu, &lt;em&gt;&quot;Otwórz menu&quot;&lt;/em&gt;, (trzy 
-poziome belki na pasku narzędzi przeglądarki) bądź naciskając klawisz F12 (o ile 
-nie mamy go zarezerwowanego pod inną funkcjonalność, np. FireBuga).&lt;/li&gt;
-&lt;li&gt;Kliknąć w ikonę aparatu fotograficznego, &lt;em&gt;&quot;Zrzut ekranu całej strony&quot;&lt;/em&gt;,
-znajdującą się na pasku narzędzi dla programistów.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Jeśli nie możesz znaleźć na pasku narzędzi dla programistów ww. ikony aparatu 
-fotograficznego oznacza to najprawdopodobniej że masz ją ukrytą. Aby to sprawdzić
-należy wybrać znajdującą się na tym samym pasku ikonę koła zębatego, &lt;em&gt;&quot;Ustawienia
-narzędzi&quot;&lt;/em&gt; i upewnić się że w sekcji &lt;em&gt;&quot;Przyciski narzędzi dla programistów&quot;&lt;/em&gt; 
-zaznaczona jest opcja &lt;em&gt;&quot;Zrzut ekranu całej strony&quot;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Po kliknięciu w ikonę aparatu zrzut od razu powinien zapisać się w domyślnym 
-katalogu do którego FireFox zapisuje pobrane pliki.&lt;/p&gt;
-
-&lt;p&gt;Opisane rozwiązanie jest bardzo wygodne, przeglądarka FF działa zarówno na systemach
-Windows, jak i Linuks. Ponad to nie wymaga ono instalowania dodatkowych narzędzi
-gdy działamy na systemie już wyposażonym w FF, co może być kluczowe gdy nie mamy
-odpowiednich uprawnień by instalować dodatkowe oprogramowanie na danym systemie.&lt;/p&gt;
-</content:encoded>
-            <pubDate>2016-09-02T19:20:00+02:00</pubDate>
-            <link>http://lion.net.pl/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html</link>
-            <atom:link href="http://lion.net.pl/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html" rel="self" type="application/rss+xml" />
-            <guid isPermaLink="true">http://lion.net.pl/2016/09/02/jak-zrobic-zrzut-ekranu-calej-strony-internetowej.html</guid>
         </item>
             </channel>
 </rss>
