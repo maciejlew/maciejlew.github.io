@@ -1,0 +1,9 @@
+Czasami chcemy zrobić szybko zrzut ekranu całej strony internetowej. Nie kawałka strony widocznego na ekranie monitora tylko całej jej zawartości. Jak zrobić to szybko i przy pomocy znanych narzędzi pokażemy teraz.
+
+Wykorzystamy w tym celu przeglądarkę stron WWW Mozilla FireFox. Przejdźmy do działania.
+
+Po pierwsze musimy dostać się do wbudowanych w przeglądarkę narzędzi dla programistów. Możemy tego dokonac na 3 sposoby: naciskając klawisz F12, klikając w ikonę "Menu" wybierając pozycję "Narzędzia" a następnie opcję przełącz narzedzie bądź klikając prawym przyciskiem myszy na stronie i wybierając z menu kontekstowego "Zbadaj element".
+
+Powinniśmy zobaczyć panel narzedzi dla programistów, gdzie na belce możemy znaleźć ikonę aparatu fotograficznego służącą do wykonania zrzutu ekranu. Jeśli ikony tej nie widać należy sprawdzić w ustawieniach narzędzi czy wśród przycisków narzędzi dla programistów zaznaczona jest opcja "Zrzut ekranu całej strony".
+
+Po kliknięciu ikony aparatu zostanie wykonany "screen" strony, a jego wynik zostanie zapisany do katalogu "Pobrane".

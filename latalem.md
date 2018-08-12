@@ -1,0 +1,3 @@
+Każdy chciałby móc latać. Ludzie od wieków marzą o tym by wzbić się w powietrze. Śwadczą o tym mity greckie, przepełnione uskrzydlonymi istotami oraz marzycielami którym w końcu udaje się wzbić w górę ku chmurom. Miłośnik muzyki pop wzruszy się słuchając "I believe I can fly", a fan rocka popadnie w zadumę przy "Learning to fly". W dziesiejszych czasach latanie stało się codziennością. Można w przystępnej cenie zakupić bilet na samolot i pooglądać sobie świat z lotu ptaka. Można także samemu unieść się w powietrze...
+
+... a potrzebny do tego jest "jedynie" odpowiednio silny jego strumień. 
