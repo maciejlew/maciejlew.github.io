@@ -1,13 +1,4 @@
-vendor/
-output_dev/
-source/
+_site/
 .sass-cache/
-page/*
-drug-dose/**/page/
-lan-management-system/**/page/
-mapa/page/
-polityka-plikow-cookies/page/
-umiejetnosci/page/
-!blog/page/
-!blog/feed/page/
-
+.jekyll-cache/
+.jekyll-metadata

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,KAAM,CAEF,UAAU,CAAE,IAAI,CAChB,KAAK,CAAE,IAAI,CAEX,MAAM,CAAE,iBAAiB,CAEzB,cAAS,CACL,OAAO,CAAE,MAAM,CACf,gBAAgB,CCRf,OAAO,CDSR,aAAa,CAAE,iBAAiB,CAGpC,cAAS,CACL,OAAO,CAAE,MAAM,CACf,WAAW,CAAE,GAAG,CAGpB,oBAAe,CACX,gBAAgB,CAAE,OAAqB",
-"sources": ["../../../source-assets/scss/tables.scss","../../../source-assets/scss/utils/variables.scss"],
-"names": [],
-"file": "tables.css"
-}

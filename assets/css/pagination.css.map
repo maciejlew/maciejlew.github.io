@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,WAAY,CAEV,OAAO,CAAE,KAAK,CAEd,MAAM,CAAE,iBAAiB,CACzB,MAAM,CAAE,MAAM,CAEd,cAAG,CAED,KAAK,CCXA,MAAM,CDYX,SAAS,CAAE,KAAe,CAC1B,SAAS,CCbJ,MAAM,CDcX,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,IAAI,CACb,UAAU,CAAE,IAAI,CAChB,eAAe,CAAE,YAAY,CAE7B,iBAAG,CACD,OAAO,CAAE,KAAK,CAEd,0CAAQ,CAEN,OAAO,CAAE,KAAK,CACd,OAAO,CAAE,IAAI,CAIf,yBAAQ,CACN,KAAK,CC3BJ,OAAO",
-"sources": ["../../../source-assets/scss/pagination.scss","../../../source-assets/scss/utils/variables.scss"],
-"names": [],
-"file": "pagination.css"
-}

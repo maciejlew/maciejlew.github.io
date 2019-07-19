@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,gBAAiB,CAEb,OAAO,CAAE,KAAK,CAEd,gBAAgB,CCJX,OAAO,CDKZ,OAAO,CAAE,MAAM,CAEf,uBAAO,CACH,KAAK,CCVJ,MAAM,CDWP,SAAS,CAAE,KAAe,CAC1B,SAAS,CCZR,MAAM,CDaP,MAAM,CAAE,MAAM,CAEd,0BAAG,CACC,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,IAAI,CACX,WAAW,CAAE,YAAY",
-"sources": ["../../../source-assets/scss/headline.scss","../../../source-assets/scss/utils/variables.scss"],
-"names": [],
-"file": "headline.css"
-}
