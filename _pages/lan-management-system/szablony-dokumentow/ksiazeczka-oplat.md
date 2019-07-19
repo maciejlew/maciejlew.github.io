@@ -19,7 +19,7 @@ breadcrumbs:
     title: page.title
     type: ItemPage
 permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html
-permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
+redirect_from: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
 ---
 
  * wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej
