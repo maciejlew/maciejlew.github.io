@@ -16,6 +16,7 @@ breadcrumbs:
     title: page.title
     type: CollectionPage
 permalink: /lan-management-system/pluginy.html
+redirect_from: /lan-management-system/pluginy/
 ---
 
 Od momentu wprowadzenia do LMS mechanizmu pluginów zacząłem przygotowywać część
@@ -32,7 +33,7 @@ Pluginy działają z wersją LMS GIT, chyba że w opisie zaznaczono inaczej. Na
 
 
 
-[1]: /lan-management-system/pluginy/konczace-sie-umowy/
-[2]: /lan-management-system/pluginy/konczace-sie-zobowiazania/
+[1]: /lan-management-system/pluginy/konczace-sie-umowy.html
+[2]: /lan-management-system/pluginy/konczace-sie-zobowiazania.html
 
 {% include json-ld-page.md %}

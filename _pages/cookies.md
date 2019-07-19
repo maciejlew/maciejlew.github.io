@@ -3,7 +3,8 @@ layout: page
 title: "Cookies"
 description: "Polityka plików cookies"
 keywords: polityka plików cookies
-permalink: /polityka-plikow-cookies
+permalink: /polityka-plikow-cookies.html
+redirect_from: /polityka-plikow-cookies
 type: QAPage
 date: "2014-06-28 19:01:00"
 breadcrumbs:

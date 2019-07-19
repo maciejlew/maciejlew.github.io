@@ -13,6 +13,7 @@ breadcrumbs:
     title: page.title
     type: CollectionPage
 permalink: /lan-management-system/artykuly.html
+redirect_from: /lan-management-system/artykuly/
 ---
 
 Od czasu do czasu piszę posty na temat LMS, które mogą Cię zainteresować:

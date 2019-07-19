@@ -19,6 +19,7 @@ breadcrumbs:
     title: page.title
     type: ItemPage
 permalink: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty.html
+redirect_from: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
 ---
 
  * lista nieopłaconych dokumentów (faktury VAT, noty obciążeniowe, korekty faktur VAT)
@@ -43,9 +44,9 @@ Przykłady:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
- * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
- * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
- * [Odstąpienie od umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty.html)
+ * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html)
+ * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem.html)
+ * [Odstąpienie od umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem.html)
 
 {% include json-ld-page.md %}

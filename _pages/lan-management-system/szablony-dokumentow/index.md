@@ -16,6 +16,7 @@ breadcrumbs:
     title: page.title
     type: CollectionPage
 permalink: /lan-management-system/szablony-dokumentow.html
+redirect_from: /lan-management-system/szablony-dokumentow/
 ---
 
 Szablony dokumentów w LMS pozwalają na automatyczne generowanie umów, regulaminów,
@@ -42,10 +43,10 @@ dokumentów klienta to wersji działającej z LMS. Dotychczas przenosiłem m. in
 
 Przygotowane przeze mnie szablony działają zarówno w LMS GIT jak i INET LMS.
 
-[1]: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty/
-[2]: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
-[3]: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
-[4]: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
-[5]: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
+[1]: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty.html
+[2]: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty.html
+[3]: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html
+[4]: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem.html
+[5]: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem.html
 
 {% include json-ld-page.md %}

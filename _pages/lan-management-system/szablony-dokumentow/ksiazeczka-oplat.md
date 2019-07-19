@@ -19,6 +19,7 @@ breadcrumbs:
     title: page.title
     type: ItemPage
 permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html
+permalink: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat/
 ---
 
  * wydruk danych klienta i firmy na podkładzie wpłaty gotówkowej
@@ -58,9 +59,9 @@ następujące zmienne:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
- * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
- * [Odstąpienie od umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty.html)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty.html)
+ * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem.html)
+ * [Odstąpienie od umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem.html)
 
 {% include json-ld-page.md %}

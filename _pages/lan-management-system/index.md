@@ -12,7 +12,8 @@ breadcrumbs:
   - url: page.url
     title: page.title
     type: CollectionPage
-permalink: /lan-management-system
+permalink: /lan-management-system.html
+redirect_from: /lan-management-system/
 ---
 
 ## Szablony dokumentów
@@ -77,12 +78,12 @@ Od czasu do czasu piszę posty na temat LMS, które mogą Cię zainteresować:
  * [LMS - system zarządzania sieciami LAN i nie tylko](/2014/07/27/lms-system-zarzadzania-sieciami-lan-i-nie-tylko.html)
  * [LMSConfig - nowy system zarządzania konfiguracją LMS](/2014/07/16/lmsconfig-nowy-system-zarzadzania-konfiguracja-lms.html)
 
-[1]: szablony-dokumentow/wezwanie-do-zaplaty/
-[2]: szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty/
-[3]: szablony-dokumentow/ksiazeczka-oplat/
-[4]: szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
-[5]: szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem/
-[6]: pluginy/konczace-sie-umowy/
-[7]: pluginy/konczace-sie-zobowiazania/
+[1]: /lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty.html
+[2]: /lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty.html
+[3]: /lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html
+[4]: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem.html
+[5]: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem.html
+[6]: /lan-management-system/pluginy/konczace-sie-umowy.html
+[7]: /lan-management-system/pluginy/konczace-sie-zobowiazania.html
 
 {% include json-ld-page.md %}

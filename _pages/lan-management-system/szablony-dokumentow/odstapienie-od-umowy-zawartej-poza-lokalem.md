@@ -19,6 +19,7 @@ breadcrumbs:
     title: page.title
     type: ItemPage
 permalink: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem.html
+redirect_from: /lan-management-system/szablony-dokumentow/odstapienie-od-umowy-zawartej-poza-lokalem
 ---
 
 Przyjmuję zlecenia przenoszenia istniejących szablonów odstąpienia od umowy zawartej
@@ -70,10 +71,10 @@ dokumentu:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
- * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
- * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty.html)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty.html)
+ * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html)
+ * [Informacje do umowy zawartej poza lokalem](/lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem.html)
 
 
 

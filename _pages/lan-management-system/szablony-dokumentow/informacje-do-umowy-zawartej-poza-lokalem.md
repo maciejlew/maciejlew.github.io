@@ -19,6 +19,7 @@ breadcrumbs:
     title: page.title
     type: ItemPage
 permalink: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem.html
+redirect-from: /lan-management-system/szablony-dokumentow/informacje-do-umowy-zawartej-poza-lokalem/
 ---
 
 Podejmuję się przenoszenia istniejących szablonów informacji dodatkowych 
@@ -81,9 +82,9 @@ dokumentu:
 
 Zobacz także:
 
- * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty)
- * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty)
- * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat)
+ * [Wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/wezwanie-do-zaplaty.html)
+ * [Przedsądowe wezwanie do zapłaty](/lan-management-system/szablony-dokumentow/przedsadowe-wezwanie-do-zaplaty.html)
+ * [Książeczka opłat](/lan-management-system/szablony-dokumentow/ksiazeczka-oplat.html)
 
 
 

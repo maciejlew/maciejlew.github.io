@@ -18,6 +18,7 @@ breadcrumbs:
     title: page.title
     type: ItemPage
 permalink: /lan-management-system/pluginy/konczace-sie-zobowiazania.html
+redirect_from: /lan-management-system/pluginy/konczace-sie-zobowiazania/
 ---
 
  * lista kończących się zobowiązań
@@ -46,6 +47,6 @@ W menu konfiguracji, w module *Wtyczki*, należy uruchomić plugin
 
 Zobacz także:
 
- * [Lista kończących się umów](/lan-management-system/pluginy/konczace-sie-umowy)
+ * [Lista kończących się umów](/lan-management-system/pluginy/konczace-sie-umowy.html)
 
 {% include json-ld-page.md %}
