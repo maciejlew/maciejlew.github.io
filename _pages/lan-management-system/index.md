@@ -70,7 +70,7 @@ Od czasu do czasu piszę posty na temat LMS, które mogą Cię zainteresować:
  * [Wezwania do zapłaty - adresy korespondencyjne klientów](/2015/08/08/wezwania-do-zaplaty-adresy-korespondencyjne-klientow.html)
  * [Grupa LMS na Goldenline](/2015/08/08/grupa-lms-na-goldenline.html)
  * [Routing w LMS](/2015/07/28/routing-w-lms.html)
- * [Usprawnienia dla LMS, część 3](/2015/07/21/usprawnienia-dla-lms-3.html)
+ * [Usprawnienia dla LMS, część 3](/2015/07/20/usprawnienia-dla-lms-3.html)
  * [Usprawnienia dla LMS, część 2](/2015/06/16/usprawnienia-dla-lms-2.html)
  * [Usprawnienia dla LMS](/2015/04/20/usprawnienia-dla-lms.html)
  * [Baza modeli urządzeń sieciowych w LMS](/2015/02/15/baza-modeli-urzadzen-sieciowych-w-lms.html)
