@@ -28,7 +28,7 @@ redirect_from: /mapa
      * [Lista kończących się umów](/lan-management-system/pluginy/konczace-sie-umowy.html)
      * [Lista kończących się zobowiązań](/lan-management-system/pluginy/konczace-sie-zobowiazania.html)
    * [Artykuły](/lan-management-system/artykuly.html)
- * [Blog IT](/it.html)
+ * [Blog IT](/it/)
  * [Mapa strony](/mapa.html)
 
 {% include json-ld-page.md %}
